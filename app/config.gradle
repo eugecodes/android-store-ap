@@ -1,0 +1,12 @@
+def propertiesFile = project.rootProject.file('app/api-keys.properties')
+
+if (propertiesFile.exists()) {
+    propertiesFile.withReader { r ->
+        /* Loading java.util.Properties as defaults makes empty Properties object */
+        def props = new Properties()
+        props.load(r)
+        props.each { key, value ->
+            System.setProperty(key, value)
+        }
+    }
+}

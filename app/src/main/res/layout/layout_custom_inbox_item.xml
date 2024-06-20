@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal"
+        android:padding="@dimen/medium_spacing">
+
+        <CheckBox
+            android:id="@+id/selection_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:minWidth="@dimen/min_button_size"
+            android:minHeight="@dimen/min_button_size"
+            android:onClickListener="@{(view) -> eventsHandler.onSelectionClicked(message)}" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/small_size"
+            android:layout_marginRight="@dimen/small_size"
+            android:layout_weight="1"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@{message.title}"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="@dimen/text_size_7"
+            app:textStyle="@{message.unread ? Typeface.BOLD : Typeface.NORMAL}"
+            tools:text="Message Title for two lines of text example" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:fontFamily="@font/primary_font_family"
+                android:textColor="@color/grayThreeColor"
+                android:textStyle="normal"
+                app:bindDate="@{message.date}"
+                app:bindDateFormat="@{@string/date_recent_order_format}"
+                tools:text="10/04/2018" />
+
+            <View
+                android:id="@+id/unread_dot"
+                android:layout_width="@dimen/small_size"
+                android:layout_height="@dimen/small_size"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/xsmall_size"
+                android:background="@drawable/unread_dot"
+                app:bindVisible="@{message.unread}"
+                app:tintBackgroundDrawable="@{@color/notificationBadgeBackgroundColor}"
+                tools:backgroundTint="@color/notificationBadgeBackgroundColor" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <data>
+
+        <import type="android.graphics.Typeface" />
+
+        <variable
+            name="eventsHandler"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.inbox.view.EventsHandler" />
+
+        <variable
+            name="message"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.inbox.model.InboxMessage" />
+    </data>
+
+</layout>

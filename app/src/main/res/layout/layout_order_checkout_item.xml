@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_spacing"
+        android:layout_marginRight="@dimen/medium_spacing"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_spacing">
+
+            <caribouapp.caribou.com.cariboucoffee.mvp.oos.ItemSizeView
+                android:id="@+id/isv_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:size="@{model.size}" />
+
+            <TextView
+                android:id="@+id/tv_order_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/product_name_content_description"
+                android:fontFamily="@font/primary_font_family"
+                android:textColor="@color/grayThreeColor"
+                android:textSize="@dimen/text_size_7"
+                android:textStyle="bold"
+                tools:text="Mocha x2" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_modifiers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/description_font_family"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="@dimen/text_size_9"
+            tools:text="2%Milk, Extra Zebra Milk, White Chcocolate, 1X Vanilla, Half more thing to maek tolines item" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xxxsmall_size"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:background="@color/warmGrayColor2" />
+
+    </LinearLayout>
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.model.OrderItem" />
+    </data>
+
+</layout>

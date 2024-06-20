@@ -1,0 +1,22 @@
+# -uses_http Http is only used by the captive portal detection code. https://coffeeandbagels.atlassian.net/browse/MA-2832
+# -secure_random_check Requires research  https://coffeeandbagels.atlassian.net/browse/MA-2905
+# -dynamic_code_loading_check This refers to the multidex android code that is required for large apps. No way around it.
+# -javascript_interface_check Requires research https://coffeeandbagels.atlassian.net/browse/MA-2904
+# -leaked_data_in_files_gpsLatitude Requires research https://coffeeandbagels.atlassian.net/browse/MA-2907
+# -sensitive_data_flow Requires research https://coffeeandbagels.atlassian.net/browse/MA-2943
+# -leaked_data_in_files_zipcode Requires research https://coffeeandbagels.atlassian.net/browse/MA-2981
+# -cookie_without_secure_flag research https://coffeeandbagels.atlassian.net/browse/MA-3297
+# -leaked_logcat_data_zipcode ticket for this is https://coffeeandbagels.atlassian.net/browse/MA-3510
+# -leaked_logcat_data_gpsLongitude ticket for this https://coffeeandbagels.atlassian.net/browse/MA-3659
+known_issues:
+  -uses_http
+  -secure_random_check
+  -dynamic_code_loading_check
+  -javascript_interface_check
+  -leaked_data_in_files_gpsLatitude
+  -sensitive_data_flow
+  -leaked_data_in_files_zipcode
+  -cookie_without_secure_flag
+  -leaked_logcat_data_zipcode
+  -leaked_data_in_files_gpsLongitude
+  -leaked_logcat_data_gpsLongitude

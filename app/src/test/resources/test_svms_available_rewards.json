@@ -1,0 +1,102 @@
+{
+  "data": [
+    {
+      "id": 152,
+      "code": "ANY1",
+      "criteria": {
+        "points": 75.0
+      }
+    },
+    {
+      "id": 34,
+      "code": "BAKE",
+      "criteria": {
+        "points": 75.0
+      }
+    },
+    {
+      "id": 151,
+      "code": "BAGEL1",
+      "criteria": {
+        "points": 100.0
+      }
+    },
+    {
+      "id": 7,
+      "code": "SIZE",
+      "criteria": {
+        "points": 30.0
+      }
+    },
+    {
+      "id": 94,
+      "code": "SHOT",
+      "criteria": {
+        "points": 30.0
+      }
+    },
+    {
+      "id": 137,
+      "code": "120Pts",
+      "criteria": {
+        "points": 120.0
+      }
+    },
+    {
+      "id": 192,
+      "code": "BEANS1",
+      "criteria": {
+        "points": 400.0
+      }
+    },
+    {
+      "id": 191,
+      "code": "GROWL1",
+      "criteria": {
+        "points": 450.0
+      }
+    },
+    {
+      "id": 190,
+      "code": "EggSand",
+      "criteria": {
+        "points": 185.0
+      }
+    },
+    {
+      "id": 210,
+      "code": "HALF1",
+      "criteria": {
+        "points": 225.0
+      }
+    },
+    {
+      "id": 211,
+      "code": "Dozen1",
+      "criteria": {
+        "points": 375.0
+      }
+    },
+    {
+      "id": 212,
+      "code": "MASON1",
+      "criteria": {
+        "points": 125.0
+      }
+    },
+    {
+      "id": 250,
+      "code": "BAKE2",
+      "criteria": {
+        "points": 50.0
+      }
+    },
+    {
+      "id": 251,
+      "code": "ANY2",
+      "criteria": {
+        "points": 50.0
+      }
+    }
+  ]
+}

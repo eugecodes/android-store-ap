@@ -1,0 +1,233 @@
+{
+  "id": 2405,
+  "user_id": 5,
+  "location": {
+    "id": 10,
+    "name": "Colfax & Indiana",
+    "number": "3099",
+    "enterprise_unit": "0bb243d1ab6c4d1bb94a606abeb2993c"
+  },
+  "data": {
+    "comments": "Pickup Type: WALK_IN\n",
+    "channel": "Web",
+    "customer": {
+      "id": "df776be3-11d6-e811-a962-000d3a36399f",
+      "externalIds": [],
+      "firstName": "ggon7",
+      "lastName": "g",
+      "phoneExtension": "",
+      "email": "gon7@mailinator.com"
+    },
+    "groupMembers": [],
+    "status": "Finished",
+    "totals": [
+      {
+        "lineId": "bebe0e39a35244dd807dd658f36d5e2d",
+        "type": "Net",
+        "value": 9.88
+      }
+    ],
+    "fulfillment": {
+      "address": {
+        "type": "Residential",
+        "line1": "",
+        "line2": "",
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "notes": "",
+        "businessInfo": {}
+      },
+      "leadTimes": [
+        {
+          "lineId": "PreperationLineId",
+          "type": "Preparation",
+          "interval": 10,
+          "intervalUnits": "Minutes"
+        },
+        {
+          "lineId": "TransitLineId",
+          "type": "Transit",
+          "interval": 0,
+          "intervalUnits": "Minutes"
+        }
+      ],
+      "pickupDate": "2020-05-28T20:18:13.663Z",
+      "type": "Pickup",
+      "autoRelease": true,
+      "catering": false
+    },
+    "expireAt": "2020-06-28T20:18:31.805Z",
+    "fees": [
+      {
+        "lineId": "750046dddd264cd68ce04909e5253698",
+        "type": "Web",
+        "amount": 0.0
+      }
+    ],
+    "orderLines": [
+      {
+        "lineId": "3636fb0a-28ff-443a-a24f-757f9f29b915",
+        "description": "Hot Choc Large",
+        "extendedAmount": 3.89,
+        "notes": [],
+        "priceModifiers": [],
+        "productId": {
+          "value": "205102"
+        },
+        "quantity": {
+          "value": 5.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 3.89,
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      },
+      {
+        "lineId": "d9f572b9-d733-42f0-8566-6ef15f194677",
+        "description": "Almond Milk",
+        "extendedAmount": 0.6,
+        "notes": [],
+        "parentLineId": "3636fb0a-28ff-443a-a24f-757f9f29b915",
+        "priceModifiers": [],
+        "productId": {
+          "value": "502175"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 0.6,
+        "linkGroupCode": "19997",
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      },
+      {
+        "lineId": "87075539-c0d6-4b7e-b6e2-31b8550e9272",
+        "description": "NO Whip",
+        "extendedAmount": 0.0,
+        "notes": [],
+        "parentLineId": "3636fb0a-28ff-443a-a24f-757f9f29b915",
+        "priceModifiers": [],
+        "productId": {
+          "value": "502311"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 0.0,
+        "linkGroupCode": "19997",
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      },
+      {
+        "lineId": "6331dfbf-0ba7-48d2-912c-294b85d0f6bc",
+        "description": "Hot Choc Small",
+        "extendedAmount": 3.89,
+        "notes": [],
+        "priceModifiers": [],
+        "productId": {
+          "value": "205100"
+        },
+        "quantity": {
+          "value": 3.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 3.29,
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      },
+      {
+        "lineId": "1e2dbe86-97e2-4033-9995-8c3a55cec3f1",
+        "description": "Almond Milk",
+        "extendedAmount": 0.6,
+        "notes": [],
+        "parentLineId": "6331dfbf-0ba7-48d2-912c-294b85d0f6bc",
+        "priceModifiers": [],
+        "productId": {
+          "value": "502175"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 0.6,
+        "linkGroupCode": "19997",
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      },
+      {
+        "lineId": "b36a6fea-eb21-414f-afa8-b917b4b51e55",
+        "description": "NO Whip",
+        "extendedAmount": 0.0,
+        "notes": [],
+        "parentLineId": "6331dfbf-0ba7-48d2-912c-294b85d0f6bc",
+        "priceModifiers": [],
+        "productId": {
+          "value": "502311"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 0.0,
+        "linkGroupCode": "19997",
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      }
+    ],
+    "payments": [
+      {
+        "lineId": "1ea1c1acdfb8401299e0ea2a4ed1559b",
+        "amount": 9.28,
+        "gratuity": 0.0,
+        "status": "Paid",
+        "type": "Other",
+        "subType": "Custom_PrePaid1",
+        "payBalance": false
+      }
+    ],
+    "taxes": [
+      {
+        "lineId": "e6144e23d78248b493dcc4f2ee02ec92",
+        "amount": 0.9,
+        "description": "Store Calculated Tax",
+        "isIncluded": false
+      }
+    ],
+    "promotions": [],
+    "additionalReferenceIds": {
+      "AtoOrderId": "42846593746774",
+      "AlohaCheckId": "11534465",
+      "AtoReferenceId": "0"
+    },
+    "taxExempt": false,
+    "totalModifiers": [],
+    "partySize": 1,
+    "dateFulfilled": "2020-05-28T20:18:31.807Z",
+    "dateCreated": "2020-05-28T20:18:12.947Z",
+    "dateUpdated": "2020-05-28T20:18:31.804Z",
+    "id": "12542547187041236225",
+    "lock": {
+      "lockedBy": "[0bb243d1ab6c4d1bb94a606abeb2993c][0a5e8f37-d9eb-4269-9b6e-e216ad54be2f]",
+      "lockedDate": "2020-05-28T20:18:31.584Z"
+    },
+    "sourceOrganization": "einstein-noah",
+    "enterpriseUnitId": "0bb243d1ab6c4d1bb94a606abeb2993c",
+    "etag": "2020-05-28T20:18:31.804Z"
+  },
+  "status": "ReadyForValidation",
+  "ncr_status": "Finished",
+  "total": 9.28,
+  "tax": 0.9,
+  "check_number": null,
+  "subtotal": 8.38,
+  "reorder_errors": []
+}

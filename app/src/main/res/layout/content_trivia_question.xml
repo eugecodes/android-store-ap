@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.trivia.model.TriviaQuestionModel" />
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lav_timer"
+                android:layout_width="@dimen/xxxlarge_size"
+                android:layout_height="@dimen/xxxlarge_size"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:lottie_rawRes="@raw/alarmclock" />
+
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xxxlarge_spacing"
+                android:layout_marginRight="@dimen/xxxlarge_spacing"
+                android:layout_weight="1"
+                android:fontFamily="@font/primary_font_family"
+                android:text="@{model.question}"
+                android:textAlignment="center"
+                android:textColor="@color/triviaQuestionAndAnswerColor"
+                android:textSize="@dimen/text_size_6_4"
+                android:textStyle="bold"
+                tools:text="Which President's face is not featured on Mount Rushmore?"
+                android:gravity="center_horizontal" />
+
+
+
+            <caribouapp.caribou.com.cariboucoffee.mvp.trivia.view.TriviaAnswersView
+                android:id="@+id/tav_answers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:bindTriviaAnswerList="@{model.answers}"
+                app:bindTriviaCorrectAnswer="@{model.correctAnswer}" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</layout>

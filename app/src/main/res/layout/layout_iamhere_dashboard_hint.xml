@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.dashboard.DashboardModel" />
+
+        <variable
+            name="presenter"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.dashboard.DashboardContract.Presenter" />
+    </data>
+
+    <LinearLayout
+        style="@style/DashboardImHereHint"
+        android:importantForAccessibility="yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/hint_im_here_title"
+            style="@style/DashboardImHereTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/your_order_will_be_ready" />
+
+        <TextView
+            android:id="@+id/hint_im_here_subtitle"
+            style="@style/DashboardImHereSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{model.curbsidePickupTime}"
+            tools:text="10:00 AM" />
+
+        <TextView
+            android:id="@+id/hint_im_here_description"
+            style="@style/DashboardImHereDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{TextUtils.isEmpty(model.curbsideIamHereMessage) ? @string/make_sure_you_let_us_know_when: model.curbsideIamHereMessage}"
+            tools:text="@string/make_sure_you_let_us_know_when" />
+
+        <Button
+            android:id="@+id/btn_im_here_signal"
+            style="@style/BaseButton.ImHereButtonDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/im_here_cd"
+            android:onClick="@{() -> presenter.sendCurbsideIamHereSignal()}"
+            android:text="@string/im_here"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="menu"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.menu.model.MenuCardItemModel" />
+    </data>
+
+    <ImageView
+        android:id="@+id/menu_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_card_image_height_menu"
+        android:layout_marginBottom="@dimen/item_card_bottom_margin_menu"
+        android:scaleType="center"
+        app:bindImageAltUrl="@{menu.altThumbnailImage}"
+        app:bindImageUrl="@{menu.thumbnailImage}" />
+
+</layout>

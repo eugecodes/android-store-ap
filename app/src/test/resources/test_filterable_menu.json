@@ -1,0 +1,3190 @@
+[
+  {
+    "category": "Featured",
+    "groups": [
+      {
+        "group": "All",
+        "products": [
+          {
+            "title": "Cold Press Shandy",
+            "effectiveDate": "2019-05-16T22:04:09.000Z",
+            "archiveDate": "2019-07-11T05:00:00.000Z",
+            "nutritionId": "C311",
+            "description": "Cold Press Iced Coffee and lemonade served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c9da6732-24fa-4cf0-847e-4624305e8e3d.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-1589d787-d338-4a47-b375-c86b7367437e.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "87abdb781444da3bbf6acdbedafe674e",
+              "f97f688c7915dc366a767a6de73dbb5e",
+              "053f18b0759f99bca6754850282e02f4"
+            ]
+          },
+          {
+            "title": "Pumpkin White Mocha",
+            "effectiveDate": "2019-05-16T22:04:09.000Z",
+            "archiveDate": "2019-07-11T05:00:00.000Z",
+            "nutritionId": "C312",
+            "description": "Cold Press Iced Coffee with stone fruit syrup and ginger ale; served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c39d5123-d9ed-464c-b26a-ac196c81f7bd.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ddd01d12-bcf3-434b-b76b-d82c04f7c9ae.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "5b30519c406e2cf8337164c9ec2b3165",
+              "d9f2b288b6a520bb28f0039778086ce0",
+              "a76e1fcc5ead1dbed58755087d36cab3",
+              "b93dfbeeae90d73f55bc1028e87f8bb5"
+            ]
+          },
+          {
+            "title": "Coconut Mango Black Tea with Bubbles",
+            "effectiveDate": "2019-05-16T22:04:10.000Z",
+            "archiveDate": null,
+            "nutritionId": "C313",
+            "description": "Mango black iced tea, coconut flavor, milk and bubbles - chewy coconut jellies lightly flavored with coffee.\r\n\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d758cd3b-967f-4647-bd94-f20ac1815697.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-93d5153f-2ac0-4ea2-b79b-37b15b60d0c4.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "879b7206a79e220c6014342b3bdad65d",
+              "5a301bba7d23dd331222df2350b76027",
+              "f82e0096d9326dfa65e1bec21e22f9ef"
+            ]
+          },
+          {
+            "title": "Raspberry Green Tea with Bubbles",
+            "effectiveDate": "2019-05-16T22:04:10.000Z",
+            "archiveDate": null,
+            "nutritionId": "C314",
+            "description": "Tropical green iced tea, raspberry flavor, milk and bubbles - chewy coconut jellies lightly flavored with coffee.\r\n\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-72b541ac-8388-48b6-adbb-3c8fb36ae5ab.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-76042019-2fb3-4d82-82f4-3d106abdbda7.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "09bb13ad0fe92669975d94fc1535d166",
+              "0cb3ffd6c0c18ab51a23be8a575807b6",
+              "8156dbbeba50e0a7bf3dedb5e05c0307"
+            ]
+          },
+          {
+            "title": "Draft Mocha Nitro",
+            "effectiveDate": "2019-05-16T22:04:06.000Z",
+            "archiveDate": null,
+            "nutritionId": "c270",
+            "description": "Creamy, smooth Nitro Cold Press combined with milk and premium chocolate. Not available in all locations.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d4242683-93c0-4d32-9351-ea7bf87adf1a.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-36aaf967-495c-40c7-bc3e-537ee86a7104.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "70a9bbb06071f94daabfaa82f8b4b3c8",
+              "c95f48997409b36c2419a8953db3af47",
+              "e3916dce539ff1c96958675222de2aae"
+            ]
+          },
+          {
+            "title": "Nitro",
+            "effectiveDate": "2019-05-16T22:04:07.000Z",
+            "archiveDate": null,
+            "nutritionId": "c269",
+            "description": "Caribou Blend cold press coffee infused with nitrogen for a creamy, smooth coffee that's rich in flavor. Not available in all locations.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-61c8c05d-f30d-463e-9f0e-f1ba6f8cc9cb.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-bebac37b-da24-4cc3-a4fe-fa58e3ddfa49.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "59fedc816fc177566a37a8a45046886b",
+              "0a072462046c29ad391bd4eabee4d035",
+              "1550451dc0abe1afe2b75b6b0d85ffc1"
+            ]
+          },
+          {
+            "title": "Nitro High Rise",
+            "effectiveDate": "2019-05-16T22:04:07.000Z",
+            "archiveDate": null,
+            "nutritionId": "c271",
+            "description": "Creamy, smooth Nitro Cold Press combined with milk and real caramel; topped with espresso whipped cream. Not available in all locations.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-be6071c5-f3ee-4b85-accc-1d625e31712c.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f831c61b-1003-4cd3-8a57-9e30b0eeeb59.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "946794832ff94ac999b74097ddb60648",
+              "1c7f16be47d43e7eb9369b7bdd8560a3",
+              "ade5707343f253c405bdd4ac50291ad7"
+            ]
+          },
+          {
+            "title": "Matcha Tea Cooler with Bubbles",
+            "effectiveDate": "2019-05-16T22:04:26.000Z",
+            "archiveDate": null,
+            "nutritionId": "C315",
+            "description": "Matcha powder blended with vanilla, half & half and our signature shake mix. Served on a bed of bubbles - chewy coconut jellies lightly flavored with coffee.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-29bfaadd-6a3e-417c-a65b-e661b9a67476.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ed4e305c-3a86-4f7a-8366-2481bafa2176.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3e415d2ea5da54fa6b7f53b2162f8043",
+              "270745b1021cbcf929b6457736734fed",
+              "d2468314d7cf19f924213ea37e3a1cc1"
+            ]
+          },
+          {
+            "title": "Honey Sriracha Bagel Breakfast Sandwich",
+            "effectiveDate": "2019-05-16T22:04:46.000Z",
+            "archiveDate": null,
+            "nutritionId": "C356",
+            "description": "Thick cut bacon, cheddar cheese and a cage-free fried egg served with honey sriracha cream cheese on a toasted everything bagel.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-6f2c04ac-9d35-46fd-b4c5-9e0c1ef90636.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-019ef0eb-5f6e-4300-8025-dc6066b3f044.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "0dcd2a9aaad47d05d48629de913fd25e",
+              "13bf93b6ad55b4b5fa1424e7b89c2ac6"
+            ]
+          },
+          {
+            "title": "Mini Donut Muffin",
+            "effectiveDate": "2019-05-16T22:04:51.000Z",
+            "archiveDate": null,
+            "nutritionId": "c204",
+            "description": "Cake batter donut accented with nutmeg, dipped in butter and rolled in cinnamon sugar.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-8b821ac5-f429-40b0-8f43-b385b5d8d816.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-08cd004c-0812-4025-9f7c-465f22da9a1d.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "24755ec134855ba96174ac0f84779515",
+              "5be339e2346c4f32edcb76ca2fea93f4",
+              "b8c91ddc858c7f42a454921d3d451aea"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Beverages",
+    "groups": [
+      {
+        "group": "Iced",
+        "products": [
+          {
+            "title": "Cold Press Shandy",
+            "effectiveDate": "2019-05-16T22:04:09.000Z",
+            "archiveDate": "2019-07-11T05:00:00.000Z",
+            "nutritionId": "C311",
+            "description": "Cold Press Iced Coffee and lemonade served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c9da6732-24fa-4cf0-847e-4624305e8e3d.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-1589d787-d338-4a47-b375-c86b7367437e.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "87abdb781444da3bbf6acdbedafe674e",
+              "f97f688c7915dc366a767a6de73dbb5e",
+              "053f18b0759f99bca6754850282e02f4"
+            ]
+          },
+          {
+            "title": "Cold Press Mule",
+            "effectiveDate": "2019-05-16T22:04:09.000Z",
+            "archiveDate": "2019-07-11T05:00:00.000Z",
+            "nutritionId": "C312",
+            "description": "Cold Press Iced Coffee with stone fruit syrup and ginger ale; served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c39d5123-d9ed-464c-b26a-ac196c81f7bd.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ddd01d12-bcf3-434b-b76b-d82c04f7c9ae.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "5b30519c406e2cf8337164c9ec2b3165",
+              "d9f2b288b6a520bb28f0039778086ce0",
+              "a76e1fcc5ead1dbed58755087d36cab3"
+            ]
+          },
+          {
+            "title": "Raspberry Green Tea with Bubbles",
+            "effectiveDate": "2019-05-16T22:04:10.000Z",
+            "archiveDate": null,
+            "nutritionId": "C314",
+            "description": "Tropical green iced tea, raspberry flavor, milk and bubbles - chewy coconut jellies lightly flavored with coffee.\r\n\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-72b541ac-8388-48b6-adbb-3c8fb36ae5ab.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-76042019-2fb3-4d82-82f4-3d106abdbda7.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "09bb13ad0fe92669975d94fc1535d166",
+              "0cb3ffd6c0c18ab51a23be8a575807b6",
+              "8156dbbeba50e0a7bf3dedb5e05c0307"
+            ]
+          },
+          {
+            "title": "Coconut Mango Black Tea with Bubbles",
+            "effectiveDate": "2019-05-16T22:04:10.000Z",
+            "archiveDate": null,
+            "nutritionId": "C313",
+            "description": "Mango black iced tea, coconut flavor, milk and bubbles - chewy coconut jellies lightly flavored with coffee.\r\n\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d758cd3b-967f-4647-bd94-f20ac1815697.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-93d5153f-2ac0-4ea2-b79b-37b15b60d0c4.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "879b7206a79e220c6014342b3bdad65d",
+              "5a301bba7d23dd331222df2350b76027",
+              "f82e0096d9326dfa65e1bec21e22f9ef"
+            ]
+          },
+          {
+            "title": "Nitro",
+            "effectiveDate": "2019-05-16T22:04:07.000Z",
+            "archiveDate": null,
+            "nutritionId": "c269",
+            "description": "Caribou Blend cold press coffee infused with nitrogen for a creamy, smooth coffee that's rich in flavor. Not available in all locations.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-61c8c05d-f30d-463e-9f0e-f1ba6f8cc9cb.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-bebac37b-da24-4cc3-a4fe-fa58e3ddfa49.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "59fedc816fc177566a37a8a45046886b",
+              "0a072462046c29ad391bd4eabee4d035",
+              "1550451dc0abe1afe2b75b6b0d85ffc1"
+            ]
+          },
+          {
+            "title": "Draft Mocha Nitro",
+            "effectiveDate": "2019-05-16T22:04:06.000Z",
+            "archiveDate": null,
+            "nutritionId": "c270",
+            "description": "Creamy, smooth Nitro Cold Press combined with milk and premium chocolate. Not available in all locations.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d4242683-93c0-4d32-9351-ea7bf87adf1a.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-36aaf967-495c-40c7-bc3e-537ee86a7104.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "70a9bbb06071f94daabfaa82f8b4b3c8",
+              "c95f48997409b36c2419a8953db3af47",
+              "e3916dce539ff1c96958675222de2aae"
+            ]
+          },
+          {
+            "title": "Nitro High Rise",
+            "effectiveDate": "2019-05-16T22:04:07.000Z",
+            "archiveDate": null,
+            "nutritionId": "c271",
+            "description": "Creamy, smooth Nitro Cold Press combined with milk and real caramel; topped with espresso whipped cream. Not available in all locations.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-be6071c5-f3ee-4b85-accc-1d625e31712c.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f831c61b-1003-4cd3-8a57-9e30b0eeeb59.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "946794832ff94ac999b74097ddb60648",
+              "1c7f16be47d43e7eb9369b7bdd8560a3",
+              "ade5707343f253c405bdd4ac50291ad7"
+            ]
+          },
+          {
+            "title": "Iced Crafted Press",
+            "effectiveDate": "2019-05-16T22:03:56.000Z",
+            "archiveDate": null,
+            "nutritionId": "c97",
+            "description": "Smooth, slow-crafted, cold-filtered coffee with a hint of cream and real sugar.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-e3af84b6-1ca1-47d3-9dfc-eb44d7f3e71b.jpeg",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-0c86f8cd-a110-486c-88de-37f76ea56f44.jpeg",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "0536ff3ebe6112392d8f93b63e87d501",
+              "4bcb8b0a852201b8af8b8c8ac51f8e09",
+              "1a97e6bd1dbb612d8623e48e746c4812"
+            ]
+          },
+          {
+            "title": "Iced Latte",
+            "effectiveDate": "2019-05-16T22:03:57.000Z",
+            "archiveDate": null,
+            "nutritionId": "c5",
+            "description": "Rich espresso and cold milk served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-28b47f6e-209a-4143-9d9d-7b8010214730.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-2cf87274-5d7f-4113-a7af-47a3bc535dc2.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "6f187a2fd995b9083b0abfac907099f5",
+              "ad2aab908e9c9e50fa3cfdf6057a489f",
+              "9330d0b91d130c6a41ec500719382682"
+            ]
+          },
+          {
+            "title": "Iced Mocha",
+            "effectiveDate": "2019-05-16T22:03:57.000Z",
+            "archiveDate": null,
+            "nutritionId": "c9",
+            "description": "Rich espresso, premium chocolate and ice cold milk.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-84deff85-0df0-443c-86b7-f08377f585cc.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-2087dcdd-09ed-4915-934d-3f8fe1ddc301.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "0ec29a4eb30f85f80d703cb2d3783f4d",
+              "bb42ba0e3fc14b312c2d38aae6638ce9",
+              "5d09a7ece9f604141e01071a10df9ba9"
+            ]
+          },
+          {
+            "title": "Iced Americano",
+            "effectiveDate": "2019-05-16T22:03:58.000Z",
+            "archiveDate": null,
+            "nutritionId": "c14",
+            "description": "Rich espresso combined with water and chilled with ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-eb6333b5-b3d6-459d-95cf-b1db0de3166e.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-cfc101f8-24a3-491b-b064-1ea12f4a045a.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "be7cb64daae66ca3e2406b2fb03e4157",
+              "d34822f480af3ac0d6e311dae737187a",
+              "d8c77350ce781b05d4f6d49a513c3054"
+            ]
+          },
+          {
+            "title": "Iced Caramel High Rise",
+            "effectiveDate": "2019-05-16T22:03:59.000Z",
+            "archiveDate": null,
+            "nutritionId": "c21",
+            "description": "Fresh espresso and caramel sauce with cold milk and served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-1018677b-7434-47bd-a2ba-52ca336f733b.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b90dd343-deee-4920-95e6-18b1af4a5931.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "e957468c4a03326578a19ae483ca3257",
+              "c0acc1e7086af003242a24095a04528a",
+              "db94d0908cc101f212014c6357df0f6d"
+            ]
+          },
+          {
+            "title": "Iced Turtle Mocha",
+            "effectiveDate": "2019-05-16T22:03:59.000Z",
+            "archiveDate": null,
+            "nutritionId": "c24",
+            "description": "Premium chocolate and espresso combined with milk and caramel and served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-9fc5729b-bb4a-486b-a8c2-5b777eb35d22.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d07ae8ef-a7a6-4182-81f3-2ffaa252fee4.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "805c078de32a78967ac1cd42cd70592d",
+              "6c5c6a15ae64ea1a115003584d0dfa27",
+              "ec8dae9c332cc121a31ea85a7e157fa9"
+            ]
+          },
+          {
+            "title": "Iced Mint Condition Mocha",
+            "effectiveDate": "2019-05-16T22:04:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "c27",
+            "description": "Premium chocolate and espresso combined with milk and mint flavor, served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-e052c4bb-0446-4532-a1cb-33e992bc10c1.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-a8dfda49-dbe2-48b8-9988-4b73de451196.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "df5f08811f281c33a310a5e6e5cc4eb2",
+              "d601b6f90eb33e142c5620a11450abea",
+              "d2ae86619da3167bed9562095d6cfd86"
+            ]
+          },
+          {
+            "title": "Iced Campfire Mocha",
+            "effectiveDate": "2019-05-16T22:04:01.000Z",
+            "archiveDate": null,
+            "nutritionId": "c33",
+            "description": "Premium chocolate and espresso combined with milk and toasted marshmallow flavor, served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-cb91ef1b-3c96-42cf-8f19-543ec6590b05.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ba73e343-d3f8-42fa-bcb4-1484c517443e.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3bc7350ed5d26542bfd383eeece611fd",
+              "d9353a0ce6a86ec64a1b9f8e853ffc5c",
+              "913ecd337b062ff0a71a2c87bf41ae3a"
+            ]
+          },
+          {
+            "title": "Iced Berry White Mocha",
+            "effectiveDate": "2019-05-16T22:04:01.000Z",
+            "archiveDate": null,
+            "nutritionId": "c30",
+            "description": "Premium chocolate and espresso combined with milk and raspberry flavor, served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c14594ac-0486-497e-a460-b4a97f10beef.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-42ad9a4d-d2a8-4648-ada2-7e34341a42b8.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "7e4a16920d7a50843e6f77836dd80e4f",
+              "de5d599d9624892447fd7154afb57164",
+              "9b86667867946c0a813b37d89fdb3fbd"
+            ]
+          },
+          {
+            "title": "Iced Vanilla White Mocha",
+            "effectiveDate": "2019-05-16T22:04:02.000Z",
+            "archiveDate": null,
+            "nutritionId": "c36",
+            "description": "Premium chocolate and espresso combined with milk and vanilla flavor, served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-71579f75-811f-4a14-aa1d-a124f3106b37.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c565ff5c-5b65-4fc4-b9ba-5ebe2c2791c3.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "7a0ba3b4db49c8915b343ee0864af49b",
+              "f476dd7ebbab3d76261ae51938a41947",
+              "59156b6a49092c1ebeb4c6b5c61e9d8c"
+            ]
+          },
+          {
+            "title": "Mango Black Iced Tea",
+            "effectiveDate": "2019-05-16T22:04:03.000Z",
+            "archiveDate": null,
+            "nutritionId": "c79",
+            "description": "Black tea with mango, served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-342521b9-6496-4e0c-88ab-5b368cfb44ee.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-5964fe47-6c53-40e3-a3a0-253a2a5629f8.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "a5dd80e07a3030c30b0a6f42c9f95cbb",
+              "26a8ff57078a25767c515883442893d6",
+              "2742dfbe93c27444669fc3446ff550b1"
+            ]
+          },
+          {
+            "title": "Tropical Green Iced Tea",
+            "effectiveDate": "2019-05-16T22:04:04.000Z",
+            "archiveDate": null,
+            "nutritionId": "c80",
+            "description": "Hand-blended green teas and dominant pineapple flavor, served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-4516234d-e3ac-46b0-ac08-2a5e5808921e.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-fa095526-9dce-40e4-afd0-079686edb4a2.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "24bdcecc35629489f454f2bf1f27af2a",
+              "087dfaf4bf67f1c604a752e4bff6f644",
+              "f572c350cf44878e62382259954dd3ce"
+            ]
+          },
+          {
+            "title": "Classic Black Iced Tea",
+            "effectiveDate": "2019-05-16T22:04:04.000Z",
+            "archiveDate": null,
+            "nutritionId": "c78",
+            "description": "Sweet in taste, rich in body and served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-51e2839d-cf89-4f0a-93a4-8da0afb8a0c9.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-40bb72e4-f893-4954-a471-f2b9297264fe.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "a352203c3de550daefa9e4fefce06585",
+              "8e1d284e1bdd50ea78f62d62325005cd",
+              "97d69959bee1fc3ef7fd14a1c9e89530"
+            ]
+          },
+          {
+            "title": "Green Tea Sparkling Lemonade",
+            "effectiveDate": "2019-05-16T22:04:05.000Z",
+            "archiveDate": null,
+            "nutritionId": "c83",
+            "description": "A classic blend of mild green tea and lemon, our Green Tea Lemonade is available sparkling or still.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-4e327343-1a55-407b-8ebc-57226042d0f6.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-57aea737-4288-4b4b-8b56-aa779d534b50.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "cd7d881b0dba1b1c46f20814afe581ae",
+              "162f70b0f75edc1fa5774143e1127c94",
+              "7084f320e1ba7f9b83b55e003846955f"
+            ]
+          },
+          {
+            "title": "Peach Black Sparkling Tea",
+            "effectiveDate": "2019-05-16T22:04:05.000Z",
+            "archiveDate": null,
+            "nutritionId": "c84",
+            "description": "A balance of real peach juice and black tea, it's a sweet and bold tea sure to please. Available sparkling or still.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b9696ea0-03f7-44f9-ba60-f85aae9f04fb.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-228e322c-7774-46a1-8237-2111d332f6cf.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "17ccf6d0b54240fd8b38a3bf619648ec",
+              "53e7cdbfaf7b9c051428c1cd88dfc4cf",
+              "f5f68faab8a3cabb8ef78025229e4337"
+            ]
+          },
+          {
+            "title": "Iced Northern Lite Latte",
+            "effectiveDate": "2019-05-16T22:04:06.000Z",
+            "archiveDate": null,
+            "nutritionId": "c7",
+            "description": "40% fewer calories than the original and served over ice. Available in 3 flavors - caramel, vanilla and raspberry.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-86fcfca0-05c7-40d1-bbe5-13e9a00d0b91.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-32d2c826-883b-4f2a-bd2d-9eabdbf7e4db.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "20cb81669e438c87bbb73e7e3c2e6ef0",
+              "a70a0564f3dcdc1d1003ecaf5880d3ed",
+              "c31bbc812ef59e086004183032501562"
+            ]
+          },
+          {
+            "title": "Iced Breve",
+            "effectiveDate": "2019-05-16T22:04:08.000Z",
+            "archiveDate": null,
+            "nutritionId": "c268",
+            "description": "Cross Fox espresso and half & half served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7053bbe6-bfc0-4aca-ab49-ae66ab8c946f.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-e2a09734-3c5d-4d42-be5f-56d03b7c1864.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "dd2828748107ab588bebc6f3619118a8",
+              "c4bf3c1a25d3680e63cdc5c04e27b196",
+              "a151bfc1108a4ea2292252b41ddfe822"
+            ]
+          },
+          {
+            "title": "Cold Press Iced Coffee",
+            "effectiveDate": "2019-05-16T22:04:08.000Z",
+            "archiveDate": null,
+            "nutritionId": "c3",
+            "description": "We steep rich Caribou Blend coffee in ice cold water to fully extract the flavors of this full-bodied medium roast coffee.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-6110bdcc-f621-452c-bb9a-b2585d322c75.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-38d65397-9be2-4bde-9023-254b5859f008.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "0b7211f78fcb5c555c0c2ab92582bf9a",
+              "09e65509146c474877289660ef3cdd7a",
+              "269062b1f33657692bd07f1ec549f367"
+            ]
+          },
+          {
+            "title": "Cold Press Iced Coffee",
+            "effectiveDate": "2019-05-16T22:04:08.000Z",
+            "archiveDate": null,
+            "nutritionId": "c400",
+            "description": "We steep rich Caribou Blend coffee in ice cold water to fully extract the flavors of this full-bodied medium roast coffee.\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b4053875-8a88-47c8-8a01-3bf7d6661c8b.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-38d65397-9be2-4bde-9023-254b5859f008.png",
+            "allergens": [],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "7ca0e1b7a8960939fca62cdd03940bd3",
+              "5e2bdd7956196d81928c38c8e5affb2d",
+              "5aabba182b00e1219b3fd8160f01d72b"
+            ]
+          },
+          {
+            "title": "Iced Chai Tea Latte",
+            "effectiveDate": "2019-05-16T22:04:09.000Z",
+            "archiveDate": null,
+            "nutritionId": "c69",
+            "description": "Spiced black tea with cold milk, served over ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-6fef5edd-44ab-4f62-b5e1-501215f32f59.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-0025b82a-9427-4fbc-9b43-f5fcf19f7454.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "f796f99d3cb8fdd58984f8c16822435d",
+              "856ba1df152da238aecdb6ec183613ce",
+              "3671e35120a4d86c19b71bff21fd688e"
+            ]
+          },
+          {
+            "title": "Blackberry Sea Salt Press",
+            "effectiveDate": "2019-05-24T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C305",
+            "description": "Cold Press infused with blackberry, sea salt and spiced brown sugar and served over ice with a splash of milk. Not available in all locations.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-2d3a9517-f22f-4041-ac31-40779b77acde.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-1dbe3ede-bf7f-42b5-abfc-317f8985e0a5.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "340c7e621230ae84e5de57e6cbfd179f",
+              "6618aa82012121508f6f541bdc69af7f"
+            ]
+          },
+          {
+            "title": "Nitro Blackberry Sea Salt Press",
+            "effectiveDate": "2019-05-24T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C306",
+            "description": "Creamy, smooth nitrogen-infused cold press with flavors of blackberry, sea salt and spiced brown sugar. Not available in all locations.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-336f0d41-2c68-4b8e-bf4b-ea4d4478d5ee.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-15131a52-b105-456f-8c1a-5dd268a055c8.png",
+            "allergens": [],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "9b9e042134aacf8db3c095fe72485ebc",
+              "5b16f5b5a2fc51935bc131f93b87cf09"
+            ]
+          },
+          {
+            "title": "Cocoa Orange Press",
+            "effectiveDate": "2019-05-24T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C307",
+            "description": "Cold Press infused with cocoa nibs and orange zest and served over ice with a splash of milk. Not available in all locations.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-82fc1e5e-f34a-456e-b129-bc63f9b2ac8c.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-07fcc137-4675-476d-ab7f-8b91afc4d11e.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "74641973141b8332c2dec8756f069260",
+              "3c82daa3d5d6da3f59285719491fdfe1"
+            ]
+          },
+          {
+            "title": "Nitro Cocoa Orange Press",
+            "effectiveDate": "2019-05-24T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C308",
+            "description": "Creamy, smooth nitrogen-infused cold press with flavors of cocoa nib and orange zest. Not available in all locations.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-307bd171-7908-4a0f-99b9-f6872cf17bec.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-3d5e36f6-a564-4427-8161-2195ce0ff592.png",
+            "allergens": [],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "a137a5dca5d82a4a9c49b4a9cf103c09",
+              "7343958f0fda2e2fa1b5ecf837dc5fc1"
+            ]
+          },
+          {
+            "title": "Chocolate Almond Press",
+            "effectiveDate": "2019-05-24T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C309",
+            "description": "Cold Press infused with chocolate and almond and served over ice with a splash of milk. Not available in all locations.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d964cbb2-6163-4632-8011-8652cb4daffc.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-8f555207-135d-4756-9302-9e8dbb635d4b.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "11045c0cd907cea4e36c376047242dd9",
+              "6d00cbd30125625a44a4cd8d090d0438",
+              "74641973141b8332c2dec8756f069260"
+            ]
+          },
+          {
+            "title": "Nitro Chocolate Almond Press",
+            "effectiveDate": "2019-05-24T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C310",
+            "description": "Creamy, smooth nitrogen-infused cold press with flavors of chocolate and almond. Not available in all locations.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-9e0a083c-9f44-4779-a622-0e7633589e49.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-d419f53f-1fb3-4299-a736-c81cd9068bb7.png",
+            "allergens": [],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "fa4903d19dc4ecd17619bfb02fd39d98",
+              "187223a76c42b564c046fade1b65cc86"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Hot",
+        "products": [
+          {
+            "title": "Coffee of the Day",
+            "effectiveDate": "2019-05-16T22:03:31.000Z",
+            "archiveDate": null,
+            "nutritionId": "c1",
+            "description": "We rotate a selection of our regular and seasonal coffees and brew every hour to ensure maximum freshness.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3f43cce6-3662-4831-902f-4a758251bf19.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-b516ec16-d5a1-4bc6-a68a-333b2eaa2326.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "8afafeab4bea45e491f9424f080a7502",
+              "0162bd255bf90a1a6d8543ac9413ae94",
+              "ae22e559e2e4d2be8328721bb35ce066"
+            ]
+          },
+          {
+            "title": "Latte",
+            "effectiveDate": "2019-05-16T22:03:33.000Z",
+            "archiveDate": null,
+            "nutritionId": "c4",
+            "description": "Rich espresso combined with creamy steamed milk.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d7173cb9-348f-4939-9967-982e0209ffdf.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f1c1a5af-6b7e-4e96-a842-31fcd7180a04.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "c99931dbf4b9f534d066d2cc45199f79",
+              "c2258617ac65b130f65c9b90a4f22468",
+              "db711fbcee1ed657e43db418bad15630"
+            ]
+          },
+          {
+            "title": "Mocha",
+            "effectiveDate": "2019-05-16T22:03:35.000Z",
+            "archiveDate": null,
+            "nutritionId": "c8",
+            "description": "Real chocolate melted into steamed milk, combined with our rich espresso and topped with whipped cream and chocolate chips.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-6c983e68-ca42-4e93-ac60-3e56e4562030.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-53bb2f31-127e-400e-a5a4-fc0e799ed4e8.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "bfaa3bee7cb9983cdbe897fa298b95ae",
+              "505a6186eb699f9d596fe23b437828a4",
+              "04fff011def567f7ae5955a63f48724a"
+            ]
+          },
+          {
+            "title": "Hot Chocolate",
+            "effectiveDate": "2019-05-16T22:03:36.000Z",
+            "archiveDate": null,
+            "nutritionId": "  c18",
+            "description": "Real chocolate melted into steamed milk and topped with whipped cream and chocolate chips.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3506e0b8-e2f3-49b8-a17c-4e7db22a3f33.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3b5ec27a-db62-449c-aeed-154c2462c3d1.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "c2041850820f8618ef99b321c51f439a",
+              "f54c741053cea4497f7a6d182ef9ca43",
+              "ddac8e0202a48cbd1d080a707df983b4"
+            ]
+          },
+          {
+            "title": "Caramel High Rise",
+            "effectiveDate": "2019-05-16T22:03:36.000Z",
+            "archiveDate": null,
+            "nutritionId": "c20",
+            "description": "Freshly steamed milk with espresso and caramel topped with whipped cream and caramel sauce.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-a4b43c77-33c1-47b3-b5d7-7a3762c5d427.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-8388f167-8f43-48a8-8b24-82d3d294da58.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "5c10e5c6fe485edbed36628e3459ad65",
+              "079db4963710e4a11380fd10d217af35",
+              "eb8b2fcd16bbc6fbc302560650914cad"
+            ]
+          },
+          {
+            "title": "Turtle Mocha",
+            "effectiveDate": "2019-05-16T22:03:37.000Z",
+            "archiveDate": null,
+            "nutritionId": "c23",
+            "description": "Real chocolate melted into steamed milk and combined with our rich espresso and caramel. Topped with whipped cream, caramel sauce and turtle pieces.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-face06f5-6e53-4520-a943-12e061a854d0.jpeg",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b0cddafe-7bb4-484b-9940-5c76ff0a1e66.jpeg",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "1df82a982ed314e23992549a5634fd94",
+              "a558b934812256266959b731a27cd29d",
+              "9b7886e485eed0270dfdf72ac759cae2"
+            ]
+          },
+          {
+            "title": "Mint Condition Mocha",
+            "effectiveDate": "2019-05-16T22:03:38.000Z",
+            "archiveDate": null,
+            "nutritionId": "c26",
+            "description": "Real chocolate melted into steamed milk and combined with our rich espresso and mint flavor. Topped with whipped cream and chocolate mints.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-5b57f88d-3e43-40f2-8d4e-7073e27cbf16.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7f52629f-20c9-4ff9-b316-f769939f4b29.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3e47c86f871671286f9a679ad92b6b03",
+              "7de2c3e39762e8b4d2fb6e6abd83b27f",
+              "802b02e92301f74ebc7d541be44ee64e"
+            ]
+          },
+          {
+            "title": "Campfire Mocha",
+            "effectiveDate": "2019-05-16T22:03:39.000Z",
+            "archiveDate": null,
+            "nutritionId": "c32",
+            "description": "Real chocolate melted into steamed milk and combined with our rich espresso and toasted marshmallow flavor. Topped with whipped cream, mini marshmallows and chocolate chips.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-bb7ab22f-2025-4577-a53c-96ce85525516.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-526a1097-afad-4490-9dcf-b4c63531da60.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "f78fcfc9e353cc2fb780fe4b22a0c6c7",
+              "4b922c1f1251500daa5eb31f74963c83",
+              "1d062dbc5378916447323a102910a1a5"
+            ]
+          },
+          {
+            "title": "Berry White Mocha",
+            "effectiveDate": "2019-05-16T22:03:40.000Z",
+            "archiveDate": null,
+            "nutritionId": "c29",
+            "description": "Real chocolate melted into steamed milk and combined with our rich espresso and raspberry flavor. Topped with whipped cream and chocolate chips.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-4d6b9009-3904-4d4f-a7a8-04b1cd7012ea.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-9346e6d9-30be-4df3-88a5-aa8ca34e8fd4.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "a313bf879b5b97cd7772167adb77f94f",
+              "66f360b280c627a272e04e26f8f7d33d",
+              "59adbaa2983c6fe6265b1df8f389c7bb"
+            ]
+          },
+          {
+            "title": "Vanilla White Mocha",
+            "effectiveDate": "2019-05-16T22:03:41.000Z",
+            "archiveDate": null,
+            "nutritionId": "c35",
+            "description": "Real chocolate melted into steamed milk and combined with our rich espresso and vanilla flavor. Topped with whipped cream and chocolate chips.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-bda49de7-a1d4-467d-92ff-90a79430daa5.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-44e5a758-c2ad-4c90-826d-e4d7344453a2.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "d52879ed4f1346cb3686a07e61b7cec0",
+              "73d44e24a800e09066d5dafa7dfafe56",
+              "630b8c5c441de55dea7fa6c9cf95244b"
+            ]
+          },
+          {
+            "title": "Cappuccino",
+            "effectiveDate": "2019-05-16T22:03:42.000Z",
+            "archiveDate": null,
+            "nutritionId": "c12",
+            "description": "Rich espresso blended with steamed milk and topped with a deep layer of foam.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-351f9469-0c18-4072-bbe2-83979584d13b.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b7117f30-85a5-42a4-90da-2947d4a0c3b4.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "ff5719769b2797e93ee5c01b9e7fecd7",
+              "5fad835e2e0a55feca8da04d475140c8",
+              "33b63f15aa48824a892100fe6fcfd599"
+            ]
+          },
+          {
+            "title": "Americano",
+            "effectiveDate": "2019-05-16T22:03:42.000Z",
+            "archiveDate": null,
+            "nutritionId": "c13",
+            "description": "Rich espresso combined with steaming hot water create this bolder, stronger version of traditional brewed coffee.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ca8488c7-638b-4fc5-99af-6d847fcb4f22.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-546fec43-577d-4999-a8ba-07d6b868306d.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "272213d81070c9c4968bc563b98c87ac",
+              "e1874ba570a2bfd4294f098fe4f59236",
+              "d9717b8659c1123968a22ec7ab10b572"
+            ]
+          },
+          {
+            "title": "Espresso",
+            "effectiveDate": "2019-05-16T22:03:43.000Z",
+            "archiveDate": null,
+            "nutritionId": "c15",
+            "description": "Our Cross Fox espresso is the beating heart of Caribou Coffee. Powerful enough to be the perfect base for our espresso-based beverages, it's exquisite on its own.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-0521c2de-1ccb-46ee-bc04-854d4f9063ef.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ea970d45-818b-40b9-94f8-9eeac7dedfc2.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "6907c4433be9f98dec6c3d4ffcaa8806",
+              "234e5bd7c5b2a69da6006992f653ba56",
+              "0345d8ed80849e1a30387d6028289a06"
+            ]
+          },
+          {
+            "title": "Macchiato",
+            "effectiveDate": "2019-05-16T22:03:44.000Z",
+            "archiveDate": null,
+            "nutritionId": "c16",
+            "description": "Rich, bold espresso topped with a dollop of steamed milk foam make this delicious classic one of our favorites.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-24c27fc1-b27b-4e9f-9313-eba3789c4089.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-963454b8-731b-403f-b4b5-1c17c5d3fef5.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "a33afe8c703c7b475870d325d8214d48",
+              "9e355b83df723f898627d5e7809e9365",
+              "608b3f1dcbf785c7b53b6a78df248701"
+            ]
+          },
+          {
+            "title": "Breve",
+            "effectiveDate": "2019-05-16T22:03:45.000Z",
+            "archiveDate": null,
+            "nutritionId": "c17",
+            "description": "We combine our bold Cross Fox espresso with steamed half & half to create a rich, delicious favorite.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-344d23dd-a364-4f5a-b89c-5ee492de5b68.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-62a08e39-ed5c-463b-aac3-c6e12fe6eb87.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "1eef7daabc48ef9ef68a24af7191765d",
+              "ea7b3b83efc844cdfa06029eece70ee8",
+              "9ef6e332093aed2b24128ff4121984a1"
+            ]
+          },
+          {
+            "title": "Hot Press",
+            "effectiveDate": "2019-05-16T22:03:46.000Z",
+            "archiveDate": null,
+            "nutritionId": "c267",
+            "description": "Caribou blend cold press coffee steamed to order.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-885e48bb-4cb2-4d76-845f-7ae3a77859eb.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-404b691a-94d0-4b9d-90ad-da8c56b63700.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "d51700203cad31b06442995e82f4308a",
+              "c202db2fe199afd6d4d653bdf803bdc3",
+              "666ac20804d43b8d4648147cce4086d6"
+            ]
+          },
+          {
+            "title": "Earl Grey Tea",
+            "effectiveDate": "2019-05-16T22:03:47.000Z",
+            "archiveDate": null,
+            "nutritionId": "c72",
+            "description": "Our blend uses teas from India and China, blended with natural Oil of Bergamot\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-9b79e824-5179-4cc9-9742-96ce00433525.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-9479ff79-cef3-4a91-b121-32254bd4611a.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "295c41e9097871bb02f9539c736869ff",
+              "ed4c479da91e69f629d1c3e757608ca9",
+              "fec07d8202a6c4520c26ecad34abbdc0"
+            ]
+          },
+          {
+            "title": "Hot Cinnamon Spice Tea",
+            "effectiveDate": "2019-05-16T22:03:48.000Z",
+            "archiveDate": null,
+            "nutritionId": "c73",
+            "description": "An assertive blend of black teas, three types of cinnamon, orange peel and sweet cloves.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-016627be-47e5-4d87-b611-1f5282a1b721.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-cf009911-65a1-426c-8653-8a9c1185e9b2.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "fcf13ff486b8f88eacca0f8128314a9e",
+              "45f0d61ee645ad2a60b0449409daf6e3",
+              "28019a908697e36271796afb75eb78d2"
+            ]
+          },
+          {
+            "title": "Mango Black Tea",
+            "effectiveDate": "2019-05-16T22:03:49.000Z",
+            "archiveDate": null,
+            "nutritionId": "c74",
+            "description": "Black tea with mango.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-0fd55509-76be-4416-8594-7a4051511da8.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-a6904183-2b20-42cf-bc6b-c3d92a47e0e1.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "c2a877c7b14b6aff93efef6c6c1d825b",
+              "5c406d304924557ffcb4c6e749f3d864",
+              "6c009dd41f5369b45fb9b1c72c00070e"
+            ]
+          },
+          {
+            "title": "Citron Green Tea",
+            "effectiveDate": "2019-05-16T22:03:50.000Z",
+            "archiveDate": null,
+            "nutritionId": "c75",
+            "description": "Delicate citrus and beautiful orange flavors.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-e7795201-31f8-4b13-a0c7-56880fdb41c7.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-808a91f0-d5be-47b5-a871-27819fce3f95.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "7a40d05044b0dfc1a3098683c07f0bda",
+              "ef82d0476f070a687f4ca92b094728e1",
+              "9fcbefea4eb18efe4e0c866ff76a6771"
+            ]
+          },
+          {
+            "title": "Mint Verbena Tea",
+            "effectiveDate": "2019-05-16T22:03:50.000Z",
+            "archiveDate": null,
+            "nutritionId": "c76",
+            "description": "Naturally decaffeinated, full-bodied lemon verbena with mint.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c0005ae2-6788-4f2f-8043-73b8b7f74d36.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-2f541181-db85-45a2-8836-979a3e36e118.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "5edf79dc5a01308167cec6e93819b97c",
+              "bc9b808394bbf378ce64cd2f963331fe",
+              "eccfd62bc4edc6dab900bec61ca4bebe"
+            ]
+          },
+          {
+            "title": "Northern Lite Latte",
+            "effectiveDate": "2019-05-16T22:03:51.000Z",
+            "archiveDate": null,
+            "nutritionId": "c6",
+            "description": "40% fewer calories than the our classic Latte, and available in 3 flavors - caramel, vanilla and raspberry.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f721ca9d-d5f3-461d-9ec9-bffa435d70e0.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7be018b9-a73d-42a1-b3a6-6a1e7b9a2fb7.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "4296fe8be16ac1ffcd0ba380b722c073",
+              "27c870d4e3d5a0385d18e8d20ba65a86",
+              "3a066caa9816d244f14af2cb51fb6b7d"
+            ]
+          },
+          {
+            "title": "Hot Apple Blast",
+            "effectiveDate": "2019-05-16T22:03:52.000Z",
+            "archiveDate": null,
+            "nutritionId": "c50",
+            "description": "Steamed apple cider combined with caramel sauce and topped with whipped cream, caramel and cinnamon.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7aa5470c-d330-434f-82cb-c4b4a86fca12.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-8c9384ef-fcde-4b7b-8053-c2431a00c7a8.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "2b1527010c67cb60e1e4b80ea7a20a3b",
+              "040e37087094778b350b31ecf77b7f86",
+              "e573344794cb46cf1c17bd30f1b7f4d0"
+            ]
+          },
+          {
+            "title": "Depth Charge",
+            "effectiveDate": "2019-05-16T22:03:53.000Z",
+            "archiveDate": null,
+            "nutritionId": "c2",
+            "description": "Because sometimes coffee isn't quite enough. We spike a black coffee with a shot of espresso for an extra pick-me-up.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-8e0649c4-5cf9-4739-8444-218d59a18eab.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7e158f78-bb32-4fae-b9b4-9f8591712f19.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "a98120c66a111d1f54de14836546a288",
+              "7e3353028171b3e04459f931cc42704b",
+              "043f6da145d05444150719b8b393f566"
+            ]
+          },
+          {
+            "title": "Chai Tea Latte",
+            "effectiveDate": "2019-05-16T22:03:53.000Z",
+            "archiveDate": null,
+            "nutritionId": "c66",
+            "description": "Spiced black tea combined with steamed milk.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-07abc25f-e252-406b-b864-592ff5877163.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-114551f1-72e1-469e-a7e3-1e02cd05759e.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3248c9c206a3101174eba92adddcc6fe",
+              "e8d9ca56441d1094c0dad4250d8f2f70",
+              "a629b983efb77944ce737cad9521c6f3",
+              "1111c9c206a3101174eba92adddcc6fe",
+              "2222c9c206a3101174eba92adddcc6fe"
+            ]
+          },
+          {
+            "title": "Chai Tea Latte NO OmsProdId or CaribouId",
+            "effectiveDate": "2019-05-16T22:03:53.000Z",
+            "archiveDate": null,
+            "nutritionId": null,
+            "description": "Spiced black tea combined with steamed milk.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-07abc25f-e252-406b-b864-592ff5877163.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-114551f1-72e1-469e-a7e3-1e02cd05759e.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": []
+          },
+          {
+            "title": "Hot Press",
+            "effectiveDate": "2019-05-16T22:03:46.000Z",
+            "archiveDate": null,
+            "nutritionId": "c401",
+            "description": "Caribou blend cold press coffee steamed to order.\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-77420feb-d89a-4685-986b-0526a9814b07.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-c1c8954d-edce-475b-9bfd-0eb5282de648.png",
+            "allergens": [],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "f26296e5129417087b7b60e4a1f5124c",
+              "07209c2ceab2b259c4ab04f53a8fb79f",
+              "a574797ccdab97aae3861cd0e8a61fdb"
+            ]
+          },
+          {
+            "title": "Matcha Vanilla Tea Latte",
+            "effectiveDate": "2019-05-16T22:03:54.000Z",
+            "archiveDate": null,
+            "nutritionId": "C290",
+            "description": "Matcha powder steamed into coconut milk and sweetened with vanilla.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-eb330d79-d95d-4421-83c2-8f374c5c772f.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-71252d7b-dec7-4fe4-b71e-0f84db647482.png",
+            "allergens": [
+              "Tree Nut"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3e13917df21ca0a561fbec68fc3943b6",
+              "5b031eeab12f74a4cfb59a56649b3ced",
+              "2ab5108c1da7fd1ec17764fab79a4bf5"
+            ]
+          },
+          {
+            "title": "Crafted Press ",
+            "effectiveDate": "2019-05-16T22:03:55.000Z",
+            "archiveDate": null,
+            "nutritionId": "C241",
+            "description": "Smooth, slow-crafted, cold-filtered coffee steamed with a hint of cream and real sugar.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-64588219-5c7d-40a7-913d-5176e5ed977d.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-121e3f84-0a91-4a50-a53e-4ccb24bc0e7a.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "970321861ebf2622cb486b0b5d5ed71a",
+              "9aaaea28d891d02972001d990544f351",
+              "8ea6bb038f8cf6eadd937ad0a802b925"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Blended",
+        "products": [
+          {
+            "title": "Kids Frozen Hot Chocolate",
+            "effectiveDate": "2019-06-26T22:04:25.000Z",
+            "archiveDate": null,
+            "nutritionId": " C273",
+            "description": "Chocolate and cocoa powder blended with ice, half & half and our signature shake mix. Topped with whipped cream and chocolate drizzle.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b16403ef-0afe-49d2-82f0-9253e4472013.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-43c02df8-bf04-4c37-a598-de36fd155f37.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "930aded0ee0e90f6354c79d5be49afd9",
+              "ffe9347420921e6126f16cc627e3b9cc"
+            ]
+          },
+          {
+            "title": "Matcha Tea Cooler with Bubbles",
+            "effectiveDate": "2019-05-16T22:04:26.000Z",
+            "archiveDate": null,
+            "nutritionId": "C315",
+            "description": "Matcha powder blended with vanilla, half & half and our signature shake mix. Served on a bed of bubbles - chewy coconut jellies lightly flavored with coffee.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-29bfaadd-6a3e-417c-a65b-e661b9a67476.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ed4e305c-3a86-4f7a-8366-2481bafa2176.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3e415d2ea5da54fa6b7f53b2162f8043",
+              "270745b1021cbcf929b6457736734fed",
+              "d2468314d7cf19f924213ea37e3a1cc1"
+            ]
+          },
+          {
+            "title": "Vanilla White Mocha Cooler",
+            "effectiveDate": "2019-05-16T22:04:11.000Z",
+            "archiveDate": null,
+            "nutritionId": "c37",
+            "description": "Coffee blended with ice, chocolate and vanilla flavor. Topped with whipped cream and chocolate drizzle. \r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-68541c2d-7c75-4c0d-b9f7-3c49874e4dd5.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d50b2ffd-4d71-4e2b-a274-0b464c7ee1f9.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "8f8435f083e725f401c68002158a162a",
+              "7b0cae5555f2e739ffb729ed847672a5",
+              "f81b9365c17c2738ac8b828a93d3eca1"
+            ]
+          },
+          {
+            "title": "Caramel Cooler",
+            "effectiveDate": "2019-05-16T22:04:11.000Z",
+            "archiveDate": null,
+            "nutritionId": "c53",
+            "description": "Coffee blended with ice and caramel flavor. Topped with whipped cream and caramel drizzle.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f7e272c2-70e8-4084-97cd-9adb91f1882a.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d14a52ef-4c62-498b-8458-6a5b7d7a2519.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "1b622e06845973a9bfda42f75f88a0bb",
+              "3158395f4691402c245f375782266a19",
+              "6acc9a6030edbaaf832c42967ca32ec4"
+            ]
+          },
+          {
+            "title": "Chocolate Cooler",
+            "effectiveDate": "2019-05-16T22:04:12.000Z",
+            "archiveDate": null,
+            "nutritionId": "c54",
+            "description": "Coffee blended with ice and premium chocolate. Topped with whipped cream and chocolate drizzle.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-a4d57fd2-b3e7-4b56-868a-2b6c68c44899.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-43df5409-25c6-45a0-b2a0-531269f6ceec.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "e12b365e43a2669a435b87dfc597a53b",
+              "e9aaf16883d41fb62d9d9a549c2f9e28",
+              "cbdb3172b8b3c09e8140b2fcd760623d"
+            ]
+          },
+          {
+            "title": "Coffee Cooler",
+            "effectiveDate": "2019-05-16T22:04:12.000Z",
+            "archiveDate": null,
+            "nutritionId": "c56",
+            "description": "Our smooth house coffee blended with ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-e6f22091-1445-4698-9869-1216ab68a93b.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-4da63c71-f219-480a-b686-a0c9439aa2e9.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "45c49a6359a77f767522dee521ff2d59",
+              "e354d2dfef844431faf42fbe9363ecf8",
+              "80ea738a6ad40507fab930fd801d75c0"
+            ]
+          },
+          {
+            "title": "Caramel High Rise Cooler",
+            "effectiveDate": "2019-05-16T22:04:13.000Z",
+            "archiveDate": null,
+            "nutritionId": "c22",
+            "description": "Coffee blended with ice and caramel. Topped with whipped cream and caramel sauce.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-53b03fd0-8a14-454b-ad09-f8200fba5be8.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c630f1f2-5b22-49d8-a8bf-b2f255094cb4.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "78e59ce203de4be679276a16a4c41dbf",
+              "b266c6f72c62fd174e00d7be245a48ba",
+              "2dd15fcd9bda395e867329e67b5d2a5e"
+            ]
+          },
+          {
+            "title": "Turtle Mocha Cooler",
+            "effectiveDate": "2019-05-16T22:04:13.000Z",
+            "archiveDate": null,
+            "nutritionId": "c25",
+            "description": "Coffee blended with ice, chocolate and caramel. Topped with whipped cream, caramel sauce and turtle pieces.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-bbfb6c79-1420-4aa4-95eb-dab08bc850ae.jpeg",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7b75cf2d-e5af-486c-ac2c-08bfa9a9afe9.jpeg",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "f5132d7bdb62a336a37051f376e9c295",
+              "3dcf01aee38135c9faacf4ebfcd4f507",
+              "a24a04c44529cbaa2fa4bed14b0853be"
+            ]
+          },
+          {
+            "title": "Mint Condition Cooler",
+            "effectiveDate": "2019-05-16T22:04:13.000Z",
+            "archiveDate": null,
+            "nutritionId": "c",
+            "description": "Coffee blended with ice, chocolate and mint flavor. Topped with whipped cream and chocolate mints.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-9398d94a-e9db-4c9b-b54d-9c580d5995be.jpeg",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-9148db59-e8fb-4b12-8be8-59ebfadc0bbc.jpeg",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "acb2afcb2e0999217df23c48a288f56e",
+              "918df0a92c0661fa38a4973f4149a975",
+              "811cecd5557afd834ab0269c6805cd57"
+            ]
+          },
+          {
+            "title": "Campfire Mocha Cooler",
+            "effectiveDate": "2019-05-16T22:04:14.000Z",
+            "archiveDate": null,
+            "nutritionId": "c34",
+            "description": "Coffee blended with ice, chocolate and toasted marshmallow flavor. Topped with whipped cream, mini marshmallows and chocolate drizzle. \r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-61f65ce4-6f0d-46e6-9e54-ca60acd34802.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7c913826-6d05-42b1-9240-92fe8ee754de.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "7222c50e246b8498435099e0689ab6b8",
+              "de4cba8399a8e05c64cffcd385a7fd19",
+              "82ca4b298d632f5b25c7051a162423bd"
+            ]
+          },
+          {
+            "title": "Berry White Mocha Cooler",
+            "effectiveDate": "2019-05-16T22:04:14.000Z",
+            "archiveDate": null,
+            "nutritionId": "c31",
+            "description": "Coffee blended with ice, chocolate and raspberry flavor. Topped with whipped cream and chocolate drizzle. \r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-10682753-78ca-42ca-9805-a5248a381c54.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-20a98f75-5ae6-4330-b532-e509c9400faf.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3f74b9e568f21bac16ba7b4264c2b5a4",
+              "332d2b2a3b8fe86eb702c68edab03e62",
+              "455b12598fc32e980194100e8de7f0df"
+            ]
+          },
+          {
+            "title": "Strawberry Banana Smoothie",
+            "effectiveDate": "2019-05-16T22:04:15.000Z",
+            "archiveDate": null,
+            "nutritionId": "c61",
+            "description": "A blend of all-natural yogurt with strawberry and banana puree and ice. A naturally sweet treat.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c26a5733-c3da-4073-b0dc-415ac9251e48.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-57512430-c1d0-44a5-8a9c-0b9a9d285b3f.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "70107328f913b42021fcba8c0b3d96ce",
+              "97e9111b2e97d06e3b0f36cd688f1d3f",
+              "0f956df60743fd6d632f7ee3d65f379d"
+            ]
+          },
+          {
+            "title": "Cookies and Cream Coffeeless Cooler",
+            "effectiveDate": "2019-05-16T22:04:15.000Z",
+            "archiveDate": null,
+            "nutritionId": "c234",
+            "description": "Cookies blended with vanilla, chocolate, half & half and our signature shake mix. Topped with whipped cream and more cookies.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-835b2080-2b83-4dde-87ec-f127a6ab5017.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-8ac54ab4-570a-45e6-96cb-fcbd054a4dae.png",
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "6d16581d78d57ad3ff76fab54d493748",
+              "e4a8596a8f88f061e9f1c5b2a2a4eb57",
+              "ac86544fb56a4de3422f32c0ef2318d0"
+            ]
+          },
+          {
+            "title": "Blended Crafted Press",
+            "effectiveDate": "2019-05-16T22:04:16.000Z",
+            "archiveDate": null,
+            "nutritionId": "c242",
+            "description": "Smooth, slow-crafted, cold-filtered coffee blended with ice and a hint of cream and real sugar.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c8f574b2-fc88-47d3-b878-aacbb7703fe5.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3ce742e8-55d3-4f41-8d9d-70ba2a2bf307.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3daca87ad34bb1e664c0b4905bf5f41b",
+              "c7b288c968f103efbc2800d605a70cd6",
+              "032524b96038692b3c36edb24848910f"
+            ]
+          },
+          {
+            "title": "Northern Lite Vanilla Cooler",
+            "effectiveDate": "2019-05-16T22:04:23.000Z",
+            "archiveDate": null,
+            "nutritionId": "c59",
+            "description": "40% fewer calories than the original. Coffee blended with ice and vanilla flavor.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ca9c2733-5d51-4378-80c0-f54bd5c2bf7e.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-cb29b19a-1028-4821-8f71-20ce12134052.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "c7a52005761038f07f63fcd981ad4af7",
+              "452e49c0bc2f4d8fbd4d0347763deeca"
+            ]
+          },
+          {
+            "title": "Northern Lite Caramel Cooler",
+            "effectiveDate": "2019-05-16T22:04:23.000Z",
+            "archiveDate": null,
+            "nutritionId": "c57",
+            "description": "40% fewer calories than the original. Coffee blended with ice and caramel flavor.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7e463667-8d9b-4a35-95ec-a03f450b7a47.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c5fa5fb2-4a95-41ad-9415-d108ebe53c87.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "9d2b9be75643206004e6688d09f09024",
+              "26cbc48aefc5b4fe6a96414e9db538cc",
+              "c3f0ed91ed72618349f963f4e6c5ddd8"
+            ]
+          },
+          {
+            "title": "Northern Lite Coffee Cooler",
+            "effectiveDate": "2019-05-16T22:04:24.000Z",
+            "archiveDate": null,
+            "nutritionId": "c60",
+            "description": "40% fewer calories than the original. House coffee blended with ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-67aa3c84-133c-491e-b30c-a24c4d8ac000.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-0d2f22e5-9697-420f-8e90-e11c264c0355.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "2a79cd1965f85df9f2b4388635172bdf",
+              "f2ef7b4d5a8d93d7271734c3426ec20a",
+              "39b6dcea0f9844eaea315073681becd3"
+            ]
+          },
+          {
+            "title": "Mango Orange Key Lime Smoothie",
+            "effectiveDate": "2019-05-16T22:04:24.000Z",
+            "archiveDate": null,
+            "nutritionId": "c63",
+            "description": "A blend of all-natural yogurt with mango, orange and key lime purees and ice. A cool treat with a touch of citrus.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-1da1521f-b948-4071-b6a0-8ca2a2b5285f.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-664a7648-736d-4b4f-beed-3528170be022.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "55d9ce28d7888d4ceec412561b64a657",
+              "c8b62e004de3f6b690e471a3d2ff05d9",
+              "0042c95e1d662e7285c109f887936c9b"
+            ]
+          },
+          {
+            "title": "Frozen Hot Chocolate",
+            "effectiveDate": "2019-05-16T22:04:25.000Z",
+            "archiveDate": null,
+            "nutritionId": "c272",
+            "description": "Chocolate and cocoa powder blended with ice, half & half and our signature shake mix. Topped with whipped cream and chocolate drizzle.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-18aa73f0-6036-426d-aae6-4402c7e37507.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-43c02df8-bf04-4c37-a598-de36fd155f37.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "5e0fc8d5f4827445bb5b485ec94d5287",
+              "0b7fd2dbfa4a0f41574be19d1f1c6008"
+            ]
+          },
+          {
+            "title": "Vanilla Cooler",
+            "effectiveDate": "2019-05-16T22:04:25.000Z",
+            "archiveDate": null,
+            "nutritionId": "c55",
+            "description": "Coffee blended with ice and premium chocolate. Topped with whipped cream and chocolate drizzle. \r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-e2145e29-c021-4781-b4d5-01e7a590aa7d.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ecf737b8-93cd-46d4-8a33-91d8224b1c28.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "e41f673d7f3b16245a9c725804db8d06",
+              "5cbe0f1d2e4d4ee0c0081eede971b90c",
+              "9afbcda84f245e0e0f472baf0a3e73b4"
+            ]
+          },
+          {
+            "title": "Espresso Cooler",
+            "effectiveDate": "2019-05-16T22:04:25.000Z",
+            "archiveDate": null,
+            "nutritionId": "c281",
+            "description": "Our smooth house coffee, spiked with espresso and blended with ice.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c2d8c8c0-658c-4df9-8d88-1d637da88d32.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-2407562d-d129-4e06-a3db-0066475e1d66.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "4ad11d3575a955942f7990b284a46d59",
+              "3c3ad43bc89e830f11f6321c71d5740a",
+              "c5ce8244f30deb6375f2a58761d2b894"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Growlers",
+        "products": [
+          {
+            "title": "Growler - Cold Press",
+            "effectiveDate": "2019-05-16T22:04:26.000Z",
+            "archiveDate": null,
+            "nutritionId": "C292",
+            "description": "64-ounce growler filled with cold press iced coffee.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3fb5db7d-f8ec-45af-9fd9-f93f4f7b8d27.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f1386ebf-4477-48b4-93eb-19d925315a72.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "d19837527d041ce517fa0e33172eec4e",
+              "d0f096ddf4c6427a58eb17a6ba9f6e23",
+              "2aa3640b31607bdd6c4a853e2653402c"
+            ]
+          },
+          {
+            "title": "Growler - Classic Black Iced Tea",
+            "effectiveDate": "2019-05-16T22:04:27.000Z",
+            "archiveDate": null,
+            "nutritionId": "C293",
+            "description": "64-ounce growler filled with Classic Black Iced Tea.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-133ae75c-e6ef-4247-87ee-fc08c38bad1b.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-52c57aca-b5b7-468b-978e-adf9ab214d0f.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "bea813763f1e97060c3d1104f7512206",
+              "ffa11fd3e61318c65a453b5213d0137f",
+              "3ea30ead4f01d7f4f3bd301bd3c00554"
+            ]
+          },
+          {
+            "title": "Growler - Mango Black Iced Tea",
+            "effectiveDate": "2019-05-16T22:04:27.000Z",
+            "archiveDate": null,
+            "nutritionId": "C294",
+            "description": "64-ounce growler filled with Mango Black Iced Tea.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c3ae64d8-e116-42c9-b225-c4d244cae1a8.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d05ab845-5ddf-4230-8b60-f9c86224c27d.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "86b349be52183ff95b6dd97c1a85b321",
+              "d06e816f247152f095ab2c01d5c6a467",
+              "9343b04b561cfb5aaa10f146c0c1ec87"
+            ]
+          },
+          {
+            "title": "Growler - Peach Black Iced Tea",
+            "effectiveDate": "2019-05-16T22:04:28.000Z",
+            "archiveDate": null,
+            "nutritionId": "C297",
+            "description": "64-ounce growler filled with Peach Black Iced Tea.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-9f3e0df3-3eca-473b-9b87-7c26fe87742d.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-6979db1b-a6e8-4435-b53d-9b02ef858a4d.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "42d3adc6a0b163d9dc9fd68a7d417a60",
+              "f4398a9fb07972eb00c556d1414dd415",
+              "d1954c1a242c4a4358bae67d4966ecb5"
+            ]
+          },
+          {
+            "title": "Growler - Tropical Green Iced Tea",
+            "effectiveDate": "2019-05-16T22:04:28.000Z",
+            "archiveDate": null,
+            "nutritionId": "C295",
+            "description": "64-ounce growler filled with Tropical Green Iced Tea.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-8cd4ea7b-6e56-4495-a9de-6e4f7afad4e8.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c65a07cd-615d-4664-ab48-6db3382f6d1e.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "f9cb4a4e6532aa6656ff3f67d59391a8",
+              "5d5374d5325e001fe7b7a237ee46aa8e",
+              "0b63431202e7fbaa466e2bec9b9401e0"
+            ]
+          },
+          {
+            "title": "Growler - Green Tea Lemonade",
+            "effectiveDate": "2019-05-16T22:04:28.000Z",
+            "archiveDate": null,
+            "nutritionId": "C296",
+            "description": "64-ounce growler filled with Green Tea Lemonade.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-457f6d2a-9179-4744-a0b9-6991394ac1a0.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f5d964e3-62fc-4b36-bc74-f4517f0409dc.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "ef69d4a03a7b6e757b24da436ca2bb84",
+              "a90cef1bad6d6ca3252fa5cde0fa0a1c",
+              "2e960429177b110312d824174d7fa86c"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Kids",
+        "products": [
+          {
+            "title": "Kids Chocolate Coffeeless Cooler",
+            "effectiveDate": "2019-06-06T17:42:01.000Z",
+            "archiveDate": null,
+            "nutritionId": "C303",
+            "description": "Chocolate blended with ice, half & half and our signature shake mix. Topped with whipped cream and chocolate drizzle.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-6638bd42-3209-4303-bdd4-28ce069e0525.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-5becf787-33af-4350-a13c-9312b737087d.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "e528865f3800dc30aebffb6f5fbb4df1",
+              "26ded62b17022d10d675b745d303c68e",
+              "9bc14d7a96f2e3798e2c4c4b9e434948"
+            ]
+          },
+          {
+            "title": "Kids Caramel Coffeeless Cooler",
+            "effectiveDate": "2019-06-06T17:42:01.000Z",
+            "archiveDate": null,
+            "nutritionId": "C302",
+            "description": "Caramel blended with ice, half & half and our signature shake mix. Topped with whipped cream and caramel drizzle.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3c12a689-7239-4f4d-b1cd-df93ba2d660e.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-f6196c31-2eb6-4f4d-beb3-dfbb1a232bc6.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "643f893270d154e36b6b07fee793f78b",
+              "cb0faf523b54298cb3e4e8f0a0b6ca83",
+              "c0eb9970319e6d1157747345db68861b"
+            ]
+          },
+          {
+            "title": "Kids Vanilla Coffeeless Cooler",
+            "effectiveDate": "2019-06-06T17:42:01.000Z",
+            "archiveDate": null,
+            "nutritionId": "C303",
+            "description": "Vanilla blended with ice, half & half and our signature shake mix. Topped with whipped cream and white chocolate drizzle.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-2c890dbc-6d36-4729-89c8-83ebf2ba997e.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-e488032b-e866-46b1-a9b8-f645ce89b74a.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "95a2a3147473b7a85a08f6e00cf6c316",
+              "193416e546be0165800137f028082d72",
+              "612f79f12811e4296ca96173ad6d688f"
+            ]
+          },
+          {
+            "title": "Kids Frozen Hot Chocolate",
+            "effectiveDate": "2019-06-26T22:04:25.000Z",
+            "archiveDate": null,
+            "nutritionId": " C273",
+            "description": "Chocolate and cocoa powder blended with ice, half & half and our signature shake mix. Topped with whipped cream and chocolate drizzle.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b16403ef-0afe-49d2-82f0-9253e4472013.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-43c02df8-bf04-4c37-a598-de36fd155f37.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "930aded0ee0e90f6354c79d5be49afd9",
+              "ffe9347420921e6126f16cc627e3b9cc"
+            ]
+          },
+          {
+            "title": "Kids Hot Chocolate",
+            "effectiveDate": "2019-05-16T22:04:29.000Z",
+            "archiveDate": null,
+            "nutritionId": "c89",
+            "description": "Chocolate steamed with skim milk and topped with whipped cream and chocolate drizzle.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d4d301cb-16e5-4dea-96dd-fe4efe9f1bd6.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f9fcae9a-ed96-4157-a3e0-0a4b1b317555.png",
+            "allergens": [
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "d38d810e21536fe98703f17d53855f10",
+              "9a81cdbd9b7ad0a196cc517bcbeb86aa",
+              "2ed2d7d3a7c9d5153e9dc5f9f5b3f822"
+            ]
+          },
+          {
+            "title": "Kids Strawberry Banana Smoothie",
+            "effectiveDate": "2019-05-16T22:04:29.000Z",
+            "archiveDate": null,
+            "nutritionId": "c93",
+            "description": "A blend of all-natural yogurt with strawberry and banana puree and ice, the perfect sweet treat for your little ones.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-870bdfc2-28b7-43c7-8d78-7439426801c1.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3d34952c-230e-4ff0-8cd5-b7c5915def24.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "49f5d111483d10769b0fee43678cfb0a",
+              "b8fea4c020a3c2a7e2bd1d685d64f8a1",
+              "0ad2bebcd2753eafb36d3181c3bb8a49"
+            ]
+          },
+          {
+            "title": "Kids Mango Orange Key Lime Smoothie",
+            "effectiveDate": "2019-05-16T22:04:30.000Z",
+            "archiveDate": null,
+            "nutritionId": "c94",
+            "description": "A blend of all-natural yogurt with mango, orange and key lime purees and ice, no little one will turn down this natural treat.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-4e684362-99fa-4222-a541-2d0ce55ecde6.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-e6b6c107-f989-4324-8d79-a45a61c703f6.png",
+            "allergens": [
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "30702db023ffec8802be68b580556346",
+              "e849e5b35219f7cea28681681ec4447c",
+              "1af281d1bf8382620c4a4891539fa681"
+            ]
+          },
+          {
+            "title": "Kids Hot Cider",
+            "effectiveDate": "2019-05-16T22:04:30.000Z",
+            "archiveDate": null,
+            "nutritionId": "c90",
+            "description": "Our tasty steamed apple cider is the ultimate kid's treat for a crisp fall day.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c3ca7b0d-bf50-4ef8-b072-42a361fe7260.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c175d8a7-b769-4b98-a01c-a160f6a0e0ef.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "7e508ee4ca4fcb227f1f8989547f76c8",
+              "a241b9f06081dd4855e6758d51d1e7f1",
+              "db3466a5065b60afed957a2289cdee4b"
+            ]
+          },
+          {
+            "title": "Kids Silly Soda",
+            "effectiveDate": "2019-05-16T22:04:30.000Z",
+            "archiveDate": null,
+            "nutritionId": "c96",
+            "description": "Raspberry or cherry-flavored sparkling water served over ice, it's soda the way it should be.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-76fcc925-547f-42ec-94e2-9b33e3c264a2.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ce1625fc-a3ad-40c8-9a15-794ee35a5991.png",
+            "allergens": [],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "abbcd0cb64bfe52463b2aba84e85714f",
+              "7649d812570504ee42740437449f3511",
+              "b3e3b530a55703a8351222157c3a4648"
+            ]
+          },
+          {
+            "title": "Kids Cookies & Cream Coffeeless Cooler",
+            "effectiveDate": "2019-05-16T22:04:31.000Z",
+            "archiveDate": null,
+            "nutritionId": "c91",
+            "description": "Cookies blended with vanilla, chocolate, half & half and our signature shake mix. Topped with whipped cream and more cookies.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-87c4f786-2192-4957-8626-75c262ee9796.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-e845fad0-96d9-4662-bc3d-43afa1c63865.png",
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "c9f21664eae2f59d6ff30bde3c3b1f79",
+              "a8734d21b95d8b780f7a293fadc584c8",
+              "02b02f57eb2fc2ab98b6860919bf2000"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Food",
+    "groups": [
+      {
+        "group": "Bagels",
+        "products": [
+          {
+            "title": "Plain Bagel",
+            "effectiveDate": "2019-05-29T16:57:03.000Z",
+            "archiveDate": null,
+            "nutritionId": "C369",
+            "description": "Our delicious plain bagel is made with simple ingredients - flour, water, brown sugar, salt and yeast.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ee3657b6-858b-41e6-b0e7-9332fb84c965.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-7f009ff1-1f5a-4f9f-9ff3-312bc85ef6c3.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "7ccd18b884349594a0b050a29fb3474e"
+            ]
+          },
+          {
+            "title": "Asiago Bagel",
+            "effectiveDate": "2019-05-29T16:57:42.000Z",
+            "archiveDate": null,
+            "nutritionId": "C370",
+            "description": "Our signature plain bagel topped with a blend of Asiago, Romano and Parmesan cheeses.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-32661ccf-897d-40de-b572-49d2d2c44af3.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-a661d265-514f-4b65-83c1-1d631d627e12.png",
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "9a47459e0487427a40496e9d0150d1f0"
+            ]
+          },
+          {
+            "title": "Everything Bagel",
+            "effectiveDate": "2019-05-29T19:14:29.000Z",
+            "archiveDate": null,
+            "nutritionId": "C371",
+            "description": "Our signature plain bagel topped with sesame seeds, poppy seeds, onion, salt, garlic and caraway.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b6ea0c18-d018-4b29-915a-ab5bf6f832d8.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-668fe9df-d27d-46f6-b3b7-23e57f97863d.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "988d0fad3db9118a1c284c7c34652571"
+            ]
+          },
+          {
+            "title": "Blueberry Bagel",
+            "effectiveDate": "2019-05-29T21:07:20.000Z",
+            "archiveDate": null,
+            "nutritionId": "C372",
+            "description": "Our signature potato bagel studded with blueberries.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-4211f14c-3ac8-4d31-9746-4616c87143e7.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-0003a921-03f5-477c-a608-9c23f580fb7b.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "6ac24ee3e4aa5d1b3243adc4420c03e7"
+            ]
+          },
+          {
+            "title": "Sesame Bagel",
+            "effectiveDate": "2019-05-29T21:07:20.000Z",
+            "archiveDate": null,
+            "nutritionId": "C373",
+            "description": "Our signature plain bagel topped with crunchy sesame seeds.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3e2f505e-3ce8-49ae-b399-5b1e5c030876.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-698c5db5-754a-4127-b6b7-89ec4f65be1f.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "d48028126770bef2c05384d227a65ed8"
+            ]
+          },
+          {
+            "title": "French Toast Bagel",
+            "effectiveDate": "2019-05-29T21:07:20.000Z",
+            "archiveDate": null,
+            "nutritionId": "C374",
+            "description": "A signature bagel baked with cinnamon streusel crunch, brown sugar and vanilla.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-07475cb1-b907-4111-a8b8-c2025feb168a.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-1819cb1c-64fd-4bea-abf9-9801749f86fb.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "3e98594d7f34084a374baac5660ef7b9"
+            ]
+          },
+          {
+            "title": "Cinnamon Sugar Bagel",
+            "effectiveDate": "2019-05-29T21:07:20.000Z",
+            "archiveDate": null,
+            "nutritionId": "C375",
+            "description": "Our signature potato bagel dipped in cinnamon and sugar.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-65f478b2-b090-4458-8adc-48c60cf49369.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-5d020039-b37c-4ebc-9513-786c810dea0c.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "e7eeb0d1dd8983d47c385a62f6519d4d"
+            ]
+          },
+          {
+            "title": "Chocolate Chip Bagel",
+            "effectiveDate": "2019-05-29T21:07:20.000Z",
+            "archiveDate": null,
+            "nutritionId": "C376",
+            "description": "A signature bagel studded with chocolate chips.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-78068f12-e0cf-4ba3-9a75-753ff7907086.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-6d2158df-7aa2-4005-a1ab-f588d82b370a.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "3447acf3ed987b9bc8084167120b9b7b"
+            ]
+          },
+          {
+            "title": "Cinnamon Raisin Bagel",
+            "effectiveDate": "2019-05-29T21:07:20.000Z",
+            "archiveDate": null,
+            "nutritionId": "C377",
+            "description": "A signature bagel baked with cinnamon and studded with raisins.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-730af056-8fdd-4f56-87b4-138e33f1c24d.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-b654a680-0c72-410f-8dc6-2cfedf1069b9.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "aa6a9863b66607ff8a2bf660775627b2"
+            ]
+          },
+          {
+            "title": "Honey Whole Wheat Bagel",
+            "effectiveDate": "2019-05-29T21:07:20.000Z",
+            "archiveDate": null,
+            "nutritionId": "C378",
+            "description": "A bagel baked with whole wheat flour, honey and brown sugar.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-0def475d-353a-42e3-8e3e-3f7711512660.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-6c30a136-0f9e-46a4-ad61-a5d04fd5ae75.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "ab1b0892082a5daf1971416568648a2a"
+            ]
+          },
+          {
+            "title": "Plain Bagel",
+            "effectiveDate": "2019-05-16T22:04:31.000Z",
+            "archiveDate": null,
+            "nutritionId": "c327",
+            "description": "Our delicious plain bagel is made with simple ingredients - flour, water, brown sugar, salt and yeast.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-67f833b6-7530-4c40-84d8-1ef50b58d244.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b8e9cea2-775c-4253-b742-502d9f7b15b0.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "cee61bc0da5c836aae36a02bbaa0726c",
+              "00e8ce0f69ea80a6e99fa2cc249641d3"
+            ]
+          },
+          {
+            "title": " Plain Bagel with Cream Cheese",
+            "effectiveDate": "2019-05-16T22:04:35.000Z",
+            "archiveDate": null,
+            "nutritionId": "c338",
+            "description": "Our plain bagel served with your choice of cream cheese - plain, honey almond or strawberry.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-db73c64d-c38c-405a-b4cf-5af0757881f0.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-1cc80dff-0c85-4661-a6a8-e6e80760f58d.png",
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "1313552146677ad6d741041fcb1db726",
+              "a1c153b25c221e964580056d87f616d1"
+            ]
+          },
+          {
+            "title": "Asiago Bagel",
+            "effectiveDate": "2019-05-16T22:04:32.000Z",
+            "archiveDate": null,
+            "nutritionId": "c328",
+            "description": "Our signature plain bagel topped with a blend of Asiago, Romano and Parmesan cheeses.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-1a58c34f-9735-4d3c-ab23-1a312ebdd0af.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d4414b60-d31e-48d2-9392-e82bbfc4bfe4.png",
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "244660cea52e6108e905dbc71d8d97b1",
+              "33798ef6a6994aa0774f07ba422d2e46"
+            ]
+          },
+          {
+            "title": "Asiago Bagel with Cream Cheese",
+            "effectiveDate": "2019-05-16T22:04:33.000Z",
+            "archiveDate": null,
+            "nutritionId": "c339",
+            "description": "Our asiago bagel served with your choice of cream cheese - plain, honey almond or strawberry.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-b06250ab-7f74-4edd-a373-f7661f5d4a72.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-39516a4d-adbc-42ad-b1ba-7d6898aa8fff.png",
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "160060b29deff239125c12e7c0f10c82",
+              "45b31c97a9d486deaa74cc1e662da950"
+            ]
+          },
+          {
+            "title": "Everything Bagel",
+            "effectiveDate": "2019-05-16T22:04:33.000Z",
+            "archiveDate": null,
+            "nutritionId": "c329",
+            "description": "Our signature plain bagel topped with sesame seeds, poppy seeds, onion, salt, garlic and caraway.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-6501f483-62a8-492f-bb55-e0c4401fb331.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-0a670767-55fa-4035-90e3-da9f8c361b4a.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "4d5e4e405d0c0bfaf62fc25d3745772b",
+              "b4883eb79ee28de7ab370f25bf62cb33"
+            ]
+          },
+          {
+            "title": "Everything Bagel with Cream Cheese",
+            "effectiveDate": "2019-05-16T22:04:34.000Z",
+            "archiveDate": null,
+            "nutritionId": "c340",
+            "description": "Our everything bagel served with your choice of cream cheese - plain, honey almond or strawberry.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-29e0fbaa-ed12-48fc-9ebc-b66e33982a7d.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-1c1a20da-32f4-4d5c-9acf-ee4da9a11172.png",
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "8a0bbba00891c2a40e3c6a69e6ea7766",
+              "95ebcda7109c694db354cf2d5fc69517"
+            ]
+          },
+          {
+            "title": "Blueberry Bagel",
+            "effectiveDate": "2019-05-16T22:04:33.000Z",
+            "archiveDate": null,
+            "nutritionId": "c330",
+            "description": "Our signature potato bagel studded with blueberries.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7b8f69b8-e253-4148-9085-4e4227c7c380.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-02acc008-6481-4745-8a1c-ae1a2fe8db89.png",
+            "allergens": [
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "dcd41c81b4f2209be36ae536686afa13",
+              "54624e10d64d9dff62f8b9822ee011a9"
+            ]
+          },
+          {
+            "title": "Blueberry Bagel with Cream Cheese",
+            "effectiveDate": "2019-05-16T22:04:34.000Z",
+            "archiveDate": null,
+            "nutritionId": "c341",
+            "description": "Our blueberry bagel served with your choice of cream cheese- plain, honey almond or strawberry.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-88e2ad0b-6cad-40b5-a59b-ede54eaca8d8.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-6f2925c9-5bec-417e-949a-b6063de2af69.png",
+            "allergens": [
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "617b411c904ff40edc59a27dd939dd05",
+              "4ac734b4607aca26983620f103465d76"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Breakfast Sandwiches",
+        "products": [
+          {
+            "title": "Honey Sriracha Bagel Breakfast Sandwich",
+            "effectiveDate": "2019-05-16T22:04:46.000Z",
+            "archiveDate": null,
+            "nutritionId": "C356",
+            "description": "Thick cut bacon, cheddar cheese and a cage-free fried egg served with honey sriracha cream cheese on a toasted everything bagel.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-6f2c04ac-9d35-46fd-b4c5-9e0c1ef90636.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-019ef0eb-5f6e-4300-8025-dc6066b3f044.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "0dcd2a9aaad47d05d48629de913fd25e",
+              "13bf93b6ad55b4b5fa1424e7b89c2ac6"
+            ]
+          },
+          {
+            "title": "Bacon Egg and Cheese Bagel ",
+            "effectiveDate": "2019-05-16T22:04:36.000Z",
+            "archiveDate": null,
+            "nutritionId": "c337",
+            "description": "Thick cut applewood-smoked bacon, cheddar cheese and a cage-free fried egg on a toasted plain bagel.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c14983e7-84b2-48b9-8704-07891bde738e.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d9d9f781-fbd1-44a0-a3dc-4095d898ba6b.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "4c6fbb2d8e4c0da1d82face4159f8d8f",
+              "943a958cf435b58adba6ede2e6032f1b"
+            ]
+          },
+          {
+            "title": "Sausage Biscuit",
+            "effectiveDate": "2019-05-16T22:04:36.000Z",
+            "archiveDate": null,
+            "nutritionId": "c228",
+            "description": "Savory sausage, cage-free fried egg and Wisconsin cheddar cheese on a buttermilk biscuit.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3d6163b7-4bc2-4db7-a5af-cef5afd9eb36.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-66a3fd10-950e-4cd3-bc4c-93f9064da042.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "0437365fe57b170ac3e4fd5eecb73c10",
+              "9ca76673f5b2621ebedf9fa6d5e644ae",
+              "0437365fe57b170ac3e4fd5eecb73c16"
+            ]
+          },
+          {
+            "title": "Gluten Free Spinach Artichoke & Provolone",
+            "effectiveDate": "2019-05-16T22:04:36.000Z",
+            "archiveDate": null,
+            "nutritionId": "c347",
+            "description": "Cage-free fried egg, spinach artichoke spread and provolone cheese on a gluten free English muffin.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-5bde74fd-194f-4532-9450-1f390b7ef16e.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-86fe9064-4f7e-4fbd-91d2-7cfb724e4b84.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "67a3900fd16a7aa4d88138bf3fffb4bc",
+              "646e89dd28f4c2ee76e882a0cb240998",
+              "32955b4f17bb67bd76087aec26fe071b"
+            ]
+          },
+          {
+            "title": "Turkey Bacon Egg and Swiss",
+            "effectiveDate": "2019-05-16T22:04:37.000Z",
+            "archiveDate": null,
+            "nutritionId": "c336",
+            "description": "Turkey bacon, aged Swiss cheese, spinach florentine spread and a cage-free fried egg on a toasted whole wheat brioche roll.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-de51d97e-9cad-48fa-a45e-1dc7878d47b1.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-8d0c4a58-604c-4d25-95dd-5071f0156c64.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "cddf42cc6c0c547f44a7a9be58049710",
+              "7a97709b5b1515a2015ca2a0a3e29682",
+              "cddf42cc6c0c547f44a7a9be5804978c"
+            ]
+          },
+          {
+            "title": "Chicken Apple Sausage",
+            "effectiveDate": "2019-05-16T22:04:43.000Z",
+            "archiveDate": null,
+            "nutritionId": "c226",
+            "description": "Chicken apple sausage, cage-free egg and Wisconsin cheddar cheese on a brioche roll.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f07650a5-268f-442e-9104-1c9c038dd537.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-0d5b9f51-1e00-4048-9ce5-9301335138f2.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "9a051fb3b3a0270230465c20202662d8",
+              "eb4dde307978b92ab096799c2de88011"
+            ]
+          },
+          {
+            "title": "Turkey Bacon Mini",
+            "effectiveDate": "2019-05-16T22:04:44.000Z",
+            "archiveDate": null,
+            "nutritionId": "c229",
+            "description": "Turkey bacon, cage-free egg and Wisconsin cheddar cheese on a toasted ciabatta.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3f3c0905-1ffd-45d9-974c-69f726c7147f.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ee2b8cd1-0cd9-4386-a3c6-7c9594bd8db8.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3b0fc7bd0baaf77a1b262b8d42e31a10",
+              "dac2687a8a9f48b8446d4702273206e8",
+              "3b0fc7bd0baaf77a1b262b8d42e31a83"
+            ]
+          },
+          {
+            "title": "Gluten Free Chicken Chorizo & Muenster",
+            "effectiveDate": "2019-05-16T22:04:44.000Z",
+            "archiveDate": null,
+            "nutritionId": "c346",
+            "description": "Spicy chicken chorizo, muenster cheese and a cage-free fried egg on a gluten free English muffin.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7eef09a6-6e08-4060-b9ce-e9fab4beca57.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ac8f86a7-0033-4572-ab82-da854d3934ce.png",
+            "allergens": [
+              "Egg",
+              "Milk"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "613a405caf027b3e700474270f5237a8",
+              "6249f66a0c31e96df6c98e7b32247e0e",
+              "61fb2982f86d5384b314443f3126f2c3"
+            ]
+          },
+          {
+            "title": "Gluten Free Bacon & Gouda Souffle",
+            "effectiveDate": "2019-05-16T22:04:45.000Z",
+            "archiveDate": null,
+            "nutritionId": "C351",
+            "description": "Cage-free eggs baked with smoked gouda, bacon, onion jam and cream.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ac7e3476-4f54-4eb6-90bd-b2e9f7f9907a.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-43662b26-ec77-4466-80be-c52da30546dd.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "155c6acb76262afc391060449009f7f9",
+              "89449156ce8b56bcaa3a659bfe4ac3a9",
+              "e175e4728fe8e2ec71083a492fd45df8"
+            ]
+          },
+          {
+            "title": "Gluten Free Spinach & Mushroom Souffle",
+            "effectiveDate": "2019-05-16T22:04:45.000Z",
+            "archiveDate": null,
+            "nutritionId": "C350",
+            "description": "Cage-free eggs baked with mushrooms, spinach, onions and swiss cheese.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-5e291e4c-6990-40ba-93b5-d73f3776ffc8.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f0d8b205-1c36-4185-80e5-db449ee85ca3.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "59192ad5741219f21fac2cab8c1b1642",
+              "60af37b47b8bf0d6d53bd2b7da7dcfe0",
+              "0f4acfc8f4adab07579b0af1481aa8b2"
+            ]
+          },
+          {
+            "title": "Turkey Sausage, Egg & Cheese Sandwich",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C364",
+            "description": "Turkey sausage and cheddar cheese with a fresh-cracked cage-free egg on an asiago bagel.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-beefecdd-8e93-46c8-b3c8-305e38606e49.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-cad0d766-316a-4de6-bc86-e7652368b702.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "d1f12a9f7f5c64838f8d5588b93a13b8"
+            ]
+          },
+          {
+            "title": "Bacon, Egg & Cheese Sandwich",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C365",
+            "description": "Applewood bacon and cheddar cheese with a fresh-cracked cage-free egg on a plain bagel.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-37a48874-ae9a-4620-8102-57883fb8d3d1.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-edc57840-714f-41e3-bf24-b05fb6adf30a.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "03d65cd48be40b20f1b9e392e607d9f4"
+            ]
+          },
+          {
+            "title": "Farmhouse Sandwich",
+            "effectiveDate": "2019-05-29T16:52:46.000Z",
+            "archiveDate": null,
+            "nutritionId": "C366",
+            "description": "Applewood bacon, ham, cheddar cheese and a fresh-cracked cage-free egg on a cheesy hashbrown bagel with country pepper cream cheese.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-894cfb15-c11d-410b-b731-04a494bd1667.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-9f2ebe05-8ec5-4e2c-87c3-219c758ff798.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "1ac79a26b0d795a8fba9d95070351bea",
+              "24af9e464a2e3f52ca9934e0b4a34a75"
+            ]
+          },
+          {
+            "title": "Ham, Egg & Cheese Sandwich",
+            "effectiveDate": "2019-05-29T16:53:59.000Z",
+            "archiveDate": null,
+            "nutritionId": "C367",
+            "description": "Sliced ham, swiss cheese and a fresh-cracked cage-free egg on a sesame bagel.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-83149394-973e-4021-bb7c-593f0a118f89.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-bc1f4d97-e949-4697-8238-14830ae093e9.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "4359b99dd46834aee2fef183035d72d5"
+            ]
+          },
+          {
+            "title": "Crispy Chicken Tater Sandwich",
+            "effectiveDate": "2019-05-29T16:54:45.000Z",
+            "archiveDate": null,
+            "nutritionId": "C368",
+            "description": "Crispy chicken filet, cheddar cheese and a fresh-cracked cage-free egg on a cheesy hashbrown bagel with country pepper cream cheese.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-cfd152b6-5995-4945-9ea9-00c7780996e6.jpeg",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-257919ff-a472-4475-a856-a7acc1b527a3.jpeg",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "fbc11688de3b6b7d8c0e2f1ae10998a0",
+              "51745cbdda83587d3c36c8952b8bf839"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Bakery",
+        "products": [
+          {
+            "title": "Mini Donut Muffin",
+            "effectiveDate": "2019-05-16T22:04:51.000Z",
+            "archiveDate": null,
+            "nutritionId": "c204",
+            "description": "Cake batter donut accented with nutmeg, dipped in butter and rolled in cinnamon sugar.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-8b821ac5-f429-40b0-8f43-b385b5d8d816.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-08cd004c-0812-4025-9f7c-465f22da9a1d.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "24755ec134855ba96174ac0f84779515",
+              "5be339e2346c4f32edcb76ca2fea93f4",
+              "b8c91ddc858c7f42a454921d3d451aea"
+            ]
+          },
+          {
+            "title": "Maine Blueberry Muffin",
+            "effectiveDate": "2019-05-16T22:04:47.000Z",
+            "archiveDate": null,
+            "nutritionId": "c207",
+            "description": "A blueberry muffin loaded with wild Maine blueberries and topped with a brown sugar cinnamon streusel.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-37dbc955-456a-47e5-8224-dfae93905ced.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-146fd09b-0592-49bc-8407-81409e9fb12f.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Peanut",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "4cdc4814a4ea3032d49764c77714ffca",
+              "67321269f361f2acbe2b022b9f3552b4"
+            ]
+          },
+          {
+            "title": "Cinnamon Coffee Cake",
+            "effectiveDate": "2019-05-16T22:04:47.000Z",
+            "archiveDate": null,
+            "nutritionId": "c214",
+            "description": "Coffee cake with a cinnamon and caramel streusel center topped with crunchy brown sugar and cinnamon topping.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-a4bc773d-f064-486d-90ea-333d610b2699.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c9106ccb-3ed8-4c2a-b008-00c9cd0e2b01.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Peanut",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3c9db9ccbd77319c59a91f3f048ffd08",
+              "72e15bb7f653c0738bc5dd23ecf885fe"
+            ]
+          },
+          {
+            "title": "Lemon Poppy Seed Bread",
+            "effectiveDate": "2019-05-16T22:04:48.000Z",
+            "archiveDate": null,
+            "nutritionId": "c209",
+            "description": "Old-fashioned pound cake with lemon zest, black poppy seeds and icing.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-77f4c853-a4a3-4ce5-b283-22773c35a001.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-19000d3e-4a41-4927-9eb5-ce945254662a.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "1ab1738ac6d63da040201df1570d8ade",
+              "4535fd1048b3109ce4f2af0913949d7f",
+              "b59088d8571c263ba75a116146592318"
+            ]
+          },
+          {
+            "title": "Chocolate Hazelnut Croissant",
+            "effectiveDate": "2019-05-16T22:04:48.000Z",
+            "archiveDate": null,
+            "nutritionId": "c335",
+            "description": "Flaky, butter croissant with a chocolate hazelnut filling.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-a4155d30-d353-4e09-9146-d6dfc9ab538f.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-7881d20d-0cb0-462a-b00f-2f500da1b60b.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "1c6951aec4281ede76b9816e607d0872",
+              "1ccb152a6a7cfe05b0b3172d195c36f4"
+            ]
+          },
+          {
+            "title": "Apple Fritter",
+            "effectiveDate": "2019-05-16T22:04:48.000Z",
+            "archiveDate": null,
+            "nutritionId": "c215",
+            "description": "Glazed apple pastry spiced with cinnamon.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-0c76ea0e-2853-49d0-be4c-b51d22381940.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-daa64bc5-c016-4256-97e6-ce2358fa5aac.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "7ae1fca91b0d2c5469d04e3f4f65f756",
+              "acd1ec6ff5583923ab95993c2efaedac"
+            ]
+          },
+          {
+            "title": "Raspberry White Chocolate Scone",
+            "effectiveDate": "2019-05-16T22:04:49.000Z",
+            "archiveDate": null,
+            "nutritionId": "c212",
+            "description": "A raspberry scone with white chocolate chunks and sprinkled with coarse sugar.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d16b1d38-469f-4f92-87e6-967fed02a662.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-e2545dd3-dd59-48e2-8954-9b2bfd42a73e.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Peanut",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "c403f42875f0622804c9370d0cb3b859",
+              "cc59796ac57b40fc4d402090ef970dd9"
+            ]
+          },
+          {
+            "title": "Cranberry Orange Scone",
+            "effectiveDate": "2019-05-16T22:04:49.000Z",
+            "archiveDate": null,
+            "nutritionId": "c211",
+            "description": "A scone made with real cranberries and orange peel drizzled with icing.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f0e3c1a4-99ee-4f2f-9832-5aab84755a03.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-a5d74c64-c474-406c-b9fe-620bf3f7e136.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Peanut",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "5e2e590ee1dcc7e6e35067a171236a3f"
+            ]
+          },
+          {
+            "title": "Oatmeal Chocolate Chip Cookie",
+            "effectiveDate": "2019-05-16T22:04:50.000Z",
+            "archiveDate": null,
+            "nutritionId": "c307",
+            "description": "Soft oatmeal cookie with chocolate chips.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-dac7b9db-4801-48a9-bee3-ee76c54adcfd.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-022d6033-f70b-405d-a226-5f7c0c378725.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Peanut",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "4b5ccf9efe11a30c8f953136d0683287"
+            ]
+          },
+          {
+            "title": "Banana Bread",
+            "effectiveDate": "2019-05-16T22:04:50.000Z",
+            "archiveDate": null,
+            "nutritionId": "c210",
+            "description": "Classic banana bread made with real bananas.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-2fd2ac94-e845-44c4-aaa1-7e758e2ce7e8.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-49a9f632-f424-4d1d-ab13-17384569c5f1.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Peanut",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "3330e2a063c5445ec98fc46ac11b9e1a",
+              "3f7b9cd115923d65ead0ac2f2563ef87"
+            ]
+          },
+          {
+            "title": "Peanut Butter Chocolate Chip Cookie",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C355",
+            "description": "Peanut butter cookie with milk chocolate chips and peanut inclusions.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-4d7c6511-a8e8-477c-a0c5-c49cfc36bf13.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-5d44d38b-a57f-4238-a8b5-4f1e419c4a97.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Peanut",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "5f97ff5f0115376e4658fe9005d7a364"
+            ]
+          },
+          {
+            "title": "Chocolate Chip Cookie",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C353",
+            "description": "Classic cookie with semi-sweet chocolate chips.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-d6266bde-dad8-4f97-a0c7-2b82ed4d8508.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-c321a420-b1bb-42f9-8cbc-c6decbd54406.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Peanut",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "5b3150ab4527a3de03d8946fc18dca9a"
+            ]
+          },
+          {
+            "title": "Chocolate Lava Cookie",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C354",
+            "description": "Chocolate cookie studded with both milk and semi-sweet chocolate chunks.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-76dae4c4-45f7-4464-bf1d-aa65556dc53e.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-052e5752-792c-4af5-8b43-f0e602d1948d.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Peanut",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "160ccc22f96e3d1faad3a1365e0139ab"
+            ]
+          },
+          {
+            "title": "Chocolate Chip Cookie",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C357",
+            "description": "Classic cookie with semi-sweet chocolate chips and flavors of vanilla and brown sugar.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c383f245-9afc-4422-9df4-b9d10a2e9d68.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-acb139cf-aea8-4076-82fd-6719f415761f.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "0f8200c5324e0c95761a1904dac05fc8"
+            ]
+          },
+          {
+            "title": "Chocolate Chip Coffee Cake",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C358",
+            "description": "Sour cream coffee cake topped with semi-sweet chocolate chips and crumbly streusel.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-ac04e2a7-915d-4240-aa5d-4cd85b3a9cd9.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-a82bbfff-9294-4261-bce3-ae48e45204fc.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "20a7f40caafbddee526345141e6ea734"
+            ]
+          },
+          {
+            "title": "Blueberry Muffin",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C359",
+            "description": "Fresh blueberries nestled in a moist, tender muffin sprinkled with streusel topping.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-8d0d617c-1a9c-47e9-bd53-5b37db91ea3d.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-c63b8564-fdac-4d4a-b3bc-1f09b4433733.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "f85a9de83033fb3d97e0004d16d4d812"
+            ]
+          },
+          {
+            "title": "Cinnamon Walnut Strudel",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C360",
+            "description": "Delicate, flaky pastry with layers of brown sugar, cinnamon and walnuts. Topped with a drizzle of icing.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-230c6a93-414a-4258-a8ba-e2b7dfc58a1a.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-06273b34-5009-4a3c-b4f0-0d6770164383.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "614c162523effe68996798b40475c686"
+            ]
+          },
+          {
+            "title": "Cinnamon Chip Muffin",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C361",
+            "description": "A light, fluffy muffin infused with cinnamon chips and topped with cinnamon crunch streusel.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-c275659d-a5b9-4999-bb5d-2acbb4adc25d.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-0900a206-7292-40f2-936d-d047e46a0813.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "c807c4a6fac4eb4cb7a7a2dc72b6298c"
+            ]
+          },
+          {
+            "title": "Iced Sugar Cookie",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C362",
+            "description": "A buttery, golden sugar cookie topped with frosting and sprinkles.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-9214e267-959f-4461-89ad-43b143597a71.jpeg",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-1c140096-09bf-48da-ba8b-7da9538ca388.jpeg",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "317aaed58e38262d6326a01e3806c6a2"
+            ]
+          },
+          {
+            "title": "Greek Yogurt Danish",
+            "effectiveDate": "2019-05-29T05:00:00.000Z",
+            "archiveDate": null,
+            "nutritionId": "C363",
+            "description": "Flaky pastry shell filled with cherries and Greek yogurt.",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-3c72a575-d07a-4e2e-88b0-2c476f1d79b9.jpeg",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-thumb-perkapp-64b0d6b6-c191-46bb-9bb5-79605ab63c74.jpeg",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Wheat"
+            ],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "012045e1841d9c662adeb63748b63d6a"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Oatmeal",
+        "products": [
+          {
+            "title": "Maple Brown Sugar Crunch Oatmeal",
+            "effectiveDate": "2019-05-16T22:04:51.000Z",
+            "archiveDate": null,
+            "nutritionId": "c225",
+            "description": "All-natural whole grain oats with maple syrup and topped with a crunchy maple brown sugar crumble.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-f3e5279a-1e15-4bda-ba51-60969fb66499.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-dcdb3ee7-d087-4bc2-9f42-939d12ab5156.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Peanut",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "e4a3e208e854df1715faebe857ad43c2",
+              "f78f1ca2ce32320181ec707a23859bb1",
+              "cfbe4aa717d78d0d2d1481697ab3bc3d"
+            ]
+          },
+          {
+            "title": "Blueberry Almond Oatmeal",
+            "effectiveDate": "2019-05-16T22:04:51.000Z",
+            "archiveDate": null,
+            "nutritionId": "c223",
+            "description": "All-natural whole grain oats topped with blueberries and honey roasted almonds.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-550dc3a7-1b61-4e5d-a9bf-2733d2300b42.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-2c1a48c4-50fc-41a4-9d29-b702b8f3adaf.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Tree Nut",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "50e5e7289ff8c91385c35c280db2a628",
+              "0baaecb78b820d6453a8cbb4e8ab3682"
+            ]
+          },
+          {
+            "title": "Classic Oatmeal",
+            "effectiveDate": "2019-05-16T22:04:52.000Z",
+            "archiveDate": null,
+            "nutritionId": "c224",
+            "description": "A hearty blend of all-natural whole grain oats.\r\n",
+            "image": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-732ff506-b353-4cb0-a25d-d65ad6d81946.png",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content/menuitem-perkapp-38935b51-ba08-4d1d-a80e-27a1a20a82bd.png",
+            "allergens": [
+              "Egg",
+              "Milk",
+              "Soy",
+              "Wheat"
+            ],
+            "orderAheadOnly": false,
+            "omsIds": [
+              "dc0d9bac12bc1b9af0e73c765a07be29",
+              "3a69e88938b95e345bc3ef1a02711947"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "SandwichLunch",
+        "products": []
+      },
+      {
+        "group": "BulkItems",
+        "products": [
+          {
+            "title": "Dozen Donuts",
+            "effectiveDate": "2020-01-21T16:02:07.000Z",
+            "archiveDate": null,
+            "nutritionId": "C450",
+            "description": "Dozen donuts",
+            "image": "https://assets.coffeeandbagels-static.com/content-dev/menuitem-perkapp-c02490d8-0985-4348-bddd-8152797d3a2c.jpeg",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content-dev/menuitem-thumb-perkapp-94fa03d0-b006-413b-8497-11783b90bceb.jpeg",
+            "allergens": [],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "69e355d68a0710214cec2648e3053b63"
+            ],
+            "prepTime": 30,
+            "servings": [
+              {
+                "priority": 1,
+                "size": "One Size",
+                "nutrition": [
+                  {
+                    "name": "calories",
+                    "label": "Calories",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "servingSize",
+                    "label": "Serving Size (g)",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "fatCalories",
+                    "label": "Fat Calories",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "totalFat",
+                    "label": "Total Fat (g)",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "saturatedFat",
+                    "label": "Saturated Fat (g)",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "transFat",
+                    "label": "Trans Fat (g)",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "cholesterol",
+                    "label": "Cholesterol (mg)",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "protein",
+                    "label": "Protein (g)",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "totalCarbohydrates",
+                    "label": "Total Carbohydrates (g)",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "sodium",
+                    "label": "Sodium (mg)",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "sugars",
+                    "label": "Sugars (g)",
+                    "value": "Varies"
+                  },
+                  {
+                    "name": "fiber",
+                    "label": "Fiber (g)",
+                    "value": "Varies"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Grab and Go Bagel Box with Cream Cheese",
+            "effectiveDate": "2020-01-22T17:56:12.000Z",
+            "archiveDate": null,
+            "nutritionId": "1110",
+            "description": "Grab and Go Bagel Box with Cream Cheese",
+            "image": "https://assets.coffeeandbagels-static.com/content-dev/menuitem-perkapp-78c30979-f904-41e8-9875-374dde5aedd5.jpeg",
+            "imageThumb": "https://assets.coffeeandbagels-static.com/content-dev/menuitem-thumb-perkapp-d519ade3-d871-4387-9b55-135f60515eae.jpeg",
+            "allergens": [],
+            "orderAheadOnly": true,
+            "omsIds": [
+              "d59595b2b3801d32667bae2cba63ff6a"
+            ],
+            "prepTime": 30,
+            "servings": []
+          }
+        ]
+      }
+    ]
+  }
+]

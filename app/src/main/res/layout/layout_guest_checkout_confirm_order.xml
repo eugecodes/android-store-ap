@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.checkout.model.CheckoutModel" />
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_guest_checkout_option_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/guest_user_card_margin"
+            app:cardCornerRadius="@dimen/guest_user_card_radius"
+            app:cardElevation="@dimen/guest_user_card_elevation">
+
+            <LinearLayout
+                style="@style/GuestUserLoginHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="yes"
+                android:paddingTop="1dp">
+
+                <TextView
+                    android:id="@+id/hint_already_member_guest"
+                    style="@style/DashboardImHereTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/empty_menu_top_margin"
+                    android:layout_marginBottom="1dp"
+                    android:height="32sp"
+                    android:text="@string/already_member_guest"
+                    app:autoSizeMaxTextSize="32sp"
+                    app:autoSizeMinTextSize="12sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform" />
+
+                <Button
+                    android:id="@+id/btn_sign_in_sign_up"
+                    style="@style/BaseButton.ImHereButtonDashboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/sign_in_sign_up"
+                    android:text="@string/sign_in_sign_up"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_continue_as_guest_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/transparent"
+            android:contentDescription="@string/continue_as_guest"
+            android:text="@string/continue_as_guest"
+            android:textColor="@color/clickable_text_color"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ll_extras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_extra_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:contentDescription="@string/customization_label_content_description"
+            android:fontFamily="@font/description_font_family"
+            tools:text="Extra Zebra: Milk White Chocolate" />
+
+        <TextView
+            android:id="@+id/tv_extra_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/customization_price_content_description"
+            android:fontFamily="@font/description_font_family"
+            android:gravity="end"
+            android:textColor="@color/primaryColor"
+            tools:text="+$0.80" />
+
+    </LinearLayout>
+</layout>

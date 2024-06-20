@@ -1,0 +1,120 @@
+# Android
+# Build your Android project with Gradle.
+# Add steps that test, sign, and distribute the APK, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+parameters:
+- name: clean
+  displayName: Checkout clean
+  type: boolean
+  default: false
+  values:
+  - false
+  - true
+
+trigger:
+  branches:
+    include:
+      - master
+      - feature-prod/*
+
+pool:
+  vmImage: 'macOS-latest'
+
+variables:
+  - group: 'Android Pipelines Variable Group' # variable group
+  - name: SourceCompleteBranchName
+    value: $[replace(variables['Build.SourceBranch'], 'refs/heads/', '')]
+    
+steps:
+  - checkout: self
+    clean: ${{ parameters.clean }}
+
+  - task: CmdLine@2
+    displayName: Checkout $(SourceCompleteBranchName) branch
+    inputs:
+      script: |
+        git checkout $(SourceCompleteBranchName)
+      failOnStderr: false
+      workingDirectory: ''
+
+  - task: Cache@2
+    displayName: Cache Homebrew packages
+    inputs:
+      key: '"Homebrew" | "$(Agent.OS)" | "v1"'
+      restoreKeys: |
+         Homebrew | "$(Agent.OS)"
+      path: $(HOMEBREW_CACHE_FOLDER)
+
+  - task: Cache@2
+    displayName: Cache Gems
+    inputs:
+      key: 'gems | "$(Agent.OS)" | Gemfile.lock | "v1"'
+      restoreKeys: | 
+        gems | "$(Agent.OS)"
+        gems
+      path: $(BUNDLE_PATH)
+      
+  - task: CmdLine@2
+    displayName: Bundle install
+    inputs:
+      script: |
+        bundle update --bundler
+        bundle check || bundle install
+      failOnStderr: false
+      workingDirectory: ''
+
+  - task: CmdLine@2
+    displayName: Reveal secrets.
+    inputs:
+      script: |
+        brew update
+        brew install git-secret || true
+        echo "$(GIT_SECRET_GPG_KEY)" | base64 --decode > ~/circleci_pkey_gpg_secret.asc
+        gpg --import ~/circleci_pkey_gpg_secret.asc
+        git-secret reveal || true
+      failOnStderr: false
+      workingDirectory: ''
+
+  - task: CmdLine@2
+    displayName: prodBuilds
+    env:
+      AZURE_BUILD_NUM: $(Build.BuildId)
+    inputs:
+      script: |
+        bundle exec fastlane release
+      failOnStderr: false
+      workingDirectory: ''
+
+  - task: CopyFiles@2
+    displayName: 'Creating Release Bundle'
+    inputs:
+          #sourceFolder: # Optional
+          Contents: |
+            app/build/outputs/bundle/bru_brandBruProductionServerBagelsRelease/app-bru_brand-bruProductionServer-bagelsRelease.aab
+            app/build/outputs/bundle/ebb_brandEbbProductionServerBagelsRelease/app-ebb_brand-ebbProductionServer-bagelsRelease.aab
+            app/build/outputs/bundle/nnyb_brandNnybProductionServerBagelsRelease/app-nnyb_brand-nnybProductionServer-bagelsRelease.aab
+            app/build/outputs/apk/ebb_brandEbbProductionServer/circleCI/app-ebb_brand-ebbProductionServer-circleCI.apk
+            app/build/outputs/apk/nnyb_brandNnybProductionServer/circleCI/app-nnyb_brand-nnybProductionServer-circleCI.apk
+            app/build/outputs/apk/bru_brandBruProductionServer/circleCI/app-bru_brand-bruProductionServer-circleCI.apk
+            app/build/outputs/mapping/bru_brandBruProductionServerBagelsRelease/bru_brand-bruProductionServer-mapping.txt
+            app/build/outputs/mapping/ebb_brandEbbProductionServerBagelsRelease/ebb_brand-ebbProductionServer-mapping.txt
+            app/build/outputs/mapping/nnyb_brandNnybProductionServerBagelsRelease/nnyb_brand-nnybProductionServer-mapping.txt
+          TargetFolder: '$(Build.ArtifactStagingDirectory)'
+          overWrite: true # Optional
+          flattenFolders: true # Optional
+          preserveTimestamp: true # Optional
+          retryCount: 3 # Optional
+          ignoreMakeDirErrors: false # Optional
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publishing Release Files'
+    inputs:
+      pathToPublish: '$(Build.ArtifactStagingDirectory)' 
+      artifactName: 'ReleaseContents' 
+      #publishLocation: 'Container' # Options: container, filePath
+      #targetPath: # Required when publishLocation == FilePath
+      #parallel: false # Optional
+      #parallelCount: # Optional
+      #fileCopyOptions: #Optional
+
+

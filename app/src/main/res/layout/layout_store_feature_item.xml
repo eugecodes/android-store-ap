@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <TextView
+        android:id="@+id/tv_store_feature"
+        style="@style/FeatureToggleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/small_spacing"
+        android:layout_marginRight="@dimen/small_spacing"
+        android:fontFamily="@font/primary_font_family"
+        android:textColor="@color/store_feature_color"
+        android:textSize="@dimen/text_size_10"
+        android:textStyle="bold"
+        tools:text="@string/mobile_pay" />
+
+</layout>

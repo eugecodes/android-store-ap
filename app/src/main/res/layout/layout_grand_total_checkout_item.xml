@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="caribouapp.caribou.com.cariboucoffee.api.model.yext.YextPickupType" />
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.order.Order" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/medium_spacing"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:layout_marginRight="@dimen/medium_spacing"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:importantForAccessibility="yes"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:bindMoneyCD="@{model.subtotal}"
+            app:bindTemplateCD="@{@string/subtotal_cd}">
+
+            <TextView
+                android:id="@+id/tv_sub_total_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/description_font_family"
+                android:gravity="start|center_vertical"
+                android:importantForAccessibility="no"
+                android:text="@string/subtotal"
+                android:textColor="@color/grayThreeColor"
+                android:textSize="@dimen/text_size_7"
+                tools:text="Subtotal" />
+
+            <TextView
+                android:id="@+id/tv_sub_total_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/description_font_family"
+                android:gravity="end|center_vertical"
+                android:importantForAccessibility="no"
+                android:textColor="@color/grayThreeColor"
+                android:textSize="@dimen/text_size_7"
+                app:bindMoney="@{model.subtotal}"
+                tools:ignore="RelativeOverlap"
+                tools:text="$5.70" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:importantForAccessibility="yes"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:bindMoneyCD="@{model.deliveryFee}"
+            app:bindTemplateCD="@{@string/delivery_fee_cd}">
+
+            <TextView
+                android:id="@+id/tv_delivery_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_weight="1"
+                android:fontFamily="@font/description_font_family"
+                android:gravity="start|center_vertical"
+                android:importantForAccessibility="no"
+                android:text="@string/delivery_fee"
+                android:textColor="@color/grayThreeColor"
+                android:textSize="@dimen/text_size_7"
+                app:bindVisible="@{model.pickupData.yextPickupType == YextPickupType.Delivery}"
+                tools:text="Delivery Fee" />
+
+            <TextView
+                android:id="@+id/tv_delivery_fee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_weight="1"
+                android:fontFamily="@font/description_font_family"
+                android:gravity="end|center_vertical"
+                android:importantForAccessibility="no"
+                android:textColor="@color/grayThreeColor"
+                android:textSize="@dimen/text_size_7"
+                app:bindMoney="@{model.deliveryFee}"
+                app:bindVisible="@{model.pickupData.yextPickupType == YextPickupType.Delivery}"
+                tools:text="$2.00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:importantForAccessibility="yes"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:bindMoneyCD="@{model.deliveryFee}"
+            app:bindTemplateCD="@{@string/local_charge_cd}">
+
+            <TextView
+                android:id="@+id/tv_pif_tax_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_weight="1"
+                android:fontFamily="@font/description_font_family"
+                android:gravity="start|center_vertical"
+                android:importantForAccessibility="no"
+                android:text="@string/local_tax"
+                android:textColor="@color/grayThreeColor"
+                android:textSize="@dimen/text_size_7"
+                app:bindVisible="@{model.pif != null}"
+                tools:text="Local Charge (PIF)" />
+
+            <TextView
+                android:id="@+id/tv_pif_tax_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_weight="1"
+                android:fontFamily="@font/description_font_family"
+                android:gravity="end|center_vertical"
+                android:importantForAccessibility="no"
+                android:textColor="@color/grayThreeColor"
+                android:textSize="@dimen/text_size_7"
+                app:bindMoney="@{model.pif}"
+                app:bindVisible="@{model.pif != null}"
+                tools:text="$0.05" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:importantForAccessibility="yes"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:bindMoneyCD="@{model.taxes}"
+            app:bindTemplateCD="@{@string/tax_cd}">
+
+            <TextView
+                android:id="@+id/tv_tax_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_weight="1"
+                android:fontFamily="@font/description_font_family"
+                android:gravity="start|center_vertical"
+                android:importantForAccessibility="no"
+                android:text="@string/tax"
+                android:textColor="@color/grayThreeColor"
+                android:textSize="@dimen/text_size_7"
+                tools:text="Tax" />
+
+
+            <TextView
+                android:id="@+id/tv_tax_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_weight="1"
+                android:fontFamily="@font/description_font_family"
+                android:gravity="end|center_vertical"
+                android:importantForAccessibility="no"
+                android:textColor="@color/grayThreeColor"
+                android:textSize="@dimen/text_size_7"
+                app:bindMoney="@{model.taxes}"
+                tools:text="$1.00" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

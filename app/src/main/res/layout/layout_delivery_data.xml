@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.pickup.model.DeliveryModel" />
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/ll_delivery_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:background="@color/primaryDarkColor"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_spacing"
+        android:theme="@style/ThemeOverlay.AppTheme.Dark">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_address_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/xsmall_spacing"
+            android:hint="@string/delivery_address_line_1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_address_line1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:text="@={model.addressLine1}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_address_line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/xsmall_spacing"
+            android:hint="@string/delivery_address_line_2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_address_line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPostalAddress"
+                android:text="@={model.addressLine2}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_zip_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/xsmall_spacing"
+            android:hint="@string/zip_code">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_zip_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="postalCode"
+                android:importantForAutofill="yes"
+                android:inputType="number"
+                android:singleLine="true"
+                android:text="@={model.zipCode}" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:hint="@string/delivery_contact_phone_number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number|phone"
+                android:singleLine="true"
+                android:text="@={model.contactPhoneNumber}"
+                app:bindPhoneNumber="@{true}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/xsmall_spacing"
+            android:hint="@string/delivery_instructions">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="textShortMessage"
+                android:text="@={model.instructions}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</layout>

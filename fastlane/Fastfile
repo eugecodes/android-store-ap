@@ -1,0 +1,535 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "2.54.3"
+
+fastlane_require 'indentation'
+fastlane_require 'json'
+fastlane_require 'yaml'
+fastlane_require 'net/http'
+
+
+default_platform :android
+
+before_all do
+    # NO-OP
+end
+
+platform :android do
+
+  desc "Runs all the tests"
+  lane :test do
+    gradle(
+      task: 'app:test',
+      flags: '--no-daemon'
+    )
+  end
+
+  lane :allQaBuild do |options|
+
+    ensure_git_branch(
+      branch: '^qa|feature-qa/.*$'
+    )
+
+    ebbQaBuild
+
+    nnybQaBuild
+
+    bruQaBuild
+  end
+
+  lane :ebbDevBuild do
+    brandBuild(
+      flavorName: 'ebb_brandEbbDevServer',
+      apkName: 'app-ebb_brand-ebbDevServer-circleCI.apk',
+      appName: 'Dev-Einstein-Bros.-Bagels-1',
+      buildNumberTimestamp: true
+    )
+  end
+
+  lane :ebbQaBuild do |options|
+    brandBuild(
+      flavorName: 'ebb_brandEbbQaServer',
+      apkName: 'app-ebb_brand-ebbQaServer-circleCI.apk',
+      appName: 'QA-Einstein-Bros.-Bagels'
+    )
+  end
+
+  lane :nnybDevBuild do
+    brandBuild(
+      flavorName: 'nnyb_brandNnybDevServer',
+      apkName: 'app-nnyb_brand-nnybDevServer-circleCI.apk',
+      appName: 'Dev-Noahs-New-York-Bagels-1',
+      buildNumberTimestamp: true
+    )
+  end
+
+  lane :nnybQaBuild do |options|
+    brandBuild(
+      flavorName: 'nnyb_brandNnybQaServer',
+      apkName: 'app-nnyb_brand-nnybQaServer-circleCI.apk',
+      appName: 'QA-Noahs-New-York-Bagels'
+    )
+  end
+
+  lane :bruDevBuild do
+    brandBuild(
+      flavorName: 'bru_brandBruDevServer',
+      apkName: 'app-bru_brand-bruDevServer-circleCI.apk',
+      appName: 'Dev-Brueggers-Bagels-1',
+      buildNumberTimestamp: true
+    )
+  end
+
+  lane :bruQaBuild do |options|
+    brandBuild(
+      flavorName: 'bru_brandBruQaServer',
+      apkName: 'app-bru_brand-bruQaServer-circleCI.apk',
+      appName: 'QA-Brueggers-Bagels'
+    )
+  end
+
+  lane :build_custom_changelog do
+    changelog_notes = changelog_from_git_commits(
+      merge_commit_filtering: "only_include_merges"
+    )
+
+    custom_changelog = ""
+
+    if ENV['CIRCLECI'].nil? # If this is builded in a Azure Environment
+
+      pr_merges = changelog_notes.split(/Merged/)
+      pr_merges = pr_merges.grep(/\.*PR\.*/)
+      pr_merges = pr_merges.reject { |text| text.match(/Merge.from/) }
+
+      pr_merges.each do |merge_text|
+
+        pr_number = merge_text.match(/PR ([0-9]+).*/i).captures[0]
+
+        begin  # "try" block
+            uri = URI.parse("https://dev.azure.com/BagelBrands/BBAndroidProject/_apis/git/pullrequests/#{pr_number}?api-version=6.0")
+            req = Net::HTTP::Get.new(uri,  { 'Authorization' => "Basic #{ENV['AZURE_TOKEN']}" })
+            http = Net::HTTP.new(uri.host, uri.port)
+            http.use_ssl = true
+            http.request(req)
+            res = http.request(req)
+        rescue # optionally: `rescue Exception => ex`
+            puts "Azure api call failed for PR #{pr_number}"
+            next
+        end
+
+        parsed = JSON.parse(res.body)
+
+        # Skip PRs without description
+        if parsed['description'].nil?
+            puts "Ignoring PR: #{pr_number}"
+            next
+        end
+
+        fromRefBranch = parsed['sourceRefName']
+        toRefBranch = parsed['targetRefName']
+
+        puts "From Branch -> " + fromRefBranch
+        puts "To Branch -> " + toRefBranch
+
+        # Skip internal PR that move code from master/develop/qa/release branches
+        if ['master','qa','develop','release'].any? { |word| fromRefBranch.include?(word) }
+            puts "Ignoring PR: #{merge_text}"
+            next
+        end
+
+        puts "\n\n"
+
+        pr_body = "#{parsed['description']}"
+
+        custom_changelog << "- #{parsed['title']}"
+
+        unless pr_body.nil? || pr_body.empty? then
+          custom_changelog << "\n#{pr_body.indent(4)}"
+        end
+
+        custom_changelog << "\n"
+
+      end
+
+    else # If this is builded in a circleCI Environment
+      pr_merges = changelog_notes.split(/Merge/)
+      pr_merges = pr_merges.grep(/\.*pull request\.*/)
+      pr_merges = pr_merges.reject { |text| text.match(/Merge.from/) }
+
+      pr_merges.each do |merge_text|
+        pr_number = merge_text.match(/pull request [#]([0-9]+).*/i).captures[0]
+
+        begin  # "try" block
+            result = github_api(
+              api_token: ENV["GITHUB_TOKEN_2023"],
+              http_method: "GET",
+              path: "/repos/BagelBrands/bagels-android-app/pulls/#{pr_number}"
+            )
+        rescue # optionally: `rescue Exception => ex`
+            puts "Github api call failed for PR #{pr_number}"
+            next
+        end
+
+        parsed = result[:json]
+
+        fromRefBranch = parsed['head']['ref']
+        toRefBranch = parsed['base']['ref']
+
+        puts "From Branch -> " + fromRefBranch
+        puts "To Branch -> " + toRefBranch
+
+        # Skip PRs without body
+        if parsed['body'].nil?
+            puts "Ignoring PR: #{pr_number}"
+            next
+        end
+
+        # Skip internal PR that move code from master/develop/qa/release branches
+        if ['master','qa','develop','release'].any? { |word| fromRefBranch.include?(word) }
+            puts "Ignoring PR: #{merge_text}"
+            next
+        end
+
+        puts "\n\n\n"
+
+        pr_body = "#{parsed['body']}"
+
+        custom_changelog << "- #{parsed['title']}"
+
+        unless pr_body.nil? || pr_body.empty? then
+          custom_changelog << "\n#{pr_body.indent(4)}"
+        end
+
+        custom_changelog << "\n"
+
+      end
+    end
+
+    UI.message "Changelog: #{custom_changelog}"
+
+    custom_changelog
+  end
+
+  private_lane :brandBuild do |options|
+
+    ensure_git_status_clean
+
+    if options[:buildNumberTimestamp]
+      buildNumber = 2112312359 + Integer(ENV["CIRCLE_BUILD_NUM"])
+
+      UI.message("Android brand buildNumber: #{buildNumber}")
+      File.open('../version.properties', 'w') { |file| file.write("build=#{buildNumber}\n") }
+    end
+
+    # clean
+    gradle(task: 'clean')
+
+    # build the release variant
+    gradle(
+      task: 'assemble',
+      build_type: 'CircleCI',
+      flavor: options[:flavorName],
+      flags: '-Dlint.baselines.continue=true'
+    )
+
+    # Generate the changelog based on commit messages since your last tag
+    changelog = build_custom_changelog
+
+    lastCommit = last_git_commit
+
+    appVersionName = get_version_name(app_folder_name:"app")
+
+    properties = property_file_read(file: "./version.properties")
+
+    appBuildNumber = properties["build"]
+
+    appcenter_upload(
+      api_token: ENV["APPCENTER_UPLOAD_API_TOKEN_2023"],
+      owner_type: 'organization',
+      owner_name: 'coffeeandbagels',
+      release_notes: changelog,
+      app_name: options[:appName],
+      app_os: 'Android',
+      app_platform: 'Java',
+      file: "./app/build/outputs/apk/#{options[:flavorName]}/circleCI/#{options[:apkName]}",
+      mapping: "./app/build/outputs/mapping/#{options[:flavorName]}CircleCI/mapping.txt",
+      notify_testers: false
+    )
+
+    reset_git_repo(
+      force: true,
+      files: [
+        "./version.properties"
+      ]
+    )
+
+    UI.important("YAY Build finished! App uploaded to AppCenter")
+
+  end
+
+  desc "Deploy a new version to Google Play Store"
+  lane :release do |options|
+
+    ensure_git_status_clean
+
+    release_branch = git_branch
+
+    ensure_git_branch(
+      branch: '^master|feature-prod/.*$'
+    )
+
+    # clean
+    gradle(task: 'clean')
+
+    # Generate the changelog based on commit messages since your last tag
+    changelog = build_custom_changelog
+
+    appVersionName = get_version_name(app_folder_name:"app")
+
+    properties = property_file_read(file: "./version.properties")
+
+    appBuildNumber = properties["build"]
+
+    full_version = appVersionName+"_"+appBuildNumber
+
+    flavors_for_release = ['ebb_brandEbbProductionServer',
+                          'nnyb_brandNnybProductionServer',
+                          'bru_brandBruProductionServer']
+
+    flavors_build_type = ['bagelsRelease','bagelsRelease','bagelsRelease']
+
+    flavors_build_type_suffix = ['BagelsRelease','BagelsRelease','BagelsRelease']
+
+    flavors_apk_for_release = ['ebb_brand-ebbProductionServer',
+                          'nnyb_brand-nnybProductionServer',
+                          'bru_brand-bruProductionServer']
+
+    flavors_app_name_release = ['Prod-Einstein-Bros.-Bagels-1',
+                            'Prod-Noahs-New-York-Bagels',
+                            'Prod-Brueggers-Bagels']
+
+    files_to_upload_github = []
+    aab_files = []
+    apk_files = []
+    mapping_files = []
+    changelogs = []
+
+    lastCommit = last_git_commit
+
+    flavors_for_release.each_with_index do |flavors, index|
+      flavors_apk = flavors_apk_for_release[index]
+      build_type = flavors_build_type[index]
+      build_type_suffix = flavors_build_type_suffix[index]
+
+      # build the release variant bundle
+      gradle(
+        task: 'bundle',
+        build_type: build_type,
+        flavor: flavors,
+        flags: '-Dlint.baselines.continue=true'
+      )
+
+      # build appCenter apk
+      gradle(
+        task: 'assemble',
+        build_type: 'circleCI',
+        flavor: flavors,
+        flags: '-Dlint.baselines.continue=true'
+      )
+
+      aab_file = "./app/build/outputs/bundle/#{flavors}#{build_type_suffix}/app-#{flavors_apk}-#{build_type}.aab"
+      if(File.exist?(".#{aab_file}"))
+        files_to_upload_github << aab_file
+        aab_files << aab_file
+      else
+        UI.user_error!("Error finding aab file #{aab_file} for #{flavors_apk}")
+      end
+
+      apk_file = "./app/build/outputs/apk/#{flavors}/circleCI/app-#{flavors_apk}-circleCI.apk"
+      if(File.exist?(".#{apk_file}"))
+        files_to_upload_github << apk_file
+        apk_files << apk_file
+      else
+        UI.user_error!("Error finding apk file #{apk_file} for #{flavors_apk}")
+      end
+
+      mapping_file = "./app/build/outputs/mapping/#{flavors}#{build_type_suffix}/#{flavors_apk}-mapping.txt"
+      FileUtils.cp("../app/build/outputs/mapping/#{flavors}#{build_type_suffix}/mapping.txt", ".#{mapping_file}")
+      if(File.exist?(".#{mapping_file}"))
+        files_to_upload_github << mapping_file
+        mapping_files << mapping_file
+      else
+        UI.user_error!("Error finding mapping file #{mapping_file} for #{flavors_apk}")
+      end
+
+    end
+
+
+    if ENV['CIRCLECI'].nil? # If this is builded in a Azure Environment
+      UI.message("Files to upload to Azure: #{files_to_upload_github}")
+
+      # Create Tag
+      create_git_tag(full_version: full_version, changelog: changelog)
+
+    else # If this is builded in a CircleCI / GitHub Environment
+
+      UI.message("Files to upload to github: #{files_to_upload_github}")
+
+      set_github_release(
+        repository_name: "BagelBrands/bagels-android-app",
+        api_token: ENV["GITHUB_TOKEN_2023"],
+        name: "v#{full_version}",
+        tag_name: "v#{full_version}",
+        description: changelog,
+        upload_assets: files_to_upload_github,
+        commitish: release_branch
+      )
+
+    end
+
+    flavors_for_release.each_with_index do |flavors, index|
+      begin
+        appcenter_upload(
+          api_token: ENV["APPCENTER_UPLOAD_API_TOKEN_2023"],
+          owner_type: 'organization',
+          owner_name: 'coffeeandbagels',
+          app_name: "#{flavors_app_name_release[index]}",
+          release_notes: changelog,
+          app_os: 'Android',
+          app_platform: 'Java',
+          file: "#{apk_files[index]}",
+          mapping: "#{mapping_files[index]}",
+          notify_testers: false
+        )
+      rescue => exception
+        puts "Unable to upload in #{flavors_app_name_release[index]}"
+        puts "app_name: #{flavors_app_name_release[index]}"
+        puts "release_notes: #{changelog}"
+        puts "file: #{apk_files[index]}"
+        puts "mapping: #{mapping_files[index]}"
+        puts "exception message: #{exception.message}"
+        puts "exception backtrace: #{exception.backtrace}"
+        next
+      end
+    end
+
+  end
+
+  lane :check_risk_score do |options|
+    file = File.read('/tmp/workspace/nowsecure-auto-security-test/nowsecure-auto-security-test-score.json')
+    data_hash = JSON.parse(file)
+    known_issues = YAML.load_file('../nowsecure_known_issues.yml')['known_issues']
+
+
+    data_hash['issues'].each do |key,value|
+      UI.message("Checking nowsecure issue: #{key}")
+      next if value <= 0
+
+      if !(known_issues.include? key) then
+        risk_error_message = "Unknown NowSecure issue `#{key}`"
+        UI.message("Risk message:: #{risk_error_message}")
+
+        if ENV['CIRCLECI'].nil? # If this is builded in a Azure Environment
+          footer = "<a href='https://dev.azure.com/BagelBrands/BBAndroidProject/_build/results?buildId=#{ENV['AZURE_BUILD_NUM']}'>Build #{ENV['AZURE_BUILD_NUM']}</a>"
+        else
+          footer = "<a href='https://circleci.com/gh/BagelBrands/bagels-android-app/#{ENV['CIRCLE_BUILD_NUM']}'>Build #{ENV['CIRCLE_BUILD_NUM']}</a>"
+        end
+
+        UI.abort_with_message!(risk_error_message)
+        exit(false)
+      else
+        UI.important("Found known issue: #{key}")
+      end
+    end
+  end
+
+  lane :create_git_tag do |options|
+
+    ## Get last commit for Azure TAG creation
+    commitId = `git log -1 --pretty=format:\"%H\" | grep -i \'.\'`
+    UI.important "commitId = #{commitId}"
+
+    ## Create TAG using Azure's API call
+
+    begin  # "try" block
+      uri = URI.parse("https://dev.azure.com/BagelBrands/BBAndroidProject/_apis/git/repositories/b8a1bbaa-f3be-4747-8c21-0b16e4af0309/annotatedtags?api-version=6.0-preview.1")
+      req = Net::HTTP::Post.new(uri,  { 'Authorization' => "Basic #{ENV['AZURE_TOKEN']}", 'Content-Type' => 'application/json' })
+      req.body = {
+                  name: "v#{options[:full_version]}",
+                  taggedObject: {
+                    objectId: "#{commitId.strip!}",
+                  },
+                  message: "#{options[:changelog]}",
+                }.to_json
+      http = Net::HTTP.new(uri.host, uri.port)
+      http.use_ssl = true
+
+      UI.important "req.body: #{req.body}"
+
+      res = http.request(req)
+
+      parsed = JSON.parse(res.body)
+
+      UI.important "TAG CREATED: #{parsed}"
+
+    rescue # optionally: `rescue Exception => ex`
+        puts "Unable to create TAG: #{full_version}"
+        next
+    end
+
+  end
+
+end
+
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+  end
+
+  error do |lane, exception|
+    # This block is called, only if the executed lane failed
+  end
+
+  lane :publish_artifact do |options|
+
+    ## Create a Release Definition using Azure's API call
+
+    # uri = URI.parse("https://vsrm.dev.azure.com/BagelBrands/BBAndroidProject/_apis/release/definitions?api-version=6.0")
+    # req = Net::HTTP::Post.new(uri,  { 'Authorization' => "Basic #{ENV['AZURE_TOKEN']}", 'Content-Type' => 'application/zip' })
+    # req.body = {
+    #             comment: "Automatic Release definition of v#{options[:full_version]}",
+    #             description: "Automatic Release definition of v#{options[:full_version]}",
+    #             artifacts: []
+    #           }.to_json
+    # http = Net::HTTP.new(uri.host, uri.port)
+    # http.use_ssl = true
+    # UI.important "req.body: #{req.body}"
+
+    # res = http.request(req)
+    # parsed = JSON.parse(res.body)
+
+    # UI.important "RELEASE CREATED: #{parsed}"
+
+    rescue # optionally: `rescue Exception => ex`
+        puts "Unable to create TAG: #{full_version}"
+        next
+    end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://docs.fastlane.tools/actions
+
+# fastlane reports which actions are used. No personal data is recorded.
+# Learn more at https://github.com/fastlane/fastlane#metrics

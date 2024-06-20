@@ -1,0 +1,195 @@
+{
+  "id": 2347,
+  "user_id": 5,
+  "location": {
+    "id": 10,
+    "name": "Colfax & Indiana",
+    "number": "3099",
+    "enterprise_unit": "0bb243d1ab6c4d1bb94a606abeb2993c"
+  },
+  "data": {
+    "comments": "Pickup Type: WALK_IN\n",
+    "channel": "Web",
+    "customer": {
+      "id": "df776be3-11d6-e811-a962-000d3a36399f",
+      "externalIds": [],
+      "firstName": "ggon7",
+      "lastName": "g",
+      "phoneExtension": "",
+      "email": "gon7@mailinator.com"
+    },
+    "groupMembers": [],
+    "status": "Finished",
+    "totals": [
+      {
+        "lineId": "246e886efa9249ae95d2d021f533d5d1",
+        "type": "Net",
+        "value": 8.12
+      }
+    ],
+    "fulfillment": {
+      "address": {
+        "type": "Residential",
+        "line1": "",
+        "line2": "",
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "notes": "",
+        "businessInfo": {}
+      },
+      "leadTimes": [
+        {
+          "lineId": "PreperationLineId",
+          "type": "Preparation",
+          "interval": 10,
+          "intervalUnits": "Minutes"
+        },
+        {
+          "lineId": "TransitLineId",
+          "type": "Transit",
+          "interval": 0,
+          "intervalUnits": "Minutes"
+        }
+      ],
+      "pickupDate": "2020-05-27T18:42:59.513Z",
+      "type": "Pickup",
+      "autoRelease": true,
+      "catering": false
+    },
+    "expireAt": "2020-06-27T18:43:17.363Z",
+    "fees": [
+      {
+        "lineId": "36925c0bdff3462685068ccfc3c2d4ab",
+        "type": "Web",
+        "amount": 0.0
+      }
+    ],
+    "orderLines": [
+      {
+        "lineId": "94ac3298-5820-48a6-8d87-771e25434094",
+        "description": "Farmhouse",
+        "extendedAmount": 5.99,
+        "notes": [],
+        "priceModifiers": [],
+        "productId": {
+          "value": "10062"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 5.99,
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      },
+      {
+        "lineId": "ce85181e-50ff-49ab-b483-72bed984d7b0",
+        "description": "Evrthing Bgl",
+        "extendedAmount": 0.0,
+        "notes": [],
+        "parentLineId": "94ac3298-5820-48a6-8d87-771e25434094",
+        "priceModifiers": [],
+        "productId": {
+          "value": "5220"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 0.0,
+        "linkGroupCode": "10008",
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      },
+      {
+        "lineId": "cc5ece71-4b63-459d-917c-0afe4df4ab7d",
+        "description": "1 Egg Wht",
+        "extendedAmount": 0.1,
+        "notes": [],
+        "parentLineId": "94ac3298-5820-48a6-8d87-771e25434094",
+        "priceModifiers": [],
+        "productId": {
+          "value": "57276"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 0.1,
+        "linkGroupCode": "15403",
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      },
+      {
+        "lineId": "8d5f6c14-10ab-4cb9-bd60-4c051f99af1c",
+        "description": "TB Hashbrown",
+        "extendedAmount": 1.29,
+        "notes": [],
+        "parentLineId": "94ac3298-5820-48a6-8d87-771e25434094",
+        "priceModifiers": [],
+        "productId": {
+          "value": "10078"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 1.29,
+        "linkGroupCode": "10505",
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      }
+    ],
+    "payments": [
+      {
+        "lineId": "fbbb8b6ed77743849d0d041a1014d7a5",
+        "amount": 8.12,
+        "gratuity": 0.0,
+        "status": "Paid",
+        "type": "Other",
+        "subType": "Custom_PrePaid1",
+        "payBalance": false
+      }
+    ],
+    "taxes": [
+      {
+        "lineId": "a1ce2175eaf9451fbe969e47638ec432",
+        "amount": 0.74,
+        "description": "Store Calculated Tax",
+        "isIncluded": false
+      }
+    ],
+    "promotions": [],
+    "additionalReferenceIds": {
+      "AtoOrderId": "42846593746766",
+      "AlohaCheckId": "11534437",
+      "AtoReferenceId": "0"
+    },
+    "taxExempt": false,
+    "totalModifiers": [],
+    "partySize": 1,
+    "dateFulfilled": "2020-05-27T18:43:17.364Z",
+    "dateCreated": "2020-05-27T18:42:58.779Z",
+    "dateUpdated": "2020-05-27T18:43:17.362Z",
+    "id": "11310045494461622072",
+    "lock": {
+      "lockedBy": "[0bb243d1ab6c4d1bb94a606abeb2993c][0a5e8f37-d9eb-4269-9b6e-e216ad54be2f]",
+      "lockedDate": "2020-05-27T18:43:17.118Z"
+    },
+    "sourceOrganization": "einstein-noah",
+    "enterpriseUnitId": "0bb243d1ab6c4d1bb94a606abeb2993c",
+    "etag": "2020-05-27T18:43:17.362Z"
+  },
+  "status": "ReadyForValidation",
+  "ncr_status": "Finished",
+  "total": 8.12,
+  "tax": 0.74,
+  "check_number": null,
+  "subtotal": 7.38,
+  "reorder_errors": []
+}

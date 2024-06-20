@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+
+android {
+    productFlavors {
+        bru_brand {
+            dimension "brand"
+            applicationIdSuffix ".bru"
+            ext {
+                brand_app_name = "Bruegger's Bagels"
+            }
+
+            buildConfigField "String", "SECOND_MENU_COLUMN_KEY", "\"Beverages\""
+            buildConfigField "String", "THIRD_MENU_COLUMN_KEY", "\"Food\""
+            buildConfigField "String", "SOURCE_APP", "\"BRUApp\""
+
+            buildConfigField "String", "RESET_PW_BRAND", "\"BRU\""
+
+            buildConfigField "String", "GOOGLE_PAY_MERCHANT_ID", "\"${System.getProperty('GOOGLE_PAY_MERCHANT_ID')}\""
+            buildConfigField "String", "GOOGLE_PAY_MERCHANT_NAME", "\"${System.getProperty('GOOGLE_PAY_MERCHANT_NAME')}\""
+            buildConfigField "String", "VENMO_PROFILE_ID", "\"${System.getProperty('VENMO_PROFILE_ID_BRU_SANDBOX')}\""
+        }
+
+        bruDevServer {
+            dimension "server"
+            applicationIdSuffix ".dev"
+
+            buildConfigField "String", "CMS_AUTH_KEY", "\"${System.getProperty('CMS_AUTH_KEY_BRU_DEV')}\""
+
+            buildConfigField "String", "AZURE_API_PATH", "\"https://api-dev.bagelbrands.com\""
+
+            resValue "string", "universal_link", "installbru.page.link"
+            resValue "string", "rewards_host", "rewards-dev.brueggers.com"
+            buildConfigField "String", "REWARDS_URL", "\"https://rewards-dev.brueggers.com//\""
+
+            buildConfigField "String", "OMS_API_PATH", "\"http://oms-app-server.northcentralus.cloudapp.azure.com:3000/\""
+            buildConfigField "String", "NCR_WRAPPER_BASE_URL", "\"https://api-dev.bagelbrands.com/oms/v1/\""
+            buildConfigField "String", "FISERV_PAY_API_PATH", "\"https://int.api.firstdata.com\""
+            buildConfigField "String", "PAY_GATE_API_PATH", "\"https://api-dev.bagelbrands.com\""
+            buildConfigField "String", "PAY_GATE_PUBLIC_KEY_NAME", "\"bb-pay-gateway-nonprod.der\""
+
+            buildConfigField "String", "GOOGLE_PAY_GATEWAY_MERCHANT_ID", "\"${System.getProperty('GOOGLE_PAY_GATEWAY_MERCHANT_ID_NONPROD')}\""
+            buildConfigField "String", "GOOGLE_PAY_PROCESSOR_NAME", "\"${System.getProperty('GOOGLE_PAY_PROCESSOR_NAME_NONPROD')}\""
+            buildConfigField "String", "PAY_PAL_AUTH_TOKEN", "\"${System.getProperty('PAY_PAL_AUTH_TOKEN_NONPROD')}\""
+
+            // Deeplink
+            resValue "string", "applink_scheme", "bruappdev"
+
+            buildConfigField "String", "NEW_RELIC_APP_ID", "\"${System.getProperty('NEW_RELIC_APP_ID_BRU_DEV')}\""
+
+            ext {
+                app_name_prefix = "[Dev]"
+                newRelicAppKey = 'NEW_RELIC_APP_ID_BRU_DEV'
+            }
+            resValue "string", "brand_app_name", "[Dev] Bruegger\\'s Bagels"
+            buildConfigField "String", "PAY_PAL_MERCHANT_ID", "\"brueggers\""
+        }
+
+        bruQaServer {
+            dimension "server"
+            applicationIdSuffix ".qa"
+
+            buildConfigField "String", "CMS_AUTH_KEY", "\"${System.getProperty('CMS_AUTH_KEY_BRU_QA')}\""
+
+            buildConfigField "String", "AZURE_API_PATH", "\"https://api-qa.bagelbrands.com\""
+
+            resValue "string", "universal_link", "installbru.page.link"
+            resValue "string", "rewards_host", "rewards-qa.brueggers.com"
+            buildConfigField "String", "REWARDS_URL", "\"https://rewards-qa.brueggers.com/\""
+            buildConfigField "String", "NCR_WRAPPER_BASE_URL", "\"https://api-qa.bagelbrands.com/oms/v1/\""
+            buildConfigField "String", "OMS_API_PATH", "\"https://oms-api-qa.coffeeandbagels.com/\""
+            buildConfigField "String", "FISERV_PAY_API_PATH", "\"https://int.api.firstdata.com\""
+            buildConfigField "String", "PAY_GATE_API_PATH", "\"https://api-qa.bagelbrands.com\""
+
+            buildConfigField "String", "PAY_GATE_PUBLIC_KEY_NAME", "\"bb-pay-gateway-nonprod.der\""
+
+            buildConfigField "String", "GOOGLE_PAY_GATEWAY_MERCHANT_ID", "\"${System.getProperty('GOOGLE_PAY_GATEWAY_MERCHANT_ID_NONPROD')}\""
+            buildConfigField "String", "GOOGLE_PAY_PROCESSOR_NAME", "\"${System.getProperty('GOOGLE_PAY_PROCESSOR_NAME_NONPROD')}\""
+            buildConfigField "String", "PAY_PAL_AUTH_TOKEN", "\"${System.getProperty('PAY_PAL_AUTH_TOKEN_NONPROD')}\""
+
+            // Deeplink
+            resValue "string", "applink_scheme", "bruappqa"
+
+            buildConfigField "String", "NEW_RELIC_APP_ID", "\"${System.getProperty('NEW_RELIC_APP_ID_BRU_QA')}\""
+
+            ext {
+                app_name_prefix = "[QA]"
+                newRelicAppKey = 'NEW_RELIC_APP_ID_BRU_QA'
+            }
+            resValue "string", "brand_app_name", "[QA] Bruegger \\'s Bagels"
+            buildConfigField "String", "PAY_PAL_MERCHANT_ID", "\"brueggers\""
+        }
+
+        bruProductionServer {
+            dimension "server"
+
+            // Yext config
+            buildConfigField "String", "YEXT_DATA_VERSION", "\"20190207\""
+            buildConfigField "boolean", "YEXT_PRODUCTION_ENV", "true"
+
+            buildConfigField "String", "CMS_AUTH_KEY", "\"${System.getProperty('CMS_AUTH_KEY_BRU_PROD')}\""
+
+            buildConfigField "String", "AZURE_API_PATH", "\"https://api.bagelbrands.com\""
+
+            resValue "string", "universal_link", "installbru.page.link"
+            resValue "string", "rewards_host", "rewards.brueggers.com"
+            buildConfigField "String", "REWARDS_URL", "\"https://rewards.brueggers.com/\""
+
+            buildConfigField "String", "OMS_API_PATH", "\"https://oms-api.coffeeandbagels.com/\""
+            buildConfigField "String", "NCR_WRAPPER_BASE_URL", "\"https://api.bagelbrands.com/oms/v1/\""
+            buildConfigField "String", "FISERV_PAY_API_PATH", "\"https://prod.api.firstdata.com\""
+            buildConfigField "String", "PAY_GATE_API_PATH", "\"https://api.bagelbrands.com\""
+
+            buildConfigField "String", "PAY_GATE_PUBLIC_KEY_NAME", "\"bb-pay-gateway-prod.der\""
+
+            buildConfigField "String", "CYBERSOURCE_URL", "\"https://secureacceptance.cybersource.com/silent/pay\""
+            buildConfigField "String", "CYBERSOURCE_SECRET_KEY", "\"${System.getProperty('CYBERSOURCE_SECRET_KEY_BRU_PROD')}\""
+            buildConfigField "String", "CYBERSOURCE_ACCESS_KEY", "\"${System.getProperty('CYBERSOURCE_ACCESS_KEY_BRU_PROD')}\""
+            buildConfigField "String", "CYBERSOURCE_PROFILE_ID", "\"${System.getProperty('CYBERSOURCE_PROFILE_ID_BRU_PROD')}\""
+
+            buildConfigField "String", "GOOGLE_PAY_GATEWAY_MERCHANT_ID", "\"${System.getProperty('GOOGLE_PAY_GATEWAY_MERCHANT_ID_PROD')}\""
+            buildConfigField "String", "GOOGLE_PAY_PROCESSOR_NAME", "\"${System.getProperty('GOOGLE_PAY_PROCESSOR_NAME_PROD')}\""
+            buildConfigField "String", "PAY_PAL_AUTH_TOKEN", "\"${System.getProperty('PAY_PAL_AUTH_TOKEN_PROD')}\""
+            buildConfigField "String", "VENMO_PROFILE_ID", "\"${System.getProperty('VENMO_PROFILE_ID_BRU_PROD')}\""
+
+            // Deeplink
+            resValue "string", "applink_scheme", "bruapp"
+
+            buildConfigField "String", "NEW_RELIC_APP_ID", "\"${System.getProperty('NEW_RELIC_APP_ID_BRU_PROD')}\""
+
+            ext {
+                app_name_prefix = ""
+                newRelicAppKey = 'NEW_RELIC_APP_ID_BRU_PROD'
+            }
+            resValue "string", "brand_app_name", "Bruegger \\'s Bagels"
+            buildConfigField "String", "PAY_PAL_MERCHANT_ID", "\"brueggers\""
+        }
+    }
+}

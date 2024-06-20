@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.locations.LocationScheduleModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/xsmall_spacing"
+        android:orientation="horizontal"
+        android:importantForAccessibility="yes"
+        app:bindDayOfWeekStoreOpenHoursCD="@{model}"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:fontFamily="@font/primary_font_family"
+            android:gravity="start|center_vertical"
+            android:textAllCaps="true"
+            android:textColor="@color/brownText"
+            android:textSize="@dimen/text_size_10"
+            android:importantForAccessibility="no"
+            android:textStyle="bold"
+            app:bindDayOfWeekName="@{model.weekDay}"
+            tools:text="MONDAY" />
+
+        <TextView
+            android:id="@+id/tv_hours"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:fontFamily="@font/primary_font_family"
+            android:gravity="center|center_vertical"
+            android:textAllCaps="true"
+            android:textColor="@color/brownText"
+            android:textSize="@dimen/text_size_10"
+            android:textStyle="bold"
+            android:importantForAccessibility="no"
+            app:bindDayOfWeekStoreOpenHours="@{model}"
+            tools:text="5:00 AM - 11:00 PM" />
+
+    </LinearLayout>
+</layout>

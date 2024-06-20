@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.dashboard.DashboardModel" />
+
+        <variable
+            name="presenter"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.dashboard.DashboardContract.Presenter" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/DashboardImHereResult"
+        android:importantForAccessibility="yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iam_here_error_img"
+            style="@style/DashboardImHereImage"
+            android:src="@drawable/trivia_incorrect"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iam_here_error_close"
+            style="@style/DashboardImHereClose"
+            android:onClick="@{() -> presenter.curbsideSuccessOrErrorClose()}"
+            android:src="@drawable/close_menu"
+            android:contentDescription="@string/dialog_close"
+            android:importantForAccessibility="yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/iam_here_error_subtitle"
+            style="@style/DashboardImHereResultSubTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/checkin_failed"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iam_here_error_img" />
+
+        <TextView
+            android:id="@+id/iam_here_error_error_description"
+            style="@style/DashboardImHereResultDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/please_call_then_store_to_let_the_crew_know_you_have_arrived"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iam_here_error_subtitle" />
+
+        <Button
+            android:id="@+id/btn_im_here_error"
+            style="@style/ImHereConfirmationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{model.curbsideLocationPhone}"
+            android:textStyle="bold"
+            app:bindCall="@{model.curbsideLocationPhone}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iam_here_error_error_description"
+            tools:text="(763) 592-2302" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

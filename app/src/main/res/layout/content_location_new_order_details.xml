@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.locations.StoreLocation" />
+
+        <variable
+            name="newOrderMode"
+            type="Boolean" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="caribouapp.caribou.com.cariboucoffee.mvp.locations.LocationsActivity"
+        tools:showIn="@layout/activity_locations">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map_fragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_location_container"
+            android:layout_alignParentTop="true"
+            android:importantForAccessibility="no"
+            tools:context=".mvp.locations.LocationDetailsActivity" />
+
+        <LinearLayout
+            android:id="@+id/ll_location_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:importantForAccessibility="yes"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/small_spacing">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_header">
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    style="@style/DistanceStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:importantForAccessibility="yes"
+                    android:padding="@dimen/small_spacing"
+                    app:bindDistanceInMiles="@{model.distanceInMiles}"
+                    tools:text="21 miles" />
+
+                <TextView
+                    android:id="@+id/tv_directions"
+                    style="@style/LinkTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical"
+                    android:contentDescription="@string/get_directions_cd"
+                    android:gravity="center_vertical"
+                    android:importantForAccessibility="yes"
+                    android:minHeight="0dp"
+                    android:padding="@dimen/small_spacing"
+                    android:text="@string/get_directions"
+                    app:bindShowDirections="@{model.coordinates}" />
+
+            </FrameLayout>
+
+            <include
+                android:id="@+id/include_location_info"
+                layout="@layout/layout_location_details_info"
+                app:model="@{model}"
+                app:newOrderMode="@{newOrderMode}" />
+
+            <Button
+                android:id="@+id/btn_start_order"
+                style="@style/BaseButton.SecondaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/choose_this_location_content_description"
+                android:text="@string/choose_this_location" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "uuid": "03d1e0ea-59e3-4d4d-b619-537d45718c01",
+    "errors": []
+  },
+  "response": {
+    "entities": [
+      {
+        "address": {
+          "line1": "1180 Shingle Creek Parkway",
+          "line2": "Suite 102",
+          "city": "Brooklyn Center",
+          "region": "MN",
+          "postalCode": "55430"
+        },
+        "addressHidden": false,
+        "description": "Life is Short, Stay Awake for it. Visit your nearby Caribou Coffee who believes that coffee is more than a drink with real ingredients. It's a personal experience that fuels your life and creates meaningful moments.",
+        "hours": {
+          "monday": {
+            "openIntervals": [
+              {
+                "start": "05:00",
+                "end": "00:00"
+              }
+            ]
+          },
+          "tuesday": {
+            "openIntervals": [
+              {
+                "start": "05:00",
+                "end": "00:00"
+              }
+            ]
+          },
+          "wednesday": {
+            "openIntervals": [
+              {
+                "start": "05:00",
+                "end": "00:00"
+              }
+            ]
+          },
+          "thursday": {
+            "openIntervals": [
+              {
+                "start": "05:00",
+                "end": "00:00"
+              }
+            ]
+          },
+          "friday": {
+            "openIntervals": [
+              {
+                "start": "05:00",
+                "end": "00:00"
+              }
+            ]
+          },
+          "saturday": {
+            "openIntervals": [
+              {
+                "start": "05:00",
+                "end": "00:00"
+              }
+            ]
+          },
+          "sunday": {
+            "openIntervals": [
+              {
+                "start": "05:00",
+                "end": "00:00"
+              }
+            ]
+          }
+        },
+        "name": "Coffee \u0026 Bagels",
+        "c_amenities": [
+          "Drive-Thru",
+          "WiFi",
+          "Catering",
+          "Bagels in the Bou"
+        ],
+        "c_brand": [
+          "CARIBOU_COFFEE",
+          "EINSTEIN_BROS._BAGELS"
+        ],
+        "c_cTA1Text": "CATERING",
+        "c_cTA1URL": "https://ebcatering.com/index.cfm?fuseaction=order\u0026action=menu-categories\u0026channel-id=2\u0026store_code=1338",
+        "c_cTA2Text": "MENU",
+        "c_cTA2URL": "https://www.cariboucoffee.com/menu-nutrition",
+        "c_cTA3Text": "NUTRITION",
+        "c_cTA3URL": "https://www.cariboucoffee.com/menu-nutrition",
+        "c_cTA4Text": "FEEDBACK",
+        "c_cTA4URL": "https://www.cariboucoffee.com/contact-us",
+        "c_declinesDiscount": false,
+        "c_locatorCTAText": "Catering",
+        "c_locatorCTAURL": "https://ebcatering.com/index.cfm?fuseaction=order\u0026action=menu-categories\u0026channel-id=2\u0026store_code=1338",
+        "c_orderAhead": true,
+        "c_pagesBusinessDescription": "Caribou Coffee located at [[address.line1]], [[address.city]], [[address.region]] is a premium coffeehouse featuring high quality, handcrafted beverages and food. At our [[c_storeDescription]] location we serve expertly roasted coffee blends \u0026 espressos and our handcrafted beverages, such as mochas and lattes, are created using only the best ingredients. Our food offerings include a variety of premium breakfast sandwiches, baked goods and snacks to fuel life's adventures.",
+        "c_pagesURL": "https://locations.cariboucoffee.com/us/mn/brooklyn-center/1180-shingle-creek-parkway",
+        "c_parentBrand": "Caribou",
+        "c_restrictedAccess": false,
+        "c_storeDescription": "Shingle Creek Crossing",
+        "displayCoordinate": {
+          "latitude": 45.0576742,
+          "longitude": -93.31314035
+        },
+        "facebookCoverPhoto": {
+          "url": "http://a.mktgcdn.com/p/bejR45Kb1WHcJqzHxGqeH1KeX6a2IcvJi6l1mmM13Ac/1640x680.png",
+          "width": 1640,
+          "height": 680,
+          "sourceUrl": "http://a.mktgcdn.com/p/bejR45Kb1WHcJqzHxGqeH1KeX6a2IcvJi6l1mmM13Ac/1640x680.png"
+        },
+        "facebookPageUrl": "https://www.facebook.com/CoffeeandBagelsShingleCreekCrossing",
+        "facebookProfilePhoto": {
+          "url": "http://a.mktgcdn.com/p/H2CJpWrXMk6FUQt8NH8C7iK4s65TnyBWF5vNA8HS_qM/952x952.jpg",
+          "width": 952,
+          "height": 952,
+          "sourceUrl": "http://a.mktgcdn.com/p/H2CJpWrXMk6FUQt8NH8C7iK4s65TnyBWF5vNA8HS_qM/952x952.jpg"
+        },
+        "featuredMessage": {
+          "description": "Click here for our favorite beverages!",
+          "url": "http://www.cariboucoffee.com"
+        },
+        "googleCoverPhoto": {
+          "url": "http://a.mktgcdn.com/p/nw890ptastGBLZfIBosCRGeyM6rwrYRp4Td4TNCfKPc/512x288.jpg",
+          "width": 512,
+          "height": 288,
+          "sourceUrl": "http://a.mktgcdn.com/p/nw890ptastGBLZfIBosCRGeyM6rwrYRp4Td4TNCfKPc/512x288.jpg"
+        },
+        "instagramHandle": "cariboucoffee",
+        "isoRegionCode": "MN",
+        "mainPhone": "+17635660219",
+        "products": [
+          "Coffee",
+          "Mocha",
+          "Latte",
+          "Hot Chocolate",
+          "Cold Press",
+          "Bagels",
+          "Tea",
+          "Breakfast",
+          "Espresso",
+          "Coffeeless Coolers",
+          "Iced Coffee",
+          "Smoothie",
+          "Chai Tea"
+        ],
+        "specialities": [
+          "Campfire Mocha",
+          "Turtle Mocha",
+          "Caramel High Rise",
+          "Crafted Press",
+          "Coffeeless Coolers",
+          "Asiago Bagel",
+          "Full Rack",
+          "LaMinita",
+          "Reindeer Blend",
+          "Moose It"
+        ],
+        "timezone": "America/Chicago",
+        "twitterHandle": "cariboucoffee",
+        "websiteUrl": {
+          "url": "[[c_pagesURL]]",
+          "displayUrl": "[[c_pagesURL]]",
+          "preferDisplayUrl": false
+        },
+        "yextDisplayCoordinate": {
+          "latitude": 45.0576742,
+          "longitude": -93.31314035
+        },
+        "yextRoutableCoordinate": {
+          "latitude": 45.059745,
+          "longitude": -93.313651
+        },
+        "meta": {
+          "accountId": "1981554",
+          "uid": "x40gqJ",
+          "id": "9997",
+          "timestamp": "2019-02-11T17:49:51",
+          "folderId": "197443",
+          "schemaTypes": [
+            "CafeOrCoffeeShop",
+            "Restaurant"
+          ],
+          "language": "en",
+          "countryCode": "US",
+          "entityType": "location"
+        },
+        "categoryIds": [
+          "1322912",
+          "1168",
+          "1164",
+          "2207"
+        ]
+      }
+    ]
+  }
+}

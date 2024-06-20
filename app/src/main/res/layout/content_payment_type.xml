@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.common.CCInformationModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/tv_payment_type_text"
+            style="@style/DashboardImHereTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/payment_type_screen_top_margin"
+            android:contentDescription="@string/payment_type_text"
+            android:importantForAccessibility="yes"
+            android:lineHeight="@dimen/payment_screen_title_line_height"
+            android:text="@string/payment_type_text"
+            android:textColor="@color/payment_type_screen"
+            android:textSize="@dimen/payment_screen_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UnusedAttribute" />
+
+        <RelativeLayout
+            android:id="@+id/btn_google_pay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/payment_selection_height"
+            android:layout_below="@+id/tv_payment_type_text"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="@dimen/medium_spacing"
+            android:background="@drawable/google_pay_button"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_payment_type_text">
+
+            <ImageView
+                android:id="@+id/iv_gp_icon"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_icon_gp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_pay_pal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/payment_selection_height"
+            android:layout_below="@+id/btn_google_pay"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="@dimen/medium_spacing"
+            android:background="@drawable/pay_pal_button"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_google_pay">
+
+            <ImageView
+                android:id="@+id/iv_pp_icon"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_paypal" />
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/btn_venmo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/payment_selection_height"
+            android:layout_below="@+id/btn_pay_pal"
+            android:layout_marginHorizontal="@dimen/medium_spacing"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            android:src="@drawable/ic_venmo_white"
+            android:background="@drawable/btn_venmo"
+            app:backgroundTint="@color/venmo_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_pay_pal" />
+
+        <ImageView
+            android:id="@+id/view_line_separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/btn_venmo"
+            android:layout_marginStart="@dimen/xlarge_spacing"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginEnd="@dimen/xlarge_spacing"
+            android:src="@drawable/ic_line_seperator"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_venmo" />
+
+        <RelativeLayout
+            android:id="@+id/btn_pay_with_debit_credit_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/payment_selection_height"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginEnd="@dimen/medium_spacing"
+            android:background="@drawable/payment_normal_button"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_line_separator">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="27dp"
+                    android:layout_height="23dp"
+                    android:src="@drawable/ic_pay_by_card" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/small_size"
+                    android:layout_toEndOf="@+id/iv_icon"
+                    android:fontFamily="@font/primary_font_family"
+                    android:importantForAccessibility="no"
+                    android:text="@string/pay_with_debit_card"
+                    android:textAllCaps="true"
+                    android:textColor="@color/secondaryTextButtonColor"
+                    android:textSize="@dimen/text_size_9"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

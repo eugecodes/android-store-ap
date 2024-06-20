@@ -1,0 +1,126 @@
+{
+  "id": "2394",
+  "defaultSalesItemId": "3668",
+  "salesItems": [
+    {
+      "name": "Avocado Toast",
+      "id": "3668",
+      "productId": "10005",
+      "currentPrice": 4.29,
+      "available": true,
+      "defaultOptions": [
+        {
+          "linkGroupId": "8566",
+          "salesItemId": "mod:4687",
+          "defaultQuantity": 1
+        },
+        {
+          "linkGroupId": "8711",
+          "salesItemId": "mod:9616",
+          "defaultQuantity": 1
+        }
+      ],
+      "linkGroups": [
+        {
+          "name": "Bagel Choices",
+          "id": "8711",
+          "restriction": {
+            "maxQuantity": 1,
+            "minQuantity": 0,
+            "freeQuantity": 0,
+            "defaultQuantity": 0
+          },
+          "linkedItems": [
+            {
+              "name": "Ancient Grain",
+              "id": "mod:9344",
+              "productId": "5455",
+              "price": 0
+            },
+            {
+              "name": "Asiago",
+              "id": "mod:9610",
+              "productId": "5020",
+              "price": 0.2
+            },
+            {
+              "name": "Cheddar Jalapeno",
+              "id": "mod:9611",
+              "productId": "5110",
+              "price": 0.7
+            },
+            {
+              "name": "Everything",
+              "id": "mod:9613",
+              "productId": "5220",
+              "price": 0
+            },
+            {
+              "name": "Whole Wheat",
+              "id": "mod:9615",
+              "productId": "5815",
+              "price": 0
+            },
+            {
+              "name": "Plain",
+              "id": "mod:9616",
+              "productId": "5470",
+              "price": 0
+            },
+            {
+              "name": "Six Cheese",
+              "id": "mod:9670",
+              "productId": "5620",
+              "price": 0.7
+            },
+            {
+              "name": "Spinach Florentine",
+              "id": "mod:9671",
+              "productId": "5660",
+              "price": 0.7
+            }
+          ]
+        },
+        {
+          "name": "Toasted?",
+          "id": "8566",
+          "restriction": {
+            "maxQuantity": 1,
+            "minQuantity": 1,
+            "freeQuantity": 0,
+            "defaultQuantity": 0
+          },
+          "linkedItems": [
+            {
+              "name": "Light Toasted",
+              "id": "mod:4699",
+              "productId": "900100",
+              "price": 0
+            },
+            {
+              "name": "Toasted",
+              "id": "mod:4687",
+              "productId": "900080",
+              "price": 0
+            },
+            {
+              "name": "Double Toasted",
+              "id": "mod:4681",
+              "productId": "900110",
+              "price": 0
+            },
+            {
+              "name": "Not Toasted",
+              "id": "mod:4674",
+              "productId": "900090",
+              "price": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "salesItemIds": [
+    "3668"
+  ]
+}

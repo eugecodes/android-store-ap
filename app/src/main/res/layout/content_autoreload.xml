@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.checkIn.model.AutoReloadModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_buttons"
+            android:layout_alignParentTop="true">
+
+                <LinearLayout
+                    android:id="@+id/ll_auto_reload_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_spacing"
+                    android:layout_marginRight="@dimen/medium_spacing"
+                    android:orientation="vertical"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <include
+                            layout="@layout/layout_section_header"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="@dimen/small_spacing"
+                            android:layout_marginTop="@dimen/large_spacing"
+                            android:layout_marginRight="@dimen/small_spacing"
+                            android:layout_marginBottom="@dimen/large_spacing"
+                            app:sectionTitle="@{@string/add_this_amount}" />
+
+                        <caribouapp.caribou.com.cariboucoffee.common.OptionChooserView
+                            android:id="@+id/mc_add_amount"
+                            android:theme="@style/OptionViewTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+
+                        <TextView
+                            android:id="@+id/tv_add_amount_error"
+                            style="@style/ErrorText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/small_spacing"
+                            android:layout_marginRight="@dimen/small_spacing"
+                            android:text="@string/error_no_amount_to_add_selected"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_balance_falls_below"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:visibility="visible">
+
+                        <include
+                            layout="@layout/layout_section_header"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            app:sectionTitle="@{@string/balance_falls_below}"
+                            android:layout_marginLeft="@dimen/small_spacing"
+                            android:layout_marginTop="@dimen/large_spacing"
+                            android:layout_marginRight="@dimen/small_spacing"
+                            android:layout_marginBottom="@dimen/large_spacing"/>
+
+                        <caribouapp.caribou.com.cariboucoffee.common.OptionChooserView
+                            android:id="@+id/mc_threshold"
+                            android:theme="@style/OptionViewTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:id="@+id/tv_threshold_error"
+                            style="@style/ErrorText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/small_spacing"
+                            android:layout_marginRight="@dimen/small_spacing"
+                            android:text="@string/select_a_threshold"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_money_coming_from"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:bindVisible="@{model.cardNumber!=null}"
+                        tools:visibility="visible">
+
+                        <include
+                            layout="@layout/layout_section_header"
+                            app:sectionTitle="@{@string/where_money_coming_from}"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_marginLeft="@dimen/small_spacing"
+                            android:layout_marginTop="@dimen/large_spacing"
+                            android:layout_marginRight="@dimen/small_spacing"
+                            android:layout_marginBottom="@dimen/large_spacing"/>
+
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/rb_existing_card"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/medium_spacing"
+                                android:background="@drawable/add_funds_check"
+                                android:checked="true"
+                                android:fontFamily="@font/tertiary_font"
+                                android:paddingStart="@dimen/small_spacing"
+                                android:text="@{@string/add_funds_cc(model.cardName, model.cardNumber)}"
+                                app:tintColorDrawable="@{@color/accentColor}"
+                                tools:text="VISA: XXXX XXXXX XXXX 4055"
+                                tools:ignore="RtlSymmetry" />
+
+                            <RadioButton
+                                android:id="@+id/rb_new_card"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/add_funds_check"
+                                android:fontFamily="@font/tertiary_font"
+                                android:paddingStart="@dimen/small_spacing"
+                                android:text="@string/a_diff_cred_deb_card"
+                                android:textAllCaps="true"
+                                app:tintColorDrawable="@{@color/accentColor}"
+                                tools:ignore="RtlSymmetry" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_terms_n_conditions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/small_spacing"
+                        android:orientation="vertical">
+
+                        <include
+                            layout="@layout/layout_section_header"
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            app:sectionTitle="@{@string/terms_n_conditions}"
+                            android:layout_marginLeft="@dimen/small_spacing"
+                            android:layout_marginTop="@dimen/large_spacing"
+                            android:layout_marginRight="@dimen/small_spacing"
+                            android:layout_marginBottom="@dimen/large_spacing"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <CheckBox
+                                android:id="@+id/cb_t_n_c"
+                                android:fontFamily="@font/primary_font_family"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/min_button_size"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/accept_t_n_c_part1"
+                                android:textSize="@dimen/text_size_10_5" />
+
+                            <TextView
+                                android:id="@+id/tv_go_to_t_n_c"
+                                android:fontFamily="@font/primary_font_family"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:minHeight="@dimen/min_button_size"
+                                android:gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/xsmall_spacing"
+                                android:layout_toEndOf="@id/cb_t_n_c"
+                                android:text="@string/accept_t_n_c_part2"
+                                android:textSize="@dimen/text_size_10_5" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_see_t_n_c_error"
+                            style="@style/ErrorText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/small_spacing"
+                            android:layout_marginRight="@dimen/small_spacing"
+                            android:text="@string/you_must_agree_with_t_n_c"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/rl_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_close"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/btn_add_payment"
+                style="@style/BaseButton.SecondaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_funds_add_payment"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_apply_settings"
+                style="@style/BaseButton.CommercePrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/apply_auto_reload"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btn_close"
+            style="@style/LinkTextView.Action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:background="@color/transparent"
+            android:fontFamily="@font/primary_font_family"
+            android:paddingTop="@dimen/small_spacing"
+            android:paddingBottom="@dimen/small_spacing"
+            android:text="@string/cancel"
+            android:textSize="@dimen/text_size_6_3"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</layout>

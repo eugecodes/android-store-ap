@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.enrollment.model.PersonalInformationModel" />
+
+        <variable
+            name="credentialsModel"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.authentication.CredentialsModel" />
+
+        <variable
+            name="configurator"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.enrollment.presenter.PersonalInformationConfigurator" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/rl_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_spacing"
+            android:layout_weight="1"
+            android:contentDescription="@{@string/concat_cd(@string/sign_up_almost_there, @string/sign_up_almost_there_subtitle)}"
+            android:gravity="center_horizontal|bottom"
+            android:importantForAccessibility="yes"
+            android:orientation="vertical"
+            app:bindVisible="@{!model.isEditPersonalInformation &amp;&amp; configurator.shouldShowMidSectionText}">
+
+            <TextView
+                android:id="@+id/tv_lets_get_you"
+                style="@style/titleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:text="@string/sign_up_almost_there" />
+
+            <TextView
+                style="@style/subtitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:text="@string/sign_up_almost_there_subtitle"
+                android:textAllCaps="false"
+                android:textSize="@dimen/text_size_6_5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_form_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginEnd="@dimen/medium_spacing"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xsmall_spacing"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/first_name"
+                android:importantForAccessibility="yes"
+                android:labelFor="@id/et_first_name"
+                app:bindVisible="@{configurator.shouldShowFirstName()}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:accessibilityLiveRegion="1"
+                    android:autofillHints="name"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:imeOptions="actionNext"
+                    android:importantForAccessibility="yes"
+                    android:importantForAutofill="yes"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@id/til_last_name"
+                    android:text="@={model.firstName}" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xsmall_spacing"
+                android:hint="@string/last_name"
+                android:importantForAccessibility="yes"
+                android:labelFor="@id/et_last_name"
+                app:bindVisible="@{configurator.shouldShowLastName()}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="lastName"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="yes"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@id/til_birthday"
+                    android:text="@={model.lastName}" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xsmall_spacing"
+                android:hint="@string/birthday"
+                android:importantForAccessibility="yes"
+                android:labelFor="@id/et_birthday"
+                app:bindVisible="@{!model.isEditPersonalInformation &amp;&amp; !model.birthdayAlreadyDefined &amp;&amp; configurator.shouldShowBirthday()}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="birthday"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="yes"
+                    android:inputType="date"
+                    android:nextFocusDown="@id/til_zip_code"
+                    app:bindDate="@{model.birthday}"
+                    app:bindEditable="@{!model.editPersonalInformation}" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_zip_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/xsmall_spacing"
+                android:hint="@string/zip_code"
+                android:importantForAccessibility="yes"
+                android:labelFor="@id/et_zip_code"
+                app:bindVisible="@{configurator.shouldShowZipCode()}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_zip_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="postalCode"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="yes"
+                    android:inputType="number"
+                    android:nextFocusDown="@id/til_password"
+                    android:text="@={model.zipCode}" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:importantForAccessibility="yes"
+                android:labelFor="@id/et_password"
+                app:bindVisible="@{credentialsModel.newPassword &amp;&amp; configurator.shouldShowPassword()}"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@id/til_password_confirm"
+                    android:text="@={credentialsModel.password}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/confirm_password"
+                android:importantForAccessibility="yes"
+                android:labelFor="@id/et_password"
+                app:bindVisible="@{credentialsModel.newPassword &amp;&amp; configurator.shouldShowPassword()}"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:nextFocusDown="@id/til_password_confirm"
+                    android:text="@={credentialsModel.passwordConfirm}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_spacing"
+                android:hint="@string/phone_number"
+                android:importantForAccessibility="yes"
+                android:labelFor="@id/et_password"
+                app:bindVisible="@{(model.isEditPersonalInformation || model.isWelcomeBackUser) &amp;&amp; configurator.shouldShowPhoneNumber()}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="phone"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="yes"
+                    android:inputType="number|phone"
+                    android:nextFocusDown="@id/til_email"
+                    android:text="@={model.phoneNumber}"
+                    app:bindPhoneNumber="@{true}"
+                    app:bindVisible="@{(model.isEditPersonalInformation || model.isWelcomeBackUser)}"
+                    tools:visibility="visible" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_address"
+                android:importantForAccessibility="yes"
+                android:labelFor="@id/et_password"
+                app:bindVisible="@{(model.isEditPersonalInformation || model.isWelcomeBackUser) &amp;&amp; configurator.shouldShowEmail()}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="emailAddress"
+                    android:imeOptions="actionNext"
+                    android:importantForAutofill="yes"
+                    android:inputType="textWebEmailAddress"
+                    android:nextFocusDown="@id/cb_opt_marketing_mails"
+                    android:text="@={model.email}"
+                    android:enabled="@{!model.isEditPersonalInformation}"
+                    tools:visibility="visible" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/cb_opt_marketing_mails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="@={model.marketingMails}"
+                android:fontFamily="@font/description_font_family"
+                android:minHeight="@dimen/min_button_size"
+                android:text="@string/opt_into_marketing_mails"
+                android:textSize="@dimen/text_size_10_5"
+                app:bindVisible="@{!model.isEditPersonalInformation }" />
+
+            <CheckBox
+                android:id="@+id/cb_opt_catering_mails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="@={model.cateringMails}"
+                android:fontFamily="@font/description_font_family"
+                android:minHeight="@dimen/min_button_size"
+                android:text="@string/opt_into_catering_mails"
+                android:textSize="@dimen/text_size_10_5" />
+
+            <RelativeLayout
+                android:id="@+id/rl_t_n_c_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bindVisible="@{(!model.isEditPersonalInformation)}">
+
+                <CheckBox
+                    android:id="@+id/cb_agree_t_n_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:checked="@={model.termsNConditions}"
+                    android:contentDescription="@string/do_you_agree_t_n_c_cd"
+                    android:fontFamily="@font/description_font_family"
+                    android:minHeight="@dimen/min_button_size"
+                    android:text="@string/do_you_agree_t_n_c"
+                    android:textSize="@dimen/text_size_10_5" />
+
+                <TextView
+                    android:id="@+id/tv_go_to_t_n_c"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/xsmall_spacing"
+                    android:layout_toEndOf="@id/cb_agree_t_n_c"
+                    android:contentDescription="@{@string/button_cd(@string/do_you_agree_t_n_c_2)}"
+                    android:fontFamily="@font/description_font_family"
+                    android:gravity="center"
+                    android:minHeight="@dimen/min_button_size"
+                    android:text="@string/do_you_agree_t_n_c_2"
+                    android:textSize="@dimen/text_size_10_5" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_see_t_n_c_error"
+                style="@style/ErrorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_spacing"
+                android:layout_marginRight="@dimen/small_spacing"
+                android:text="@string/you_must_agree_with_t_n_c"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/BaseButton.CommercePrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@null"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="@dimen/medium_spacing"
+                android:text="@{configurator.submitTitle ?? @string/submit}"
+                tools:text="@string/submit" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

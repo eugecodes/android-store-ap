@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.enrollment.model.PersonalInformationModel" />
+
+        <variable
+            name="configurator"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.enrollment.presenter.PersonalInformationConfigurator" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteColor"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/welcome_back"
+                    style="@style/titleStyle"
+                    android:layout_width="@dimen/match_constraint"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/welcome_back_top_spacing"
+                    android:text="@string/welcome_back"
+                    android:textSize="@dimen/text_size_3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ebb_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/welcome_back_logo_height"
+                    android:layout_marginTop="@dimen/medium_spacing"
+                    android:contentDescription="@string/ebb_brand_name"
+                    android:src="@drawable/ebb_logo"
+                    app:layout_constraintEnd_toStartOf="@+id/noahs_logo"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/welcome_back" />
+
+                <ImageView
+                    android:id="@+id/noahs_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/welcome_back_logo_height"
+                    android:contentDescription="@string/bru_brand_name"
+                    android:src="@drawable/brueggers_logo"
+                    app:layout_constraintEnd_toStartOf="@+id/bru_logo"
+                    app:layout_constraintStart_toEndOf="@+id/ebb_logo"
+                    app:layout_constraintTop_toTopOf="@+id/ebb_logo" />
+
+                <ImageView
+                    android:id="@+id/bru_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/welcome_back_logo_height"
+                    android:contentDescription="@string/nnyb_brand_name"
+                    android:src="@drawable/noahs_logo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/noahs_logo"
+                    app:layout_constraintTop_toTopOf="@+id/ebb_logo" />
+
+                <androidx.constraintlayout.widget.Barrier
+                    android:id="@+id/logos_bottom_barrier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:barrierDirection="bottom"
+                    app:constraint_referenced_ids="bru_logo,ebb_logo,noahs_logo" />
+
+                <TextView
+                    android:id="@+id/welcome_subtitle"
+                    style="@style/subtitleStyle"
+                    android:layout_width="@dimen/match_constraint"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_spacing"
+                    android:layout_marginTop="@dimen/large_spacing"
+                    android:layout_marginEnd="@dimen/medium_spacing"
+                    android:importantForAccessibility="yes"
+                    android:text="@{@string/welcome_back_subtitle_with_program_name(@string/program_name)}"
+                    android:textAllCaps="false"
+                    android:textColor="@color/welcomeBackTextColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/logos_bottom_barrier"
+                    tools:text="@string/welcome_back_subtitle_with_program_name" />
+
+                <TextView
+                    android:id="@+id/before_earning_request"
+                    android:layout_width="@dimen/match_constraint"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_spacing"
+                    android:layout_marginTop="@dimen/large_spacing"
+                    android:layout_marginEnd="@dimen/medium_spacing"
+                    android:gravity="center"
+                    android:importantForAccessibility="yes"
+                    android:text="@string/before_earning_request"
+                    android:textColor="@color/brownText"
+                    app:bindVisible="@{configurator.someFieldShouldBeShown}"
+                    app:fontFamily="@font/primary_font_family"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/welcome_subtitle" />
+
+                <FrameLayout
+                    android:id="@+id/form_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/small_spacing"
+                    android:layout_marginTop="@dimen/medium_spacing"
+                    android:layout_marginEnd="@dimen/small_spacing"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/before_earning_request" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

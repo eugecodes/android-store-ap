@@ -1,0 +1,658 @@
+[
+  {
+    "Source": {
+      "Title": "CRC"
+    },
+    "UserMessage": "An unexpected system error has occured and we were not able to process your transaction. Please try again.",
+    "SystemMessage": "auth passed but capture failed at cybersource",
+    "ID": "555"
+  },
+  {
+    "Source": {
+      "Title": "CRC"
+    },
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction.  Please try again.",
+    "SystemMessage": "Unhandled or unknown or Internal exception\r\n",
+    "ID": "1100"
+  },
+  {
+    "Source": {
+      "Title": "CRC"
+    },
+    "UserMessage": "Our credit card processor could not approve this transaction based on the information provided. Please check your billing and credit card information and try again.",
+    "SystemMessage": "Credit Card processor could not approve transaction with information provided. Cybersource authorization fails\r\n",
+    "ID": "1120"
+  },
+  {
+    "Source": {
+      "Title": "CRC"
+    },
+    "UserMessage": "An unexpected system error has occured and we were not able to process your transaction. Please try again.",
+    "SystemMessage": "Auth passed but settlement capture failed at cybersource.",
+    "ID": "1121"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "Sorry, but we are not able to process your request with the information you provided. Please check your information and try again. ",
+    "SystemMessage": "Credit Card processor could not approve transaction with information provided.",
+    "ID": "9999"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "Sorry, but we had a problem retrieving your account information. Please try logging in with your username and password.",
+    "SystemMessage": "",
+    "ID": "9988"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "An unexpected system error has occured and we were not able create your account.  Please try again.",
+    "SystemMessage": "An unexpected system error has occurred and we were not able create your account. Please try again.\r\n",
+    "ID": "1000"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "The submitted request is invalid. ",
+    "SystemMessage": "The submitted request is invalid. \r\n",
+    "ID": "1001"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your request. Please try again.",
+    "SystemMessage": "Lookup Service - Unhandled or unknown or Internal exception\r\n",
+    "ID": "1020"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your request. Please try again.",
+    "SystemMessage": "Update - Unhandled or unknown or Internal exception\r\n",
+    "ID": "1030"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "Whoops, something went wrong.  Please Try Again!",
+    "SystemMessage": "Password Reset Notification Service failure\r\n",
+    "ID": "1410"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your request.  Please try again.",
+    "SystemMessage": "Credential Services - Unknown source app\r\n",
+    "ID": "1411"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "The password reset link has expired and is no longer valid.  Please press reset password to receive another email.",
+    "SystemMessage": "Credential Services - Reset Token not found in Cache\r\n",
+    "ID": "1420"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "The current password does not match the password on the account.  The password was not changed. (1421)",
+    "SystemMessage": "User submitted password does not match account password\r\n",
+    "ID": "1421"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "UserMessage": "Invalid Account",
+    "SystemMessage": "UID not found\r\n",
+    "ID": "1422"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "An unexpected system error has occured and we were not able to process your transaction.  Please try again.",
+    "SystemMessage": "The updatebilling portion of the removebilling was not successful.",
+    "ID": "500"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "The card number you entered is already registered to an existing loyalty account.",
+    "SystemMessage": "The stored value card passed from the source system is already associated to a different account.",
+    "ID": "400"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "The current password you entered does not match our records.",
+    "SystemMessage": "Current password passed from source system does not match the password in the Hub.",
+    "ID": "600"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "This card is already associated to another loyalty account.",
+    "SystemMessage": "A different loyalty member account already uses this gift card number.",
+    "ID": "303"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "There appears to be multiple accounts in our system that match either the email, mobile number or gift card number information your provided. Please use different credentials or call Caribou customer service for assistance. 1.888.CARIBOU (1.888.227.4268) weekdays from 8:00 a.m. - 4:00 p.m. CT. ",
+    "SystemMessage": "Multiple loyalty records contain the email, mobile number and/or card number credentials. ",
+    "ID": "304"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "There appears already be some account information in our system for the email and/or mobile number your provided. Please use different credentials or call Caribou customer service for assistance. 1.888.CARIBOU (1.888.227.4268) weekdays from 8:00 a.m. - 4:00 p.m. CT. ",
+    "SystemMessage": "Submitted loyalty account does not contain a card number, but a non-loyalty account match was found (either by email or mobile number) in CRM that does not have a card.",
+    "ID": "305"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "There appears to already be some account information in our system with a matching email and/or mobile number your provided. Please use different credentials or call Caribou customer service for assistance. 1.888.CARIBOU (1.888.227.4268) weekdays from 8:00 a.m. - 4:00 p.m. CT. ",
+    "SystemMessage": "Submitted loyalty account has a card number, but a non-loyalty account match was found (either by email or mobile number) in CRM that has a different card number.",
+    "ID": "306"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "We can not create this account for you right now. Please call Caribou customer service for assistance. 1.888.CARIBOU (1.888.227.4268) weekdays from 8:00 a.m. - 4:00 p.m. CT. ",
+    "SystemMessage": "There is a non-loyalty record in CRM with matching email, mobile number and/or card number and that record already contains a password. This should never occur, so check it out.",
+    "ID": "307"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "Update account can not take place. A non-loyalty account already uses this email address.",
+    "SystemMessage": "Update account can not take place. A non-loyalty account already uses this email address.",
+    "ID": "308"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "Update account can not take place. A non-loyalty account already uses this mobile number.",
+    "SystemMessage": "Update account can not take place. A non-loyalty account already uses this mobile number.",
+    "ID": "309"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "Update account can not take place. A non-loyalty account already uses this card number.",
+    "SystemMessage": "This update can not take place. A non-loyalty account already uses this card number.",
+    "ID": "310"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "We are currently having technical difficulties. Please contact Caribou Customer Service.",
+    "SystemMessage": "No data passed for the account lookup.",
+    "ID": "300"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "A different loyalty member account already uses this email address.",
+    "SystemMessage": "A different loyalty member account already uses this email address.",
+    "ID": "301"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "A different loyalty member account already uses this mobile number.",
+    "SystemMessage": "A different loyalty member account already uses this mobile number.",
+    "ID": "302"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "Auto Reload is not enabled.",
+    "SystemMessage": "Auto Reload is not enabled.",
+    "ID": "501"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "Invalid Threshold Amount or Increment Amount",
+    "SystemMessage": "Invalid Threshold Amount or Increment Amount",
+    "ID": "502"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "We found an account that is used for another program, but requires more setup.  Please choose Reset/Set password link setup a password and claim this account.",
+    "SystemMessage": "Email Match, Member Phone \u003d No Match, Password False\r\n",
+    "ID": "1012"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "There appears already be some account information in our system for the email and/or mobile number your provided. Please use different credentials or call customer service for assistance.",
+    "SystemMessage": "Email Match, Member Phone \u003d null, Password True\r\n",
+    "ID": "1013"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "There appears already be some account information in our system for the email and/or mobile number your provided. Please use different credentials or call customer service for assistance.",
+    "SystemMessage": "Email Match, Member Phone \u003d Match, Password True\r\n",
+    "ID": "1014"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "Sorry, but we had a problem retrieving your account information. Please try logging in with your username and password.",
+    "SystemMessage": "UID not found in CRM\r\n",
+    "ID": "1031"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction.  Please try again.",
+    "SystemMessage": "Billing - Unhandled or unknown or Internal exception\r\n",
+    "ID": "1040"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction.  Please try again.",
+    "SystemMessage": "Payment ID not found in CRM\r\n",
+    "ID": "1041"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction.  Please try again.",
+    "SystemMessage": "The updatebilling portion of the removebilling was not successful.\r\n",
+    "ID": "1042"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "Invalid Threshold Amount or Increment Amount",
+    "SystemMessage": "Auto Reload Invalid Threshold Amount or Increment Amount\r\n",
+    "ID": "1043"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "Your email and/or password are incorrect.  Please try again.",
+    "SystemMessage": "Submitted password does not match CRM\r\n",
+    "ID": "1050"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "Whoops, something happened.   Please Try Again!",
+    "SystemMessage": "Credential Service - Unhandled or unknown or Internal exception\r\n",
+    "ID": "1400"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "Auto Reload not enabled",
+    "SystemMessage": "Auto Reload not enabled",
+    "ID": "1044"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "UserMessage": "We are currently having technical difficulties. Please contact Caribou Customer Service. (1045)",
+    "SystemMessage": "Missing Cybersource Token",
+    "ID": "1045"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Sorry, you\u0027ve gotta be at least 13 to use Caribou Perks. See you in a couple years. ",
+    "SystemMessage": "Birth date is not old enough",
+    "ID": "138"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Please enter your email address.",
+    "SystemMessage": "Customer login required",
+    "ID": "148"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Please enter your password. ",
+    "SystemMessage": "Customer password required",
+    "ID": "149"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Hmm, either your email and/or password is invalid. Give it another try.",
+    "SystemMessage": "Invalid customer login/password",
+    "ID": "150"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "We are unable to reconcile your account balance. Please contact customer service at 1.888.CARIBOU for more information. ",
+    "SystemMessage": "Trans to old",
+    "ID": "15"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "That phone number is already tied to an existing account. Please provide a different number.",
+    "SystemMessage": "The phone number entered has already been used for an existing registered user. Please provide a different number.",
+    "ID": "156"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "The card number you entered is already tied to a different account. ",
+    "SystemMessage": "Error updating customer record",
+    "ID": "166"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "That phone number is already tied to an existing account. Please provide a different number.",
+    "SystemMessage": "The phone number entered has already been used for an existing registered user. Please provide a different number.",
+    "ID": "196"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "This is not a valid card number. Please check your card number and try again. ",
+    "SystemMessage": "Cert not exist",
+    "ID": "2"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "This card number is on hold. ",
+    "SystemMessage": "Certificate on hold",
+    "ID": "27"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "This card number has been cancelled. ",
+    "SystemMessage": "Certificate cancelled",
+    "ID": "28"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "This card number has been cancelled. ",
+    "SystemMessage": "Certificate cancelled for fraud",
+    "ID": "29"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Please enter a valid email address. ",
+    "SystemMessage": "Validation wrong",
+    "ID": "4"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Sorry, you cannot transfer to same card. Please enter a different card number. ",
+    "SystemMessage": "Cannot transfer to same card",
+    "ID": "42"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "That phone number is already tied to an existing account. Please provide a different number.",
+    "SystemMessage": "Phone number is not unique",
+    "ID": "49"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Sorry, you can not carry a balance greater than $500.",
+    "SystemMessage": "Amt exceeds bal limit",
+    "ID": "50"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Hmm, either your email and/or password is invalid. Give it another try.",
+    "SystemMessage": "Invalid customer login/password",
+    "ID": "184"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Temp password",
+    "SystemMessage": "Temp password",
+    "ID": "0"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Please enter a valid card number. ",
+    "SystemMessage": "Certificate is not active",
+    "ID": "40"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Hmm, either your email and/or password is invalid. Give it another try.",
+    "SystemMessage": "Invalid user ID/pswd",
+    "ID": "1"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Looks like this email address is already assigned to an account. Try signing in. ",
+    "SystemMessage": "Duplicate Email Address (Account Registration/Update)",
+    "ID": "110"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "We are unable to reconcile your account balance. Please contact customer service at 1.888.CARIBOU for more information. ",
+    "SystemMessage": "Incorrect amount",
+    "ID": "13"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "We do not have an account with this email address. Please check and try again.",
+    "SystemMessage": "Invalid customer login",
+    "ID": "115"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Looks like this email address is already assigned to an account. Try signing in. ",
+    "SystemMessage": "Duplicate Email Address (Account Registration/Update)",
+    "ID": "182"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "Sorry, an unexpected error has occured. Please try again.",
+    "SystemMessage": "operation not permitted error",
+    "ID": "19"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "We do not have an account with this email address. Please check and try again.",
+    "SystemMessage": "Invalid customer login",
+    "ID": "322"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "This card is already associated to another loyalty account.",
+    "SystemMessage": "The member is already enrolled",
+    "ID": "67"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "There appears already be some account information in our system for the email and/or mobile number your provided. Please use different credentials.",
+    "SystemMessage": "Phone Number is already in use (PX register, createandregister, editaccount)\r\n\r\n",
+    "ID": "1010"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "There appears already be some account information in our system for the email and/or mobile number your provided. Please use different credentials.",
+    "SystemMessage": "Card Number is already in use (PX Register Only)\r\n",
+    "ID": "1011"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "The phone number you entered is not valid. ",
+    "SystemMessage": "Invalid Inputs - setUserFields. Invalid Phone (at Paytronix)\r\n",
+    "ID": "1057"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "The email address you entered is not valid.",
+    "SystemMessage": "Invalid Inputs - setUserFields. Invalid Email (at Paytonix)\r\n",
+    "ID": "1058"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "This card is already registered to another account.",
+    "SystemMessage": "Card is already registered to another account.",
+    "ID": "1101"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "This card has been cancelled and can not be used.",
+    "SystemMessage": "Card has been disabled_terminated.",
+    "ID": "1102"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "The card number you entered is not valid. Try entering the card number again.",
+    "SystemMessage": "Card number is not valid.",
+    "ID": "1103"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "This card is no longer valid to be used.",
+    "SystemMessage": "Card has been exchanged and can not be used.",
+    "ID": "1104"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "The card you are attempting to transfer money from is not active.",
+    "SystemMessage": "The \"from\" card is not active and can\u0027t be used for a transfer funds card transfer.",
+    "ID": "1105"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "This exceeds the max balance allowed on a gift card.",
+    "SystemMessage": "This exceeds the max balance.",
+    "ID": "1106"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "This is not a valid card to use for this transaction.",
+    "SystemMessage": "Card is not active - likely disabled/terminated.",
+    "ID": "1107"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "UserMessage": "The state and zip code you submitted do not match. (1056)",
+    "SystemMessage": "Invalid Inputs - setUserFields. Invalid Zip and State do not match\r\n",
+    "ID": "1056"
+  }
+]

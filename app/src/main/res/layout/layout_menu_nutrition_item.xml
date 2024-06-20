@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.menu.model.NutritionalRowData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/tv_item_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/xsmall_spacing"
+            android:importantForAccessibility="yes">
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/primary_font_family"
+                android:gravity="start"
+                android:importantForAccessibility="no"
+                android:text="@{model.nutritionalName}"
+                android:textAlignment="textStart"
+                tools:text="Test" />
+
+            <TextView
+                android:id="@+id/tv_item_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/primary_font_family"
+                android:gravity="end"
+                android:importantForAccessibility="no"
+                android:text="@{model.nutritionalValue}"
+                android:textAlignment="textEnd"
+                tools:text="Test" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xxxsmall_size"
+            android:background="@color/warmGrayColor" />
+
+    </LinearLayout>
+
+
+</layout>

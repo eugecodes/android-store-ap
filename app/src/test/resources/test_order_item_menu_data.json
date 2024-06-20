@@ -1,0 +1,17 @@
+{
+  "mAllergens": [],
+  "mCaribouId": "C13",
+  "mDescription": "Rich espresso combined with steaming hot water create this bolder, stronger version of traditional brewed coffee. ",
+  "mFeatured": true,
+  "mImage": "https://cms-dev.cariboucoffee.com/~/media/BeverageImages/Detail/Classics/F_Classics_Americano.png",
+  "mIsOrderAheadMenuOnly": false,
+  "mName": "Americano",
+  "mOmsProdIdForCurrentLocation": "272213d81070c9c4968bc563b98c87ac",
+  "mOmsProdIdSet": [
+    "272213d81070c9c4968bc563b98c87ac",
+    "0224a94c5c1fcd72fd48067d0363d1d8",
+    "163fdfbd58a41c4ebd91e1fcaf45104c"
+  ],
+  "mThumbnailImage": "https://cms-dev.cariboucoffee.com/~/media/BeverageImages/Thumbs/Classics/Classics_Coffee_Of_The_Day.png",
+  "mType": "beverage"
+}

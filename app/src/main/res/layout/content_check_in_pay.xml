@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.checkIn.model.CheckInModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayBackgroundColor"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_check_in_pay">
+
+        <LinearLayout
+            android:id="@+id/ll_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/whiteColor"
+            android:elevation="@dimen/small_spacing"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/xsmall_spacing"
+            app:bindPointsCD="@{model.points}"
+            app:bindPointsDigitsCD="@{0}"
+            app:bindPointsTemplateCD="@{@string/you_have_cd}">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/small_spacing"
+                android:fontFamily="@font/content_font_family"
+                android:gravity="center_vertical"
+                android:importantForAccessibility="no"
+                android:text="@string/you_have"
+                android:textColor="@color/textSecondaryColor"
+                android:textSize="@dimen/text_size_7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/primary_font_family"
+                android:importantForAccessibility="no"
+                android:paddingTop="@dimen/xxsmall_spacing"
+                android:paddingBottom="@dimen/xxsmall_spacing"
+                android:textColor="@color/textSecondaryColor"
+                android:textSize="@dimen/text_size_6"
+                android:textStyle="bold"
+                app:bindPoints="@{model.points}"
+                app:bindPointsAddText="@{true}"
+                tools:text="1234 Points" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_offers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_footer"
+            android:layout_below="@id/ll_header"
+            android:background="@color/grayBackgroundColor"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/small_spacing"
+            android:paddingBottom="@dimen/list_bottom_padding"
+            app:bindVisible="@{!model.showMessageError}" />
+
+        <TextView
+            android:id="@+id/tv_no_rewards"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/rl_footer"
+            android:layout_below="@id/ll_header"
+            android:fontFamily="@font/heading_secondary_font_family"
+            android:gravity="center"
+            android:text="@string/check_in_no_rewards"
+            android:textColor="@color/signInGrayTextColor"
+            android:textSize="@dimen/text_size_6"
+            android:visibility="gone"
+            app:bindVisible="@{model.showMessageError}" />
+
+        <RelativeLayout
+            android:id="@+id/rl_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/whiteColor"
+            android:elevation="@dimen/medium_spacing"
+            android:gravity="bottom"
+            android:padding="@dimen/large_spacing">
+
+            <LinearLayout
+                android:id="@+id/ll_balance_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/ib_add_funds"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                app:bindMoneyCD="@{model.balance}"
+                app:bindTemplateCD="@{@string/reward_card_balance_cd}">
+
+                <TextView
+                    android:id="@+id/tv_reward_card_balance_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:fontFamily="@font/tertiary_font"
+                    android:gravity="center_vertical|start"
+                    android:importantForAccessibility="no"
+                    android:text="@string/reward_card_balance"
+                    android:textColor="@color/textSecondaryColor"
+                    tools:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/medium_spacing"
+                    android:layout_weight="5"
+                    android:contentDescription="@string/current_balance"
+                    android:fontFamily="@font/tertiary_light_font"
+                    android:gravity="end"
+                    android:importantForAccessibility="no"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textSecondaryColor"
+                    android:textSize="@dimen/text_size_2"
+                    app:bindMoney="@{model.balance}"
+                    tools:text="$46.32" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ib_add_funds"
+                android:layout_width="@dimen/min_button_size"
+                android:layout_height="@dimen/min_button_size"
+                android:layout_alignTop="@id/ll_balance_container"
+                android:layout_alignBottom="@id/ll_balance_container"
+                android:layout_alignParentEnd="true"
+                android:background="@color/whiteColor"
+                android:contentDescription="@string/add_funds"
+                android:scaleType="center"
+                android:src="@drawable/ic_add_tinted" />
+
+            <ImageView
+                android:id="@+id/iv_barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_balance_container"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:contentDescription="@string/barcode_cd"
+                tools:layout_height="50dp"
+                tools:layout_width="match_parent"
+                tools:visibility="visible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

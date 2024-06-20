@@ -1,0 +1,1533 @@
+[
+  {
+    "id": 134,
+    "uuid": "cfbe4aa717d78d0d2d1481697ab3bc3d",
+    "name": "Maple Boudino",
+    "custom_groups": [
+      {
+        "id": 1,
+        "name": "Hot Drink Sizes",
+        "additional_charges": false,
+        "display_style": "Sizes",
+        "custom_modifiers": [
+          {
+            "id": 1,
+            "name": "Small",
+            "notes": "Hot Drink Sizes",
+            "entangled_modifiers": [
+              {
+                "id": 1,
+                "label": "Small",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Medium",
+            "notes": "Hot Drink Sizes",
+            "entangled_modifiers": [
+              {
+                "id": 2,
+                "label": "Medium",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Large",
+            "notes": "Hot Drink Sizes",
+            "entangled_modifiers": [
+              {
+                "id": 3,
+                "label": "Large",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Espresso Options",
+        "additional_charges": false,
+        "display_style": "Select One",
+        "custom_modifiers": [
+          {
+            "id": 17,
+            "name": "Regular",
+            "notes": null,
+            "entangled_modifiers": [
+              {
+                "id": 31,
+                "label": "Regular",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 18,
+            "name": "Moose it (+1 shot)",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 32,
+                "label": "Moose it! (+1 shot)",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 19,
+            "name": "Double Moose it (+2)",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 33,
+                "label": "Double Moose it (+2)",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 21,
+            "name": "Half Caf",
+            "notes": null,
+            "entangled_modifiers": [
+              {
+                "id": 35,
+                "label": "Half Caf",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 22,
+            "name": "Decaf",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 36,
+                "label": "Decaf",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 23,
+            "name": "Decaf Moose it (+1)",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 37,
+                "label": "Decaf Moose it (+1)",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 77,
+        "name": "Maple",
+        "additional_charges": false,
+        "display_style": "Select One",
+        "custom_modifiers": [
+          {
+            "id": 270,
+            "name": "Regular",
+            "notes": "Regular Maple for Maple drinks",
+            "entangled_modifiers": [
+              {
+                "id": 496,
+                "label": "Regular",
+                "additional_charges": false,
+                "hide_label": true
+              }
+            ]
+          },
+          {
+            "id": 271,
+            "name": "Half",
+            "notes": "Half Maple for Maple drinks",
+            "entangled_modifiers": [
+              {
+                "id": 497,
+                "label": "Half",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 272,
+            "name": "Extra!",
+            "notes": "Extra Maple for Maple drinks",
+            "entangled_modifiers": [
+              {
+                "id": 498,
+                "label": "Extra!",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 78,
+        "name": "Whip & Salt/Sugar",
+        "additional_charges": false,
+        "display_style": "Select One",
+        "custom_modifiers": [
+          {
+            "id": 273,
+            "name": "Everything!",
+            "notes": "Whip & Salt/Sugar Topping",
+            "entangled_modifiers": [
+              {
+                "id": 499,
+                "label": "Everything!",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 274,
+            "name": "Extra!",
+            "notes": "Extra Whip for Whip & Salt/Sugar",
+            "entangled_modifiers": [
+              {
+                "id": 500,
+                "label": "Extra!",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 275,
+            "name": "Whip Only",
+            "notes": "No Salt/Sugar",
+            "entangled_modifiers": [
+              {
+                "id": 501,
+                "label": "Whip Only",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 276,
+            "name": "None",
+            "notes": "No whip, no salt/sugar",
+            "entangled_modifiers": [
+              {
+                "id": 502,
+                "label": "None",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 75,
+        "name": "Temperature",
+        "additional_charges": false,
+        "display_style": "Select One",
+        "custom_modifiers": [
+          {
+            "id": 260,
+            "name": "Regular",
+            "notes": "Regular temp for hot drinks",
+            "entangled_modifiers": [
+              {
+                "id": 486,
+                "label": "Regular",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 259,
+            "name": "Not So Hot",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 485,
+                "label": "Not So Hot",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 269,
+            "name": "Extra Hot",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 495,
+                "label": "Extra Hot",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 79,
+        "name": "Additional Flavor Shots",
+        "additional_charges": true,
+        "display_style": "Select Multiple & Quantity",
+        "custom_modifiers": [
+          {
+            "id": 28,
+            "name": "Vanilla",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 263,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 264,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 265,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 266,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 41,
+            "name": "Sugar-Free Vanilla",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 94,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 95,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 96,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 97,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 29,
+            "name": "Caramel",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 267,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 268,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 269,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 270,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 39,
+            "name": "Sugar-Free Caramel",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 283,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 284,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 285,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 286,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 33,
+            "name": "Hazelnut",
+            "notes": "Hazelnut Flavor Shot (none, half, full, regular)",
+            "entangled_modifiers": [
+              {
+                "id": 62,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 63,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 64,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 65,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 34,
+            "name": "Marshmallow",
+            "notes": "Marshmallow Flavor Shot (none, half, full, extra)",
+            "entangled_modifiers": [
+              {
+                "id": 66,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 67,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 68,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 69,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 35,
+            "name": "Mint",
+            "notes": "Mint Flavor Shot (none, half, full, extra)",
+            "entangled_modifiers": [
+              {
+                "id": 70,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 71,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 72,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 73,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 37,
+            "name": "Pumpkin",
+            "notes": "Pumpkin Flavor Shot (none, half, full, extra)",
+            "entangled_modifiers": [
+              {
+                "id": 78,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 79,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 80,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 81,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 38,
+            "name": "Raspberry",
+            "notes": "Raspberry Flavor Shot (none, half, full, extra)",
+            "entangled_modifiers": [
+              {
+                "id": 82,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 83,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 84,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 85,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 40,
+            "name": "Sugar-Free Raspberry",
+            "notes": "Sugar-Free Raspberry Flavor Shot (none, half, full, extra)",
+            "entangled_modifiers": [
+              {
+                "id": 90,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 91,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 92,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 93,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "default_modifiers": [
+      2,
+      496,
+      31,
+      263,
+      94,
+      267,
+      283,
+      62,
+      66,
+      70,
+      78,
+      82,
+      90,
+      486,
+      499
+    ],
+    "active": true
+  },
+  {
+    "id": 135,
+    "uuid": "b93dfbeeae90d73f55bc1028e87f8bb5",
+    "name": "Pumpkin White Mocha",
+    "custom_groups": [
+      {
+        "id": 1,
+        "name": "Hot Drink Sizes",
+        "additional_charges": false,
+        "display_style": "Sizes",
+        "custom_modifiers": [
+          {
+            "id": 1,
+            "name": "Small",
+            "notes": "Hot Drink Sizes",
+            "entangled_modifiers": [
+              {
+                "id": 1,
+                "label": "Small",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Medium",
+            "notes": "Hot Drink Sizes",
+            "entangled_modifiers": [
+              {
+                "id": 2,
+                "label": "Medium",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Large",
+            "notes": "Hot Drink Sizes",
+            "entangled_modifiers": [
+              {
+                "id": 3,
+                "label": "Large",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Espresso Options",
+        "additional_charges": false,
+        "display_style": "Select One",
+        "custom_modifiers": [
+          {
+            "id": 17,
+            "name": "Regular",
+            "notes": null,
+            "entangled_modifiers": [
+              {
+                "id": 31,
+                "label": "Regular",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 18,
+            "name": "Moose it (+1 shot)",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 32,
+                "label": "Moose it! (+1 shot)",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 19,
+            "name": "Double Moose it (+2)",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 33,
+                "label": "Double Moose it (+2)",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 21,
+            "name": "Half Caf",
+            "notes": null,
+            "entangled_modifiers": [
+              {
+                "id": 35,
+                "label": "Half Caf",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 22,
+            "name": "Decaf",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 36,
+                "label": "Decaf",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 23,
+            "name": "Decaf Moose it (+1)",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 37,
+                "label": "Decaf Moose it (+1)",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Milk",
+        "additional_charges": false,
+        "display_style": "Select One",
+        "custom_modifiers": [
+          {
+            "id": 11,
+            "name": "2%",
+            "notes": "Milk 10",
+            "entangled_modifiers": [
+              {
+                "id": 25,
+                "label": "2%",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "name": "Skim",
+            "notes": "Milk 10",
+            "entangled_modifiers": [
+              {
+                "id": 26,
+                "label": "Skim",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 13,
+            "name": "Soy",
+            "notes": "Milk 10",
+            "entangled_modifiers": [
+              {
+                "id": 27,
+                "label": "Soy",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 14,
+            "name": "Almond",
+            "notes": "Milk 10",
+            "entangled_modifiers": [
+              {
+                "id": 28,
+                "label": "Almond",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 15,
+            "name": "Half & Half",
+            "notes": "Milk 10",
+            "entangled_modifiers": [
+              {
+                "id": 261,
+                "label": "Half & Half",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 16,
+            "name": "Heavy Cream",
+            "notes": "Milk 10",
+            "entangled_modifiers": [
+              {
+                "id": 262,
+                "label": "Heavy Cream",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Chocolate",
+        "additional_charges": null,
+        "display_style": "Select One & Quantity",
+        "custom_modifiers": [
+          {
+            "id": 4,
+            "name": "Milk Chocolate",
+            "notes": "Chocolate for drinks like Mochas",
+            "entangled_modifiers": [
+              {
+                "id": 240,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 241,
+                "label": "Regular",
+                "additional_charges": null,
+                "hide_label": true
+              },
+              {
+                "id": 242,
+                "label": "Extra",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Dark Chocolate",
+            "notes": "Chocolate for drinks like mochas",
+            "entangled_modifiers": [
+              {
+                "id": 243,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 244,
+                "label": "Regular",
+                "additional_charges": null,
+                "hide_label": true
+              },
+              {
+                "id": 245,
+                "label": "Extra",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "White Chocolate",
+            "notes": "Chocolate for drinks like mochas",
+            "entangled_modifiers": [
+              {
+                "id": 246,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 247,
+                "label": "Regular",
+                "additional_charges": null,
+                "hide_label": true
+              },
+              {
+                "id": 248,
+                "label": "Extra",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "name": "Milk & Dark Chocolate",
+            "notes": "Chocolate for drinks like mochas",
+            "entangled_modifiers": [
+              {
+                "id": 249,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 250,
+                "label": "Regular",
+                "additional_charges": null,
+                "hide_label": true
+              },
+              {
+                "id": 251,
+                "label": "Extra",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 8,
+            "name": "Dark & White Chocolate",
+            "notes": "Chocolate for drinks like mochas",
+            "entangled_modifiers": [
+              {
+                "id": 252,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 253,
+                "label": "Regular",
+                "additional_charges": null,
+                "hide_label": true
+              },
+              {
+                "id": 254,
+                "label": "Extra",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 9,
+            "name": "Milk & White Chocolate",
+            "notes": "Chocolate for drinks like mochas",
+            "entangled_modifiers": [
+              {
+                "id": 255,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 256,
+                "label": "Regular",
+                "additional_charges": null,
+                "hide_label": true
+              },
+              {
+                "id": 257,
+                "label": "Extra",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 10,
+            "name": "Milk & Dark & White",
+            "notes": "Chocolate for drinks like mochas",
+            "entangled_modifiers": [
+              {
+                "id": 258,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 259,
+                "label": "Regular",
+                "additional_charges": null,
+                "hide_label": true
+              },
+              {
+                "id": 260,
+                "label": "Extra",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 80,
+        "name": "Pumpkin",
+        "additional_charges": false,
+        "display_style": "Select One",
+        "custom_modifiers": [
+          {
+            "id": 277,
+            "name": "Regular",
+            "notes": "Regular Pumpkin for Pumpkin drinks",
+            "entangled_modifiers": [
+              {
+                "id": 503,
+                "label": "Regular",
+                "additional_charges": false,
+                "hide_label": true
+              }
+            ]
+          },
+          {
+            "id": 278,
+            "name": "Half",
+            "notes": "Half Pumpkin for Pumpkin drinks",
+            "entangled_modifiers": [
+              {
+                "id": 504,
+                "label": "Half",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 279,
+            "name": "Extra!",
+            "notes": "Extra Pumpkin for Pumpkin drinks",
+            "entangled_modifiers": [
+              {
+                "id": 505,
+                "label": "Extra!",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Whip & Chips",
+        "additional_charges": false,
+        "display_style": "Select One",
+        "custom_modifiers": [
+          {
+            "id": 24,
+            "name": "Everything!",
+            "notes": null,
+            "entangled_modifiers": [
+              {
+                "id": 38,
+                "label": "Everything!",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 25,
+            "name": "Extra!",
+            "notes": "Extra Whip",
+            "entangled_modifiers": [
+              {
+                "id": 39,
+                "label": "Extra!",
+                "additional_charges": true,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 26,
+            "name": "Whip Only",
+            "notes": "No Chips",
+            "entangled_modifiers": [
+              {
+                "id": 40,
+                "label": "Whip Only",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 27,
+            "name": "None",
+            "notes": "No Whip, No Chips",
+            "entangled_modifiers": [
+              {
+                "id": 41,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 75,
+        "name": "Temperature",
+        "additional_charges": false,
+        "display_style": "Select One",
+        "custom_modifiers": [
+          {
+            "id": 260,
+            "name": "Regular",
+            "notes": "Regular temp for hot drinks",
+            "entangled_modifiers": [
+              {
+                "id": 486,
+                "label": "Regular",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 259,
+            "name": "Not So Hot",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 485,
+                "label": "Not So Hot",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 269,
+            "name": "Extra Hot",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 495,
+                "label": "Extra Hot",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 81,
+        "name": "Additional Flavor Shots",
+        "additional_charges": true,
+        "display_style": "Select Multiple & Quantity",
+        "custom_modifiers": [
+          {
+            "id": 28,
+            "name": "Vanilla",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 263,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 264,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 265,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 266,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 41,
+            "name": "Sugar-Free Vanilla",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 94,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 95,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 96,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 97,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 29,
+            "name": "Caramel",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 267,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 268,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 269,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 270,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 39,
+            "name": "Sugar-Free Caramel",
+            "notes": "",
+            "entangled_modifiers": [
+              {
+                "id": 283,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 284,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 285,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 286,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 33,
+            "name": "Hazelnut",
+            "notes": "Hazelnut Flavor Shot (none, half, full, regular)",
+            "entangled_modifiers": [
+              {
+                "id": 62,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 63,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 64,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 65,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 280,
+            "name": "Maple",
+            "notes": "Maple Flavor Shot",
+            "entangled_modifiers": [
+              {
+                "id": 506,
+                "label": "None",
+                "additional_charges": false,
+                "hide_label": false
+              },
+              {
+                "id": 507,
+                "label": "Half",
+                "additional_charges": false,
+                "hide_label": false
+              },
+              {
+                "id": 508,
+                "label": "Full",
+                "additional_charges": false,
+                "hide_label": false
+              },
+              {
+                "id": 509,
+                "label": "Extra",
+                "additional_charges": false,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 34,
+            "name": "Marshmallow",
+            "notes": "Marshmallow Flavor Shot (none, half, full, extra)",
+            "entangled_modifiers": [
+              {
+                "id": 66,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 67,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 68,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 69,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 35,
+            "name": "Mint",
+            "notes": "Mint Flavor Shot (none, half, full, extra)",
+            "entangled_modifiers": [
+              {
+                "id": 70,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 71,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 72,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 73,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 38,
+            "name": "Raspberry",
+            "notes": "Raspberry Flavor Shot (none, half, full, extra)",
+            "entangled_modifiers": [
+              {
+                "id": 82,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 83,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 84,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 85,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          },
+          {
+            "id": 40,
+            "name": "Sugar-Free Raspberry",
+            "notes": "Sugar-Free Raspberry Flavor Shot (none, half, full, extra)",
+            "entangled_modifiers": [
+              {
+                "id": 90,
+                "label": "None",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 91,
+                "label": "Half",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 92,
+                "label": "Full",
+                "additional_charges": null,
+                "hide_label": false
+              },
+              {
+                "id": 93,
+                "label": "Extra",
+                "additional_charges": null,
+                "hide_label": false
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "default_modifiers": [
+      2,
+      25,
+      31,
+      247,
+      503,
+      263,
+      94,
+      267,
+      283,
+      62,
+      506,
+      66,
+      70,
+      82,
+      90,
+      486,
+      38
+    ],
+    "active": true
+  }
+]

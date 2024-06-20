@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.account.model.CreditCardModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/credit_card_height"
+        android:layout_margin="@dimen/small_spacing"
+        android:background="@drawable/card_shape"
+        android:contentDescription="@{@string/add_funds_cc_cd(model.card.apiName, model.cardEnding)}"
+        android:importantForAccessibility="yes">
+
+        <TextView
+            android:id="@+id/tv_edit_card"
+            style="@style/LinkTextView.MainColorBG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_toStartOf="@+id/tv_delete_card"
+            android:contentDescription="@{@string/button_cd(@string/edit)}"
+            android:importantForAccessibility="yes"
+            android:text="@string/edit"
+            android:textSize="@dimen/text_size_7"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_delete_card"
+            style="@style/LinkTextView.MainColorBG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/medium_spacing"
+            android:contentDescription="@{@string/button_cd(@string/delete)}"
+            android:importantForAccessibility="yes"
+            android:text="@string/delete"
+            android:textSize="@dimen/text_size_7"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_card_drawable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_card_number"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:contentDescription="@{@string/image_cd(model.card.apiName)}"
+            android:importantForAccessibility="no"
+            tools:src="@drawable/card_visa" />
+
+        <TextView
+            android:id="@+id/tv_card_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginEnd="@dimen/medium_spacing"
+            android:layout_marginBottom="@dimen/medium_spacing"
+            android:fontFamily="@font/content_font_family"
+            android:importantForAccessibility="no"
+            android:text="@{@string/credit_card_masking(model.cardEnding)}"
+            android:textColor="@color/clickable_text_main_color_bg"
+            android:textSize="@dimen/text_size_6"
+            tools:text="XXXX XXXX XXXX 1234" />
+
+    </RelativeLayout>
+</layout>

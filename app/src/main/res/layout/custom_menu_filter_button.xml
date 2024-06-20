@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/margin_start_toggle_menu"
+        android:layout_marginEnd="@dimen/margin_end_toggle_menu"
+        android:background="@drawable/menu_toggle_button"
+        android:fontFamily="@font/primary_font_family"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_toggle_menu"
+        android:paddingRight="@dimen/padding_toggle_menu"
+        android:textAlignment="center"
+        android:textAllCaps="@bool/menu_toggle_button_allcaps"
+        android:textColor="@color/menu_toggle_button_text"
+        android:textSize="@dimen/text_size_toggle_menu"
+        tools:text="Category" />
+</layout>

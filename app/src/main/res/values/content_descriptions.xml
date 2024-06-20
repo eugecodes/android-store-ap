@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Dashboard-->
+
+    <string name="close_hamburger_cd">Close Main Menu</string>
+    <string name="hamburger_cd">Main Menu</string>
+    <plurals name="hamburger_with_messages_cd">
+        <item quantity="one">Main Menu, %1$d Message</item>
+        <item quantity="other">Main Menu, %1$d Messages</item>
+    </plurals>
+
+    <string name="checkin_pay_button_log_out_cd">SignUp, Button</string>
+
+    <string name="checkin_pay_button_no_points_cd">CheckIn Pay, no points yet, Button</string>
+
+    <plurals name="checkin_pay_button_cd">
+        <item quantity="one"> CheckIn Pay, %1$d Point, Button</item>
+        <item quantity="other"> CheckIn Pay, %1$d Points, Button</item>
+    </plurals>
+
+    <string name="nearest_location_content_description">Nearest location is %1$s</string>
+
+    <string name="order_now_cd">Order Now</string>
+    <plurals name="continue_order_now_cd">
+        <item quantity="one">Continue my order now, %1$d item</item>
+        <item quantity="other">Continue my order now, %1$d items</item>
+    </plurals>
+
+    <!--Dashboard Curbside-->
+
+    <string name="im_here_cd">I\'m here</string>
+    <string name="call_cd">Call Phone number, %1$s, Button.</string>
+    <string name="call_store_cd">Call Store Phone number, %1$s </string>
+    <string name="got_it_cd">Got it</string>
+
+
+    <!--Recent Orders-->
+    <string name="recent_order_content_description">Recent Order %1$d, %2$s, %3$s, %4$s</string>
+
+    <!-- Choose Locations -->
+    <string name="clear_search_field_button">Clear search field</string>
+    <string name="search_button">Search</string>
+    <string name="search_button_cd">Search Button</string>
+    <string name="filter_options_button">Show filters</string>
+    <string name="location_search_cc">Search by city, state, zipcode</string>
+
+    <string name="choose_location_button_cd">Choose location</string>
+    <string name="available">Available</string>
+    <!-- Toolbar-->
+    <string name="go_back_cd">Go Back</string>
+    <string name="heading_cd">%s Heading</string>
+
+    <!--Loading-->
+    <string name="screen_loading_cd">Screen Loading, please wait</string>
+    <string name="loading_finished_cd">Loading Finished</string>
+
+    <!-- Menu -->
+    <string name="menu_tabs">%1$s, Tab</string>
+    <string name="menu_rewards_tab">Rewards Menu</string>
+    <string name="menu_feature_tab">Feature Menu</string>
+    <string name="menu_beverage_tab">Beverage Menu</string>
+    <string name="menu_food_tab">Food Menu</string>
+
+    <string name="my_cart_no_items_cd">My Cart, No items, Button</string>
+    <plurals name="my_cart_cd">
+        <item quantity="one">My Cart, %1$d item, Button</item>
+        <item quantity="other">My Cart, %1$d items, Button</item>
+    </plurals>
+
+    <!--Item Customization-->
+    <string name="image_cd">%1$s, Image</string>
+
+    <!--Quantity modifications-->
+    <string name="substract_cd">Quantity subtract</string>
+    <string name="add_cd">Quantity Add</string>
+
+    <!-- My Cart -->
+    <string name="cancel_cd">Cancel Order, button</string>
+
+    <!-- Confirmation -->
+    <string name="store_heading_cd">Store,  %1$s, Heading.</string>
+    <string name="store_address_cd">Store address,  %1$s.</string>
+    <string name="phone_number_cd">Phone number, %1$s, Button.</string>
+    <string name="get_directions_cd">Get directions, Button</string>
+    <string name="dialog_close_cd">Close, Button</string>
+
+    <!-- Check In -->
+    <string name="barcode_cd">Credit card barcode, Image</string>
+    <string name="reward_card_balance_cd">Rewards Card Balance amount, %1$s</string>
+    <string name="you_have_cd">You have: %1$s, points</string>
+
+    <!-- Tools -->
+    <string name="concat_cd">%1$s, %2$s,</string>
+    <string name="concat_three_cd">%1$s, %2$s, %3$s,</string>
+    <string name="concat_title_description_cd">%1$s %2$s, %3$s,</string>
+    <string name="add_card_from_camera_cd">Add card from camera</string>
+    <string name="menu_favorite_cd">Set as Favorite</string>
+    <string name="selected_cd">%1$s, selected</string>
+    <string name="button_cd">%1$s, Button</string>
+
+    <!--Recent Orders-->
+    <string name="transaction_cd">Transaction Row %1$d, %2$s, %3$s, %4$s</string>
+
+    <!-- Feedback -->
+    <plurals name="stars_cd">
+        <item quantity="one">%1$d Star</item>
+        <item quantity="other">%1$d Stars</item>
+    </plurals>
+
+    <!-- My Profile -->
+    <string name="personal_information_cd">%1$s. City, %2$s. Zipcode, %3$s. Phone number, %4$s. Email %5$s.</string>
+    <string name="no_credit_card">No credit card</string>
+
+
+</resources>

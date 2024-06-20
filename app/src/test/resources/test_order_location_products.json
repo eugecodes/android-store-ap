@@ -1,0 +1,80 @@
+[
+  {
+    "id": 59,
+    "uuid": "1eef7daabc48ef9ef68a24af7191765d",
+    "name": "Breve",
+    "applicable_rewards": [
+      "5",
+      "151"
+    ]
+  },
+  {
+    "id": 16,
+    "uuid": "160060b29deff239125c12e7c0f10c82",
+    "name": "Asiago Bagel & Shmear",
+    "applicable_rewards": [
+      "5",
+      "151"
+    ]
+  },
+  {
+    "id": 53,
+    "uuid": "dcd41c81b4f2209be36ae536686afa13",
+    "name": "Blueberry Bagel",
+    "applicable_rewards": []
+  },
+  {
+    "id": 54,
+    "uuid": "617b411c904ff40edc59a27dd939dd05",
+    "name": "Blueberry Bagel & Shmear",
+    "applicable_rewards": []
+  },
+  {
+    "id": 57,
+    "uuid": "4d5e4e405d0c0bfaf62fc25d3745772b",
+    "name": "Everything Bagel",
+    "applicable_rewards": [
+      "5",
+      "151"
+    ]
+  },
+  {
+    "id": 58,
+    "uuid": "8a0bbba00891c2a40e3c6a69e6ea7766",
+    "name": "Everything Bagel & Shmear",
+    "applicable_rewards": [
+      "5",
+      "151"
+    ]
+  },
+  {
+    "id": 55,
+    "uuid": "cee61bc0da5c836aae36a02bbaa0726c",
+    "name": "Plain Bagel",
+    "applicable_rewards": [
+      "5",
+      "151"
+    ]
+  },
+  {
+    "id": 56,
+    "uuid": "1313552146677ad6d741041fcb1db726",
+    "name": "Plain Bagel & Shmear",
+    "applicable_rewards": [
+      "5",
+      "151"
+    ]
+  },
+  {
+    "id": 143,
+    "uuid": "6ed9dd1f3d92ef0912e1528937cfa3aa",
+    "name": "Pumpkin Bagel",
+    "applicable_rewards": []
+  },
+  {
+    "id": 144,
+    "uuid": "5762952267ce9b54779fb9683c3a24ad",
+    "name": "Pumpkin Bagel w/ Pumpkin Shmear",
+    "applicable_rewards": []
+  }
+]

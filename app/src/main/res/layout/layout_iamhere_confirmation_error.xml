@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="confirmationModel"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.confirmation.model.ConfirmationModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/iAmHereConfirmationBackground"
+        android:contentDescription="@{@string/concat_cd(@string/checkin_failed,@string/please_call_then_store_to_let_the_crew_know_you_have_arrived)}"
+        android:importantForAccessibility="yes"
+        android:padding="@dimen/xxxlarge_padding">
+
+        <ImageView
+            android:id="@+id/iam_here_error_img"
+            style="@style/DashboardImHereImage"
+            android:layout_margin="0dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/trivia_incorrect"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/iAmHereConfirmationTitleColor" />
+
+        <TextView
+            android:id="@+id/iam_here_error_subtitle"
+            style="@style/ConfirmationImHereTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/large_padding"
+            android:gravity="center_vertical|start"
+            android:importantForAccessibility="no"
+            android:text="@string/checkin_failed"
+            app:layout_constraintBottom_toBottomOf="@id/iam_here_error_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iam_here_error_img"
+            app:layout_constraintTop_toTopOf="@id/iam_here_error_img" />
+
+        <TextView
+            android:id="@+id/iam_here_error_error_description"
+            style="@style/ConfirmationImHereResultDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:importantForAccessibility="no"
+            android:text="@string/please_call_then_store_to_let_the_crew_know_you_have_arrived"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iam_here_error_img" />
+
+        <Button
+            android:id="@+id/btn_im_here_error"
+            style="@style/ImHereConfirmationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="yes"
+            android:contentDescription="@{@string/call_store_cd(confirmationModel.curbsideLocationPhone)}"
+            android:text="@string/call_store"
+            android:textStyle="bold"
+            app:bindOnlyCall="@{confirmationModel.curbsideLocationPhone}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iam_here_error_error_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

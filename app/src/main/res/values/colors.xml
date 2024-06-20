@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- ################################# Colors ################################# -->
+
+    <!-- ## Primary Colors ## -->
+    <color name="cariblueColor">#74AEB9</color>
+
+    <color name="deepBrownColor">#3A2A15</color>
+    <color name="taupeColor">#AEA49C</color>
+
+    <color name="lightGray">#D7D7D7</color>
+
+    <color name="universal">#ccc</color>
+    <!-- ## Secondary Colors ## -->
+
+    <color name="lightBrownColor">#766E67</color>
+    <color name="warmGrayColor">#D8D8D8</color>
+    <color name="grayBackgroundColor">#F2F2F2</color>
+    <color name="grayTwoColor">#F7F7F7</color>
+    <color name="brownText">#382F20</color>
+    <color name="grayThreeColor">#434544</color>
+    <color name="darkGray">#757575</color>
+
+
+    <color name="textSecondaryLightColor">@color/lightBrownColor</color>
+    <color name="textSecondaryColor">@color/deepBrownColor</color>
+
+    <!-- ## White & Black ## -->
+
+    <color name="blackColor">#000000</color>
+    <color name="whiteColor">#FFFFFF</color>
+    <color name="halfMidWhiteColor">#80FFFFFF</color>
+    <color name="midTransparentWhiteColor">#88FFFFFF</color>
+    <color name="midTransparentBlackColor">#88000000</color>
+    <color name="midTransparentGreyColor">#88CCCCCC</color>
+    <color name="letsGetPopUpWindow">#C4FFFFFF</color>
+
+    <!-- ## Transparent ## -->
+    <color name="transparent">#00000000</color>
+
+    <color name="openHours">#909446</color>
+    <color name="closedHours">@color/taupeColor</color>
+
+    <!-- ## Other created colors that were not in the source pdf ## -->
+
+    <color name="expand_collapse_text_button">@color/primaryLightColor</color>
+
+    <color name="menuGrayTextColors">#B3B3B3</color>
+    <color name="grayBackgroundMenu">#D8D8D8</color>
+    <color name="grayDottedBorder">#969696</color>
+
+    <color name="toggleBackgroundCheckedMenu">@color/primaryLightColor</color>
+    <color name="toggleBackgroundUncheckedMenu">#F4F4F4</color>
+    <color name="toggleTextUnselectedMenu">#828282</color>
+
+    <color name="menuDetailsItemDescription">#433326</color>
+    <color name="signInGrayTextColor">#AEAEAE</color>
+
+    <color name="rowSeparator">@color/grayBackgroundColor</color>
+
+    <color name="textTitleColor">@color/titleTextColor</color>
+    <color name="textSubtitleColor">@color/subtitleTextColor</color>
+
+    <color name="warmGrayColor2">#9B9B98</color>
+
+    <color name="feedback_background">#F3F3F3</color>
+
+    <color name="modifierFontColor">#434544</color>
+
+    <color name="tipsBackgroundColor">#EAEAEA</color>
+
+    <color name="notificationBadgeBackgroundColor">#A7353A</color>
+    <color name="notificationBadgeTextColor">@color/whiteColor</color>
+
+    <color name="secondaryTextButtonColor">@color/whiteColor</color>
+    <color name="primaryTextButtonColor">@color/whiteColor</color>
+
+    <color name="coloredBackgroundTextColor">@color/whiteColor</color>
+    <color name="triviaQuestionAndAnswerColor">@color/deepBrownColor</color>
+
+    <color name="itemSizeColor">@color/primaryDarkColor</color>
+    <color name="inlineModifierSelectedColor">@color/primaryColor</color>
+
+    <color name="rewardLimitedTextColor">@color/whiteColor</color>
+    <color name="rewardLimitedBackgroundColor">@color/textAccentSecondaryColor</color>
+
+    <color name="shortButtonTextColor">@color/whiteColor</color>
+
+    <color name="toggleTextSelectedMenu">@color/whiteColor</color>
+    <color name="menuCaloriesTextColor">@color/menuGrayTextColors</color>
+
+    <color name="toolbarControlColor">@color/whiteColor</color>
+
+    <color name="distanceTextColor">@color/blackColor</color>
+
+    <color name="locationCardHeaderBackgroundColor">@color/grayTwoColor</color>
+
+    <color name="contentControlColor">@color/grayThreeColor</color>
+
+    <color name="toolbarBackgroundGradient1">@color/primaryColor</color>
+    <color name="toolbarBackgroundGradient2">@color/primaryMidDarkColor</color>
+
+    <color name="menuItemTextColor">@color/darkGray</color>
+    <color name="sizeSelectedColor">@color/buttonPrimaryPressedColor</color>
+    <color name="locationMarkerTintColor">@color/primaryColor</color>
+    <color name="checkIconTintColor">@color/primaryDarkColor</color>
+    <color name="quantitySelectorBackgroundColor">@color/primaryColor</color>
+    <color name="quantitySelectorSymbolColor">@color/whiteColor</color>
+    <color name="sizeSelectorTextColor">@color/whiteColor</color>
+    <color name="storeDetailsButtonColor">@color/buttonPrimaryColor</color>
+    <color name="storeDetailsButtonPressedColor">@color/buttonPrimaryPressedColor</color>
+    <color name="optionRowSelectedColor">@color/lightGray</color>
+
+    <color name="inlineErrorTextColorDarkBackground">@color/textAccentSecondaryColor</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">@color/whiteColor</color>
+
+    <color name="pay_pal_button_color">#FFC439</color>
+    <color name="venmo_blue">#008CFF</color>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="pickupTitle"
+            type="String" />
+
+        <variable
+            name="pickupDescription"
+            type="String" />
+
+        <variable
+            name="pickupRules"
+            type="String" />
+
+        <variable
+            name="pickupCurbsideTipMessage"
+            type="String" />
+
+        <variable
+            name="enabled"
+            type="Boolean" />
+
+        <import type="android.text.TextUtils" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/ll_pickup_type_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="@{ enabled ?  @fraction/alpha_for_enable : @fraction/alpha_for_disable  }"
+        android:background="@drawable/bg_option_row"
+        android:contentDescription="@{TextUtils.isEmpty(pickupRules)? pickupTitle + ',' + pickupDescription + ',' + pickupCurbsideTipMessage : pickupTitle + ',' + pickupDescription + ',' + pickupRules }"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/primary_font_family"
+            android:paddingLeft="@dimen/medium_spacing"
+            android:paddingTop="@dimen/medium_spacing"
+            android:paddingRight="@dimen/medium_spacing"
+            android:text="@{pickupTitle}"
+            android:textColor="@color/primaryDarkColor"
+            android:textSize="@dimen/text_size_6"
+            tools:text="Walk-In" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/content_font_family"
+            android:paddingLeft="@dimen/medium_spacing"
+            android:paddingRight="@dimen/medium_spacing"
+            android:paddingBottom="@dimen/medium_spacing"
+            android:text="@{pickupDescription}"
+            tools:text="Head into the store and pick-up your order" />
+
+        <TextView
+            android:id="@+id/tv_rules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/large_spacing"
+            android:fontFamily="@font/content_font_family"
+            android:paddingLeft="@dimen/medium_spacing"
+            android:paddingRight="@dimen/medium_spacing"
+            android:paddingBottom="@dimen/medium_spacing"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:bindVisible="@{!TextUtils.isEmpty(pickupRules)}"
+            tools:text="* Your order sub-total must be greater than $0.00"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</layout>

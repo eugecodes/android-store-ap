@@ -1,0 +1,72 @@
+{
+  "id": 6110,
+  "user_id": 129,
+  "location": {
+    "id": 20,
+    "name": "Colfax & Indiana",
+    "number": "3099",
+    "enterprise_unit": "0bb243d1ab6c4d1bb94a606abeb2993c"
+  },
+  "data": {
+    "customer": {
+      "id": "172a3d7b-87ae-eb11-8236-000d3a5ac908",
+      "name": "Ismael D",
+      "email": "ismaeldosil+bru3@gmail.com"
+    },
+    "status": "ReadyForValidation",
+    "expireAt": "2021-08-22T13:46:51.065Z",
+    "orderLines": [
+      {
+        "lineId": "b1222191-9679-4583-a91d-efd61adc3f24",
+        "description": "Texas Brisket Egg Sandwich",
+        "productId": {
+          "value": "10115"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false
+      },
+      {
+        "lineId": "6db53495-4461-463c-ac14-7648e37e00f5",
+        "description": "Two Egg Whites",
+        "parentLineId": "b1222191-9679-4583-a91d-efd61adc3f24",
+        "productId": {
+          "value": "57326"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false
+      },
+      {
+        "lineId": "9d0d30ba-1be8-433d-a20c-42f15d3bd019",
+        "description": "Twice Baked Hashbrown",
+        "parentLineId": "b1222191-9679-4583-a91d-efd61adc3f24",
+        "productId": {
+          "value": "10078"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false
+      }
+    ],
+    "taxExempt": false,
+    "dateCreated": "2021-05-24T13:46:51.064Z",
+    "dateUpdated": "2021-05-24T13:46:51.064Z",
+    "id": "09327432765729801129",
+    "sourceOrganization": "einstein-noah",
+    "enterpriseUnitId": "0bb243d1ab6c4d1bb94a606abeb2993c",
+    "etag": "2021-05-24T13:46:51.064Z"
+  },
+  "status": null,
+  "ncr_status": null,
+  "total": null,
+  "tax": null,
+  "check_number": "09327432765729801129",
+  "subtotal": null,
+  "reorder_errors": null,
+  "reward_errors": null,
+  "applied_rewards": []
+}

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.locations.StoreLocation" />
+
+        <variable
+            name="listener"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.locations.LocationListAdapter.LocationListListener" />
+
+        <import type="caribouapp.caribou.com.cariboucoffee.databinding.BindingAdapters" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_location_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/xsmall_spacing"
+        android:importantForAccessibility="no"
+        app:cardElevation="@dimen/medium_elevation"
+        app:cardUseCompatPadding="true"
+        tools:layout_height="380dp">
+
+        <FrameLayout
+            android:id="@+id/ll_location_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="@{() -> listener.setSelectedLocation(model)}"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:importantForAccessibility="no"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/directions_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_header"
+                    android:gravity="center_vertical"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/tv_distance"
+                        style="@style/DistanceStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_weight="1"
+                        android:gravity="start|center_vertical"
+                        android:importantForAccessibility="yes"
+                        android:focusable="true"
+                        android:padding="@dimen/small_spacing"
+                        app:bindDistanceInMiles="@{model.distanceInMiles}"
+                        tools:text="21 miles" />
+
+                    <TextView
+                        android:id="@+id/tv_directions"
+                        style="@style/LinkTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/get_directions_cd"
+                        android:gravity="end|center_vertical"
+                        android:importantForAccessibility="yes"
+                        android:minHeight="0dp"
+                        android:padding="@dimen/small_spacing"
+                        android:text="@string/get_directions"
+                        app:bindShowDirections="@{model.coordinates}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:importantForAccessibility="no"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/StoreName.Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/medium_spacing"
+                        android:layout_marginTop="@dimen/small_spacing"
+                        android:layout_marginRight="@dimen/medium_spacing"
+                        android:layout_weight="3"
+                        android:importantForAccessibility="yes"
+                        android:singleLine="true"
+                        android:text="@{model.name}"
+                        tools:text="Stadium Village" />
+
+                    <TextView
+                        android:id="@+id/tv_restricted_access_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/xxsmall_spacing"
+                        android:fontFamily="@font/primary_font_family"
+                        android:importantForAccessibility="yes"
+                        android:text="@string/restricted_access_location"
+                        android:textAllCaps="true"
+                        android:textColor="@color/textAccentSecondaryColor"
+                        android:textSize="@dimen/text_size_10"
+                        android:textStyle="bold"
+                        app:bindVisible="@{model.restrictedAccessLocation}" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/small_spacing"
+                        android:fontFamily="@font/description_font_family"
+                        android:gravity="center_horizontal"
+                        android:importantForAccessibility="yes"
+                        android:maxLines="3"
+                        android:text="@{model.address}"
+                        android:nextFocusDown="@id/tv_store_hours"
+                        android:textSize="@dimen/text_size_8"
+                        android:textStyle="bold"
+                        tools:text="501 Washington Avenue\nMinneapolis, MN 34234-3432" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_store_hours"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/primary_font_family"
+                            android:importantForAccessibility="yes"
+                            android:nextFocusDown="@id/tv_call_store"
+                            android:textColor="@color/openHours"
+                            android:textSize="@dimen/text_size_8"
+                            android:textStyle="bold"
+                            app:bindOpenStatus="@{model}"
+                            tools:text="Open until 8:00 pm" />
+
+                        <View
+                            android:layout_width="@dimen/xxxsmall_size"
+                            android:layout_height="match_parent"
+                            android:importantForAccessibility="no"
+                            android:layout_marginLeft="@dimen/small_spacing"
+                            android:layout_marginRight="@dimen/small_spacing"
+                            android:background="@drawable/separator" />
+
+                        <TextView
+                            android:id="@+id/tv_call_store"
+                            style="@style/PhoneNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:importantForAccessibility="yes"
+                            android:padding="@dimen/small_spacing"
+                            android:text="@{model.phone}"
+                            app:bindCall="@{model.phone}"
+                            tools:text="(123) 423-4321" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_view_details_location"
+                            style="@style/StoreDetailsButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="@{() -> listener.openLocationDetails(model)}"
+                            android:text="@string/view_location_details" />
+
+                        <Button
+                            android:id="@+id/btn_start_order"
+                            style="@style/BaseButton.SecondaryButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:onClick="@{() -> listener.startNewOrder(model)}"
+                            android:text="@string/start_new_order" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

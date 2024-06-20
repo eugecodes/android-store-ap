@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <import type="caribouapp.caribou.com.cariboucoffee.common.CurbsideStatusEnum" />
+
+        <variable
+            name="confirmationModel"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.confirmation.model.ConfirmationModel" />
+
+        <variable
+            name="presenter"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.confirmation.OrderConfirmationContract.Presenter" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/confirmation_im_here_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_padding"
+        app:bindVisible="@{confirmationModel.curbsideIamHereState != CurbsideStatusEnum.NONE}">
+
+        <include
+            android:id="@+id/iamhere_hint_confirmation"
+            layout="@layout/layout_iamhere_confirmation_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bindVisible="@{confirmationModel.curbsideIamHereState == CurbsideStatusEnum.IM_HERE}"
+            app:confirmationModel="@{confirmationModel}"
+            app:presenter="@{presenter}"
+            tools:visibility="visible" />
+
+        <include
+            android:id="@+id/iamhere_success_confirmation"
+            layout="@layout/layout_iamhere_confirmation_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bindVisible="@{confirmationModel.curbsideIamHereState == CurbsideStatusEnum.SUCCESS}"
+            app:confirmationModel="@{confirmationModel}"
+            tools:visibility="visible" />
+
+        <include
+            android:id="@+id/iamhere_error_confirmation"
+            layout="@layout/layout_iamhere_confirmation_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bindVisible="@{confirmationModel.curbsideIamHereState == CurbsideStatusEnum.ERROR}"
+            app:confirmationModel="@{confirmationModel}"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</layout>

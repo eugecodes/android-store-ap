@@ -1,0 +1,555 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <!-- Set the custom Message Center style -->
+        <item name="messageCenterStyle">@style/AppTheme.MessageCenter</item>
+
+        <item name="android:textViewStyle">@style/DefaultTextViewStyle</item>
+        <item name="android:buttonStyle">@style/DefaultButtonStyle</item>
+        <item name="android:editTextStyle">@style/DefaultEditTextStyle</item>
+
+    </style>
+
+    <style name="ThemeOverlay.AppTheme.Dark" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="errorTextAppearance">@style/ErrorTextDarkBackground</item>
+    </style>
+
+    <style name="DefaultTextViewStyle" parent="Base.Widget.AppCompat.TextView" />
+
+    <style name="DefaultButtonStyle" parent="Base.Widget.AppCompat.Button" />
+
+    <style name="DefaultEditTextStyle" parent="Base.Widget.AppCompat.EditText" />
+
+    <style name="SplashTheme" parent="AppTheme.NoStatusBar">
+        <item name="android:windowBackground">@drawable/pre_splash_logo</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.TransparentActionBar" parent="Theme.MaterialComponents.NoActionBar.Bridge">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="AppTheme.NoStatusBar" parent="AppTheme.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlayLightMenu" parent="AppTheme.AppBarOverlay">
+        <item name="android:actionMenuTextColor">@color/whiteColor</item>
+        <item name="android:colorControlNormal">@color/whiteColor</item>
+        <item name="colorControlNormal">@color/whiteColor</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:windowActionBarOverlay">false</item>
+        <item name="windowActionBarOverlay">false</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay.White" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="elevation">0dp</item>
+        <item name="colorOnPrimary">@color/whiteColor</item>
+    </style>
+
+    <style name="Toolbar.Title" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/toolbarControlColor</item>
+        <item name="android:fontFamily">@font/toolbar_title_font</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+    </style>
+
+    <style name="Toolbar.Title.White" parent="Toolbar.Title">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textSize">@dimen/text_size_6_5</item>
+        <item name="paddingEnd">10dp</item>
+    </style>
+
+    <style name="Toolbar.Subtitle" parent="Toolbar.Title">
+        <item name="android:fontFamily">@font/toolbar_subtitle_font</item>
+        <item name="android:paddingTop">@dimen/xsmall_spacing</item>
+        <item name="android:paddingBottom">@dimen/xsmall_spacing</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+
+    <!-- ################################# Text styles ################################# -->
+
+    <style name="ShadowedText" parent="@android:style/Widget.TextView">
+        <item name="android:shadowColor">@color/dashboardTextShadowColor</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">5</item>
+    </style>
+
+    <style name="Display1TextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <style name="Display2TextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">44sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Display2TextStyleWShadow" parent="ShadowedText">
+        <item name="android:textSize">44sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="DashboardMenuText" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_header1</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/heading_secondary_font_family</item>
+    </style>
+
+    <style name="DashboardMenuBottomItems" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_header5</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:fontFamily">@font/primary_font_family</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:minHeight">@dimen/xxlarge_size</item>
+    </style>
+
+    <style name="MenuLocation">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- ################################# Button styles ################################# -->
+
+    <style name="BaseButton">
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:layout_margin">@dimen/small_spacing</item>
+        <item name="android:textSize">@dimen/text_size_7</item>
+        <item name="android:fontFamily">@font/primary_font_family</item>
+    </style>
+
+    <style name="BaseButton.PrimaryButton">
+        <item name="android:textColor">@color/primaryTextButtonColor</item>
+        <item name="android:background">@drawable/primary_button</item>
+    </style>
+
+    <style name="BaseButton.SecondaryButton">
+        <item name="android:textColor">@color/secondaryTextButtonColor</item>
+        <item name="android:background">@drawable/secondary_button</item>
+    </style>
+
+    <style name="BaseButton.ImHereButton">
+        <item name="android:textColor">@color/secondaryTextButtonColor</item>
+        <item name="android:background">@drawable/im_here_button</item>
+    </style>
+
+    <style name="BaseButton.ImHereButtonDashboard">
+        <item name="android:textColor">@color/secondaryTextButtonColor</item>
+        <item name="android:background">@drawable/im_here_button_dashboard</item>
+    </style>
+
+    <style name="BaseButton.SecondaryButton.Light">
+        <item name="android:background">@drawable/secondary_light_button</item>
+    </style>
+
+    <style name="StoreDetailsButton" parent="BaseButton.PrimaryButton">
+        <item name="android:background">@drawable/store_details_button</item>
+    </style>
+
+    <style name="BaseButton.ActionNeededButton">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:background">@drawable/action_needed_button</item>
+    </style>
+
+    <style name="ShortButton">
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:background">@drawable/secondary_button</item>
+        <item name="android:paddingBottom">@dimen/xsmall_spacing</item>
+        <item name="android:paddingLeft">@dimen/medium_spacing</item>
+        <item name="android:paddingRight">@dimen/medium_spacing</item>
+        <item name="android:fontFamily">@font/opensans_family</item>
+        <item name="android:paddingTop">@dimen/xsmall_spacing</item>
+        <item name="android:minHeight">@dimen/medium_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/shortButtonTextColor</item>
+    </style>
+
+    <style name="CheckoutActionButton" parent="ShortButton">
+        <item name="android:minWidth">@dimen/xxxsmall_size</item>
+        <item name="android:paddingLeft">@dimen/medium_spacing</item>
+        <item name="android:paddingTop">@dimen/xsmall_spacing</item>
+        <item name="android:paddingRight">@dimen/medium_spacing</item>
+        <item name="android:paddingBottom">@dimen/xsmall_spacing</item>
+        <item name="android:textSize">@dimen/text_size_9</item>
+    </style>
+
+    <style name="BaseButton.CommercePrimaryButton">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:background">@drawable/commerce_primary_button</item>
+    </style>
+
+    <style name="RadioButton" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/radio_button_text_color</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@drawable/bg_radio_button</item>
+        <item name="android:button">@color/transparent</item>
+    </style>
+
+    <style name="SizeSelector" parent="RadioButton">
+        <item name="android:textColor">@color/size_selector_text_color</item>
+        <item name="android:fontFamily">@font/primary_font_family</item>
+    </style>
+
+    <style name="OptionViewTheme">
+        <item name="optionTextViewStyle">@style/OptionButton</item>
+    </style>
+
+    <style name="TipOptionViewTheme">
+        <item name="optionTextViewStyle">@style/TipOptionButton</item>
+    </style>
+
+    <style name="OptionButton" parent="Theme.AppCompat.Light">
+        <item name="android:layout_width">@dimen/xxlarge_size</item>
+        <item name="android:layout_height">@dimen/xxlarge_size</item>
+        <item name="android:textColor">@color/funds_color</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:background">@drawable/funds_button</item>
+        <item name="android:button">@color/transparent</item>
+    </style>
+
+    <style name="TipOptionButton" parent="OptionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/xlarge_size</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">@dimen/small_size</item>
+        <item name="android:textColor">@color/tip_option_text_color</item>
+        <item name="android:background">@drawable/bg_tip_amount_value</item>
+    </style>
+
+    <!--  ################################# TabLayout #################################  -->
+    <style name="TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabIndicatorColor">@color/whiteColor</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">2dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+        <item name="tabTextColor">@color/midTransparentWhiteColor</item>
+        <item name="tabSelectedTextColor">@color/whiteColor</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMode">fixed</item>
+    </style>
+
+    <style name="TabLayout.Underlined">
+        <item name="tabIndicatorHeight">7dp</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="SpinnerItem">
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="StorePickupTypesTextView">
+        <item name="android:layout_marginBottom">@dimen/small_spacing</item>
+        <item name="android:layout_marginStart">@dimen/small_spacing</item>
+        <item name="android:layout_marginEnd">@dimen/medium_spacing</item>
+        <item name="android:textSize">@dimen/text_size_7</item>
+        <item name="android:fontFamily">@font/description_font_family</item>
+    </style>
+
+    <style name="WrapOnceTextView">
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:state_selected">true</item>
+    </style>
+
+    <style name="MenuItemName" parent="WrapOnceTextView">
+        <item name="android:fontFamily">@font/menu_item_name_font</item>
+        <item name="android:textColor">@color/menuItemTextColor</item>
+    </style>
+
+    <style name="MenuItemCalories">
+        <item name="android:fontFamily">@font/calories_font</item>
+        <item name="android:textColor">@color/menuCaloriesTextColor</item>
+    </style>
+
+    <style name="FeatureToggleStyle">
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_marginLeft">@dimen/xxsmall_spacing</item>
+        <item name="android:layout_marginRight">@dimen/xxsmall_spacing</item>
+        <item name="android:drawablePadding">@dimen/small_spacing</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/text_size_11</item>
+    </style>
+
+    <style name="LinkTextView">
+        <item name="android:fontFamily">@font/primary_font_family</item>
+        <item name="android:textColor">@color/clickable_text_color</item>
+        <item name="android:textSize">@dimen/link_text_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:minHeight">@dimen/xxlarge_size</item>
+    </style>
+
+    <style name="LinkTextView.MainColorBG">
+        <item name="android:textColor">@color/clickable_text_main_color_bg</item>
+    </style>
+
+    <style name="LinkTextView.Action">
+        <item name="android:textColor">@color/buttonCommerceDarkColor</item>
+    </style>
+
+    <style name="GrayMiddleText">
+        <item name="android:textSize">@dimen/text_size_7</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/signInGrayTextColor</item>
+    </style>
+
+    <style name="ProductDescriptionMenuTitle">
+        <item name="android:fontFamily">@font/primary_font_family</item>
+        <item name="android:textColor">@color/customizationButtonColor</item>
+        <item name="android:textSize">@dimen/text_size_6_5</item>
+    </style>
+
+    <style name="ProductDescriptionMenuDetails">
+        <item name="android:fontFamily">@font/description_font_family</item>
+        <item name="android:textColor">@color/menuDetailsItemDescription</item>
+        <item name="android:textSize">@dimen/text_size_8</item>
+    </style>
+
+    <style name="Customization"></style>
+
+    <style name="Customization.Overlay">
+        <item name="android:background">@drawable/overlay_button</item>
+        <item name="android:fontFamily">@font/opensans_family</item>
+        <item name="android:minHeight">@dimen/medium_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <style name="Customization.Title">
+        <item name="android:fontFamily">@font/primary_font_family</item>
+        <item name="android:textColor">@color/customizationTextColor</item>
+        <item name="android:textSize">@dimen/text_size_6_5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Customization.Description">
+        <item name="android:fontFamily">@font/description_font_family</item>
+        <item name="android:textColor">@color/customizationTextColor</item>
+        <item name="android:textSize">@dimen/text_size_8</item>
+    </style>
+
+    <style name="Customization.Description.Bold">
+        <item name="android:fontFamily">@font/primary_font_family</item>
+        <item name="android:textColor">@color/customizationTextColor</item>
+        <item name="android:textSize">@dimen/text_size_9</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="HintTextAppearance">
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="ErrorText">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+        <item name="android:textSize">@dimen/text_size_10_5</item>
+    </style>
+
+    <style name="titleStyle">
+        <item name="android:textColor">@color/textTitleColor</item>
+        <item name="android:textSize">@dimen/text_size_5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/heading_primary_font_family</item>
+    </style>
+
+    <style name="subtitleStyle">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_6</item>
+        <item name="android:textColor">@color/textSubtitleColor</item>
+        <item name="android:fontFamily">@font/heading_secondary_font_family</item>
+    </style>
+
+
+    <style name="ChargesMayApply">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/text_size_9</item>
+    </style>
+
+    <style name="AppTheme.MessageCenter" parent="MessageCenter">
+        <item name="messageCenterDividerColor">@color/rowSeparator</item>
+        <item name="messageCenterItemIconEnabled">false</item>
+        <item name="messageCenterItemTitleTextAppearance">
+            @style/AppTheme.MessageCenter.TitleTextAppearance
+        </item>
+        <item name="messageCenterItemDateTextAppearance">
+            @style/AppTheme.MessageCenter.DateTextAppearance
+        </item>
+    </style>
+
+    <!-- Custom message title text style -->
+    <style name="AppTheme.MessageCenter.TitleTextAppearance" parent="MessageCenter.Item.Title.TextAppearance">
+        <item name="android:textSize">@dimen/text_size_7</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- Custom message date text style -->
+    <style name="AppTheme.MessageCenter.DateTextAppearance" parent="MessageCenter.Item.Date.TextAppearance">
+        <item name="android:textSize">@dimen/text_size_8</item>
+    </style>
+
+    <style name="MessageContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_dotted_border</item>
+        <item name="android:layout_margin">@dimen/medium_spacing</item>
+    </style>
+
+    <style name="DashboardMenuItems">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="android:paddingTop">@dimen/menu_option_separation_dashboard</item>
+        <item name="android:paddingBottom">@dimen/menu_option_separation_dashboard</item>
+        <item name="android:paddingStart">@dimen/menu_items_left_margin_dashboard</item>
+        <item name="android:paddingLeft">@dimen/menu_items_left_margin_dashboard</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">start</item>
+    </style>
+
+    <style name="MessageStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily">@font/heading_secondary_font_family</item>
+        <item name="android:layout_marginTop">@dimen/medium_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/medium_spacing</item>
+        <item name="android:layout_marginLeft">@dimen/small_spacing</item>
+        <item name="android:layout_marginRight">@dimen/small_spacing</item>
+        <item name="android:textColor">@color/warmGrayColor2</item>
+        <item name="android:textSize">@dimen/text_size_6_4</item>
+    </style>
+
+    <style name="PhoneNumber">
+        <item name="android:fontFamily">@font/phone_font</item>
+        <item name="android:textColor">@color/textAccentPrimaryColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_8</item>
+    </style>
+
+    <style name="SectionHeaderText">
+        <item name="android:fontFamily">@font/section_header_font</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/sectionTitleTextColor</item>
+    </style>
+
+    <style name="CheckoutViewOnMap" parent="LinkTextView" />
+
+    <style name="StoreName">
+        <item name="android:fontFamily">@font/store_name_font</item>
+        <item name="android:textSize">@dimen/text_size_6</item>
+        <item name="android:textColor">@color/textSecondaryColor</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="StoreName.Title">
+        <item name="android:textSize">@dimen/location_list_name_text_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DistanceStyle">
+        <item name="android:fontFamily">@font/primary_font_family</item>
+        <item name="android:textColor">@color/distanceTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_9</item>
+    </style>
+
+    <style name="SearchField">
+        <item name="android:fontFamily">@font/search_field_font</item>
+        <item name="android:inputType">text|textCapWords|textAutoComplete</item>
+        <item name="android:padding">@dimen/small_spacing</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="MenuItemDescriptionContainer">
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <style name="ErrorTextDarkBackground" parent="ErrorText">
+        <item name="android:textColor">@color/inlineErrorTextColorDarkBackground</item>
+        <item name="android:fontFamily">@font/primary_font_family</item>
+    </style>
+
+    <style name="TippingDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/grayBackgroundColor</item>
+    </style>
+
+    <style name="GuestUserDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <dimen name="xxxlarge_padding">18dp</dimen>
+    <dimen name="large_padding">8dp</dimen>
+    <dimen name="small_padding">4dp</dimen>
+
+
+    <style name="GuestDialogTheme" parent="Theme.MaterialComponents.Dialog">
+        <item name="colorPrimary">@color/guest_user_dialog_button</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="materialButtonStyle">@style/DefaultButtonStyle</item>
+        <item name="android:textViewStyle">@style/DefaultTextViewStyle</item>
+        <item name="android:buttonStyle">@style/DefaultButtonStyle</item>
+        <item name="android:editTextStyle">@style/DefaultEditTextStyle</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/letsGetPopUpWindow</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.recentOrders.model.RecentOrdersModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayBackgroundMenu"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <Button
+            android:id="@+id/btn_start_order"
+            style="@style/BaseButton.PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@null"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@string/start_a_new_order"
+            android:textStyle="bold" />
+
+        <include
+            android:id="@+id/ll_header_recent_locations"
+            layout="@layout/layout_section_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_spacing"
+            app:sectionTitle="@{@string/recent_orders}"
+            app:sectionTitleTextSize="@{@dimen/text_size_7}" />
+
+        <FrameLayout
+            style="@style/MessageContainer"
+            android:visibility="gone"
+            app:bindVisible="@{model.showReorderError || model.recentOrderList.isEmpty()}"
+            tools:visibility="visible">
+
+            <TextView
+                style="@style/MessageStyle"
+                android:text="@string/we_dont_have_any_recent_orders_for_you"
+                app:bindVisible="@{model.recentOrderList.isEmpty() &amp;&amp; !model.showReorderError}" />
+
+            <TextView
+                style="@style/MessageStyle"
+                android:text="@string/reorder_disable"
+                app:bindVisible="@{model.showReorderError}" />
+        </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/list_bottom_padding"
+            app:bindVisible="@{!model.showReorderError &amp;&amp; !model.recentOrderList.isEmpty()}" />
+
+    </LinearLayout>
+</layout>

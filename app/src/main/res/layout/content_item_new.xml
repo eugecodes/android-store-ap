@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.model.OrderItem" />
+
+        <import type="caribouapp.caribou.com.cariboucoffee.mvp.menu.model.SizeEnum" />
+        <import type="caribouapp.caribou.com.cariboucoffee.common.ScaleTypeEnum"/>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv_main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        tools:context="caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.view.ItemActivity"
+        tools:showIn="@layout/activity_item">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--
+            Added focusableInTouchMode=true to prevent the nested scroll view scrolling to the recyclerView
+            https://stackoverflow.com/questions/36314836/recycler-view-inside-nestedscrollview-causes-scroll-to-start-in-the-middle/37288302#37288302
+            -->
+            <FrameLayout
+                android:id="@+id/iv_item_image_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_item_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:focusableInTouchMode="true"
+                    android:scaleType="center"
+                    tools:layout_height="@dimen/item_image_height"
+                    app:bindContentDescription="@{item.menuData.name}"
+                    app:bindImageAltUrl="@{item.menuData.getAltImage()}"
+                    app:bindImageScaleType="@{ScaleTypeEnum.FIT_XY}"
+                    app:bindImageUrl="@{item.menuData.getImage()}"
+                    tools:src="@drawable/brueggers_logo" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_product_description"
+                style="@style/ProductDescriptionMenuDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_spacing"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_marginEnd="@dimen/medium_spacing"
+                android:gravity="center"
+                app:expandableText="@{item.menuData.description}"
+                tools:text="40% fewer calories than the original classic Latte, and available in 4 flavors - caramel, vanilla, hazelnut and raspberry." />
+
+            <TextView
+                android:id="@+id/tv_nutrition_link"
+                style="@style/LinkTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_spacing"
+                android:gravity="center"
+                android:contentDescription="@string/view_nutrition_n_allergens_cd"
+                android:text="@string/view_nutrition_n_allergens" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_spacing"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_marginEnd="@dimen/medium_spacing">
+
+                <caribouapp.caribou.com.cariboucoffee.mvp.menu.view.SizeSelectorView
+                    android:id="@+id/ssv_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    app:bindVisible="@{item.showSizeSelector}" />
+
+                <TextView
+                    android:id="@+id/tv_one_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:fontFamily="@font/primary_font_family"
+                    android:text="@string/one_size"
+                    android:textColor="@color/lightBrownColor"
+                    android:textSize="@dimen/text_size_7"
+                    app:bindVisible="@{item.showOneSize}" />
+
+            </FrameLayout>
+
+            <caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.view.ItemQuantityView
+                android:id="@+id/iqv_item_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginBottom="@dimen/medium_spacing" />
+
+            <TextView
+                android:id="@+id/tv_bulk_item_description"
+                style="@style/ProductDescriptionMenuDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_spacing"
+                android:layout_marginEnd="@dimen/medium_spacing"
+                android:layout_marginBottom="@dimen/medium_spacing"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <include
+                android:id="@+id/incl_header_text"
+                layout="@layout/layout_header_text"
+                app:headerText="@{@string/customize_and_add_to_your_order}" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_modifiers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_add_to_order"
+                style="@style/BaseButton.SecondaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/add_to_order"
+                android:text="@string/add_to_order" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

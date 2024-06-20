@@ -1,0 +1,46 @@
+{
+  "ranges": [
+    {
+      "starts": "00:00",
+      "ends": "04:00",
+      "timeOfDay": "LateNight",
+      "messages": null
+    },
+    {
+      "starts": "04:00",
+      "ends": "11:00",
+      "timeOfDay": "Morning",
+      "messages": []
+    },
+    {
+      "starts": "11:00",
+      "ends": "16:30",
+      "timeOfDay": "Day",
+      "messages": []
+    },
+    {
+      "starts": "16:30",
+      "ends": "19:30",
+      "timeOfDay": "Evening",
+      "messages": [
+        "Hey you! Good evening!"
+      ]
+    },
+    {
+      "starts": "19:30",
+      "ends": "00:00",
+      "timeOfDay": "Night",
+      "messages": [
+        "Hey you! Nighty night"
+      ]
+    },
+    {
+      "starts": "00:00",
+      "ends": "00:00",
+      "timeOfDay": "LoggedOut",
+      "messages": [
+        "Hey you! Log in please!"
+      ]
+    }
+  ]
+}

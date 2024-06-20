@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.confirmation.model.GuestInfoModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_parent_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/get_started_pop_up_margin"
+            android:layout_marginEnd="@dimen/get_started_pop_up_margin"
+            android:background="@drawable/background_rounded_guest_dialog"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/iv_close_dialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:contentDescription="@string/dialog_close"
+                android:importantForAccessibility="yes"
+                android:padding="@dimen/small_spacing"
+                android:src="@drawable/ic_bb_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_lets_gets_started"
+                style="@style/DashboardImHereTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/lets_get_started"
+                android:importantForAccessibility="yes"
+                android:textColor="@color/whiteColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_close_dialog"
+                tools:text="@string/lets_get_started" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_guest_user_first_name"
+                style="@style/GuestDetailsDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="@string/first_name_hint"
+                android:importantForAccessibility="yes"
+                android:padding="0dp"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_lets_gets_started">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_txt_guest_user_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/get_started_field_height"
+                    android:fontFamily="@font/primary_font_family"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:nextFocusDown="@id/til_guest_user_last_name"
+                    android:padding="0dp"
+                    android:singleLine="true"
+                    android:text="@={model.guestFirstName}"
+                    android:textColor="@color/whiteColor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_guest_user_last_name"
+                style="@style/GuestDetailsDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/last_name_hint"
+                android:importantForAccessibility="yes"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_guest_user_first_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_txt_guest_user_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/get_started_field_height"
+                    android:fontFamily="@font/primary_font_family"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:maxLength="50"
+                    android:nextFocusDown="@id/til_guest_user_email"
+                    android:padding="0dp"
+                    android:singleLine="true"
+                    android:text="@={model.guestLastName}"
+                    android:textColor="@color/whiteColor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_guest_user_email"
+                style="@style/GuestDetailsDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email_hint"
+                android:importantForAccessibility="yes"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_guest_user_last_name">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_txt_guest_user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/get_started_field_height"
+                    android:fontFamily="@font/primary_font_family"
+                    android:imeOptions="actionNext"
+                    android:inputType="textWebEmailAddress"
+                    android:maxLength="100"
+                    android:nextFocusDown="@id/til_guest_user_phone_number"
+                    android:padding="0dp"
+                    android:singleLine="true"
+                    android:text="@={model.guestEmailId}"
+                    android:textColor="@color/whiteColor" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_guest_user_phone_number"
+                style="@style/GuestDetailsDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:importantForAccessibility="yes"
+                app:endIconMode="clear_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_guest_user_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_txt_guest_user_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/get_started_field_height"
+                    android:autofillHints="phone"
+                    android:fontFamily="@font/primary_font_family"
+                    android:imeOptions="actionDone"
+                    android:importantForAutofill="yes"
+                    android:inputType="number|phone"
+                    android:padding="0dp"
+                    android:singleLine="true"
+                    android:text="@={model.guestPhoneNumber}"
+                    android:textColor="@color/whiteColor"
+                    app:bindPhoneNumber2="@{true}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_field_indicator"
+                style="@style/Customization.Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:text="@string/mandatory_fields"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/text_size_9"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_guest_user_phone_number" />
+
+            <ImageView
+                android:id="@+id/iv_check_terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/large_spacing"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginEnd="@dimen/margin_10dp"
+                android:contentDescription="@string/do_you_agree_t_n_c_cd"
+                android:importantForAccessibility="yes"
+                android:paddingEnd="@dimen/small_spacing"
+                android:paddingBottom="@dimen/small_spacing"
+                android:src="@drawable/bb_unchecked"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_field_indicator"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tv_i_accept"
+                style="@style/Customization.Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="-15dp"
+                android:contentDescription="@string/do_you_agree_t_n_c_cd"
+                android:fontFamily="@font/primary_font_family"
+                android:gravity="center"
+                android:paddingStart="2dp"
+                android:text="@string/i_accept"
+                android:textColor="@color/guestTNCColor"
+                android:textSize="@dimen/text_size_9"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_check_terms"
+                app:layout_constraintStart_toEndOf="@+id/iv_check_terms"
+                app:layout_constraintTop_toTopOf="@+id/iv_check_terms"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tv_guest_go_to_t_n_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15dp"
+                android:contentDescription="@{@string/button_cd(@string/do_you_agree_t_n_c_2)}"
+                android:fontFamily="@font/primary_font_family"
+                android:gravity="center"
+                android:paddingStart="3dp"
+                android:text="@string/do_you_agree_t_n_c_2"
+                android:textColor="@color/guestTNCColor"
+                android:textSize="@dimen/text_size_9"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_check_terms"
+                app:layout_constraintStart_toEndOf="@+id/tv_i_accept"
+                app:layout_constraintTop_toTopOf="@+id/iv_check_terms"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tv_certify_older"
+                style="@style/Customization.Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/primary_font_family"
+                android:gravity="center"
+                android:text="@string/and_certify_that_i_am_18_or_older"
+                android:textColor="@color/guestTNCColor"
+                android:textSize="@dimen/text_size_9"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/iv_check_terms"
+                app:layout_constraintTop_toBottomOf="@+id/tv_i_accept" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/get_started_pop_up_margin"
+                android:layout_marginTop="@dimen/xlarge_spacing"
+                android:layout_marginEnd="@dimen/get_started_pop_up_margin"
+                android:layout_marginBottom="@dimen/get_started_pop_up_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_certify_older">
+
+                <Button
+                    android:id="@+id/btn_continue_guest_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/commerce_primary_button_disabled"
+                    android:contentDescription="@string/continue_text"
+                    android:enabled="false"
+                    android:fontFamily="@font/primary_font_family"
+                    android:text="@string/continue_text"
+                    android:textColor="@color/halfMidWhiteColor"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

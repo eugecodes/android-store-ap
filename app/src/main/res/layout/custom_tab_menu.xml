@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/xsmall_spacing"
+        android:paddingBottom="@dimen/small_spacing"
+        tools:background="@color/primaryMidDarkColor">
+
+        <ImageView
+            android:id="@+id/iv_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_above="@+id/tv_tab"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:alpha="0.5"
+            app:tint="@color/toolbarControlColor"
+            tools:alpha="1"
+            tools:src="@drawable/favorites" />
+
+        <TextView
+            android:id="@+id/tv_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:alpha="0"
+            android:fontFamily="@font/primary_font_family"
+            android:textAllCaps="true"
+            android:textColor="@color/toolbarControlColor"
+            android:textSize="@dimen/text_size_10_5"
+            android:visibility="gone"
+            tools:alpha="1"
+            tools:text="TABNAME"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+</layout>

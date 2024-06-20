@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.model.ItemOption" />
+
+    </data>
+
+    <RadioButton
+        android:id="@+id/rb_option"
+        style="@style/RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small_spacing"
+        android:background="@drawable/bg_item_option_background"
+        android:fontFamily="@font/primary_font_family"
+        android:textColor="@color/item_option_text_color"
+        android:textStyle="bold"
+        tools:text="Dark" />
+
+</layout>

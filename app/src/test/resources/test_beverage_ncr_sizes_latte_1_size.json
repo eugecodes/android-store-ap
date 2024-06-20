@@ -1,0 +1,562 @@
+{
+  "name": "Latte",
+  "id": "2464",
+  "quickComboId": "0",
+  "type": "MENU_ITEM",
+  "defaultSalesItemId": "3488",
+  "orderMode": "NORMAL",
+  "salesItemIds": [
+    "3488"
+  ],
+  "salesItems": [
+    {
+      "name": "Medium",
+      "id": "3488",
+      "productId": "103620",
+      "currentPrice": 3.75,
+      "available": true,
+      "defaultOptions": [],
+      "linkGroupIds": [
+        "8614",
+        "8615",
+        "8186",
+        "8616",
+        "8187"
+      ],
+      "linkGroups": [
+        {
+          "name": "Milk",
+          "description": "Choice of Milk - Medium Hot Drinks",
+          "id": "8614",
+          "linkGroupCode": "19998",
+          "folder": false,
+          "restriction": {
+            "maxQuantity": 1,
+            "minQuantity": 1,
+            "freeQuantity": 0,
+            "defaultQuantity": 0,
+            "perOptionMaximum": 0,
+            "perOptionMinimum": 0,
+            "maxDistinctOptions": 0,
+            "visibilityScope": "EXTERNAL"
+          },
+          "linkedItems": [
+            {
+              "name": "2%",
+              "id": "mod:4703",
+              "productId": "502170",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "price": 0,
+              "basePrice": false
+            },
+            {
+              "name": "Skim",
+              "id": "mod:4717",
+              "productId": "502190",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "price": 0,
+              "basePrice": false
+            },
+            {
+              "name": "Almond",
+              "id": "mod:4326",
+              "productId": "512570",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "price": 0.8,
+              "basePrice": false
+            },
+            {
+              "name": "Soy",
+              "id": "mod:4718",
+              "productId": "502200",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "price": 0.5,
+              "basePrice": false
+            }
+          ]
+        },
+        {
+          "name": "Whip",
+          "id": "8615",
+          "linkGroupCode": "19998",
+          "folder": false,
+          "restriction": {
+            "maxQuantity": 1,
+            "minQuantity": 0,
+            "freeQuantity": 0,
+            "defaultQuantity": 0,
+            "perOptionMaximum": 0,
+            "perOptionMinimum": 0,
+            "maxDistinctOptions": 0,
+            "visibilityScope": "EXTERNAL"
+          },
+          "linkedItems": [
+            {
+              "name": "Yes",
+              "id": "mod:4671",
+              "productId": "502310",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "price": 0,
+              "basePrice": false
+            }
+          ]
+        },
+        {
+          "name": "Coffee Syrups",
+          "id": "8186",
+          "linkGroupCode": "19995",
+          "folder": false,
+          "restriction": {
+            "maxQuantity": 0,
+            "minQuantity": 0,
+            "freeQuantity": 0,
+            "defaultQuantity": 0,
+            "perOptionMaximum": 0,
+            "perOptionMinimum": 0,
+            "maxDistinctOptions": 0,
+            "visibilityScope": "EXTERNAL"
+          },
+          "linkedItems": [
+            {
+              "name": "Almond",
+              "id": "mod:4674",
+              "productId": "502410",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.35,
+              "basePrice": false
+            },
+            {
+              "name": "Caramel",
+              "id": "mod:4675",
+              "productId": "502420",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Caramel Sauce",
+              "id": "mod:4691",
+              "productId": "502421",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Caramel - Sugar Free",
+              "id": "mod:4676",
+              "productId": "502430",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Chocolate",
+              "id": "mod:4677",
+              "productId": "502440",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Coconut Syrup",
+              "id": "mod:4679",
+              "productId": "502495",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Dutch Cocoa Sauce",
+              "id": "mod:4692",
+              "productId": "502445",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Hazelnut",
+              "id": "mod:4680",
+              "productId": "502450",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Hazelnut, Peets",
+              "id": "mod:4693",
+              "productId": "502451",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Honey Simple Syrup",
+              "id": "mod:4694",
+              "productId": "502492",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Mango Syrup",
+              "id": "mod:4681",
+              "productId": "502493",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Mojito Syrup",
+              "id": "mod:4682",
+              "productId": "502494",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Pumpkin",
+              "id": "mod:4683",
+              "productId": "502465",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Raspberry",
+              "id": "mod:4684",
+              "productId": "502460",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Strawberry",
+              "id": "mod:4685",
+              "productId": "502467",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Vanilla",
+              "id": "mod:4686",
+              "productId": "502470",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Vanilla, Peets",
+              "id": "mod:4695",
+              "productId": "502471",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Vanilla, Sugar Free",
+              "id": "mod:4687",
+              "productId": "502480",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.35,
+              "basePrice": false
+            },
+            {
+              "name": "Vanilla, Sugar Free Peets",
+              "id": "mod:4696",
+              "productId": "502481",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Vanilla Hazelnut",
+              "id": "mod:4688",
+              "productId": "502484",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.35,
+              "basePrice": false
+            },
+            {
+              "name": "Vanilla Hazel, Sugar Free",
+              "id": "mod:4689",
+              "productId": "502485",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.35,
+              "basePrice": false
+            },
+            {
+              "name": "White Chocolate",
+              "id": "mod:4690",
+              "productId": "502490",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "White Chocolate Sauce",
+              "id": "mod:4697",
+              "productId": "502491",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            }
+          ]
+        },
+        {
+          "name": "Flavor Shot",
+          "id": "8616",
+          "linkGroupCode": "19995",
+          "folder": false,
+          "restriction": {
+            "maxQuantity": 4,
+            "minQuantity": 0,
+            "freeQuantity": 0,
+            "defaultQuantity": 0,
+            "perOptionMaximum": 0,
+            "perOptionMinimum": 0,
+            "maxDistinctOptions": 0,
+            "visibilityScope": "EXTERNAL"
+          },
+          "linkedItems": [
+            {
+              "name": "Caramel",
+              "id": "mod:4675",
+              "productId": "502420",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Caramel - Sugar Free",
+              "id": "mod:4676",
+              "productId": "502430",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Hazelnut",
+              "id": "mod:4680",
+              "productId": "502450",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            },
+            {
+              "name": "Vanilla",
+              "id": "mod:4686",
+              "productId": "502470",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "linkGroupIds": [
+                "8187"
+              ],
+              "price": 0.5,
+              "basePrice": false
+            }
+          ]
+        },
+        {
+          "name": "Pumps",
+          "id": "8187",
+          "linkGroupCode": "19996",
+          "folder": false,
+          "restriction": {
+            "maxQuantity": 1,
+            "minQuantity": 0,
+            "freeQuantity": 0,
+            "defaultQuantity": 0,
+            "perOptionMaximum": 0,
+            "perOptionMinimum": 0,
+            "maxDistinctOptions": 0,
+            "visibilityScope": "EXTERNAL"
+          },
+          "linkedItems": [
+            {
+              "name": "1",
+              "id": "mod:4698",
+              "productId": "502225",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "price": 0,
+              "basePrice": false
+            },
+            {
+              "name": "2",
+              "id": "mod:4699",
+              "productId": "502226",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "price": 0,
+              "basePrice": false
+            },
+            {
+              "name": "3",
+              "id": "mod:4701",
+              "productId": "502227",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "price": 0,
+              "basePrice": false
+            },
+            {
+              "name": "4",
+              "id": "mod:4700",
+              "productId": "502229",
+              "calories": 0,
+              "available": true,
+              "defaultOptions": [],
+              "price": 0,
+              "basePrice": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

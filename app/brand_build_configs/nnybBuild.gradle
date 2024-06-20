@@ -1,0 +1,144 @@
+apply plugin: 'com.android.application'
+
+android {
+    productFlavors {
+        nnyb_brand {
+            dimension "brand"
+            applicationIdSuffix ".nnyb"
+            ext {
+                brand_app_name = "Noah's New York Bagels"
+            }
+
+            buildConfigField "String", "SECOND_MENU_COLUMN_KEY", "\"Beverages\""
+            buildConfigField "String", "THIRD_MENU_COLUMN_KEY", "\"Food\""
+            buildConfigField "String", "SOURCE_APP", "\"NoahsApp\""
+
+            buildConfigField "String", "RESET_PW_BRAND", "\"NNYB\""
+
+            buildConfigField "String", "GOOGLE_PAY_MERCHANT_ID", "\"${System.getProperty('GOOGLE_PAY_MERCHANT_ID')}\""
+            buildConfigField "String", "GOOGLE_PAY_MERCHANT_NAME", "\"${System.getProperty('GOOGLE_PAY_MERCHANT_NAME')}\""
+            buildConfigField "String", "VENMO_PROFILE_ID", "\"${System.getProperty('VENMO_PROFILE_ID_NNYB_SANDBOX')}\""
+        }
+
+
+        nnybDevServer {
+            dimension "server"
+            applicationIdSuffix ".dev"
+
+            buildConfigField "String", "CMS_AUTH_KEY", "\"${System.getProperty('CMS_AUTH_KEY_NNYB_DEV')}\""
+
+            buildConfigField "String", "AZURE_API_PATH", "\"https://api-dev.bagelbrands.com\""
+
+            resValue "string", "universal_link", "installnoahs.page.link"
+            resValue "string", "rewards_host", "rewards-dev.noahs.com"
+            buildConfigField "String", "REWARDS_URL", "\"https://rewards-dev.noahs.com/\""
+
+            buildConfigField "String", "OMS_API_PATH", "\"http://oms-app-server.northcentralus.cloudapp.azure.com:3000/\""
+
+            // Deeplink
+            resValue "string", "applink_scheme", "nnybappdev"
+
+            buildConfigField "String", "NCR_WRAPPER_BASE_URL", "\"https://api-dev.bagelbrands.com/oms/v1/\""
+            buildConfigField "String", "FISERV_PAY_API_PATH", "\"https://int.api.firstdata.com\""
+            buildConfigField "String", "PAY_GATE_API_PATH", "\"https://api-dev.bagelbrands.com\""
+
+            buildConfigField "String", "PAY_GATE_PUBLIC_KEY_NAME", "\"bb-pay-gateway-nonprod.der\""
+
+            buildConfigField "String", "NEW_RELIC_APP_ID", "\"${System.getProperty('NEW_RELIC_APP_ID_NNYB_DEV')}\""
+
+            buildConfigField "String", "GOOGLE_PAY_GATEWAY_MERCHANT_ID", "\"${System.getProperty('GOOGLE_PAY_GATEWAY_MERCHANT_ID_NONPROD')}\""
+            buildConfigField "String", "GOOGLE_PAY_PROCESSOR_NAME", "\"${System.getProperty('GOOGLE_PAY_PROCESSOR_NAME_NONPROD')}\""
+            buildConfigField "String", "PAY_PAL_AUTH_TOKEN", "\"${System.getProperty('PAY_PAL_AUTH_TOKEN_NONPROD')}\""
+
+            ext {
+                app_name_prefix = "[Dev]"
+                newRelicAppKey = 'NEW_RELIC_APP_ID_NNYB_DEV'
+            }
+            resValue "string","brand_app_name","[Dev] Noah\\'s New York Bagels"
+            buildConfigField "String", "PAY_PAL_MERCHANT_ID", "\"noahs\""
+        }
+
+        nnybQaServer {
+            dimension "server"
+            applicationIdSuffix ".qa"
+
+            buildConfigField "String", "CMS_AUTH_KEY", "\"${System.getProperty('CMS_AUTH_KEY_NNYB_QA')}\""
+
+            buildConfigField "String", "AZURE_API_PATH", "\"https://api-qa.bagelbrands.com\""
+
+            resValue "string", "universal_link", "installnoahs.page.link"
+            resValue "string", "rewards_host", "rewards-qa.noahs.com"
+            buildConfigField "String", "REWARDS_URL", "\"https://rewards-qa.noahs.com/\""
+
+            buildConfigField "String", "OMS_API_PATH", "\"https://oms-api-qa.coffeeandbagels.com/\""
+
+            // Deeplink
+            resValue "string", "applink_scheme", "nnybappqa"
+
+            buildConfigField "String", "NCR_WRAPPER_BASE_URL", "\"https://api-qa.bagelbrands.com/oms/v1/\""
+            buildConfigField "String", "FISERV_PAY_API_PATH", "\"https://int.api.firstdata.com\""
+            buildConfigField "String", "PAY_GATE_API_PATH", "\"https://api-qa.bagelbrands.com\""
+
+            buildConfigField "String", "PAY_GATE_PUBLIC_KEY_NAME", "\"bb-pay-gateway-nonprod.der\""
+
+            buildConfigField "String", "NEW_RELIC_APP_ID", "\"${System.getProperty('NEW_RELIC_APP_ID_NNYB_QA')}\""
+
+            buildConfigField "String", "GOOGLE_PAY_GATEWAY_MERCHANT_ID", "\"${System.getProperty('GOOGLE_PAY_GATEWAY_MERCHANT_ID_NONPROD')}\""
+            buildConfigField "String", "GOOGLE_PAY_PROCESSOR_NAME", "\"${System.getProperty('GOOGLE_PAY_PROCESSOR_NAME_NONPROD')}\""
+            buildConfigField "String", "PAY_PAL_AUTH_TOKEN", "\"${System.getProperty('PAY_PAL_AUTH_TOKEN_NONPROD')}\""
+
+            ext {
+                app_name_prefix = "[QA]"
+                newRelicAppKey = 'NEW_RELIC_APP_ID_NNYB_QA'
+            }
+            resValue "string","brand_app_name","[QA] Noah\\'s New York Bagels"
+            buildConfigField "String", "PAY_PAL_MERCHANT_ID", "\"noahs\""
+        }
+
+        nnybProductionServer {
+            dimension "server"
+
+            // Yext config
+            buildConfigField "boolean", "YEXT_PRODUCTION_ENV", "true"
+            buildConfigField "String", "YEXT_DATA_VERSION", "\"20190207\""
+
+            buildConfigField "String", "CMS_AUTH_KEY", "\"${System.getProperty('CMS_AUTH_KEY_NNYB_PROD')}\""
+
+            buildConfigField "String", "AZURE_API_PATH", "\"https://api.bagelbrands.com\""
+
+            resValue "string", "universal_link", "installnoahs.page.link"
+            resValue "string", "rewards_host", "rewards.noahs.com"
+            buildConfigField "String", "REWARDS_URL", "\"https://rewards.noahs.com/\""
+
+            buildConfigField "String", "OMS_API_PATH", "\"https://oms-api.coffeeandbagels.com/\""
+            buildConfigField "String", "FISERV_PAY_API_PATH", "\"https://prod.api.firstdata.com\""
+            buildConfigField "String", "PAY_GATE_API_PATH", "\"https://api.bagelbrands.com\""
+
+            buildConfigField "String", "PAY_GATE_PUBLIC_KEY_NAME", "\"bb-pay-gateway-prod.der\""
+
+            buildConfigField "String", "CYBERSOURCE_URL", "\"https://secureacceptance.cybersource.com/silent/pay\""
+            buildConfigField "String", "CYBERSOURCE_SECRET_KEY", "\"${System.getProperty('CYBERSOURCE_SECRET_KEY_NNYB_PROD')}\""
+            buildConfigField "String", "CYBERSOURCE_ACCESS_KEY", "\"${System.getProperty('CYBERSOURCE_ACCESS_KEY_NNYB_PROD')}\""
+            buildConfigField "String", "CYBERSOURCE_PROFILE_ID", "\"${System.getProperty('CYBERSOURCE_PROFILE_ID_NNYB_PROD')}\""
+
+            buildConfigField "String", "GOOGLE_PAY_GATEWAY_MERCHANT_ID", "\"${System.getProperty('GOOGLE_PAY_GATEWAY_MERCHANT_ID_PROD')}\""
+            buildConfigField "String", "GOOGLE_PAY_PROCESSOR_NAME", "\"${System.getProperty('GOOGLE_PAY_PROCESSOR_NAME_PROD')}\""
+            buildConfigField "String", "PAY_PAL_AUTH_TOKEN", "\"${System.getProperty('PAY_PAL_AUTH_TOKEN_PROD')}\""
+            buildConfigField "String", "VENMO_PROFILE_ID", "\"${System.getProperty('VENMO_PROFILE_ID_NNYB_PROD')}\""
+
+            // Deeplink
+            resValue "string", "applink_scheme", "nnybapp"
+
+            buildConfigField "String", "NCR_WRAPPER_BASE_URL", "\"https://api.bagelbrands.com/oms/v1/\""
+
+            buildConfigField "String", "NEW_RELIC_APP_ID", "\"${System.getProperty('NEW_RELIC_APP_ID_NNYB_PROD')}\""
+
+            ext {
+                app_name_prefix = ""
+                newRelicAppKey = 'NEW_RELIC_APP_ID_NNYB_PROD'
+            }
+            resValue "string","brand_app_name","Noah\\'s New York Bagels"
+            buildConfigField "String", "PAY_PAL_MERCHANT_ID", "\"noahs\""
+        }
+    }
+}

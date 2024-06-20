@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/background">
+        <shape android:shape="oval">
+            <stroke android:color="@color/whiteColor" android:width="0.95dp"/>
+            <solid android:color="@color/transparent"/>
+            <size android:width="48dp" android:height="48dp"/>
+        </shape>
+    </item>
+
+    <item android:id="@+id/pay_icon">
+        <bitmap android:src="@drawable/pay_logo" android:gravity="center" app:tint="@color/whiteColor"/>
+    </item>
+</layer-list>

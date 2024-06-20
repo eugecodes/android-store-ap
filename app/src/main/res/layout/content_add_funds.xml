@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.checkIn.model.AddFundsModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_buttons"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_spacing"
+                    android:layout_marginRight="@dimen/medium_spacing"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/small_spacing"
+                        android:layout_marginTop="@dimen/large_spacing"
+                        android:layout_marginRight="@dimen/small_spacing"
+                        android:layout_marginBottom="@dimen/large_spacing">
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/xxxsmall_size"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/medium_spacing"
+                            android:layout_toStartOf="@id/tv_how_much_add"
+                            android:background="@color/textAccentPrimaryColor" />
+
+                        <TextView
+                            android:id="@+id/tv_how_much_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:contentDescription="@{@string/heading_cd(@string/how_much_add)}"
+                            android:fontFamily="@font/primary_font_family"
+                            android:text="@string/how_much_add"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/textSecondaryColor"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/xxxsmall_size"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/medium_spacing"
+                            android:layout_toEndOf="@id/tv_how_much_add"
+                            android:background="@color/textAccentPrimaryColor" />
+
+                    </RelativeLayout>
+
+                    <caribouapp.caribou.com.cariboucoffee.common.OptionChooserView
+                        android:id="@+id/mc_add_funds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:theme="@style/OptionViewTheme" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/primary_font_family"
+                        android:text="@string/minimum_amount_to_add"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_8"
+                        android:textStyle="bold"
+                        app:bindVisible="@{model.minimumAmountToAddAlert}" />
+
+                    <TextView
+                        android:id="@+id/til_amount_to_add"
+                        style="@style/ErrorText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:importantForAccessibility="yes"
+                        android:accessibilityLiveRegion="2"
+                        android:text="@string/error_no_amount_to_add_selected"
+                        android:contentDescription="@string/error_no_amount_to_add_selected_cd"
+                        android:visibility="gone"
+                        tools:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_balance_n_money_coming_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:bindVisible="@{model.moneyToAdd!=null}"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/rl_new_balance_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/large_spacing"
+                        android:layout_marginBottom="@dimen/large_spacing"
+                        android:orientation="vertical"
+                        app:bindMoneyCD="@{model.newBalance}"
+                        app:bindTemplateCD="@{@string/new_balance_cd}">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/grayBackgroundColor"
+                            android:importantForAccessibility="noHideDescendants">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/xsmall_spacing"
+                                android:layout_marginBottom="@dimen/xsmall_spacing"
+                                android:contentDescription="@{@string/heading_cd(@string/add_funds_your_new_balance)}"
+                                android:drawablePadding="@dimen/small_spacing"
+                                android:fontFamily="@font/tertiary_font"
+                                android:gravity="center"
+                                android:text="@string/add_funds_your_new_balance"
+                                android:textAllCaps="true"
+                                android:textColor="@color/textSecondaryColor"
+                                app:drawableStartCompat="@drawable/add_funds_logo" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/large_spacing"
+                            android:fontFamily="@font/tertiary_light_font"
+                            android:gravity="center_horizontal"
+                            android:importantForAccessibility="no"
+                            android:textAlignment="center"
+                            android:textColor="@color/textSecondaryColor"
+                            android:textSize="@dimen/text_size_4"
+                            app:bindMoney="@{model.newBalance}"
+                            tools:text="$71.23" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/medium_spacing"
+                        android:layout_marginRight="@dimen/medium_spacing"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_money_coming_from"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:bindVisible="@{model.cardNumber!=null}">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/small_spacing"
+                                android:layout_marginRight="@dimen/small_spacing"
+                                android:layout_marginBottom="@dimen/large_spacing">
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/xxxsmall_size"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginEnd="@dimen/medium_spacing"
+                                    android:layout_toStartOf="@id/tv_where_money_coming"
+                                    android:background="@color/textAccentPrimaryColor" />
+
+                                <TextView
+                                    android:id="@+id/tv_where_money_coming"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:contentDescription="@{@string/heading_cd(@string/where_money_coming_from)}"
+                                    android:fontFamily="@font/primary_font_family"
+                                    android:text="@string/where_money_coming_from"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/textSecondaryColor"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/xxxsmall_size"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/medium_spacing"
+                                    android:layout_toEndOf="@id/tv_where_money_coming"
+                                    android:background="@color/textAccentPrimaryColor" />
+
+                            </RelativeLayout>
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RadioButton
+                                    android:id="@+id/rb_existing_card"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/medium_spacing"
+                                    android:background="@drawable/add_funds_check"
+                                    android:checked="true"
+                                    android:contentDescription="@{@string/add_funds_cc_cd(model.cardName, model.cardNumber)}"
+                                    android:fontFamily="@font/tertiary_font"
+                                    android:paddingStart="@dimen/small_spacing"
+                                    android:text="@{@string/add_funds_cc(model.cardName, model.cardNumber)}"
+                                    app:tintColorDrawable="@{@color/accentColor}"
+                                    tools:ignore="RtlSymmetry"
+                                    tools:text="VISA: XXXX XXXXX XXXX 4055" />
+
+                                <RadioButton
+                                    android:id="@+id/rb_new_card"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/add_funds_check"
+                                    android:contentDescription="@string/a_diff_cred_deb_card_cd"
+                                    android:fontFamily="@font/tertiary_font"
+                                    android:paddingStart="@dimen/small_spacing"
+                                    android:text="@string/a_diff_cred_deb_card"
+                                    android:textAllCaps="true"
+                                    app:tintColorDrawable="@{@color/accentColor}"
+                                    tools:ignore="RtlSymmetry" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/rl_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_add_payment"
+                style="@style/BaseButton.SecondaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacing"
+                android:text="@string/add_funds_add_payment"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <Button
+                android:id="@+id/btn_add_funds"
+                style="@style/BaseButton.CommercePrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacing"
+                android:text="@string/add_payment"
+                android:visibility="visible" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</layout>

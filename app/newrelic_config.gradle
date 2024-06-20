@@ -1,0 +1,40 @@
+// This supports multi flavor builds for uploading newrelic proguard mappings
+// https://discuss.newrelic.com/t/multiple-flavors/12374/14
+
+// Create New Relic properties file according to flavor
+File newRelicProperties = new File("${project.projectDir.absolutePath}/newrelic.properties")
+newRelicProperties.createNewFile()
+
+android.applicationVariants.all { variant ->
+    def flavors = variant.productFlavors
+    // flavorDimensions "brand" -> 0, "server" -> 1
+    def brand = flavors[0]
+    def serverFlavor = flavors[1]
+
+    def newRelicAppKey = serverFlavor['newRelicAppKey']
+
+    if (newRelicAppKey == null) {
+        return
+    }
+
+    print "Generating newrelic.properties $serverFlavor.name"
+
+    def variantSuffix = variant.name.capitalize()
+    def generateResourcesTask = project.tasks.getByName("compile${variantSuffix}Sources")
+
+
+    def generateTaskName = "newRelicGenerateProperties${variantSuffix}"
+    try {
+        def generatePropertiesTask = project.tasks.getByName(generateTaskName)
+    } catch (e) {
+        // Task not found so we create it
+        def generatePropertiesTask = task(generateTaskName).doLast {
+            Properties properties = new Properties()
+            properties.load(newRelicProperties.newDataInputStream())
+            properties.setProperty("com.newrelic.application_token", System.getProperty(newRelicAppKey))
+            properties.store(newRelicProperties.newWriter(), null)
+        }
+        generateResourcesTask.dependsOn generatePropertiesTask
+    }
+
+}

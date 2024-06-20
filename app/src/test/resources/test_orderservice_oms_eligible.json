@@ -1,0 +1,147 @@
+[
+  {
+    "wallet_id": "151",
+    "description": "Use your free bagel and shmear perk!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "5",
+    "description": "Use your free bagel and shmear perk!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "190",
+    "description": "Use your free egg sandwich perk!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "94",
+    "description": "Use your free beverage add-on perk!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "9",
+    "description": "Use your $1 off large handcrafted beverage perk!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "191",
+    "description": "Use your free growler perk!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "10",
+    "description": "Free Growler",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "105",
+    "description": "$3.50 Medium Hand Crafted Beverage",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "105",
+    "description": "$3 Medium Hand Crafted Beverage",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "233",
+    "description": "Employee Discount Beverage",
+    "auto_apply": true
+  },
+  {
+    "wallet_id": "246",
+    "description": "Employee Discount Food",
+    "auto_apply": true
+  },
+  {
+    "wallet_id": "124",
+    "description": "Trivia",
+    "auto_apply": true
+  },
+  {
+    "wallet_id": "152",
+    "description": "Use your free coffee of the day reward!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "59",
+    "description": "Use your free coffee of the day reward!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "251",
+    "description": "Use your free coffee of the day reward!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "34",
+    "description": "Use your free bakery reward!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "73",
+    "description": "Use your free bakery reward!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "250",
+    "description": "Use your free bakery reward!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "235",
+    "description": "Partner Food Discount",
+    "auto_apply": true
+  },
+  {
+    "wallet_id": "234",
+    "description": "Partner Beverage Discount",
+    "auto_apply": true
+  },
+  {
+    "wallet_id": "90",
+    "description": "Use your free any beverage reward! ",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "89",
+    "description": "Use your free any beverage reward! ",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "137",
+    "description": "Use your free any beverage reward! ",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "100",
+    "description": "Use your free any beverage reward! ",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "104",
+    "description": "Use your beverage size upgrade perk!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "7",
+    "description": "Use your beverage size upgrade perk!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "51",
+    "description": "Use your beverage size upgrade perk!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "109",
+    "description": "Use your $1 off a $3 order Perk!",
+    "auto_apply": false
+  },
+  {
+    "wallet_id": "107",
+    "description": "Use your $1 off a $3 order Perk!",
+    "auto_apply": false
+  }
+]

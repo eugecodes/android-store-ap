@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="confirmationModel"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.confirmation.model.ConfirmationModel" />
+
+        <variable
+            name="presenter"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.confirmation.OrderConfirmationContract.Presenter" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/im_here_prompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/iAmHereConfirmationBackground"
+        android:contentDescription="@{TextUtils.isEmpty(confirmationModel.curbsideIamHereMessage) ? @string/make_sure_you_let_us_know_when : confirmationModel.curbsideIamHereMessage}"
+        android:gravity="center"
+        android:importantForAccessibility="yes"
+        android:orientation="horizontal"
+        android:padding="@dimen/medium_padding"
+        android:weightSum="10">
+
+        <TextView
+            style="@style/ConfirmationImHereHintTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:importantForAccessibility="no"
+            android:text="@{TextUtils.isEmpty(confirmationModel.curbsideIamHereMessage) ? @string/make_sure_you_let_us_know_when : confirmationModel.curbsideIamHereMessage}"
+            tools:text="@string/make_sure_you_let_us_know_when" />
+
+        <Button
+            android:id="@+id/btn_im_here_signal"
+            style="@style/BaseButton.ImHereButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:contentDescription="@string/im_here"
+            android:importantForAccessibility="yes"
+            android:onClick="@{() -> presenter.imHereSignal()}"
+            android:text="@string/im_here"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</layout>

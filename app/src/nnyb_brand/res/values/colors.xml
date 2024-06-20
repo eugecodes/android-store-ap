@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#1f355e</color>
+    <color name="primaryLightColor">#3bb0c9</color>
+    <color name="primaryDarkColor">#1f355e</color>
+    <color name="primaryMidDarkColor">#1f355e</color>
+    <color name="accentColor">#e27c00</color>
+    <color name="textAccentPrimaryColor">#1f355e</color>
+    <color name="textAccentSecondaryColor">#3bb0c9</color>
+    <color name="buttonPrimaryPressedColor">#1f355e</color>
+    <color name="nybbLightBlue5EADC6">#5EADC6</color>
+    <color name="startColor">#24345B</color>
+    <color name="endColor">#3C6788</color>
+    <color name="guestHintColor">#909191</color>
+    <color name="buttonPrimaryColor">@color/primaryLightColor</color>
+    <color name="progressColor">@color/primaryLightColor</color>
+    <color name="buttonSecondaryPressedColor">@color/primaryDarkColor</color>
+    <color name="buttonSecondaryColor">@color/primaryColor</color>
+    <color name="buttonCommercePressed">@color/primaryColor</color>
+    <color name="buttonCommerceDarkColor">@color/primaryDarkColor</color>
+    <color name="rewardBannerBackground">@color/lightBrownColor</color>
+
+    <color name="gradientBackgroundStartColor">@color/primaryMidDarkColor</color>
+    <color name="gradientBackgroundEndColor">@color/primaryColor</color>
+
+    <color name="menuDawnTextColor">@color/whiteColor</color>
+    <color name="menuDuskTextColor">@color/whiteColor</color>
+    <color name="menuMiddayTextColor">@color/whiteColor</color>
+    <color name="menuNightskyTextColor">@color/whiteColor</color>
+
+    <color name="menuDawnBottomTextColor">@color/whiteColor</color>
+    <color name="menuDuskBottomTextColor">@color/whiteColor</color>
+    <color name="menuMiddayBottomTextColor">@color/whiteColor</color>
+    <color name="menuNightskyBottomTextColor">@color/whiteColor</color>
+
+    <color name="dashboardDawnCheckInBackgroundColor">@color/primaryColor</color>
+    <color name="dashboardDuskCheckInBackgroundColor">@color/primaryColor</color>
+    <color name="dashboardMiddayCheckInBackgroundColor">@color/primaryColor</color>
+    <color name="dashboardNightskyCheckInBackgroundColor">@color/primaryColor</color>
+
+    <color name="dashboardDawnCheckInPayTextColor">@color/whiteColor</color>
+    <color name="dashboardDuskCheckInPayTextColor">@color/whiteColor</color>
+    <color name="dashboardMiddayCheckInPayTextColor">@color/whiteColor</color>
+    <color name="dashboardNightskyCheckInPayTextColor">@color/whiteColor</color>
+
+    <color name="dashboardDawnMenuButtonColor">@color/primaryColor</color>
+    <color name="dashboardDuskMenuButtonColor">@color/primaryColor</color>
+    <color name="dashboardMiddayMenuButtonColor">@color/primaryColor</color>
+    <color name="dashboardNightskyMenuButtonColor">@color/primaryColor</color>
+
+    <color name="dashboardDawnTextColor">@color/primaryColor</color>
+    <color name="dashboardDuskTextColor">@color/primaryColor</color>
+    <color name="dashboardMiddayTextColor">@color/primaryColor</color>
+    <color name="dashboardNightskyTextColor">@color/primaryColor</color>
+
+    <color name="dashboardDawnBannerTextColor">@color/whiteColor</color>
+    <color name="dashboardDuskBannerTextColor">@color/whiteColor</color>
+    <color name="dashboardMiddayBannerTextColor">@color/whiteColor</color>
+    <color name="dashboardNightskyBannerTextColor">@color/whiteColor</color>
+
+    <color name="dashboardDawnBannerSecondaryTextColor">@color/taupeColor</color>
+    <color name="dashboardDuskBannerSecondaryTextColor">@color/taupeColor</color>
+    <color name="dashboardMiddayBannerSecondaryTextColor">@color/taupeColor</color>
+    <color name="dashboardNightskyBannerSecondaryTextColor">@color/taupeColor</color>
+
+    <color name="buttonActionNeededColor">#C66828</color>
+    <color name="buttonActionNeededPressedColor">#843804</color>
+
+    <color name="dashboardTextShadowColor">@color/transparent</color>
+
+    <color name="welcomeBackTextColor">@color/primaryLightColor</color>
+
+    <color name="titleTextColor">@color/primaryDarkColor</color>
+    <color name="sectionTitleTextColor">@color/primaryDarkColor</color>
+    <color name="subtitleTextColor">@color/primaryLightColor</color>
+
+    <color name="toggleBackgroundCheckedMenu">@color/primaryDarkColor</color>
+    <color name="orderConfirmationTitleTextColor">@color/primaryColor</color>
+    <color name="orderConfirmationTextColor">@color/primaryLightColor</color>
+
+    <color name="itemSizeColor">@color/primaryLightColor</color>
+    <color name="inlineModifierSelectedColor">@color/primaryLightColor</color>
+    <color name="quantitySelectorBackgroundColor">@color/primaryColor</color>
+
+    <color name="iAmHereDashboardTitleColor">@color/primaryColor</color>
+    <color name="iAmHereConfirmationTitleColor">@color/whiteColor</color>
+    <color name="iAmHereConfirmationBackground">@color/primaryColor</color>
+
+    <color name="iAmHereDashboardButton">@color/primaryLightColor</color>
+    <color name="iAmHereDashboardButtonPressed">@color/buttonPrimaryPressedColor</color>
+    <color name="iAmHereDashboardBackground">@color/midTransparentWhiteColor</color>
+
+    <color name="tertiaryColor">#1f355e</color>
+    <color name="buttonTertiaryColor">@color/tertiaryColor</color>
+    <color name="buttonTertiaryPressedColor">@color/tertiaryColor</color>
+
+    <color name="customizationTextColor">@color/primaryColor</color>
+    <color name="customizationButtonColor">@color/primaryColor</color>
+    <color name="customizationButtonPressedColor">@color/buttonPrimaryPressedColor</color>
+
+    <color name="expand_collapse_text_button">@color/primaryColor</color>
+    <color name="guest_user_dialog_close">@color/whiteColor</color>
+    <color name="guest_user_dialog_button">@color/nybbLightBlue5EADC6</color>
+    <color name="guestDialogBackgroundStartColor">@color/startColor</color>
+    <color name="guestDialogBackgroundEndColor">@color/endColor</color>
+    <color name="lets_get_started_hint_color">@color/guestHintColor</color>
+    <color name="guestTNCColor">@color/whiteColor</color>
+    <color name="disabled_continue_button">#805EADC6</color>
+    <color name="payment_type_screen">#433726</color>
+    <color name="payment_type_normal_button_color">#24345B</color>
+
+</resources>

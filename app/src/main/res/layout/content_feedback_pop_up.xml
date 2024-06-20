@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_full_screen_background"
+        android:paddingStart="@dimen/small_spacing"
+        android:paddingTop="@dimen/small_spacing"
+        android:paddingEnd="@dimen/small_spacing">
+
+        <LinearLayout
+            android:id="@+id/ll_title_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@{@string/concat_cd(@string/are_you_enjoying,@string/this_app_question_mark)}"
+            android:gravity="center_horizontal"
+            android:importantForAccessibility="yes"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:fontFamily="@font/heading_primary_font_family"
+                android:importantForAccessibility="no"
+                android:text="@string/are_you_enjoying"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/text_size_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heading_secondary_font_family"
+                android:importantForAccessibility="no"
+                android:text="@string/this_app_question_mark"
+                android:textAllCaps="true"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/text_size_3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tx_rate_us"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_title_container"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:fontFamily="@font/primary_font_family"
+            android:gravity="center_horizontal"
+            android:importantForAccessibility="yes"
+            android:text="@string/rate_us_text_feedback"
+            android:textAlignment="center"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_im_your_biggest_fan"
+            android:layout_below="@id/tx_rate_us"
+            android:layout_margin="@dimen/small_spacing"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_feedback" />
+
+        <Button
+            android:id="@+id/btn_im_your_biggest_fan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_ive_got_some_ideas_for_you"
+            android:layout_marginLeft="@dimen/small_spacing"
+            android:layout_marginRight="@dimen/small_spacing"
+            android:layout_marginBottom="@dimen/medium_spacing"
+            android:background="@drawable/background_rounded_white_button"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@string/im_your_biggest_fan"
+            android:textAllCaps="true"
+            android:textColor="@color/primaryLightColor"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_ive_got_some_ideas_for_you"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_im_not_ready"
+            android:layout_marginLeft="@dimen/small_spacing"
+            android:layout_marginRight="@dimen/small_spacing"
+            android:layout_marginBottom="@dimen/medium_spacing"
+            android:background="@drawable/background_rounded_white_button_border_only"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@string/ive_got_some_ideas_for_you"
+            android:textAllCaps="true"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_im_not_ready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:contentDescription="@string/im_not_ready_cd"
+            android:fontFamily="@font/primary_font_family"
+            android:paddingTop="@dimen/medium_spacing"
+            android:paddingEnd="@dimen/medium_spacing"
+            android:paddingBottom="@dimen/medium_spacing"
+            android:text="@string/im_not_ready"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/btn_dont_ask_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:contentDescription="@string/dont_ask_me_again_cd"
+            android:fontFamily="@font/primary_font_family"
+            android:paddingStart="@dimen/medium_spacing"
+            android:paddingTop="@dimen/medium_spacing"
+            android:paddingBottom="@dimen/medium_spacing"
+            android:text="@string/dont_ask_me_again"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap,RtlSymmetry" />
+    </RelativeLayout>
+</layout>

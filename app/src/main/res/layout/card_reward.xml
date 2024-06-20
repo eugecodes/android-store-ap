@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.checkIn.model.RewardItemModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/small_spacing"
+        android:layout_marginTop="@dimen/xsmall_spacing"
+        android:layout_marginRight="@dimen/small_spacing"
+        android:layout_marginBottom="@dimen/xsmall_spacing"
+        android:background="@color/whiteColor"
+        android:importantForAccessibility="yes"
+        android:orientation="horizontal"
+        app:bindEndingDateCD="@{model.endingDate}"
+        app:bindFormatStringCD="@{@string/expires_in_format}"
+        app:bindHoursFormatStringCD="@{@string/expires_in_hours_format}"
+        app:bindLimitedTime="@{model.limitedTimeReward}"
+        app:bindLimitedTimeCD="@{@string/limited_time_cd}"
+        app:bindPointsCD="@{model.points}"
+        app:bindPrefixCD="@{model.redeemed ? @string/ready_to_use_reward_cd : @string/redeem_it_reward_cd}"
+        app:bindRedeemedCD="@{model.redeemed}"
+        app:bindRewardCD="@{model.name}">
+
+        <LinearLayout
+            android:id="@+id/fl_points"
+            android:layout_width="@dimen/xxxlarge_size"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"
+            android:minWidth="@dimen/xxxlarge_size"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/reward_card_points"
+                android:importantForAccessibility="no"
+                android:orientation="vertical"
+                app:bindVisible="@{!model.redeemed}">
+
+                <LinearLayout
+                    android:id="@+id/ll_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:importantForAccessibility="no"
+                    android:minWidth="@dimen/xxxlarge_size"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/reward_card_font"
+                        android:importantForAccessibility="no"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/text_size_4"
+                        app:bindPoints="@{model.points}"
+                        tools:text="120" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/secondary_font_family"
+                        android:importantForAccessibility="no"
+                        android:text="@string/points"
+                        android:textAllCaps="true"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/text_size_9"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_limited_offer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/rewardLimitedBackgroundColor"
+                    android:fontFamily="@font/heading_secondary_font_family"
+                    android:gravity="center"
+                    android:importantForAccessibility="no"
+                    android:maxLines="1"
+                    android:minWidth="@dimen/xxxlarge_size"
+                    android:paddingTop="@dimen/xxsmall_spacing"
+                    android:paddingBottom="@dimen/xxsmall_spacing"
+                    android:text="@string/limited_time"
+                    android:textAllCaps="true"
+                    android:textColor="@color/rewardLimitedTextColor"
+                    android:textSize="@dimen/limited_time_text_size"
+                    app:bindVisible="@{model.limitedTimeReward}" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/reward_card_points"
+                android:fontFamily="@font/heading_secondary_font_family"
+                android:gravity="center"
+                android:importantForAccessibility="no"
+                android:padding="@dimen/xsmall_spacing"
+                android:text="@string/ready_to_use_redeemed"
+                android:textAllCaps="true"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/text_size_7"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:bindEndingDate="@{model.endingDate}"
+                app:bindFormatString="@{@string/expires_in_format}"
+                app:bindHoursFormatString="@{@string/expires_in_hours_format}"
+                app:bindVisible="@{model.redeemed}" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_reward"
+            android:layout_width="@dimen/reward_card_image_width"
+            android:layout_height="@dimen/reward_card_image_height"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/xsmall_spacing"
+            android:importantForAccessibility="no"
+            android:scaleType="center"
+            app:bindImageUrl="@{model.getImageUrl()}"
+            tools:scaleX=".5"
+            tools:scaleY=".5"
+            tools:src="@drawable/logo_with_text" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/medium_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:layout_weight="1"
+            android:importantForAccessibility="yes"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_offer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/reward_card_font"
+                android:gravity="bottom"
+                android:importantForAccessibility="no"
+                android:maxLines="2"
+                android:textAllCaps="true"
+                android:textColor="@color/textSecondaryColor"
+                android:textSize="@dimen/text_size_rewards_large"
+                app:bindLargeFontSize="@{@dimen/text_size_rewards_large}"
+                app:bindSmallFontSize="@{@dimen/text_size_rewards_small}"
+                app:bindText="@{model.name}"
+                tools:text="Coffee of the Day" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/xxsmall_spacing"
+                android:focusable="true"
+                android:importantForAccessibility="yes">
+
+                <TextView
+                    android:id="@+id/tv_sorry_not_enough_points"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:fontFamily="@font/primary_font_family"
+                    android:importantForAccessibility="yes"
+                    android:maxLines="1"
+                    android:text="@string/sorry_not_enough_points"
+                    android:textAllCaps="true"
+                    android:textColor="@color/taupeColor"
+                    android:textSize="@dimen/text_size_10"
+                    android:textStyle="bold"
+                    app:bindVisible="@{!model.buyable &amp;&amp; !model.redeemed}" />
+
+                <TextView
+                    android:id="@+id/btn_redeem_now"
+                    style="@style/ShortButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:contentDescription="@string/redeem_now_cd"
+                    android:focusable="true"
+                    android:importantForAccessibility="yes"
+                    android:text="@string/redeem_now"
+                    app:bindVisible="@{model.buyable}"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/btn_add_to_order"
+                    style="@style/ShortButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:contentDescription="@string/add_to_order_cd"
+                    android:focusable="true"
+                    android:importantForAccessibility="yes"
+                    android:text="@string/add_to_order"
+                    app:bindVisible="@{model.redeemed &amp;&amp; model.omsMobileEligible &amp;&amp; model.selectionEnabled}" />
+
+                <TextView
+                    android:id="@+id/btn_remove_from_order"
+                    style="@style/ShortButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:contentDescription="@string/remove_from_order_cd"
+                    android:focusable="true"
+                    android:importantForAccessibility="yes"
+                    android:text="@string/remove_from_order"
+                    app:bindVisible="@{model.selectedReward}" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

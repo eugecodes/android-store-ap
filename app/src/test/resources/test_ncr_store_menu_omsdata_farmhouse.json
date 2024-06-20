@@ -1,0 +1,162 @@
+{
+  "defaultSalesItemId": "3455",
+  "salesItems": [
+    {
+      "name": "Farmhouse",
+      "id": "3455",
+      "productId": "10400",
+      "currentPrice": 5.99,
+      "defaultOptions": [
+        {
+          "linkGroupId": "8549",
+          "salesItemId": "mod:4816",
+          "defaultQuantity": 1
+        },
+        {
+          "linkGroupId": "8363",
+          "salesItemId": "mod:4770",
+          "defaultQuantity": 1
+        }
+      ],
+      "linkGroups": [
+        {
+          "name": "Bagel",
+          "id": "8549",
+          "restriction": {
+            "maxQuantity": 1,
+            "minQuantity": 1,
+            "defaultQuantity": 0
+          },
+          "linkedItems": [
+            {
+              "name": "Ancient Grain",
+              "id": "mod:4814",
+              "productId": "5455",
+              "price": 0
+            },
+            {
+              "name": "Asiago",
+              "id": "mod:4818",
+              "productId": "5020",
+              "price": 0
+            },
+            {
+              "name": "Challah",
+              "id": "mod:4819",
+              "productId": "7120",
+              "price": 0
+            },
+            {
+              "name": "Cheddar Jalapeno",
+              "id": "mod:4822",
+              "productId": "5110",
+              "price": 0
+            },
+            {
+              "name": "Everything Bagel",
+              "id": "mod:4811",
+              "productId": "5220",
+              "price": 0
+            },
+            {
+              "name": "Plain",
+              "id": "mod:4821",
+              "productId": "5470",
+              "price": 0
+            },
+            {
+              "name": "Sesame Seed",
+              "id": "mod:4815",
+              "productId": "5610",
+              "price": 0
+            },
+            {
+              "name": "Six Cheese",
+              "id": "mod:4816",
+              "productId": "5620",
+              "price": 0
+            },
+            {
+              "name": "Whole Wheat",
+              "id": "mod:4812",
+              "productId": "5815",
+              "price": 0
+            }
+          ]
+        },
+        {
+          "name": "Make it Thintastic!",
+          "id": "8561",
+          "restriction": {
+            "maxQuantity": 1,
+            "minQuantity": 0
+          },
+          "linkedItems": [
+            {
+              "name": "Yes",
+              "id": "mod:4744",
+              "productId": "900330",
+              "price": 0
+            }
+          ]
+        },
+        {
+          "name": "Fresh Cracked Eggs",
+          "id": "8363",
+          "restriction": {
+            "maxQuantity": 1,
+            "minQuantity": 1
+          },
+          "linkedItems": [
+            {
+              "name": "Two Eggs",
+              "id": "mod:4770",
+              "productId": "57325",
+              "price": 0.7
+            },
+            {
+              "name": "One Egg",
+              "id": "mod:4771",
+              "productId": "57275",
+              "price": 0
+            },
+            {
+              "name": "Two Egg Whites",
+              "id": "mod:4778",
+              "productId": "57326",
+              "price": 0.7
+            },
+            {
+              "name": "One Egg White",
+              "id": "mod:4777",
+              "productId": "57276",
+              "price": 0
+            }
+          ]
+        },
+        {
+          "name": "Sides",
+          "id": "8560",
+          "restriction": {
+            "maxQuantity": 1,
+            "minQuantity": 1
+          },
+          "linkedItems": [
+            {
+              "name": "None",
+              "id": "mod:4772",
+              "productId": "900245",
+              "price": 0
+            },
+            {
+              "name": "Chips",
+              "id": "mod:4779",
+              "productId": "18010",
+              "price": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

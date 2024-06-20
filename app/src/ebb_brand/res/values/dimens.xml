@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="limited_time_text_size">8sp</dimen>
+    <dimen name="location_list_name_text_size">@dimen/text_size_5</dimen>
+    <dimen name="link_text_size">@dimen/text_size_9</dimen>
+    <dimen name="text_size_toggle_menu">13sp</dimen>
+    <dimen name="section_header_menu_item_text_size">20sp</dimen>
+    <dimen name="xxxlarge_padding">18dp</dimen>
+    <dimen name="large_padding">15dp</dimen>
+    <dimen name="small_padding">4dp</dimen>
+    <dimen name="text_add_funds_wallet">15sp</dimen>
+    <dimen name="payment_screen_title">32sp</dimen>
+    <dimen name="payment_screen_title_line_height">38sp</dimen>
+</resources>

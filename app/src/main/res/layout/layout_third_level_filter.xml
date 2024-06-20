@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryColor"
+        android:gravity="center"
+        android:padding="@dimen/small_spacing">
+
+        <ImageView
+            android:id="@+id/iv_remove_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter_delete" />
+
+        <TextView
+            android:id="@+id/tv_filter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:fontFamily="@font/primary_font_family"
+            android:textColor="@color/whiteColor"
+            android:textStyle="bold"
+            tools:text="Latte" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_small_size"
+            style="@style/SizeSelector"
+            android:layout_width="@dimen/radio_button_size"
+            android:layout_height="@dimen/radio_button_size"
+            android:contentDescription="@string/size_small_content_description"
+            android:text="@string/size_small" />
+
+        <RadioButton
+            android:id="@+id/rb_medium_size"
+            style="@style/SizeSelector"
+            android:layout_width="@dimen/radio_button_size"
+            android:layout_height="@dimen/radio_button_size"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:contentDescription="@string/size_medium_content_description"
+            android:text="@string/size_medium" />
+
+        <RadioButton
+            android:id="@+id/rb_large_size"
+            style="@style/SizeSelector"
+            android:layout_width="@dimen/radio_button_size"
+            android:layout_height="@dimen/radio_button_size"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:contentDescription="@string/size_large_content_description"
+            android:text="@string/size_large" />
+
+        <RadioButton
+            android:id="@+id/rb_extra_large_size"
+            style="@style/SizeSelector"
+            android:layout_width="@dimen/radio_button_size"
+            android:layout_height="@dimen/radio_button_size"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:contentDescription="@string/size_large_content_description"
+            android:text="@string/size_extra_large" />
+
+    </RadioGroup>
+
+</layout>

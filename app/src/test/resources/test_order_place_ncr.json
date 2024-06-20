@@ -1,0 +1,22 @@
+{
+  "location": {
+    "name": "Colfax & Indiana",
+    "number": "3099"
+  },
+  "data": {
+    "OrderLines": [
+      {
+        "Description": "Hash Brown Side",
+        "LineId": "82eaa581-b292-47b6-9cef-85ceead0cbfd",
+        "ProductId": {
+          "Value": "10078"
+        },
+        "Quantity": {
+          "Value": 1
+        }
+      }
+    ],
+    "Status": "OrderPlaced",
+    "TaxExempt": false
+  }
+}

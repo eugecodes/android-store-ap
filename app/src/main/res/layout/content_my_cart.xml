@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.order.Order" />
+
+        <import type="caribouapp.caribou.com.cariboucoffee.util.StringUtils" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="@color/grayBackgroundColor"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/cart_store_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/whiteColor"
+            android:contentDescription="@{@string/item_cd(model.storeLocation.name,model.storeLocation.addressShort)}"
+            android:elevation="@dimen/small_spacing"
+            android:gravity="center_horizontal"
+            android:importantForAccessibility="yes"
+            android:orientation="horizontal"
+            android:padding="@dimen/small_spacing">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/small_spacing"
+                android:ellipsize="end"
+                android:fontFamily="@font/primary_font_family"
+                android:gravity="center_horizontal"
+                android:importantForAccessibility="no"
+                android:padding="@dimen/small_spacing"
+                android:singleLine="true"
+                android:text="@{model.storeLocation.name}"
+                android:textSize="@dimen/text_size_7"
+                app:drawableStartCompat="@drawable/location_tinted"
+                tools:text="Brooklyn Park HQ" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="none"
+                android:fontFamily="@font/description_font_family"
+                android:importantForAccessibility="no"
+                android:singleLine="true"
+                android:text="@{model.storeLocation.addressShort}"
+                android:textSize="@dimen/text_size_7"
+                tools:text="(3900 Lakebreeze Ave N)" />
+        </LinearLayout>
+
+        <caribouapp.caribou.com.cariboucoffee.mvp.oos.RewardAddedBanner
+            android:id="@+id/reward_added_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cart_store_address"
+            app:bindPreSelectedReward="@{model.preSelectedReward}" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cart_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cart_grand_total_container"
+            android:layout_below="@+id/reward_added_banner"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/large_spacing"
+            app:bindVisible="@{!model.items.empty}" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reward_added_banner"
+            android:orientation="vertical"
+            app:bindVisible="@{model.items.empty}"
+            tools:visibility="visible">
+
+            <FrameLayout
+                style="@style/MessageContainer"
+                android:layout_marginTop="@dimen/medium_spacing">
+
+                <TextView
+                    style="@style/MessageStyle"
+                    android:text="@string/empty_cart"
+                    android:textSize="@dimen/text_size_6" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/cart_grand_total_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/whiteColor"
+            android:elevation="@dimen/small_spacing"
+            android:paddingBottom="@dimen/small_spacing">
+
+            <FrameLayout
+                android:id="@+id/tv_sub_total_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                app:bindMoneyCD="@{model.subtotal}"
+                app:bindTemplateCD="@{@string/subtotal_cd}">
+
+                <TextView
+                    android:id="@+id/tv_sub_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/primary_font_family"
+                    android:importantForAccessibility="no"
+                    android:padding="@dimen/small_spacing"
+                    android:text="@string/subtotal"
+                    android:textColor="@color/textSecondaryColor"
+                    android:textSize="@dimen/text_size_6_5" />
+
+                <TextView
+                    android:id="@+id/tv_sub_total_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="1dp"
+                    android:fontFamily="@font/primary_font_family"
+                    android:importantForAccessibility="no"
+                    android:padding="@dimen/small_spacing"
+                    android:textColor="@color/textSecondaryColor"
+                    android:textSize="@dimen/text_size_6_3"
+                    app:bindMoney="@{model.subtotal}"
+                    tools:ignore="RelativeOverlap"
+                    tools:text="$6.70" />
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/btn_add_more_items"
+                style="@style/BaseButton.SecondaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sub_total_container"
+                android:contentDescription="@string/add_more_items_button_content_description"
+                android:text="@string/add_more_items" />
+
+            <Button
+                android:id="@+id/btn_continue_to_checkout"
+                style="@style/BaseButton.PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_add_more_items"
+                android:contentDescription="@string/go_to_checkout"
+                android:text="@string/go_to_checkout" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

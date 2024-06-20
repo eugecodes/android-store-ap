@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_curbside_data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primaryDarkColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/medium_spacing">
+
+            <TextView
+                android:id="@+id/tv_car_make_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_spacing"
+                android:layout_marginLeft="@dimen/medium_spacing"
+                android:layout_marginTop="@dimen/small_spacing"
+                android:layout_marginEnd="@dimen/medium_spacing"
+                android:layout_marginRight="@dimen/medium_spacing"
+                android:fontFamily="@font/primary_font_family"
+                android:textColor="@color/whiteColor"
+                android:text="@string/curbside_car_maker_selection_tittle"
+                android:textSize="@dimen/text_size_6_5"
+                android:textStyle="bold"
+                tools:text="Vehicle Maker" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_rectangle_spinner_selection"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_marginStart="@dimen/xxlarge_size"
+                android:layout_marginEnd="@dimen/xxlarge_size"
+                android:padding="@dimen/small_spacing"
+                android:layout_gravity="center">
+
+                <tech.hibk.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/spn_car_make"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Dialog.Alert"
+                    app:theme="@style/ThemeOverlay.AppCompat.Dark"
+                    app:cancelButtontext="@string/dialog_close"
+                    app:dialogTitle="@string/select_car_make_title"
+                    android:prompt="@string/curbside_car_maker_selection_tittle" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_select_car_make_error"
+                style="@style/ErrorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/error_no_car_maker_selected"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+
+        <caribouapp.caribou.com.cariboucoffee.mvp.oos.pickup.view.HorizontalPicker
+            android:id="@+id/carTypePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_select_car_type_error"
+            style="@style/ErrorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/error_no_car_type_selected"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <caribouapp.caribou.com.cariboucoffee.mvp.oos.pickup.view.HorizontalPicker
+            android:id="@+id/carColorPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_select_car_color_error"
+            style="@style/ErrorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/error_no_car_color_selected"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</layout>

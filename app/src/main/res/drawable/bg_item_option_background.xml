@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape>
+            <solid android:color="@color/primaryColor" />
+            <corners android:radius="@dimen/button_radius" />
+            <padding android:bottom="@dimen/small_spacing" android:left="@dimen/medium_spacing" android:right="@dimen/medium_spacing" android:top="@dimen/small_spacing" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <stroke android:width="@dimen/radio_button_stroke_size" android:color="@color/primaryColor" />
+            <padding android:bottom="@dimen/small_spacing" android:left="@dimen/medium_spacing" android:right="@dimen/medium_spacing" android:top="@dimen/small_spacing" />
+            <corners android:radius="@dimen/button_radius" />
+        </shape>
+    </item>
+</selector>

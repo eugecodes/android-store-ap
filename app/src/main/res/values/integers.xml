@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_badge_count">99</integer>
+    <integer name="cc_length">20</integer>
+    <integer name="month_year_cc_length">2</integer>
+    <integer name="ccv_cc_length">4</integer>
+    <integer name="zip_length">5</integer>
+    <integer name="bounce_animation_time">900</integer>
+    <integer name="bounce_animation_delay_time">1000</integer>
+    <integer name="bounce_animation_translation">-40</integer>
+    <fraction name="alpha_for_white_text_colors">0.7</fraction>
+    <fraction name="alpha_for_enable">100%</fraction>
+    <fraction name="alpha_for_disable">38%</fraction>
+</resources>

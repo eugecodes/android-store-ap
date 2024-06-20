@@ -1,0 +1,86 @@
+# Android
+# Build your Android project with Gradle.
+# Add steps that test, sign, and distribute the APK, save build artifacts, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/android
+parameters:
+- name: clean
+  displayName: Checkout clean
+  type: boolean
+  default: false
+  values:
+  - false
+  - true
+
+trigger:
+  branches:
+    include:
+      - qa
+      - feature-qa/*
+
+pool:
+  vmImage: 'macOS-latest'
+
+variables:
+  - group: 'Android Pipelines Variable Group' # variable group
+  - name: SourceCompleteBranchName
+    value: $[replace(variables['Build.SourceBranch'], 'refs/heads/', '')]
+    
+steps:
+  - checkout: self
+    clean: ${{ parameters.clean }}
+    
+  - task: CmdLine@2
+    displayName: Checkout $(SourceCompleteBranchName) branch
+    inputs:
+      script: |
+        git checkout $(SourceCompleteBranchName)
+      failOnStderr: false
+      workingDirectory: ''
+
+  - task: Cache@2
+    displayName: Cache Homebrew packages
+    inputs:
+      key: '"Homebrew" | "$(Agent.OS)" | "v1"'
+      restoreKeys: |
+         Homebrew | "$(Agent.OS)"
+      path: $(HOMEBREW_CACHE_FOLDER)
+
+  - task: Cache@2
+    displayName: Cache Gems
+    inputs:
+      key: 'gems | "$(Agent.OS)" | Gemfile.lock | "v1"'
+      restoreKeys: | 
+        gems | "$(Agent.OS)"
+        gems
+      path: $(BUNDLE_PATH)
+
+  - task: CmdLine@2
+    displayName: Bundle install
+    inputs:
+      script: |
+        bundle update --bundler
+        bundle check || bundle install
+      failOnStderr: false
+      workingDirectory: ''
+
+  - task: CmdLine@2
+    displayName: Reveal secrets.
+    inputs:
+      script: |
+        brew update
+        brew install git-secret || true
+        echo "$(GIT_SECRET_GPG_KEY)" | base64 --decode > ~/circleci_pkey_gpg_secret.asc
+        gpg --import ~/circleci_pkey_gpg_secret.asc
+        git-secret reveal || true
+      failOnStderr: false
+      workingDirectory: ''
+
+  - task: CmdLine@2
+    displayName: qaBuilds
+    env:
+      AZURE_BUILD_NUM: $(Build.BuildId)
+    inputs:
+      script: |
+        bundle exec fastlane allQaBuild
+      failOnStderr: false
+      workingDirectory: ''

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="menu"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.menu.model.MenuCardItemModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_card_menu"
+        android:layout_marginRight="@dimen/margin_card_menu"
+        android:layout_marginBottom="@dimen/margin_bottom_card_menu"
+        android:background="@color/whiteColor"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardElevation="0dp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/item_lower_margin_card"
+            android:background="@color/midTransparentWhiteColor"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/include_menu_image"
+                layout="@layout/layout_menu_product_image"
+                app:menu="@{menu}" />
+
+            <LinearLayout
+                android:id="@+id/ll_menu_item_description_container"
+                style="@style/MenuItemDescriptionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/small_spacing"
+                android:layout_marginRight="@dimen/small_spacing"
+                android:minHeight="@dimen/menu_item_min_name_height"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_product"
+                    style="@style/MenuItemName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:text="@{menu.name}"
+                    tools:text="Americano Iced" />
+
+                <TextView
+                    android:id="@+id/tv_calories"
+                    style="@style/MenuItemCalories"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="no"
+                    android:text="@{@string/cal(menu.getDefaultNutritionalItemModel().calories)}"
+                    app:bindInvisible="@{menu.getDefaultNutritionalItemModel() == null || menu.getDefaultNutritionalItemModel().calories == null}"
+                    tools:text="320cal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_item_not_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+            android:fontFamily="@font/menu_item_name_font"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:textColor="@color/menuItemTextColor"
+            android:textSize="@dimen/text_size_5" />
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

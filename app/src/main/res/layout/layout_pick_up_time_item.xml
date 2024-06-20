@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="listener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center"
+        android:minHeight="@dimen/xxlarge_size"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_pick_up_time"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/xsmall_spacing"
+            android:layout_marginBottom="@dimen/xsmall_spacing"
+            android:layout_weight="1"
+            android:fontFamily="@font/primary_font_family"
+            android:gravity="center_vertical"
+            android:onClick="@{listener}"
+            android:textColor="@color/store_feature_color"
+            android:textSize="@dimen/text_size_9"
+            tools:text="12:50 AM" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_separator_height"
+            android:layout_gravity="bottom"
+            android:background="@color/rowSeparator" />
+    </LinearLayout>
+</layout>

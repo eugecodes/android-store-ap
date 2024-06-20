@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.picklocation.model.PickLocationModel" />
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayBackgroundMenu"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="caribouapp.caribou.com.cariboucoffee.mvp.oos.picklocation.view.PickLocationActivity"
+        tools:showIn="@layout/activity_pick_location">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:importantForAccessibility="no"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf" />
+
+            <TextView
+                android:id="@+id/tv_pick_location_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacing"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:text="@string/choose_location_header_text"
+                tools:visibility="visible" />
+
+            <caribouapp.caribou.com.cariboucoffee.mvp.menu.view.BasicSearchView
+                android:id="@+id/sv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacing" />
+
+            <LinearLayout
+                android:id="@+id/ll_locations_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:bindVisible="@{model.finishedLoading}">
+
+                <include
+                    android:id="@+id/ll_header_recent_locations"
+                    layout="@layout/layout_section_header"
+                    app:sectionTitle="@{@string/recent_locations_header}"
+                    app:sectionTitleTextSize="@{@dimen/text_size_7}"
+                    app:visible="@{!model.recentStores.isEmpty()}" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_recent_locations_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grayBackgroundMenu"
+                    app:bindVisible="@{!model.recentStores.isEmpty()}" />
+
+                <include
+                    layout="@layout/layout_section_header"
+                    app:sectionTitle="@{@string/nearby_locations_header}"
+                    app:sectionTitleTextSize="@{@dimen/text_size_7}" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_nearby_locations_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grayBackgroundMenu"
+                    android:clipToPadding="false"
+                    android:paddingBottom="@dimen/list_bottom_padding"
+                    app:bindVisible="@{model.LocationServicesAvailable &amp;&amp; !model.nearbyStores.isEmpty()}"
+                    tools:visibility="gone" />
+
+                <FrameLayout
+                    android:id="@+id/rl_location_services_disabled"
+                    style="@style/MessageContainer"
+                    android:visibility="gone"
+                    app:bindVisible="@{!model.LocationServicesAvailable}"
+                    tools:visibility="visible">
+
+                    <TextView
+                        style="@style/MessageStyle"
+                        android:text="@string/see_locations_location_services_enabled" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/rl_no_stores_nearby"
+                    style="@style/MessageContainer"
+                    android:visibility="gone"
+                    app:bindVisible="@{model.LocationServicesAvailable &amp;&amp; model.nearbyStores.isEmpty()}"
+                    tools:visibility="visible">
+
+                    <TextView
+                        style="@style/MessageStyle"
+                        android:text="@string/no_stores_on_location_pick_location" />
+                </FrameLayout>
+
+                <Button
+                    android:id="@+id/btn_enable_location_services"
+                    style="@style/BaseButton.SecondaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/enable_location_services_button_content_description"
+                    android:text="@string/enable_location_services"
+                    app:bindVisible="@{!model.LocationServicesAvailable}" />
+
+                <Button
+                    android:id="@+id/btn_search_walk_locations"
+                    style="@style/BaseButton.SecondaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/search_for_locations"
+                    app:bindVisible="@{model.nearbyStores.empty  &amp;&amp; model.LocationServicesAvailable}" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>

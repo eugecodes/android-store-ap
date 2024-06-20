@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.menu.model.MenuCardItemModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/v_centered_ref_view"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@{model.name}"
+            android:scaleType="center"
+            app:bindImageAltUrl="@{model.getAltImage()}"
+            app:bindImageUrl="@{model.getImage()}"
+            tools:src="@drawable/logo_with_text" />
+
+        <View
+            android:id="@+id/v_centered_ref_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tv_product_description"
+            style="@style/ProductDescriptionMenuDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v_centered_ref_view"
+            android:layout_marginStart="@dimen/large_spacing"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginEnd="@dimen/large_spacing"
+            android:gravity="center"
+            android:text="@{model.description}"
+            tools:text="40% fewer calories than the original classic Latte, and available in 4 flavors - caramel, vanilla, hazelnut and raspberry." />
+
+        <TextView
+            android:id="@+id/tv_nutrition_link"
+            style="@style/LinkTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_product_description"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:contentDescription="@string/view_nutrition_n_allergens_cd"
+            android:gravity="center"
+            android:text="@string/view_nutrition_n_allergens"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</layout>

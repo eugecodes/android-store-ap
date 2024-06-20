@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.authentication.CredentialsModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/ll_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/iv_caribou_perks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/perks_logo_margin"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:importantForAccessibility="no"
+            android:src="@drawable/perks_logo_black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_caribou_perks"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_spacing"
+                android:layout_marginEnd="@dimen/small_spacing"
+                android:layout_marginBottom="@dimen/medium_spacing"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/email"
+                android:importantForAccessibility="yes"
+                android:labelFor="@id/et_email">
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="emailAddress"
+                    android:fontFamily="sans-serif"
+                    android:importantForAutofill="yes"
+                    android:inputType="textWebEmailAddress"
+                    android:text="@={model.email}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_spacing"
+                android:layout_marginEnd="@dimen/small_spacing"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="@string/password"
+                android:importantForAccessibility="yes"
+                android:labelFor="@id/et_password"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:imeOptions="actionGo"
+                    android:importantForAutofill="yes"
+                    android:inputType="textPassword"
+                    android:text="@={model.password}" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                style="@style/LinkTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@{@string/button_cd(@string/forgot_password)}"
+                android:gravity="center"
+                android:text="@string/forgot_password"
+                android:textSize="@dimen/text_size_8" />
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                style="@style/BaseButton.PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sign_in_button_margin"
+                android:contentDescription="@string/log_in"
+                android:text="@string/log_in" />
+
+            <TextView
+                android:id="@+id/tv_sign_google"
+                style="@style/GrayMiddleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/primary_font_family"
+                android:gravity="center"
+                android:importantForAccessibility="no"
+                android:text="@string/or_sign_in_with"
+                android:textSize="@dimen/text_size_9" />
+
+            <Button
+                android:id="@+id/btn_sign_in_google"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/sign_in_button_margin"
+                android:background="@drawable/common_google_signin_btn_text_dark"
+                android:minHeight="@dimen/min_google_button_height"
+                android:text="@string/log_in_with_google"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/text_size_6_5" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_go_to_sign_up"
+            style="@style/LinkTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xlarge_size"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grayBackgroundColor"
+            android:contentDescription="@{@string/button_cd(@string/im_not_a_member_sign_up)}"
+            android:gravity="center"
+            android:text="@string/im_not_a_member_sign_up"
+            android:textSize="@dimen/text_size_8" />
+
+    </RelativeLayout>
+</layout>

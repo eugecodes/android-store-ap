@@ -1,0 +1,10 @@
+ID,Size,Serving Size (g),Calories,Fat Calories,Total Fat (g),Saturated Fat (g),Trans Fat (g),Cholesterol (mg),Protein (g),Total Carbohydrates (g),Sodium (mg),Sugars (g),Fiber (g),Caffeine (mg)
+C1,small-12 fl oz,340,5,0,0,0,0,0,0,0,5,0,0,230
+C1,medium-16 fl oz,454,5,0,0,0,0,0,1,0,10,0,0,305
+c1,large-20 fl oz,567,5,0,0,0,0,0,1,0,10,0,0,385
+C2,small-12 fl oz,337,5,0,0,0,0,0,1,0,10,0,0,290
+C2,medium-16 fl oz,450,5,0,0,0,0,0,1,0,15,0,0,370
+C2,large-20 fl oz,563,5,0,0,0,0,0,1,0,15,0,0,445
+c3 ,small-16 fl oz,402,5,0,0,0,0,0,0,0,5,0,0,190
+C3,medium-20 fl oz,488,5,0,0,0,0,0,0,0,5,0,0,230
+C3,large- 24 oz,575,5,0,0,0,0,0,0,0,10,0,0,270

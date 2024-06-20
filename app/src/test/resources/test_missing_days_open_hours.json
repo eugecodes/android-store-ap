@@ -1,0 +1,34 @@
+{
+  "tuesday": {
+    "openIntervals": [
+      {
+        "start": "04:00",
+        "end": "23:00"
+      }
+    ]
+  },
+  "thursday": {
+    "openIntervals": [
+      {
+        "start": "04:00",
+        "end": "23:00"
+      }
+    ]
+  },
+  "saturday": {
+    "openIntervals": [
+      {
+        "start": "04:00",
+        "end": "23:00"
+      }
+    ]
+  },
+  "sunday": {
+    "openIntervals": [
+      {
+        "start": "04:00",
+        "end": "23:00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+def readVersionProps() {
+    def versionFile = new File(project.rootDir, 'version.properties')
+    def version = new Properties()
+
+    def stream
+    try {
+        stream = new FileInputStream(versionFile)
+        version.load(stream)
+    } catch (FileNotFoundException ignore) {
+    } finally {
+        if (stream != null) stream.close()
+    }
+
+    // safety defaults in case file is missing
+    if (!version['build']) version['build'] = "1"
+
+    return version
+}
+
+ext.readBuildCode = {
+    def version = readVersionProps()
+    def build = version['build'] as int
+    return build
+}

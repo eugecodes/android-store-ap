@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/large_spacing"
+        android:layout_marginTop="@dimen/large_spacing"
+        android:layout_marginRight="@dimen/large_spacing"
+        android:layout_marginBottom="@dimen/small_spacing"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/tv_allergens"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@string/allergens"
+            android:textColor="@color/menuDetailsItemDescription" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xxxsmall_size"
+            android:background="@color/warmGrayColor" />
+
+        <LinearLayout
+            android:id="@+id/group_nutrition_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_spacing"
+                android:layout_marginBottom="@dimen/small_spacing"
+                android:fontFamily="@font/description_font_family"
+                android:text="@string/nutrition_text"
+                android:textColor="@color/menuDetailsItemDescription" />
+
+            <TextView
+                android:id="@+id/tv_one_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_spacing"
+                android:layout_marginBottom="@dimen/small_spacing"
+                android:fontFamily="@font/content_font_family"
+                android:text="@string/one_size"
+                android:textColor="@color/menuDetailsItemDescription"
+                android:visibility="gone" />
+
+            <caribouapp.caribou.com.cariboucoffee.mvp.menu.view.SizeSelectorView
+                android:id="@+id/ss_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_nutrition_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

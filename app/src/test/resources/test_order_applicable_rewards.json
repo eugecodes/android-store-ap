@@ -1,0 +1,14 @@
+{
+  "status": "success",
+  "message": null,
+  "data": [
+    {
+      "identifier": "free_size_upgrade",
+      "wallet_id": 1,
+      "applicable": true,
+      "discount_line": "Free size upgrade",
+      "description": "Get yourself a FREE size upgrade!",
+      "ranking": 1
+    }
+  ]
+}

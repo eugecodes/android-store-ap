@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.model.OptionAndQuantityModel" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/layout_section_header"
+                app:sectionTitle="@{@string/choose_option}"
+                app:sectionTitleTextSize="@{@dimen/text_size_7}"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_modifiers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <include
+                layout="@layout/layout_section_header"
+                app:sectionTitle="@{@string/how_much_of_that}"
+                app:sectionTitleTextSize="@{@dimen/text_size_7}"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_quantity_options"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/tv_additional_charges"
+                style="@style/ChargesMayApply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/xsmall_spacing"
+                android:layout_marginBottom="@dimen/medium_spacing"
+                android:text="@string/additional_charges_apply"
+                app:bindAdditionalCharges="@{model.modifierGroup}" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <Button
+                android:id="@+id/btn_save_modifier"
+                style="@style/BaseButton.SecondaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/item_modifier_save" />
+
+            <TextView
+                android:id="@+id/tv_reset_modifier"
+                style="@style/LinkTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/medium_spacing"
+                android:text="@{@string/reset +' '+ model.modifierGroup.name}"
+                android:textStyle="bold"
+                tools:text="Reset Chocolate" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

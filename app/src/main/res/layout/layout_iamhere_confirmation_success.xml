@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="confirmationModel"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.confirmation.model.ConfirmationModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/iAmHereConfirmationBackground"
+        android:contentDescription="@{@string/concat_cd(@string/you_are_checked_in,@string/a_crew_member_is_on_the_way)}"
+        android:importantForAccessibility="yes"
+        android:padding="@dimen/xxxlarge_padding">
+
+        <ImageView
+            android:id="@+id/iam_here_success_img"
+            style="@style/DashboardImHereImage"
+            android:layout_margin="0dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/trivia_correct"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/iAmHereConfirmationTitleColor" />
+
+        <TextView
+            android:id="@+id/iam_here_success_subtitle"
+            style="@style/ConfirmationImHereTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/large_padding"
+            android:gravity="center_vertical|start"
+            android:importantForAccessibility="no"
+            android:text="@string/you_are_checked_in"
+            app:layout_constraintBottom_toBottomOf="@id/iam_here_success_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/iam_here_success_img"
+            app:layout_constraintTop_toTopOf="@id/iam_here_success_img" />
+
+        <TextView
+            android:id="@+id/iam_here_success_error_description"
+            style="@style/ConfirmationImHereResultDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:importantForAccessibility="no"
+            android:text="@string/a_crew_member_is_on_the_way"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iam_here_success_img" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

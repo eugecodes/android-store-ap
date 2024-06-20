@@ -1,0 +1,175 @@
+{
+    "result": {
+        "items": [
+                  {
+                  "Fields": {
+                  "LateNightMessages": [
+                                        {
+                                        "Title": "Do you know what time it is",
+                                        "DaysAvailable": [
+                                                          {
+                                                          "ItemName": "Friday"
+                                                          },
+                                                          {
+                                                          "ItemName": "Monday"
+                                                          },
+                                                          {
+                                                          "ItemName": "Saturday"
+                                                          },
+                                                          {
+                                                          "ItemName": "Sunday"
+                                                          },
+                                                          {
+                                                          "ItemName": "Thursday"
+                                                          },
+                                                          {
+                                                          "ItemName": "Tuesday"
+                                                          },
+                                                          {
+                                                          "ItemName": "Wednesday"
+                                                          }
+                                                          ]
+                                        }
+                                        ],
+                  "LateNightTime": "0000-0359",
+                  "NightMessages": [
+                                    {
+                                    "Title": "Howl",
+                                    "DaysAvailable": [
+                                                      {
+                                                      "ItemName": "Friday"
+                                                      },
+                                                      {
+                                                      "ItemName": "Monday"
+                                                      },
+                                                      {
+                                                      "ItemName": "Saturday"
+                                                      },
+                                                      {
+                                                      "ItemName": "Sunday"
+                                                      },
+                                                      {
+                                                      "ItemName": "Thursday"
+                                                      },
+                                                      {
+                                                      "ItemName": "Tuesday"
+                                                      },
+                                                      {
+                                                      "ItemName": "Wednesday"
+                                                      }
+                                                      ]
+                                    }
+                                    ],
+                  "NightTime": "1930-2359",
+                  "EveningMessages": [
+                                      {
+                                      "Title": "Bring on the night",
+                                      "DaysAvailable": [
+                                                        {
+                                                        "ItemName": "Friday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Saturday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Sunday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Monday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Tuesday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Wednesday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Thursday"
+                                                        }
+                                                        ]
+                                      }
+                                      ],
+                  "EveningTime": "1630-1929",
+                  "DayMessages": [
+                                  {
+                                  "Title": "Afternoon pick-me-up",
+                                  "DaysAvailable": [
+                                                    {
+                                                    "ItemName": "Monday"
+                                                    },
+                                                    {
+                                                    "ItemName": "Tuesday"
+                                                    },
+                                                    {
+                                                    "ItemName": "Wednesday"
+                                                    },
+                                                    {
+                                                    "ItemName": "Friday"
+                                                    },
+                                                    {
+                                                    "ItemName": "Thursday"
+                                                    }
+                                                    ]
+                                  }
+                                  ],
+                  "DayTime": "1100-1629",
+                  "MorningMessages": [
+                                      {
+                                      "Title": "Get up and get crackin",
+                                      "DaysAvailable": [
+                                                        {
+                                                        "ItemName": "Monday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Tuesday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Wednesday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Thursday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Friday"
+                                                        }
+                                                        ]
+                                      },
+                                      {
+                                      "Title": "Bring it on Monday",
+                                      "DaysAvailable": [{
+                                                        "ItemName": "Monday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Wednesday"
+                                                        }
+                                                        ]
+                                      },
+                                      {
+                                      "Title": "Good morning sunshine",
+                                      "DaysAvailable": [{
+                                                        "ItemName": "Friday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Saturday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Thursday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Tuesday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Wednesday"
+                                                        },
+                                                        {
+                                                        "ItemName": "Monday"
+                                                        }
+                                                        ]
+                                      }
+                                      ],
+                  "MorningTime": "0400-1059"
+                  }
+                  }
+                  ]
+    }
+}

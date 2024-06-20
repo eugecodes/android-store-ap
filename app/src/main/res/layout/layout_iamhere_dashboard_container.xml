@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <import type="caribouapp.caribou.com.cariboucoffee.common.CurbsideStatusEnum" />
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.dashboard.DashboardModel" />
+
+        <variable
+            name="presenter"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.dashboard.DashboardContract.Presenter" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/curbside_im_here_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:focusable="true"
+        app:bindVisible="@{model.curbsideIamHereState != CurbsideStatusEnum.NONE}">
+
+        <include
+            android:id="@+id/curbside_iam_here"
+            layout="@layout/layout_iamhere_dashboard_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xlarge_size"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginRight="@dimen/xlarge_size"
+            app:bindVisible="@{model.curbsideIamHereState == CurbsideStatusEnum.IM_HERE}"
+            app:model="@{model}"
+            app:presenter="@{presenter}"
+            tools:visibility="visible" />
+
+        <include
+            android:id="@+id/curbside_iam_here_success"
+            layout="@layout/layout_iamhere_dashboard_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xlarge_size"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginRight="@dimen/xlarge_size"
+            app:bindVisible="@{model.curbsideIamHereState == CurbsideStatusEnum.SUCCESS}"
+            app:model="@{model}"
+            app:presenter="@{presenter}"
+            tools:visibility="visible" />
+
+        <include
+            android:id="@+id/curbside_iam_here_error"
+            layout="@layout/layout_iamhere_dashboard_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xlarge_size"
+            android:layout_marginTop="@dimen/small_size"
+            android:layout_marginRight="@dimen/xlarge_size"
+            app:bindVisible="@{model.curbsideIamHereState == CurbsideStatusEnum.ERROR}"
+            app:model="@{model}"
+            app:presenter="@{presenter}"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</layout>

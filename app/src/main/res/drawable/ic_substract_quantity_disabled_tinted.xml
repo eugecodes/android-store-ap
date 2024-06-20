@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <stroke
+                android:width="@dimen/subtract_disable_stroke_size"
+                android:color="@color/quantitySelectorBackgroundColor" />
+            <solid android:color="@android:color/transparent" />
+            <size
+                android:width="@dimen/circular_button_size"
+                android:height="@dimen/circular_button_size" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="@dimen/small_spacing"
+        android:left="@dimen/small_spacing"
+        android:right="@dimen/small_spacing"
+        android:top="@dimen/small_spacing">
+        <bitmap
+            android:src="@drawable/ic_substract"
+            android:tint="@color/quantitySelectorBackgroundColor" />
+    </item>
+</layer-list>

@@ -1,0 +1,10 @@
+{
+  "sunday": {
+    "openIntervals": [
+      {
+        "start": "04:00",
+        "end": "23:00"
+      }
+    ]
+  }
+}

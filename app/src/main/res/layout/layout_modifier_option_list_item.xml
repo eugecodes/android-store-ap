@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.model.ItemModifier" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/medium_spacing"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@{model.name}"
+            android:textColor="@color/modifierFontColor"
+            android:textSize="@dimen/text_size_6_5"
+            android:textStyle="bold"
+            tools:text="Dark" />
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_margin="@dimen/medium_spacing"
+            android:src="@drawable/fg_selectable" />
+
+        <View
+            android:id="@+id/row_separator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_separator_height"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:background="@color/rowSeparator" />
+    </FrameLayout>
+</layout>

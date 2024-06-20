@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.dashboard.DashboardModel" />
+
+        <variable
+            name="presenter"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.dashboard.DashboardContract.Presenter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/DashboardImHereResult"
+        android:importantForAccessibility="yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iam_here_success_img"
+            style="@style/DashboardImHereImage"
+            android:src="@drawable/trivia_correct"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iam_here_success_close"
+            style="@style/DashboardImHereClose"
+            android:onClick="@{() -> presenter.curbsideSuccessOrErrorClose()}"
+            android:src="@drawable/close_menu"
+            android:contentDescription="@string/dialog_close"
+            android:importantForAccessibility="yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/iam_here_success_subtitle"
+            style="@style/DashboardImHereResultSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_are_checked_in"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iam_here_success_img" />
+
+        <TextView
+            android:id="@+id/iam_here_success_error_description"
+            style="@style/DashboardImHereResultDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/a_crew_member_is_on_the_way"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iam_here_success_subtitle" />
+
+        <Button
+            android:id="@+id/btn_im_here_success"
+            style="@style/ImHereConfirmationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/got_it_cd"
+            android:onClick="@{() -> presenter.curbsideSuccessGotIt()}"
+            android:text="@string/got_it"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iam_here_success_error_description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

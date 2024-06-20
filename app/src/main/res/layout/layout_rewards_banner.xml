@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.order.PreSelectedReward" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBrownColor"
+        android:elevation="@dimen/medium_elevation"
+        android:importantForAccessibility="no"
+        android:orientation="vertical"
+        android:padding="@dimen/medium_spacing"
+        app:bindVisible="@{model!=null}">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/tv_banner_title"
+                style="@style/Display2TextStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|start"
+                android:layout_weight="1"
+                android:fontFamily="@font/heading_secondary_font_family"
+                android:text="@{@string/pre_selected_reward_banner_title(model.rewardName)}"
+                android:textSize="@dimen/text_size_6_3"
+                tools:text="Free backery Item" />
+
+            <ImageView
+                android:id="@+id/iv_remove_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:contentDescription="@string/remove_reward_cd"
+                android:src="@drawable/grey_oval_cross" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_choose_one_to_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="@fraction/alpha_for_white_text_colors"
+            android:fontFamily="@font/heading_secondary_font_family"
+            android:gravity="start"
+            android:text="@string/choose_one_to_add"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/text_size_6_3" />
+
+    </LinearLayout>
+
+</layout>

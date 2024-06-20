@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="xxxlarge_padding">18dp</dimen>
+    <dimen name="large_padding">15dp</dimen>
+    <dimen name="text_add_funds_wallet">16sp</dimen>
+    <dimen name="payment_screen_title">32sp</dimen>
+    <dimen name="payment_screen_title_line_height">36sp</dimen>
+</resources>

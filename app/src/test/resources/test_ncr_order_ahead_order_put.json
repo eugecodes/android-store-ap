@@ -1,0 +1,156 @@
+{
+  "id": 171,
+  "user_id": 1,
+  "location": {
+    "id": 2,
+    "name": "Solano",
+    "number": "2101",
+    "enterprise_unit": "e7279f27926845c9ab456a323766981b"
+  },
+  "data": {
+    "dateCreated": "2019-09-27T13:22:40.825Z",
+    "dateUpdated": "2019-09-27T14:21:38.699Z",
+    "id": "12343569984522997237",
+    "sourceOrganization": "einstein-noah",
+    "enterpriseUnitId": "e7279f27926845c9ab456a323766981b",
+    "channel": "Web",
+    "customer": {
+      "id": "cb94d6bf-a61d-e911-a979-000d3a363879",
+      "externalIds": [],
+      "name": "Andrés S",
+      "firstName": "Andrés",
+      "lastName": "S",
+      "phone": "2563295326",
+      "email": "andres+test2019@tarmac.io"
+    },
+    "groupMembers": [],
+    "status": "ReadyForValidation",
+    "totals": [
+      {
+        "type": "Net",
+        "value": 12.48,
+        "lineId": "e09d9972b28048da85490351fc96f528"
+      }
+    ],
+    "fulfillment": {
+      "address": {
+        "type": "Residential",
+        "line1": "",
+        "line2": "",
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "businessInfo": {}
+      },
+      "leadTimes": [
+        {
+          "type": "Preparation",
+          "interval": 10,
+          "intervalUnits": "Minutes",
+          "lineId": "b7c5605536e549a3adca5618f5c6c37e"
+        },
+        {
+          "type": "Transit",
+          "interval": 0,
+          "intervalUnits": "Minutes",
+          "lineId": "f2ec83fd420a49da922e2fbb2cd60fbe"
+        }
+      ],
+      "pickupDate": "2019-09-27T13:22:41.529Z",
+      "type": "Pickup",
+      "autoRelease": false
+    },
+    "expireAt": "2019-12-26T13:58:34.065Z",
+    "fees": [
+      {
+        "type": "Web",
+        "amount": 0.0,
+        "lineId": "363ba592121f47f6a55a0213fdb80028"
+      }
+    ],
+    "orderLines": [
+      {
+        "description": "Latte",
+        "productId": {
+          "value": "103620"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false,
+        "lineId": "fc6b0394-566d-4f74-b3d3-98cd78bfab1f"
+      },
+      {
+        "description": "Farmhouse Egg Sandwich",
+        "productId": {
+          "value": "10400"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false,
+        "lineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe"
+      },
+      {
+        "description": "Spinach Florentine Bagel",
+        "parentLineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe",
+        "productId": {
+          "value": "60660"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false,
+        "lineId": "46af0cea-6540-4edd-ad90-c0c52dcb169f"
+      },
+      {
+        "description": "One Egg",
+        "parentLineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe",
+        "productId": {
+          "value": "57275"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false,
+        "lineId": "0b54155f-1bb3-4f76-be5e-997ca9b2c07c"
+      },
+      {
+        "description": "Chips",
+        "parentLineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe",
+        "productId": {
+          "value": "18010"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false,
+        "lineId": "84838c29-fbd6-42b6-90fb-fdf7b54eb785"
+      }
+    ],
+    "payments": [],
+    "taxes": [
+      {
+        "amount": 1.09,
+        "description": "Store Calculated Tax",
+        "isIncluded": false,
+        "lineId": "a98627239e3348818ed30e8d4cde2913"
+      }
+    ],
+    "promotions": [],
+    "additionalReferenceIds": {
+      "AtoOrderId": "0",
+      "AlohaCheckId": "11534368",
+      "AtoReferenceId": "0"
+    },
+    "taxExempt": false,
+    "totalModifiers": [],
+    "partySize": 0,
+    "etag": "2019-09-27T14:21:38.699Z"
+  },
+  "status": "ReadyForValidation",
+  "total": 12.48,
+  "tax": 1.09,
+  "check_number": "12343569984522997237",
+  "subtotal": 11.39
+}

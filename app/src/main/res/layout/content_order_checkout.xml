@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="caribouapp.caribou.com.cariboucoffee.api.model.yext.YextPickupType" />
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.checkout.model.CheckoutModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/rl_perks_balance_container"
+            android:layout_alignParentTop="true"
+            android:background="@color/grayBackgroundMenu">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_reward_error_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:background="@color/whiteColor"
+                    android:elevation="@dimen/medium_elevation"
+                    android:orientation="vertical"
+                    android:padding="@dimen/medium_spacing"
+                    app:bindVisible="@{model.order.rewardErrorMessage != null}">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/primary_font_family"
+                        android:gravity="center"
+                        android:text="@{model.order.rewardErrorMessage}"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_7"
+                        tools:text="We removed the reward you added to this order since there are not items that apply" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_reward_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:animateLayoutChanges="true"
+                    android:background="@color/rewardBannerBackground"
+                    android:contentDescription="@{@string/reward_cd(model.rewardBannerModel.description)}"
+                    android:elevation="@dimen/medium_elevation"
+                    android:importantForAccessibility="yes"
+                    android:minHeight="@dimen/checkout_reward_banner_min_height"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/medium_spacing"
+                    android:paddingTop="@dimen/large_spacing"
+                    android:paddingRight="@dimen/medium_spacing"
+                    android:paddingBottom="@dimen/large_spacing"
+                    android:visibility="gone"
+                    app:bindVisible="@{model.shouldShowBanner}"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/heading_secondary_font_family"
+                        android:gravity="center_vertical"
+                        android:importantForAccessibility="no"
+                        android:text="@{model.rewardBannerModel.description}"
+                        android:textAllCaps="true"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="@dimen/text_size_6_4"
+                        tools:fontFamily="@font/heading_secondary_font_family"
+                        tools:text="Get a free beverage, any size!" />
+
+                    <Button
+                        android:id="@+id/btn_add_reward"
+                        style="@style/CheckoutActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:contentDescription="@string/add_reward_to_order_cd"
+                        android:importantForAccessibility="yes"
+                        android:text="@string/add_reward_to_order" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/cart_store_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_spacing"
+                    android:background="@color/whiteColor"
+                    android:contentDescription="@{model.order.storeLocation.name+','+model.order.storeLocation.address}"
+                    android:elevation="@dimen/small_spacing"
+                    android:padding="@dimen/small_spacing">
+
+                    <ImageView
+                        android:id="@+id/iv_location_pin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_store_name"
+                        android:layout_alignBottom="@id/tv_store_name"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/xsmall_spacing"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/location_tinted" />
+
+                    <TextView
+                        android:id="@+id/tv_store_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="@dimen/xxsmall_spacing"
+                        android:layout_toStartOf="@+id/tv_view_on_map"
+                        android:layout_toEndOf="@id/iv_location_pin"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/primary_font_family"
+                        android:importantForAccessibility="no"
+                        android:maxLines="2"
+                        android:paddingLeft="@dimen/small_spacing"
+                        android:paddingRight="@dimen/small_spacing"
+                        android:paddingBottom="@dimen/xsmall_spacing"
+                        android:text="@{model.order.storeLocation.name}"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_6_3"
+                        android:textStyle="bold"
+                        tools:text="Brooklyn Park HQ" />
+
+                    <TextView
+                        android:id="@+id/tv_store_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_store_name"
+                        android:layout_alignStart="@id/tv_store_name"
+                        android:fontFamily="@font/description_font_family"
+                        android:importantForAccessibility="no"
+                        android:paddingStart="@dimen/small_spacing"
+                        android:text="@{model.order.storeLocation.address}"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_9"
+                        tools:ignore="RtlSymmetry"
+                        tools:text="Brooklyn Center, MN 55429" />
+
+                    <TextView
+                        android:id="@+id/tv_view_on_map"
+                        style="@style/CheckoutViewOnMap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/tv_store_name"
+                        android:layout_alignBottom="@id/tv_store_name"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/small_spacing"
+                        android:contentDescription="@string/view_on_map_cd"
+                        android:fontFamily="@font/primary_font_family"
+                        android:gravity="center"
+                        android:text="@string/view_on_map"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_pickup_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_spacing"
+                    android:layout_marginRight="@dimen/medium_spacing"
+                    android:layout_marginBottom="@dimen/medium_spacing"
+                    android:background="@color/whiteColor"
+                    android:contentDescription="@{model.order.chosenPickUpTime.asap ? @string/pick_up_time_cd(@string/asap) : @string/pick_up_time_cd(model.order.chosenPickUpTime.toString())}"
+                    android:elevation="@dimen/small_spacing"
+                    android:focusable="true"
+                    android:padding="@dimen/small_spacing">
+
+                    <TextView
+                        android:id="@+id/tv_delivery_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/small_spacing"
+                        android:fontFamily="@font/primary_font_family"
+                        android:gravity="center_horizontal"
+                        android:importantForAccessibility="yes"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textStyle="bold"
+                        app:bindVisible="@{model.order.pickupData.yextPickupType == YextPickupType.Delivery}"
+                        tools:text="Your order will be sent out for delivery in approximately 30 minutes"
+                        tools:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_selected_pick_up_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/xsmall_spacing"
+                        android:layout_marginTop="@dimen/xsmall_spacing"
+                        android:layout_marginEnd="@dimen/medium_spacing"
+                        android:layout_marginBottom="@dimen/small_spacing"
+                        android:layout_toStartOf="@+id/btn_update_pick_up_time"
+                        android:fontFamily="@font/primary_font_family"
+                        android:importantForAccessibility="no"
+                        android:text="@{model.order.chosenPickUpTime.asap ? @string/pick_up_time(@string/asap) : @string/pick_up_time(model.order.chosenPickUpTime.toString())}"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_8"
+                        android:textStyle="bold"
+                        app:bindVisible="@{model.order.pickupData.yextPickupType != YextPickupType.Delivery}"
+                        app:drawablePadding="@{@dimen/small_spacing}"
+                        app:drawableStart="@{@drawable/ic_pick_up_time}"
+                        app:drawableTint="@{@color/primaryLightColor}"
+                        tools:text="Pick-up time: ASAP" />
+
+                    <TextView
+                        android:id="@+id/tv_asap_not_available"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_selected_pick_up_time"
+                        android:layout_marginStart="@dimen/xsmall_spacing"
+                        android:fontFamily="@font/description_font_family"
+                        android:importantForAccessibility="yes"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_9"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:bindVisible="@{model.order.pickupData.yextPickupType != YextPickupType.Delivery}"
+                        tools:text="ASAP not available due to selected items"
+                        tools:visibility="visible" />
+
+                    <Button
+                        android:id="@+id/btn_update_pick_up_time"
+                        style="@style/CheckoutActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/xsmall_spacing"
+                        android:layout_marginEnd="@dimen/xsmall_spacing"
+                        android:layout_marginBottom="@dimen/xsmall_spacing"
+                        android:contentDescription="@string/update_pickup_time_cd"
+                        android:importantForAccessibility="yes"
+                        android:text="@string/update_pickup"
+                        app:bindVisible="@{model.order.pickupData.yextPickupType != YextPickupType.Delivery}" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_pickup_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_spacing"
+                    android:layout_marginRight="@dimen/medium_spacing"
+                    android:layout_marginBottom="@dimen/medium_spacing"
+                    android:background="@color/whiteColor"
+                    android:elevation="@dimen/small_spacing"
+                    android:padding="@dimen/small_spacing"
+                    app:bindPickupTypeDescription="@{model.order.pickupData.yextPickupType}"
+                    tools:ignore="UnusedAttribute">
+
+                    <TextView
+                        android:id="@+id/tv_selected_pickup_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="@dimen/xsmall_spacing"
+                        android:layout_marginTop="@dimen/xsmall_spacing"
+                        android:layout_marginEnd="@dimen/medium_spacing"
+                        android:layout_marginBottom="@dimen/small_spacing"
+                        android:layout_toStartOf="@+id/btn_update_pickup_type"
+                        android:drawablePadding="@dimen/small_spacing"
+                        android:fontFamily="@font/primary_font_family"
+                        android:importantForAccessibility="no"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_8"
+                        android:textStyle="bold"
+                        app:bindPickupType="@{model.order.pickupData.yextPickupType}"
+                        app:drawableStartCompat="@drawable/location_tinted"
+                        tools:text="Pick-up Location: Walk-In" />
+
+                    <Button
+                        android:id="@+id/btn_update_pickup_type"
+                        style="@style/CheckoutActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/xsmall_spacing"
+                        android:layout_marginEnd="@dimen/xsmall_spacing"
+                        android:layout_marginBottom="@dimen/xsmall_spacing"
+                        android:contentDescription="@string/update_pickup_type_cd"
+                        android:importantForAccessibility="yes"
+                        android:text="@string/update_pickup" />
+
+                    <TextView
+                        android:id="@+id/tv_curbside_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_update_pickup_type"
+                        android:layout_marginStart="@dimen/xsmall_spacing"
+                        android:layout_marginTop="@dimen/small_spacing"
+                        android:fontFamily="@font/description_font_family"
+                        android:importantForAccessibility="yes"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_7"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        app:bindVisible="@{model.order.pickupData.yextPickupType == YextPickupType.Curbside}"
+                        tools:text="Please park near the store entrance and turn your hazard lights on"
+                        tools:visibility="visible" />
+
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/layout_section_header"
+                    app:sectionTitle="@{@string/your_order}" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_checkout_order_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:paddingBottom="@dimen/medium_spacing"
+                    android:scrollbars="vertical"
+                    android:visibility="gone"
+                    tools:listitem="@layout/layout_order_checkout_item"
+                    tools:visibility="visible" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_perks_balance_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/whiteColor"
+            android:elevation="@dimen/small_spacing"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/add_tip_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xxlarge_size"
+                android:background="@color/tipsBackgroundColor"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_tip_text"
+                    style="@style/OptionButton"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/xxlarge_size"
+                    android:layout_marginLeft="@dimen/xsmall_spacing"
+                    android:layout_marginRight="@dimen/xsmall_spacing"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/tertiary_light_font"
+                    android:gravity="center_vertical|start"
+                    android:importantForAccessibility="no"
+                    android:minWidth="@dimen/xxlarge_size"
+                    android:paddingStart="@dimen/small_spacing"
+                    android:paddingLeft="@dimen/small_spacing"
+                    android:paddingEnd="@dimen/small_spacing"
+                    android:paddingRight="@dimen/small_spacing"
+                    android:text="@string/tip"
+                    android:textAlignment="gravity"
+                    android:textSize="@dimen/text_size_6_5" />
+
+                <caribouapp.caribou.com.cariboucoffee.common.OptionChooserView
+                    android:id="@+id/mc_add_tip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="4"
+                    android:theme="@style/TipOptionViewTheme" />
+
+                <TextView
+                    android:id="@+id/tv_custom_tip"
+                    style="@style/TipOptionButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/xsmall_spacing"
+                    android:layout_marginTop="@dimen/xsmall_spacing"
+                    android:layout_marginRight="@dimen/xsmall_spacing"
+                    android:layout_marginBottom="@dimen/xsmall_spacing"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/tertiary_font"
+                    android:importantForAccessibility="no"
+                    android:minWidth="@dimen/xxlarge_size"
+                    android:padding="0dp"
+                    android:text="@string/custom"
+                    android:textColor="@color/tip_option_text_color" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_total_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_tip_container"
+                android:focusable="true"
+                android:importantForAccessibility="yes"
+                android:weightSum="2"
+                app:bindMoneyCD="@{model.order.totalWithTip}"
+                app:bindTemplateCD="@{@string/total_cd}">
+
+                <TextView
+                    android:id="@+id/tv_total_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_spacing"
+                    android:layout_marginTop="@dimen/small_spacing"
+                    android:layout_marginBottom="@dimen/small_spacing"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/primary_font_family"
+                    android:importantForAccessibility="no"
+                    android:text="@string/total"
+                    android:textColor="@color/textSecondaryColor"
+                    android:textSize="@dimen/text_size_6_3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_total_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_spacing"
+                    android:layout_marginEnd="@dimen/medium_spacing"
+                    android:layout_marginBottom="@dimen/small_spacing"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/primary_font_family"
+                    android:gravity="end"
+                    android:importantForAccessibility="no"
+                    android:textColor="@color/textSecondaryColor"
+                    android:textSize="@dimen/text_size_6_3"
+                    android:textStyle="bold"
+                    app:bindMoney="@{model.order.totalWithTip}"
+                    tools:text="$ 10.0" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_separator"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/xxxsmall_size"
+                android:layout_below="@+id/ll_total_container"
+                android:layout_marginLeft="@dimen/small_spacing"
+                android:layout_marginRight="@dimen/small_spacing"
+                android:background="@color/warmGrayColor" />
+
+            <LinearLayout
+                android:id="@+id/ll_reward_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view_separator"
+                android:focusable="true"
+                android:importantForAccessibility="yes"
+                android:weightSum="2"
+                app:bindMoneyCD="@{model.rewardsCardBalance}"
+                app:bindTemplateCD="@{@string/rewards_cd}">
+
+                <TextView
+                    android:id="@+id/tv_reward_card_balance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_spacing"
+                    android:layout_marginTop="@dimen/small_spacing"
+                    android:layout_marginBottom="@dimen/small_spacing"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/primary_font_family"
+                    android:importantForAccessibility="no"
+                    android:text="@string/reward_card_balance_checkout"
+                    android:textColor="@color/darkGray"
+                    android:textSize="@dimen/text_size_9"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_reward_card_balance_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_spacing"
+                    android:layout_marginEnd="@dimen/medium_spacing"
+                    android:layout_marginBottom="@dimen/small_spacing"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/primary_font_family"
+                    android:gravity="end"
+                    android:importantForAccessibility="no"
+                    android:textColor="@color/darkGray"
+                    android:textSize="@dimen/text_size_9"
+                    android:textStyle="bold"
+                    app:bindMoney="@{model.rewardsCardBalance}"
+                    tools:text="$ 10.0" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_add_funds_and_place"
+                style="@style/BaseButton.ActionNeededButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_reward_container"
+                android:importantForAccessibility="yes"
+                android:text="@string/continue_to_payment"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_place_order"
+                style="@style/BaseButton.CommercePrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_reward_container"
+                android:importantForAccessibility="yes"
+                android:text="@string/place_order"
+                android:visibility="visible" />
+            <include
+                android:id="@+id/ll_guest_checkout_option"
+                layout="@layout/layout_guest_checkout_confirm_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view_separator"
+                android:layout_marginLeft="@dimen/small_size"
+                android:layout_marginTop="@dimen/small_size"
+                android:layout_marginRight="@dimen/small_size"  />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

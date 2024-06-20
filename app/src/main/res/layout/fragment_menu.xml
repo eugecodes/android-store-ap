@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="filterButtonListener"
+            type="android.view.View.OnClickListener" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/margin_bottom_card_menu"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_filters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:id="@+id/ll_toggle_button_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size_toggle_button_menu"
+                    android:layout_marginBottom="@dimen/margin_bottom_card_menu"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_lvl3_filters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:gravity="center_horizontal"
+            android:paddingStart="@dimen/medium_spacing"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:ignore="RtlSymmetry">
+
+            <LinearLayout
+                android:id="@+id/ll_iv_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/primaryColor">
+
+                <ImageView
+                    android:id="@+id/iv_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_spacing"
+                    android:layout_marginRight="@dimen/medium_spacing"
+                    android:onClick="@{filterButtonListener}"
+                    android:src="@drawable/filter_menu" />
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/ll_iv_filter"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/ll_lvl3_filters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/showing"
+                        android:textColor="@color/whiteColor"
+                        android:fontFamily="@font/description_font_family" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <caribouapp.caribou.com.cariboucoffee.mvp.menu.view.BasicSearchView
+                android:id="@+id/sv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/small_spacing"
+                android:layout_toStartOf="@id/ll_filter_button" />
+
+            <LinearLayout
+                android:id="@+id/ll_filter_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/sv"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignTop="@id/sv"
+                android:layout_centerVertical="true"
+                android:background="@color/primaryColor"
+                android:gravity="center_vertical"
+                android:onClick="@{filterButtonListener}">
+
+                <ImageView
+                    android:id="@+id/iv_filter_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/medium_spacing"
+                    android:layout_marginRight="@dimen/medium_spacing"
+                    android:src="@drawable/filter_menu" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_menu_cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_card_menu"
+            android:layout_marginLeft="@dimen/margin_card_menu"
+            android:layout_marginRight="@dimen/margin_card_menu"
+            android:clipToPadding="false"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="@dimen/list_bottom_padding"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/tv_empty_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/empty_menu_top_margin"
+            android:gravity="center"
+            android:text="@string/empty_menu" />
+
+    </LinearLayout>
+</layout>

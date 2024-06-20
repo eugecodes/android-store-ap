@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:name=".SourceApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/brand_app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="UnusedAttribute, LockedOrientationActivity"
+        tools:replace="android:allowBackup,android:label">
+
+        <activity
+            android:name=".mvp.dashboard.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="deeplink"
+                    android:scheme="@string/applink_scheme" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="@string/rewards_host"
+                    android:pathPrefix="/claim-reward"
+                    android:scheme="https" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="@string/universal_link"
+                    android:scheme="https" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.authentication.SignInActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.authentication.ResetPasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".mvp.menu.view.MenuActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.locations.LocationsActivity"
+            android:label="@string/title_activity_locations"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.locations.LocationDetailsActivity"
+            android:label="@string/title_activity_locations"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".mvp.menu.view.MenuDetailsActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.checkIn.view.CheckInActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_api_key" />
+
+        <activity
+            android:name=".mvp.locations.LocationsListActivity"
+            android:label="@string/brand_app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".mvp.termsandprivacy.view.TermsAndPrivacyActivity"
+            android:label="@string/title_activity_terms_and_privacy"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mvp.faq.view.FaqActivity"
+            android:label="@string/title_activity_faq_title"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mvp.menu.view.MenuNutritionActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.account.view.AccountActivity"
+            android:label="@string/brand_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.oos.recentOrders.view.RecentOrderActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.webflow.view.CashStarWebView"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".mvp.webflow.view.SourceWebActivity"
+            android:exported="true"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter android:label="@string/brand_app_name">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="activity"
+                    android:pathPrefix="/finish"
+                    android:scheme="@string/applink_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.checkIn.view.AddFundsActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".common.CCInformationActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.checkIn.view.AutoReloadActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.checkIn.view.TermsAndConditionsActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.enrollment.view.SetPasswordActivity"
+            android:exported="true"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="UnusedAttribute, LockedOrientationActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/rewards_host"
+                    android:path="/passwordreset"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.enrollment.view.SignUpPersonalInfoActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.enrollment.view.PersonalInformationActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.enrollment.view.WelcomeBackActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.webflow.view.CaptivePortalWebActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.oos.confirmation.view.OrderConfirmationActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.oos.cart.view.CartActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.oos.checkout.view.OrderCheckoutActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.oos.picklocation.view.PickLocationActivity"
+            android:label="@string/start_new_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.oos.pickup.view.PickupTypeActivity"
+            android:label="@string/brand_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.feedback.view.FeedbackPopupActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.feedback.view.FeedbackActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.trivia.view.TriviaCountdownActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.trivia.view.TriviaQuestionActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.trivia.view.TriviaFinishFailAnswerActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.trivia.view.TriviaAlreadyPlayedActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.trivia.view.TriviaFinishCorrectAnswerActivity"
+            android:label="@string/brand_app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.itemcustomization.view.ItemActivity"
+            android:label="@string/brand_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.itemcustomization.view.OptionAndQuantityActivity"
+            android:label="@string/brand_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.itemcustomization.view.MultipleModifiersAndQuantitiesActivity"
+            android:label="@string/brand_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".mvp.inbox.view.CustomMessageListActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="com.urbanairship.VIEW_RICH_PUSH_INBOX" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.urbanairship.VIEW_RICH_PUSH_MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- <data android:mimeType="text/plain"/> -->
+                <data android:scheme="message" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".mvp.inbox.view.CustomMessageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".mvp.enrollment.view.SignUpActivity"
+            android:label="@string/brand_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.oos.confirmation.view.GuestUserDetailActivityDialog"
+            android:label="@string/brand_app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/GuestDialogTheme"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name=".mvp.oos.confirmation.view.AddNewCardPaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".mvp.oos.confirmation.view.PaymentTypeSelectionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mvp.oos.confirmation.view.PlaceOrderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".push.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_push_notification" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/notification_channel_id" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/cariblueColor" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+    </application>
+
+</manifest>

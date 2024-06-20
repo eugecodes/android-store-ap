@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE suppressions PUBLIC
+    "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+    "http://checkstyle.sourceforge.net/dtds/suppressions_1_1.dtd">
+
+<!--suppress XmlHighlighting -->
+<suppressions>
+    <suppress checks="JavadocMethod" files=".*Test.java" />
+    <suppress checks="MagicNumber" files=".*(Test.java|StoresServiceMock.java|SettingsServicesImpl.java)" />
+    <suppress checks="LineLength" files=".*Test.java" />
+    <suppress checks="OperatorWrap" files=".*Test.java" />
+    <suppress checks="InnerAssignment" files=".*(AutoReloadPresenter.java|SignInActivity.java)" />
+    <suppress checks="AvoidNestedBlocks" files=".*OrderItemUtil.java" />
+    <suppress checks="MagicNumber"
+        files=".*(RestModule.java|BaseActivity.java|LoadingView.java|LocationAwareActivity.java|BindingAdapters.java|CustomGlideModule.java|AutoReloadActivity.java|DashboardActivity.java|StringUtils.java|DateUtil.java|TransactionHistoryAdapter.java|LocationDetailsActivity.java|LocationListAdapter.java|OrderCheckoutPresenter.java|AddFundsActivity.java|StoreHoursCheckUtil.java)" />
+    <suppress checks="LineLength" files=".*StoreFeature.java" />
+    <suppress checks="InterfaceIsType" files=".*MenuContract.java" />
+</suppressions>

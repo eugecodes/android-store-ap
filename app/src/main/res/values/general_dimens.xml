@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_size_plus_margin">88dp</dimen>
+
+    <dimen name="medium_spacing">16dp</dimen>
+    <dimen name="medium_negative_spacing">-16dp</dimen>
+
+    <dimen name="large_spacing">24dp</dimen>
+    <dimen name="large_negative_spacing">-24dp</dimen>
+
+    <dimen name="xlarge_negative_spacing">-36dp</dimen>
+    <dimen name="xlarge_spacing">36dp</dimen>
+
+    <dimen name="small_spacing">8dp</dimen>
+    <dimen name="small_negative_spacing">-8dp</dimen>
+
+    <dimen name="xsmall_spacing">4dp</dimen>
+    <dimen name="xsmall_negative_spacing">-4dp</dimen>
+
+    <dimen name="xxsmall_spacing">2dp</dimen>
+    <dimen name="xxsmall_negative_spacing">-2dp</dimen>
+
+    <dimen name="xxxsmall_spacing">1dp</dimen>
+    <dimen name="xxxsmall_negative_spacing">-1dp</dimen>
+
+    <dimen name="xxlarge_spacing">48dp</dimen>
+    <dimen name="xxlarge_negative_spacing">-48dp</dimen>
+
+    <dimen name="xxxlarge_spacing">64dp</dimen>
+    <dimen name="xxxlarge_negative_spacing">-64dp</dimen>
+
+
+    <dimen name="xxlarge_size">48dp</dimen>
+    <dimen name="medium_size">23dp</dimen>
+    <dimen name="small_size">10dp</dimen>
+    <dimen name="xsmall_size">4dp</dimen>
+    <dimen name="large_size">24dp</dimen>
+    <dimen name="xlarge_size">36dp</dimen>
+    <dimen name="xxxlarge_size">72dp</dimen>
+    <dimen name="xxxsmall_size">1dp</dimen>
+    <dimen name="xxxxsmall_size">1dp</dimen>
+
+    <dimen name="text_size_1">44sp</dimen>
+    <dimen name="text_size_2">36sp</dimen>
+    <dimen name="text_size_3">32sp</dimen>
+    <dimen name="text_size_4">30sp</dimen>
+    <dimen name="text_size_5">24sp</dimen>
+    <dimen name="text_size_6">22sp</dimen>
+    <dimen name="text_size_6_3">19sp</dimen>
+    <dimen name="text_size_6_4">18sp</dimen>
+    <dimen name="text_size_6_5">17sp</dimen>
+    <dimen name="text_size_7">16sp</dimen>
+    <dimen name="text_size_8">15sp</dimen>
+    <dimen name="text_size_9">14sp</dimen>
+    <dimen name="text_size_10">12sp</dimen>
+    <dimen name="text_size_10_5">11sp</dimen>
+
+    <dimen name="text_separation">4dp</dimen>
+
+    <dimen name="medium_dash_gap">5dp</dimen>
+    <dimen name="medium_dash_width">7dp</dimen>
+
+    <dimen name="unity">1dp</dimen>
+
+    <dimen name="small_elevation">2dp</dimen>
+    <dimen name="medium_elevation">8dp</dimen>
+
+    <dimen name="min_row_height">40dp</dimen>
+
+    <dimen name="match_constraint">0dp</dimen>
+
+    <dimen name="medium_padding">10dp</dimen>
+
+    <dimen name="payment_selection_height">45dp</dimen>
+
+</resources>

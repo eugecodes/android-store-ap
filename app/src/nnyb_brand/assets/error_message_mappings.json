@@ -1,0 +1,674 @@
+[
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "0",
+    "SystemMessage": "Temp password",
+    "UserMessage": "Temp password"
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1",
+    "SystemMessage": "Invalid user ID/pswd",
+    "UserMessage": "Hmm, either your email and/or password is invalid. Give it another try."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "2",
+    "SystemMessage": "Cert not exist",
+    "UserMessage": "This is not a valid card number. Please check your card number and try again. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "4",
+    "SystemMessage": "Validation wrong",
+    "UserMessage": "Please enter a valid email address. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "13",
+    "SystemMessage": "Incorrect amount",
+    "UserMessage": "We are unable to reconcile your account balance. Please contact customer service at 1.866.25BAGEL for more information. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "15",
+    "SystemMessage": "Trans to old",
+    "UserMessage": "We are unable to reconcile your account balance. Please contact customer service at 1.866.25BAGEL for more information. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "19",
+    "SystemMessage": "operation not permitted error",
+    "UserMessage": "Sorry, an unexpected error has occurred. Please try again."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "27",
+    "SystemMessage": "Certificate on hold",
+    "UserMessage": "This card number is on hold. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "28",
+    "SystemMessage": "Certificate cancelled",
+    "UserMessage": "This card number has been cancelled. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "29",
+    "SystemMessage": "Certificate cancelled for fraud",
+    "UserMessage": "This card number has been cancelled. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "40",
+    "SystemMessage": "Certificate is not active",
+    "UserMessage": "Please enter a valid card number. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "42",
+    "SystemMessage": "Cannot transfer to same card",
+    "UserMessage": "Sorry, you cannot transfer to same card. Please enter a different card number. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "49",
+    "SystemMessage": "Phone number is not unique",
+    "UserMessage": "That phone number is already tied to an existing account. Please provide a different number."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "50",
+    "SystemMessage": "Amt exceeds bal limit",
+    "UserMessage": "Sorry, you cannot carry a balance greater than $500."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "67",
+    "SystemMessage": "The member is already enrolled",
+    "UserMessage": "This card is already associated to another loyalty account."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "110",
+    "SystemMessage": "Duplicate Email Address (Account Registration/Update)",
+    "UserMessage": "Looks like this email address is already assigned to an account. Try signing in. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "115",
+    "SystemMessage": "Invalid customer login",
+    "UserMessage": "We do not have an account with this email address. Please check and try again."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "138",
+    "SystemMessage": "Birth date is not old enough",
+    "UserMessage": "Sorry, you need to be at least 13 to use Noah's Rewards. See you in a couple years. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "148",
+    "SystemMessage": "Customer login required",
+    "UserMessage": "Please enter your email address."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "149",
+    "SystemMessage": "Customer password required",
+    "UserMessage": "Please enter your password. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "150",
+    "SystemMessage": "Invalid customer login/password",
+    "UserMessage": "Hmm, your email and/or password is invalid. Give it another try."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "156",
+    "SystemMessage": "The phone number entered has already been used for an existing registered user. Please provide a different number.",
+    "UserMessage": "That phone number is already tied to an existing account. Please provide a different number."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "166",
+    "SystemMessage": "Error updating customer record",
+    "UserMessage": "The card number you entered is already tied to a different account. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "182",
+    "SystemMessage": "Duplicate Email Address (Account Registration/Update)",
+    "UserMessage": "Looks like this email address is already assigned to an account. Try signing in. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "184",
+    "SystemMessage": "Invalid customer login/password",
+    "UserMessage": "Hmm, either your email and/or password is invalid. Give it another try."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "196",
+    "SystemMessage": "The phone number entered has already been used for an existing registered user. Please provide a different number.",
+    "UserMessage": "That phone number is already tied to an existing account. Please provide a different number."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "300",
+    "SystemMessage": "No data passed for the account lookup.",
+    "UserMessage": "We are currently having technical difficulties. Please contact Noah's New York Bagels Customer Service."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "301",
+    "SystemMessage": "A different loyalty member account already uses this email address.",
+    "UserMessage": "A different loyalty member account already uses this email address."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "302",
+    "SystemMessage": "A different loyalty member account already uses this mobile number.",
+    "UserMessage": "A different loyalty member account already uses this mobile number."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "303",
+    "SystemMessage": "A different loyalty member account already uses this gift card number.",
+    "UserMessage": "This card is already associated to another loyalty account."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "304",
+    "SystemMessage": "Multiple loyalty records contain the email, mobile number and/or card number credentials. ",
+    "UserMessage": "There appear to be multiple accounts in our system that match either the email, mobile number or gift card number you provided. Please use different credentials or call Noah's New York Bagels customer service for assistance. 1.866.25BAGEL 5:30 a.m. - 9:30 p.m. EST Mon-Fri and 7:00 am to 6:30 pm EST Sat-Sun. "
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "305",
+    "SystemMessage": "Submitted loyalty account does not contain a card number, but a non-loyalty account match was found (either by email or mobile number) in CRM that does not have a card.",
+    "UserMessage": "There appears to already be some account information in our system for the email and/or mobile number you provided. Please use different credentials or call Noah's New York Bagels customer service for assistance. 1.866.25BAGEL 5:30 a.m. - 9:30 p.m. EST Mon-Fri and 7:00 am to 6:30 pm EST Sat-Sun. "
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "306",
+    "SystemMessage": "Submitted loyalty account has a card number, but a non-loyalty account match was found (either by email or mobile number) in CRM that has a different card number.",
+    "UserMessage": "There appears to already be some account information in our system for the email and/or mobile number you provided. Please use different credentials or call Noah's New York Bagels customer service for assistance. 1.866.25BAGEL 5:30 a.m. - 9:30 p.m. EST Mon-Fri and 7:00 am to 6:30 pm EST Sat-Sun. "
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "307",
+    "SystemMessage": "There is a non-loyalty record in CRM with matching email, mobile number and/or card number and that record already contains a password. This should never occur, so check it out.",
+    "UserMessage": "We cannot create this account for you right now. Please call Noah's New York Bagels customer service for assistance. 1.866.25BAGEL 5:30 a.m. - 9:30 p.m. EST Mon-Fri and 7:00 am to 6:30 pm EST Sat-Sun. "
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "308",
+    "SystemMessage": "Update account cannot take place. A non-loyalty account already uses this email address.",
+    "UserMessage": "Update account cannot take place. A non-loyalty account already uses this email address."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "309",
+    "SystemMessage": "Update account cannot take place. A non-loyalty account already uses this mobile number.",
+    "UserMessage": "Update account cannot take place. A non-loyalty account already uses this email address."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "310",
+    "SystemMessage": "This update cannot take place. A non-loyalty account already uses this card number.",
+    "UserMessage": "Update account cannot take place. A non-loyalty account already uses this email address."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "322",
+    "SystemMessage": "Invalid customer login",
+    "UserMessage": "We do not have an account with this email address. Please check and try again."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "400",
+    "SystemMessage": "The stored value card passed from the source system is already associated to a different account.",
+    "UserMessage": "The card number you entered is already registered to an existing loyalty account."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "500",
+    "SystemMessage": "The updatebilling portion of the removebilling was not successful.",
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction.  Please try again."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "501",
+    "SystemMessage": "Auto Reload is not enabled.",
+    "UserMessage": "Auto Reload is not enabled."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "502",
+    "SystemMessage": "Invalid Threshold Amount or Increment Amount",
+    "UserMessage": "Invalid Threshold Amount or Increment Amount"
+  },
+  {
+    "Source": {
+      "Title": "CRC"
+    },
+    "ID": "555",
+    "SystemMessage": "auth passed but capture failed at cybersource",
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction. Please try again."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "600",
+    "SystemMessage": "Current password passed from source system does not match the password in the Hub.",
+    "UserMessage": "The current password you entered does not match our records."
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "ID": "1000",
+    "SystemMessage": "An unexpected system error has occurred and we were not able create your account. Please try again.\r\n",
+    "UserMessage": "An unexpected system error has occurred and we were not able create your account.  Please try again."
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "ID": "1001",
+    "SystemMessage": "The submitted request is invalid. \r\n",
+    "UserMessage": "The submitted request is invalid. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1010",
+    "SystemMessage": "Phone Number is already in use (PX register, createandregister, editaccount)\r\n\r\n",
+    "UserMessage": "There appears already be some account information in our system for the email and/or mobile number your provided. Please use different credentials."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1011",
+    "SystemMessage": "Card Number is already in use (PX Register Only)\r\n",
+    "UserMessage": "There appears already be some account information in our system for the email and/or mobile number your provided. Please use different credentials."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1012",
+    "SystemMessage": "Email Match, Member Phone \u003d No Match, Password False\r\n",
+    "UserMessage": "We found an account that is used for another program, but requires more setup.  Please choose Reset/Set password link setup a password and claim this account."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1013",
+    "SystemMessage": "Email Match, Member Phone \u003d null, Password True\r\n",
+    "UserMessage": "There appears already be some account information in our system for the email and/or mobile number your provided. Please use different credentials or call customer service for assistance."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1014",
+    "SystemMessage": "Email Match, Member Phone \u003d Match, Password True\r\n",
+    "UserMessage": "There appears already be some account information in our system for the email and/or mobile number your provided. Please use different credentials or call customer service for assistance."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1015",
+    "SystemMessage": "Create - PX account failed.",
+    "UserMessage": "We found an account that is used for another program, but requires more setup.  Please choose Reset/Set password link setup a password and claim this account."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1016",
+    "SystemMessage": "Overtaking a marketing account, however trying to register with card.",
+    "UserMessage": "We were able to create your account, however the gift card you entered was not able to be registered.  Please contact Customer service for assistance."
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "ID": "1020",
+    "SystemMessage": "Lookup Service - Unhandled or unknown or Internal exception\r\n",
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your request. Please try again."
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "ID": "1030",
+    "SystemMessage": "Update - Unhandled or unknown or Internal exception\r\n",
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your request. Please try again."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1031",
+    "SystemMessage": "UID not found in CRM\r\n",
+    "UserMessage": "Sorry, but we had a problem retrieving your account information. Please try logging in with your username and password."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1040",
+    "SystemMessage": "Billing - Unhandled or unknown or Internal exception\r\n",
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction.  Please try again."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1041",
+    "SystemMessage": "Payment ID not found in CRM\r\n",
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction.  Please try again."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1042",
+    "SystemMessage": "The updatebilling portion of the removebilling was not successful.\r\n",
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction.  Please try again."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1043",
+    "SystemMessage": "Auto Reload Invalid Threshold Amount or Increment Amount\r\n",
+    "UserMessage": "Invalid Threshold Amount or Increment Amount"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1044",
+    "SystemMessage": "Auto Reload not enabled",
+    "UserMessage": "Auto Reload not enabled"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1045",
+    "SystemMessage": "Missing Cybersource Token",
+    "UserMessage": "We are currently having technical difficulties. Please contact Noah's New York Bagels Customer Service. (1045)"
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1050",
+    "SystemMessage": "Submitted password does not match CRM\r\n",
+    "UserMessage": "Your email and/or password are incorrect.  Please try again. If you continue to have trouble signing in, please reset your password."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1056",
+    "SystemMessage": "Invalid Inputs - setUserFields. Invalid Zip and State do not match\r\n",
+    "UserMessage": "The state and zip code you submitted do not match. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1057",
+    "SystemMessage": "Invalid Inputs - setUserFields. Invalid Phone (at Paytronix)\r\n",
+    "UserMessage": "The phone number you entered is not valid. "
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1058",
+    "SystemMessage": "Invalid Inputs - setUserFields. Invalid Email (at Paytonix)\r\n",
+    "UserMessage": "The email address you entered is not valid."
+  },
+  {
+    "Source": {
+      "Title": "CRC"
+    },
+    "ID": "1100",
+    "SystemMessage": "Unhandled or unknown or Internal exception\r\n",
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction. Please try again."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1101",
+    "SystemMessage": "Card is already registered to another account.",
+    "UserMessage": "This card is already registered to another account."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1102",
+    "SystemMessage": "Card has been disabled_terminated.",
+    "UserMessage": "This card has been cancelled and cannot be used."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1103",
+    "SystemMessage": "Card number is not valid.",
+    "UserMessage": "The card number you entered is not valid. Try entering the card number again."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1104",
+    "SystemMessage": "Card has been exchanged and cannot be used.",
+    "UserMessage": "This card is no longer valid to be used."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1105",
+    "SystemMessage": "The \"from\" card is not active and can\u0027t be used for a transfer funds card transfer.",
+    "UserMessage": "The card you are attempting to transfer money from is not active."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1106",
+    "SystemMessage": "This exceeds the max balance.",
+    "UserMessage": "For security reasons, accounts cannot have a balance over $200."
+  },
+  {
+    "Source": {
+      "Title": "LOY"
+    },
+    "ID": "1107",
+    "SystemMessage": "Card is not active - likely disabled/terminated.",
+    "UserMessage": "This is not a valid card to use for this transaction."
+  },
+  {
+    "Source": {
+      "Title": "CRC"
+    },
+    "ID": "1120",
+    "SystemMessage": "Credit Card processor could not approve transaction with information provided. Cybersource authorization fails\r\n",
+    "UserMessage": "Our credit card processor could not approve this transaction based on the information provided. Please check your billing and credit card information and try again."
+  },
+  {
+    "Source": {
+      "Title": "CRC_555"
+    },
+    "ID": "1121",
+    "SystemMessage": "Auth passed but settlement capture failed at cybersource.",
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your transaction. Please try again."
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1400",
+    "SystemMessage": "Credential Service - Unhandled or unknown or Internal exception\r\n",
+    "UserMessage": "Whoops, something went wrong.  Please Try Again!"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "ID": "1410",
+    "SystemMessage": "Password Reset Notification Service failure\r\n",
+    "UserMessage": "Whoops, something went wrong.  Please Try Again!"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "ID": "1411",
+    "SystemMessage": "Credential Services - Unknown source app\r\n",
+    "UserMessage": "An unexpected system error has occurred and we were not able to process your request.  Please try again."
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "ID": "1420",
+    "SystemMessage": "Credential Services - Reset Token not found in Cache\r\n",
+    "UserMessage": "The password reset link has expired and is no longer valid.  Please tap reset password to receive another email."
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "ID": "1421",
+    "SystemMessage": "User submitted password does not match account password\r\n",
+    "UserMessage": "The current password does not match the password on the account.  The password was not changed. "
+  },
+  {
+    "Source": {
+      "Title": "HUB"
+    },
+    "ID": "1422",
+    "SystemMessage": "UID not found\r\n",
+    "UserMessage": "Invalid Account"
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "ID": "9988",
+    "SystemMessage": "",
+    "UserMessage": "Sorry, but we had a problem retrieving your account information. Please try logging in with your username and password."
+  },
+  {
+    "Source": {
+      "Title": "ESB"
+    },
+    "ID": "9999",
+    "SystemMessage": "Credit Card processor could not approve transaction with information provided.",
+    "UserMessage": "Sorry, but we are not able to process your request with the information you provided. Please check your information and try again. "
+  }
+]

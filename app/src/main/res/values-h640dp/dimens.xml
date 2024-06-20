@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="text_size_header1">38sp</dimen>
+    <dimen name="menu_option_separation_dashboard">8dp</dimen>
+    <dimen name="ebb_header_lets_get_started">32sp</dimen>
+    <dimen name="noah_header_lets_get_started">38sp</dimen>
+    <dimen name="bru_header_lets_get_started">27sp</dimen>
+</resources>

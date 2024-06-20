@@ -1,0 +1,158 @@
+[
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.caribou.caribouapp.dev",
+      sha256_cert_fingerprints: [
+        "29:75:67:64:D5:87:26:1B:62:BB:5F:47:1E:B5:1C:A1:AE:40:0E:CF:0C:8F:47:F9:49:14:8D:1D:52:73:77:A4"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.caribou.caribouapp.qa",
+      sha256_cert_fingerprints: [
+        "29:75:67:64:D5:87:26:1B:62:BB:5F:47:1E:B5:1C:A1:AE:40:0E:CF:0C:8F:47:F9:49:14:8D:1D:52:73:77:A4"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.caribou.caribouapp.staging",
+      sha256_cert_fingerprints: [
+        "29:75:67:64:D5:87:26:1B:62:BB:5F:47:1E:B5:1C:A1:AE:40:0E:CF:0C:8F:47:F9:49:14:8D:1D:52:73:77:A4"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.caribou.caribouapp",
+      sha256_cert_fingerprints: [
+        "FC:1C:5C:76:34:54:6B:51:D8:9D:B7:B8:36:EA:F4:8A:35:90:6A:0E:6B:5C:0C:7D:F7:F8:1E:A9:BC:F0:A2:21"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.sourceapp.ebb.dev",
+      sha256_cert_fingerprints: [
+        "29:75:67:64:D5:87:26:1B:62:BB:5F:47:1E:B5:1C:A1:AE:40:0E:CF:0C:8F:47:F9:49:14:8D:1D:52:73:77:A4"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.sourceapp.ebb.qa",
+      sha256_cert_fingerprints: [
+        "29:75:67:64:D5:87:26:1B:62:BB:5F:47:1E:B5:1C:A1:AE:40:0E:CF:0C:8F:47:F9:49:14:8D:1D:52:73:77:A4"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.sourceapp.ebb",
+      sha256_cert_fingerprints: [
+        "FC:1C:5C:76:34:54:6B:51:D8:9D:B7:B8:36:EA:F4:8A:35:90:6A:0E:6B:5C:0C:7D:F7:F8:1E:A9:BC:F0:A2:21"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.sourceapp.bru.dev",
+      sha256_cert_fingerprints: [
+        "29:75:67:64:D5:87:26:1B:62:BB:5F:47:1E:B5:1C:A1:AE:40:0E:CF:0C:8F:47:F9:49:14:8D:1D:52:73:77:A4"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.sourceapp.bru.qa",
+      sha256_cert_fingerprints: [
+        "29:75:67:64:D5:87:26:1B:62:BB:5F:47:1E:B5:1C:A1:AE:40:0E:CF:0C:8F:47:F9:49:14:8D:1D:52:73:77:A4"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.sourceapp.bru",
+      sha256_cert_fingerprints: [
+        "FC:1C:5C:76:34:54:6B:51:D8:9D:B7:B8:36:EA:F4:8A:35:90:6A:0E:6B:5C:0C:7D:F7:F8:1E:A9:BC:F0:A2:21"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.sourceapp.nnyb.dev",
+      sha256_cert_fingerprints: [
+        "29:75:67:64:D5:87:26:1B:62:BB:5F:47:1E:B5:1C:A1:AE:40:0E:CF:0C:8F:47:F9:49:14:8D:1D:52:73:77:A4"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.sourceapp.nnyb.qa",
+      sha256_cert_fingerprints: [
+        "29:75:67:64:D5:87:26:1B:62:BB:5F:47:1E:B5:1C:A1:AE:40:0E:CF:0C:8F:47:F9:49:14:8D:1D:52:73:77:A4"
+      ]
+    }
+  },
+  {
+    relation: [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    target: {
+      namespace: "android_app",
+      package_name: "com.sourceapp.nnyb",
+      sha256_cert_fingerprints: [
+        "FC:1C:5C:76:34:54:6B:51:D8:9D:B7:B8:36:EA:F4:8A:35:90:6A:0E:6B:5C:0C:7D:F7:F8:1E:A9:BC:F0:A2:21"
+      ]
+    }
+  }
+]

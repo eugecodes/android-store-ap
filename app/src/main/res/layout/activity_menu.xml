@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.menu.model.MenuModel" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/cl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/abl_app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/appbar_primary_background"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tb"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/transparent"
+                app:elevation="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/cv_cart"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            style="@style/Toolbar.Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:contentDescription="@{model.storeLocation != null? @string/heading_cd(model.storeLocation.name) : @string/heading_cd(@string/our_menu)}"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@{model.storeLocation != null? model.storeLocation.name : @string/our_menu}"
+                            tools:text="Our Menu" />
+
+                        <TextView
+                            android:id="@+id/tv_subtitle"
+                            style="@style/Toolbar.Subtitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:text="@{model.storeLocation.addressShort}"
+                            app:bindVisible="@{model.storeLocation != null}"
+                            tools:text="3900 Lakebreeze Ave N"
+                            tools:visibility="visible" />
+                    </LinearLayout>
+
+                    <caribouapp.caribou.com.cariboucoffee.mvp.oos.CartIconItemsView
+                        android:id="@+id/cv_cart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_marginStart="@dimen/medium_spacing"
+                        android:layout_marginEnd="@dimen/small_spacing"
+                        app:bindInvisible="@{model.storeLocation == null}"
+                        app:bindItemCount="@{model.amountItemsOnCart}" />
+
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl_tabs"
+                style="@style/TabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_height_menu"
+                android:layout_below="@id/abl_app_bar_layout" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <caribouapp.caribou.com.cariboucoffee.mvp.oos.RewardAddedBanner
+                android:id="@+id/reward_added_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:bindPreSelectedReward="@{model.order.preSelectedReward}"
+                app:bindVisible="@{model.filteredMenu}" />
+
+            <include
+                android:id="@+id/content_included"
+                layout="@layout/content_menu" />
+
+        </LinearLayout>
+
+        <caribouapp.caribou.com.cariboucoffee.common.LoadingView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

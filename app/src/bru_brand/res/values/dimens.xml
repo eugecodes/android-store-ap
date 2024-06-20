@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="limited_time_text_size">9sp</dimen>
+    <dimen name="text_add_funds_wallet">16sp</dimen>
+    <dimen name="payment_screen_title">26sp</dimen>
+    <dimen name="payment_screen_title_line_height">27sp</dimen>
+</resources>

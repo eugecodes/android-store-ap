@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="view"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.dashboard.DashboardContract.View" />
+
+        <variable
+            name="textColor"
+            type="int" />
+
+        <variable
+            name="bottomTextColor"
+            type="int" />
+
+        <variable
+            name="settings"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.authentication.SettingsServices" />
+
+        <variable
+            name="inboxCount"
+            type="int" />
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.dashboard.DashboardModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/menu_background_panel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/background_menu_nightsky" />
+
+        <RelativeLayout
+            android:id="@+id/rl_ib_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/xxlarge_spacing">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ib_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/medium_spacing"
+                android:background="@color/transparent"
+                android:elevation="@dimen/small_elevation"
+                android:contentDescription="@string/close_hamburger_cd"
+                android:foreground="?attr/selectableItemBackground"
+                android:minWidth="@dimen/xxlarge_spacing"
+                android:minHeight="@dimen/xxlarge_spacing"
+                android:padding="@dimen/medium_spacing"
+                android:src="@drawable/icon_close_big"
+                android:tint="@{textColor}"
+                tools:ignore="UnusedAttribute" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_bottom_menu"
+            android:layout_below="@id/rl_ib_container"
+            android:layout_marginTop="@dimen/xlarge_spacing">
+
+            <LinearLayout
+                android:id="@+id/ll_menu_options"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_menu_action"
+                    style="@style/DashboardMenuItems"
+                    app:bindVisible="@{settings.displayMenu}">
+
+                    <TextView
+                        style="@style/DashboardMenuText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_browse_the_menu_second"
+                        android:textColor="@{textColor}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_locations"
+                    style="@style/DashboardMenuItems"
+                    app:bindVisible="@{settings.locations}">
+
+                    <TextView
+                        style="@style/DashboardMenuText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_browse_our_locations_second"
+                        android:textColor="@{textColor}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_rewards"
+                    style="@style/DashboardMenuItems">
+
+                    <TextView
+                        style="@style/DashboardMenuText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_rewards_second"
+                        android:textColor="@{textColor}" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/ll_inbox"
+                    style="@style/DashboardMenuItems"
+                    app:bindVisible="@{settings.news}">
+
+                    <TextView
+                        android:id="@+id/ll_inbox_title"
+                        style="@style/DashboardMenuText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_check_out_your_inbox_2"
+                        android:textColor="@{textColor}" />
+
+                    <include
+                        android:id="@+id/inbox_badge"
+                        layout="@layout/layout_inbox_badge"
+                        android:layout_width="@dimen/menu_badge_size"
+                        android:layout_height="@dimen/menu_badge_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|center"
+                        android:layout_marginLeft="@dimen/menu_items_left_margin_dashboard"
+                        android:layout_marginTop="@dimen/small_negative_spacing"
+                        android:layout_marginRight="@dimen/menu_items_left_margin_dashboard"
+                        app:count="@{inboxCount}" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_e_gift"
+                    style="@style/DashboardMenuItems"
+                    app:bindVisible="@{settings.egift}">
+
+                    <TextView
+                        style="@style/DashboardMenuText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_purchase_an_egift_second"
+                        android:textColor="@{textColor}" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_account_action"
+                    style="@style/DashboardMenuItems">
+
+                    <TextView
+                        style="@style/DashboardMenuText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/menu_my_account"
+                        android:textColor="@{textColor}" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="start">
+
+            <TextView
+                android:id="@+id/tv_faq"
+                style="@style/DashboardMenuBottomItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:paddingStart="@dimen/menu_items_left_margin_dashboard"
+                android:paddingTop="@dimen/menu_bottom_margin"
+                android:paddingEnd="@dimen/menu_lower_items_margin_dashboard"
+                android:paddingBottom="@dimen/menu_bottom_margin"
+                android:text="@string/menu_faq"
+                android:textColor="@{bottomTextColor}"
+                app:bindVisible="@{settings.faqs}" />
+
+            <TextView
+                android:id="@+id/tv_terms"
+                style="@style/DashboardMenuBottomItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingStart="@dimen/menu_lower_items_margin_dashboard"
+                android:paddingTop="@dimen/menu_bottom_margin"
+                android:paddingEnd="@dimen/menu_lower_items_margin_dashboard"
+                android:paddingBottom="@dimen/menu_bottom_margin"
+                android:text="@string/menu_terms_privacy"
+                android:textColor="@{bottomTextColor}" />
+
+            <TextView
+                android:id="@+id/tv_signout"
+                style="@style/DashboardMenuBottomItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingStart="@dimen/menu_lower_items_margin_dashboard"
+                android:paddingTop="@dimen/menu_bottom_margin"
+                android:paddingEnd="@dimen/menu_items_left_margin_dashboard"
+                android:paddingBottom="@dimen/menu_bottom_margin"
+                android:text="@string/menu_signout"
+                android:textColor="@{bottomTextColor}" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

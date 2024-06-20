@@ -1,0 +1,201 @@
+{
+  "meta": {
+    "uuid": "48f90659-5e7b-4afa-8b10-ab25409ad972",
+    "errors": []
+  },
+  "response": {
+    "address": {
+      "line1": "3900 Lakebreeze Avenue N",
+      "city": "Brooklyn Center",
+      "region": "MN",
+      "postalCode": "55429",
+      "countryCode": "US"
+    },
+    "addressHidden": false,
+    "description": "Life is Short, Stay Awake for it. Visit your nearby Caribou Coffee who believes that coffee is more than a drink with real ingredients. It's a personal experience that fuels your life and creates meaningful moments.",
+    "hours": {
+      "monday": {
+        "openIntervals": [
+          {
+            "start": "04:00",
+            "end": "23:00"
+          }
+        ]
+      },
+      "tuesday": {
+        "openIntervals": [
+          {
+            "start": "04:00",
+            "end": "23:00"
+          }
+        ]
+      },
+      "wednesday": {
+        "openIntervals": [
+          {
+            "start": "04:00",
+            "end": "23:00"
+          }
+        ]
+      },
+      "thursday": {
+        "openIntervals": [
+          {
+            "start": "04:00",
+            "end": "23:00"
+          }
+        ]
+      },
+      "friday": {
+        "openIntervals": [
+          {
+            "start": "04:00",
+            "end": "23:00"
+          }
+        ]
+      },
+      "saturday": {
+        "openIntervals": [
+          {
+            "start": "04:00",
+            "end": "23:00"
+          }
+        ]
+      },
+      "sunday": {
+        "openIntervals": [
+          {
+            "start": "04:00",
+            "end": "23:00"
+          }
+        ]
+      }
+    },
+    "name": "Caribou Coffee",
+    "c_amenities": [
+      "WiFi",
+      "Bagels in the Bou"
+    ],
+    "c_brand": [
+      "BRUEGGER'S_BAGELS",
+      "CARIBOU_COFFEE",
+      "NOAH'S_BAGELS",
+      "EINSTEINBROSBAGELS"
+    ],
+    "c_cTA1Text": "HOME",
+    "c_cTA1URL": "https://www.cariboucoffee.com/home",
+    "c_cTA2Text": "MENU",
+    "c_cTA2URL": "https://www.cariboucoffee.com/menu-nutrition",
+    "c_cTA3Text": "NUTRITION",
+    "c_cTA3URL": "https://www.cariboucoffee.com/menu-nutrition",
+    "c_cTA4Text": "FEEDBACK",
+    "c_cTA4URL": "https://www.cariboucoffee.com/contact-us",
+    "c_declinesDiscount": false,
+    "c_orderAhead": true,
+    "c_orderAheadTempOff": false,
+    "c_pagesBusinessDescription": "Caribou Coffee located at [[address.line1]], [[address.city]], [[address.region]] is a premium coffeehouse featuring high quality, handcrafted beverages and food. At our [[c_storeDescription]] location we serve expertly roasted coffee blends \u0026 espressos and our handcrafted beverages, such as mochas and lattes, are created using only the best ingredients. Our food offerings include a variety of premium breakfast sandwiches, baked goods and snacks to fuel life's adventures.",
+    "c_pagesURL": "https://locations.cariboucoffee.com/us/mn/brooklyn-center/3900-lakebreeze-avenue-n",
+    "c_parentBrand": "Caribou",
+    "c_prepTime": "5 - 10",
+    "c_restrictedAccess": false,
+    "c_storeDescription": "Brooklyn Center HQ",
+    "displayCoordinate": {
+      "latitude": 45.04380161,
+      "longitude": -93.33053046
+    },
+    "calendars": {
+      "ids": [
+        "1192724"
+      ]
+    },
+    "facebookCoverPhoto": {
+      "url": "http://a.mktgcdn.com/p/3uefzlJBTfUW0fbPGrBw1-tQ7H8f1VgA-PM24MLu2zM/1640x680.jpg",
+      "width": 1640,
+      "height": 680,
+      "sourceUrl": "http://a.mktgcdn.com/p/3uefzlJBTfUW0fbPGrBw1-tQ7H8f1VgA-PM24MLu2zM/1640x680.jpg"
+    },
+    "facebookPageUrl": "https://www.facebook.com/CBOUBrooklynCenterHQ",
+    "facebookProfilePhoto": {
+      "url": "http://a.mktgcdn.com/p/CUUQxJQMSDXOFUyU_4jKYz4xq4vV3FnNcMpD_exnkaE/600x600.jpg",
+      "width": 600,
+      "height": 600,
+      "sourceUrl": "http://a.mktgcdn.com/p/CUUQxJQMSDXOFUyU_4jKYz4xq4vV3FnNcMpD_exnkaE/600x600.jpg"
+    },
+    "featuredMessage": {
+      "description": "Click here for our favorite beverages!",
+      "url": "http://www.cariboucoffee.com"
+    },
+    "googleCoverPhoto": {
+      "url": "http://a.mktgcdn.com/p/MEhfRDb6QF9KqLYVyoyvFJjKzaKSLU6vn2mKVlXGQtI/2048x1152.png",
+      "width": 2048,
+      "height": 1152,
+      "sourceUrl": "http://a.mktgcdn.com/p/MEhfRDb6QF9KqLYVyoyvFJjKzaKSLU6vn2mKVlXGQtI/2048x1152.png"
+    },
+    "instagramHandle": "cariboucoffee",
+    "isoRegionCode": "MN",
+    "mainPhone": "+17635922302",
+    "products": [
+      "Coffee",
+      "Mocha",
+      "Latte",
+      "Hot Chocolate",
+      "Cold Press",
+      "Bagels",
+      "Tea",
+      "Breakfast",
+      "Espresso",
+      "Coffeeless Coolers",
+      "Iced Coffee",
+      "Smoothie",
+      "Chai Tea"
+    ],
+    "specialities": [
+      "Campfire Mocha",
+      "Turtle Mocha",
+      "Caramel High Rise",
+      "Crafted Press",
+      "Coffeeless Coolers",
+      "Asiago Bagel",
+      "Full Rack",
+      "LaMinita",
+      "Reindeer Blend",
+      "Moose It"
+    ],
+    "timezone": "America/Chicago",
+    "twitterHandle": "cariboucoffee",
+    "websiteUrl": {
+      "url": "[[c_pagesURL]]",
+      "displayUrl": "[[c_pagesURL]]",
+      "preferDisplayUrl": false
+    },
+    "yextDisplayCoordinate": {
+      "latitude": 45.04380161,
+      "longitude": -93.33053046
+    },
+    "yextRoutableCoordinate": {
+      "latitude": 45.0431965508581,
+      "longitude": -93.3348281619284
+    },
+    "meta": {
+      "accountId": "1981554",
+      "uid": "MEkL3o",
+      "id": "9920",
+      "timestamp": "2019-10-22T14:27:06",
+      "folderId": "197443",
+      "schemaTypes": [
+        "CafeOrCoffeeShop",
+        "Restaurant"
+      ],
+      "language": "en",
+      "countryCode": "US",
+      "entityType": "location"
+    },
+    "categoryIds": [
+      "1322912",
+      "1168",
+      "1164",
+      "2207"
+    ],
+    "timeZoneUtcOffset": "-06:00"
+  }
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.model.ModifierGroup" />
+
+        <variable
+            name="inlineEditing"
+            type="Boolean" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rl_inline_modifier_edit_panel"
+        bindInvisible="@{!safeUnbox(inlineEditing)}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryDarkColor">
+
+        <TextView
+            android:id="@+id/tv_modifier_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:layout_marginLeft="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/medium_spacing"
+            android:layout_marginRight="@dimen/medium_spacing"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@{model.name}"
+            android:importantForAccessibility="yes"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/text_size_6_5"
+            android:textStyle="bold"
+            tools:text="Chocolate" />
+
+        <TextView
+            android:id="@+id/tv_additional_charges"
+            style="@style/ChargesMayApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:importantForAccessibility="no"
+            android:text="@string/additional_charges_apply"
+            android:textColor="@color/whiteColor"
+            app:bindAdditionalCharges="@{model}"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:id="@+id/tv_availability_not_guaranteed"
+            style="@style/ChargesMayApply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:importantForAccessibility="yes"
+            android:text="@string/availability_not_guaranteed"
+            android:textColor="@color/whiteColor"
+            tools:visibility="gone"
+            tools:ignore="RelativeOverlap" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_item_modifier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_modifier_name"
+            android:layout_marginStart="@dimen/xxlarge_spacing"
+            android:layout_marginTop="@dimen/xsmall_spacing"
+            android:layout_marginBottom="@dimen/small_spacing" />
+
+    </RelativeLayout>
+</layout>

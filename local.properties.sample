@@ -1,0 +1,7 @@
+# Location of the SDK. This is only used by Gradle.
+sdk.dir=.
+
+release.storeFile=.
+release.storePassword=
+release.keyAlias=
+release.keyPassword=

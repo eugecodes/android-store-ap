@@ -1,0 +1,186 @@
+<resources>
+
+    <style name="ShortButton">
+        <item name="android:background">@drawable/secondary_button</item>
+        <item name="android:paddingBottom">@dimen/xsmall_spacing</item>
+        <item name="android:paddingLeft">@dimen/medium_spacing</item>
+        <item name="android:paddingRight">@dimen/medium_spacing</item>
+        <item name="android:fontFamily">@font/opensans_family</item>
+        <item name="android:paddingTop">@dimen/xsmall_spacing</item>
+        <item name="android:minHeight">@dimen/medium_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <style name="BaseButton.PrimaryButton">
+        <item name="android:background">@drawable/secondary_button</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <style name="CheckoutViewOnMap" parent="LinkTextView">
+        <item name="android:textColor">@color/primaryLightColor</item>
+    </style>
+
+    <style name="Display1TextStyleWShadow" parent="ShadowedText">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:layout_marginTop">@dimen/small_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/small_spacing</item>
+    </style>
+
+    <style name="DashboardImHereResult" parent="@android:style/Widget.TextView">
+        <item name="android:paddingLeft">@dimen/large_padding</item>
+        <item name="android:paddingTop">@dimen/small_padding</item>
+        <item name="android:paddingRight">@dimen/large_padding</item>
+        <item name="android:paddingBottom">@dimen/small_padding</item>
+        <item name="android:background">@drawable/bg_iam_here_dashboard_hint</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="DashboardImHereResultSubTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_5</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textColor">@color/iAmHereDashboardTitleColor</item>
+        <item name="android:fontFamily">@font/heading_secondary_font_family</item>
+    </style>
+
+    <style name="DashboardImHereResultDescription" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_7</item>
+        <item name="android:textColor">@color/iAmHereDashboardTitleColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/heading_secondary_font_family</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+    </style>
+
+    <style name="ConfirmationImHereResultDescription" parent="DashboardImHereResultDescription">
+        <item name="android:textColor">@color/iAmHereConfirmationTitleColor</item>
+        <item name="android:layout_marginTop">@dimen/xsmall_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/xsmall_spacing</item>
+    </style>
+
+    <style name="DashboardImHereHint" parent="@android:style/Widget.TextView">
+        <item name="android:paddingLeft">@dimen/large_padding</item>
+        <item name="android:paddingTop">@dimen/medium_padding</item>
+        <item name="android:paddingRight">@dimen/large_padding</item>
+        <item name="android:paddingBottom">@dimen/medium_padding</item>
+        <item name="android:background">@drawable/bg_iam_here_dashboard_hint</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="DashboardImHereTitle" parent="@android:style/Widget.TextView">
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:textSize">@dimen/text_size_6</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:fontFamily">@font/heading_secondary_font_family</item>
+    </style>
+
+    <style name="DashboardImHereSubTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:fontFamily">@font/heading_secondary_font_family</item>
+    </style>
+
+    <style name="DashboardImHereDescription" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_7</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/heading_secondary_font_family</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="ConfirmationImHereTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_6</item>
+        <item name="android:textColor">@color/iAmHereConfirmationTitleColor</item>
+        <item name="android:fontFamily">@font/heading_secondary_font_family</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ConfirmationImHereHintTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_size_6_5</item>
+        <item name="android:textColor">@color/iAmHereConfirmationTitleColor</item>
+        <item name="android:fontFamily">@font/heading_secondary_font_family</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DashboardImHereImage">
+        <item name="android:layout_width">34dp</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:layout_marginTop">@dimen/small_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/small_spacing</item>
+        <item name="tint">@color/iAmHereDashboardTitleColor</item>
+    </style>
+
+    <style name="DashboardImHereClose">
+        <item name="android:layout_width">14dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="android:layout_marginTop">@dimen/small_spacing</item>
+        <item name="android:layout_marginBottom">@dimen/small_spacing</item>
+        <item name="tint">@color/iAmHereDashboardTitleColor</item>
+    </style>
+
+    <style name="ImHereConfirmationButton" parent="BaseButton.PrimaryButton">
+        <item name="android:textColor">@color/secondaryTextButtonColor</item>
+        <item name="android:background">@drawable/tertiary_button</item>
+    </style>
+
+    <style name="Customization.Button">
+        <item name="android:fontFamily">@font/opensans_family</item>
+        <item name="android:minHeight">@dimen/medium_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/whiteColor</item>
+    </style>
+
+    <style name="Customization.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/opensans_family</item>
+        <item name="android:minHeight">@dimen/medium_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:layout_marginLeft">@dimen/icon_padding</item>
+        <item name="android:layout_marginRight">@dimen/icon_padding</item>
+    </style>
+
+    <style name="GuestUserLoginHint" parent="@android:style/Widget.TextView">
+        <item name="shapeAppearance">@dimen/circular_button_size</item>
+        <item name="android:paddingLeft">@dimen/small_padding</item>
+        <item name="android:paddingTop">@dimen/medium_padding</item>
+        <item name="android:paddingRight">@dimen/small_padding</item>
+        <item name="android:paddingBottom">@dimen/medium_padding</item>
+        <item name="android:background">@drawable/free_coffee_waiting</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="GuestDetailsDialog" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginStart">@dimen/get_started_pop_up_margin</item>
+        <item name="android:layout_marginTop">@dimen/margin_10dp</item>
+        <item name="android:layout_marginEnd">@dimen/get_started_pop_up_margin</item>
+        <item name="android:backgroundTint">@color/whiteColor</item>
+        <item name="android:textColorHint">@color/guestHintColor</item>
+        <item name="hintTextColor">@color/whiteColor</item>
+        <item name="boxStrokeColor">@color/whiteColor</item>
+        <item name="errorTextColor">@color/whiteColor</item>
+        <item name="boxStrokeErrorColor">@color/whiteColor</item>
+        <item name="errorIconDrawable">@color/transparent</item>
+    </style>
+
+</resources>

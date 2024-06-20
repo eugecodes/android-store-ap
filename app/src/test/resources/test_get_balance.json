@@ -1,0 +1,19 @@
+{
+  "header": {
+    "status": "Success"
+  },
+  "getBalanceResult": {
+    "cardNumber": "6000900000170181",
+    "balanceAmount": 20.01,
+    "pointsBalance": 148.0,
+    "ebbPointsBalance": 0.0,
+    "rewards": [
+      {
+        "code": "137",
+        "name": "Complimentary Bev Points",
+        "expirationDate": "2019-05-03T00:00:00",
+        "quantity": 1
+      }
+    ]
+  }
+}

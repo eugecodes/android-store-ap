@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Spinner
+            android:id="@+id/spn_other_options"
+            android:layout_width="@dimen/xxlarge_size"
+            android:layout_height="@dimen/xxlarge_size"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/cb_other_options"
+            style="@style/OptionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/xxlarge_size"
+            android:layout_marginStart="@dimen/xsmall_spacing"
+            android:layout_marginEnd="@dimen/xsmall_spacing"
+            android:fontFamily="@font/tertiary_font"
+            android:minWidth="@dimen/xxlarge_size"
+            android:text="@string/other"
+            android:textAllCaps="true"
+            app:drawableEndCompat="@drawable/add_funds_down_arrow" />
+
+    </FrameLayout>
+</layout>

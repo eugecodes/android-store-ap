@@ -1,0 +1,328 @@
+{
+  "id": 3698,
+  "user_id": 6,
+  "location": {
+    "name": "physical lab",
+    "number": 9920,
+    "price_tier": 2
+  },
+  "line_items": [
+    {
+      "id": 3777,
+      "variation_id": 1162,
+      "product_price": 4.49,
+      "modifier_details": [
+        [
+          "3189",
+          "0.0"
+        ],
+        [
+          "3305",
+          "0.0"
+        ],
+        [
+          "3335",
+          "0.0"
+        ],
+        [
+          "104",
+          "0.8"
+        ]
+      ],
+      "subtotal": 10.58,
+      "groups": [
+        {
+          "additional_charges": false,
+          "id": 50,
+          "modifiers": [
+            {
+              "id": 2,
+              "name": "Medium",
+              "option": {
+                "id": 321,
+                "label": "Medium",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Hot Drink Sizes",
+          "display_style": "Sizes"
+        },
+        {
+          "additional_charges": false,
+          "id": 60,
+          "modifiers": [
+            {
+              "id": 16,
+              "name": "Milk Chocolate",
+              "option": {
+                "id": 469,
+                "label": "Regular",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Chocolate",
+          "display_style": "Select One & Quantity"
+        },
+        {
+          "additional_charges": false,
+          "id": 52,
+          "modifiers": [
+            {
+              "id": 9,
+              "name": "2%",
+              "option": {
+                "id": 464,
+                "label": "2%",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Milk",
+          "display_style": "Select One"
+        },
+        {
+          "additional_charges": false,
+          "id": 54,
+          "modifiers": [
+            {
+              "id": 23,
+              "name": "Regular",
+              "option": {
+                "id": 37,
+                "label": "Regular",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Espresso",
+          "display_style": "Select One"
+        },
+        {
+          "additional_charges": false,
+          "id": 51,
+          "modifiers": [
+            {
+              "id": 4,
+              "name": "Everything!",
+              "option": {
+                "id": 132,
+                "label": "Everything!",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Whip & Chips",
+          "display_style": "Select One"
+        },
+        {
+          "additional_charges": true,
+          "id": 56,
+          "modifiers": [
+            {
+              "id": 34,
+              "name": "Vanilla",
+              "option": {
+                "id": 302,
+                "label": "Full",
+                "price": 0.8
+              }
+            },
+            {
+              "id": 36,
+              "name": "Sugar-Free Vanilla",
+              "option": {
+                "id": 308,
+                "label": "None",
+                "price": 0
+              }
+            },
+            {
+              "id": 33,
+              "name": "Caramel",
+              "option": {
+                "id": 304,
+                "label": "None",
+                "price": 0
+              }
+            },
+            {
+              "id": 35,
+              "name": "Sugar-Free Caramel",
+              "option": {
+                "id": 312,
+                "label": "None",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Flavor",
+          "display_style": "Select Multiple & Quantity"
+        }
+      ],
+      "product": {
+        "id": 4
+      },
+      "qty": 2
+    },
+    {
+      "id": 3779,
+      "variation_id": 1162,
+      "product_price": 4.49,
+      "modifier_details": [
+        [
+          "3189",
+          "0.0"
+        ],
+        [
+          "3305",
+          "0.0"
+        ],
+        [
+          "3335",
+          "0.0"
+        ]
+      ],
+      "subtotal": 4.49,
+      "groups": [
+        {
+          "additional_charges": false,
+          "id": 50,
+          "modifiers": [
+            {
+              "id": 2,
+              "name": "Medium",
+              "option": {
+                "id": 321,
+                "label": "Medium",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Hot Drink Sizes",
+          "display_style": "Sizes"
+        },
+        {
+          "additional_charges": false,
+          "id": 60,
+          "modifiers": [
+            {
+              "id": 16,
+              "name": "Milk Chocolate",
+              "option": {
+                "id": 469,
+                "label": "Regular",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Chocolate",
+          "display_style": "Select One & Quantity"
+        },
+        {
+          "additional_charges": false,
+          "id": 52,
+          "modifiers": [
+            {
+              "id": 9,
+              "name": "2%",
+              "option": {
+                "id": 464,
+                "label": "2%",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Milk",
+          "display_style": "Select One"
+        },
+        {
+          "additional_charges": false,
+          "id": 54,
+          "modifiers": [
+            {
+              "id": 23,
+              "name": "Regular",
+              "option": {
+                "id": 37,
+                "label": "Regular",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Espresso",
+          "display_style": "Select One"
+        },
+        {
+          "additional_charges": false,
+          "id": 51,
+          "modifiers": [
+            {
+              "id": 4,
+              "name": "Everything!",
+              "option": {
+                "id": 132,
+                "label": "Everything!",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Whip & Chips",
+          "display_style": "Select One"
+        },
+        {
+          "additional_charges": true,
+          "id": 56,
+          "modifiers": [
+            {
+              "id": 34,
+              "name": "Vanilla",
+              "option": {
+                "id": 300,
+                "label": "None",
+                "price": 0
+              }
+            },
+            {
+              "id": 36,
+              "name": "Sugar-Free Vanilla",
+              "option": {
+                "id": 308,
+                "label": "None",
+                "price": 0
+              }
+            },
+            {
+              "id": 33,
+              "name": "Caramel",
+              "option": {
+                "id": 304,
+                "label": "None",
+                "price": 0
+              }
+            },
+            {
+              "id": 35,
+              "name": "Sugar-Free Caramel",
+              "option": {
+                "id": 312,
+                "label": "None",
+                "price": 0
+              }
+            }
+          ],
+          "name": "Flavor",
+          "display_style": "Select Multiple & Quantity"
+        }
+      ],
+      "product": {
+        "id": "4"
+      },
+      "qty": 1
+    }
+  ],
+  "tax": null,
+  "total": 0,
+  "created_at": "2018-04-25 17:25:34 UTC"
+}

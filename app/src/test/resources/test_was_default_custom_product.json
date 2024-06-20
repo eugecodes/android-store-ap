@@ -1,0 +1,1096 @@
+{
+  "id": 290,
+  "uuid": "505a6186eb699f9d596fe23b437828a4",
+  "name": "Mocha",
+  "custom_groups": [
+    {
+      "id": 118,
+      "name": "Hot Drink Sizes",
+      "additional_charges": false,
+      "display_style": "Sizes",
+      "custom_modifiers": [
+        {
+          "id": 370,
+          "name": "Small",
+          "notes": "Hot Sizes",
+          "entangled_modifiers": [
+            {
+              "id": 658,
+              "label": "Small",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 371,
+          "name": "Medium",
+          "notes": "Hot Sizes",
+          "entangled_modifiers": [
+            {
+              "id": 659,
+              "label": "Medium",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 372,
+          "name": "Large",
+          "notes": "Hot Sizes",
+          "entangled_modifiers": [
+            {
+              "id": 660,
+              "label": "Large",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "name": "Espresso Options",
+      "additional_charges": false,
+      "display_style": "Select One",
+      "custom_modifiers": [
+        {
+          "id": 376,
+          "name": "Regular",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 667,
+              "label": "Regular",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 377,
+          "name": "Moose it (+1 shot)",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 668,
+              "label": "Moose it (+1 shot)",
+              "printer_label": null,
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 378,
+          "name": "Double Moose it (+2)",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 669,
+              "label": "Double Moose it (+2)",
+              "printer_label": "Double moose it!",
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 1086,
+          "name": "Triple Moose it",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 1771,
+              "label": "Triple moose it",
+              "printer_label": "",
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 379,
+          "name": "Decaf",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 670,
+              "label": "Decaf",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 380,
+          "name": "Half Caf",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 671,
+              "label": "Half Caf",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 381,
+          "name": "Decaf Moose it (+1)",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 672,
+              "label": "Decaf Moose it (+1)",
+              "printer_label": "Extra shot decaf esp",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 128,
+      "name": "Milk",
+      "additional_charges": false,
+      "display_style": "Select One",
+      "custom_modifiers": [
+        {
+          "id": 412,
+          "name": "2%",
+          "notes": "Milk 10",
+          "entangled_modifiers": [
+            {
+              "id": 739,
+              "label": "2%",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 1089,
+          "name": "Human milk",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 1774,
+              "label": "Human",
+              "printer_label": "Human",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 413,
+          "name": "Skim",
+          "notes": "Milk 10",
+          "entangled_modifiers": [
+            {
+              "id": 740,
+              "label": "Skim",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 414,
+          "name": "Almond",
+          "notes": "Milk 10",
+          "entangled_modifiers": [
+            {
+              "id": 741,
+              "label": "Almond",
+              "printer_label": null,
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 598,
+          "name": "Oat milk",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 1018,
+              "label": "Oat milk",
+              "printer_label": "Oat milk yummy",
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 415,
+          "name": "Coconut",
+          "notes": "Milk 10",
+          "entangled_modifiers": [
+            {
+              "id": 742,
+              "label": "Coconut",
+              "printer_label": null,
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 416,
+          "name": "Half & Half",
+          "notes": "Milk 10",
+          "entangled_modifiers": [
+            {
+              "id": 743,
+              "label": "Half & Half",
+              "printer_label": null,
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 417,
+          "name": "Heavy Cream",
+          "notes": "Milk 10",
+          "entangled_modifiers": [
+            {
+              "id": 744,
+              "label": "Heavy Cream",
+              "printer_label": null,
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "name": "Chocolate",
+      "additional_charges": false,
+      "display_style": "Select One & Quantity",
+      "custom_modifiers": [
+        {
+          "id": 418,
+          "name": "Milk Chocolate",
+          "notes": "Chocolate for drinks like Mochas",
+          "entangled_modifiers": [
+            {
+              "id": 745,
+              "label": "Half",
+              "printer_label": "Half Milk Chocolate Shot.",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 746,
+              "label": "Regular",
+              "printer_label": "Regular Milk Chocolate Shot",
+              "additional_charges": false,
+              "hide_label": true
+            },
+            {
+              "id": 747,
+              "label": "Extra",
+              "printer_label": "Extra Milk Chocolate Shot",
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 419,
+          "name": "Dark Chocolate",
+          "notes": "Chocolate for drinks like mochas",
+          "entangled_modifiers": [
+            {
+              "id": 748,
+              "label": "Half",
+              "printer_label": "Half Dark Chocolate",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 749,
+              "label": "Regular",
+              "printer_label": "Regular Dark Chocolate",
+              "additional_charges": false,
+              "hide_label": true
+            },
+            {
+              "id": 750,
+              "label": "Extra",
+              "printer_label": "Extra Dark Chocolate",
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 420,
+          "name": "White Chocolate",
+          "notes": "Chocolate for drinks like mochas",
+          "entangled_modifiers": [
+            {
+              "id": 751,
+              "label": "Half",
+              "printer_label": "Half White Chocolate",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 752,
+              "label": "Regular",
+              "printer_label": "Regular White Chocolate",
+              "additional_charges": false,
+              "hide_label": true
+            },
+            {
+              "id": 753,
+              "label": "Extra",
+              "printer_label": "Extra White Chocolate",
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 421,
+          "name": "Milk & Dark Chocolate",
+          "notes": "Chocolate for drinks like mochas",
+          "entangled_modifiers": [
+            {
+              "id": 754,
+              "label": "Half",
+              "printer_label": "Half Milk & Dark Chocolate",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 755,
+              "label": "Regular",
+              "printer_label": "Regular Milk & Dark Chocolate",
+              "additional_charges": false,
+              "hide_label": true
+            },
+            {
+              "id": 756,
+              "label": "Extra",
+              "printer_label": "Extra Milk & Dark Chocolate",
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 423,
+          "name": "Milk & White Chocolate",
+          "notes": "Chocolate for drinks like mochas",
+          "entangled_modifiers": [
+            {
+              "id": 760,
+              "label": "Half",
+              "printer_label": "Half Milk & White Chocolate",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 761,
+              "label": "Regular",
+              "printer_label": "Regular Milk & White Chocolate",
+              "additional_charges": false,
+              "hide_label": true
+            },
+            {
+              "id": 762,
+              "label": "Extra",
+              "printer_label": "Extra Milk & White Chocolate",
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 424,
+          "name": "Milk & Dark & White",
+          "notes": "Chocolate for drinks like mochas",
+          "entangled_modifiers": [
+            {
+              "id": 763,
+              "label": "Half",
+              "printer_label": "Half Milk & Dark & White Chocolate",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 764,
+              "label": "Regular",
+              "printer_label": "Regular Milk & Dark & White Chocolate",
+              "additional_charges": false,
+              "hide_label": true
+            },
+            {
+              "id": 765,
+              "label": "Extra",
+              "printer_label": "Extra Milk & Dark & White Chocolate ",
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 131,
+      "name": "Whip & Chips",
+      "additional_charges": false,
+      "display_style": "Select One",
+      "custom_modifiers": [
+        {
+          "id": 428,
+          "name": "Everything!",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 769,
+              "label": "Everything!",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 429,
+          "name": "Extra!",
+          "notes": "Extra Whip",
+          "entangled_modifiers": [
+            {
+              "id": 770,
+              "label": "Extra!",
+              "printer_label": null,
+              "additional_charges": true,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 430,
+          "name": "Whip Only",
+          "notes": "No Chips",
+          "entangled_modifiers": [
+            {
+              "id": 771,
+              "label": "Whip Only",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 431,
+          "name": "None",
+          "notes": "No Whip, No Chips",
+          "entangled_modifiers": [
+            {
+              "id": 772,
+              "label": "None",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 132,
+      "name": "Temperature",
+      "additional_charges": false,
+      "display_style": "Select One",
+      "custom_modifiers": [
+        {
+          "id": 432,
+          "name": "Regular",
+          "notes": "Regular temp for hot drinks",
+          "entangled_modifiers": [
+            {
+              "id": 773,
+              "label": "Regular",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 433,
+          "name": "Not So Hot",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 774,
+              "label": "Not So Hot",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 434,
+          "name": "Extra Hot",
+          "notes": "",
+          "entangled_modifiers": [
+            {
+              "id": 775,
+              "label": "Extra Hot",
+              "printer_label": null,
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 171,
+      "name": "Flavor Shot",
+      "additional_charges": true,
+      "display_style": "Select Multiple & Quantity",
+      "custom_modifiers": [
+        {
+          "id": 386,
+          "name": "Sugar-Free Vanilla",
+          "notes": "Hot - SF Vanilla Flavor Shot (none, half, full, extra)",
+          "entangled_modifiers": [
+            {
+              "id": 680,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 681,
+              "label": "Half",
+              "printer_label": "Half Sugar-Free Vanilla Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 682,
+              "label": "Full",
+              "printer_label": "Full Sugar-Free Vanilla Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 683,
+              "label": "Extra",
+              "printer_label": "Extra Sugar-Free Vanilla Shot",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 387,
+          "name": "Caramel",
+          "notes": "Hot - Caramel Flavor Shot (none, half, full, extra)",
+          "entangled_modifiers": [
+            {
+              "id": 684,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 685,
+              "label": "Half",
+              "printer_label": "Half Caramel Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 686,
+              "label": "Full",
+              "printer_label": "Full Caramel Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 687,
+              "label": "Extra",
+              "printer_label": "Extra Caramel Shot",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 388,
+          "name": "Sugar-Free Caramel",
+          "notes": "Hot - SF Caramel Flavor Shot (none, half, full, extra)",
+          "entangled_modifiers": [
+            {
+              "id": 688,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 689,
+              "label": "Half",
+              "printer_label": "Half Sugar-Free Caramel Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 690,
+              "label": "Full",
+              "printer_label": "Full Sugar-Free Caramel Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 691,
+              "label": "Extra",
+              "printer_label": "Extra Sugar-Free Caramel Shot",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 392,
+          "name": "Hazelnut",
+          "notes": "Hot - Hazelnut Flavor Shot (none, half, full, extra)",
+          "entangled_modifiers": [
+            {
+              "id": 704,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 705,
+              "label": "Half",
+              "printer_label": "Half Hazelnut Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 706,
+              "label": "Full",
+              "printer_label": "Full Hazelnut Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 707,
+              "label": "Extra",
+              "printer_label": "Extra Hazelnut Shot",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 393,
+          "name": "Maple",
+          "notes": "Hot/Cold - Maple Flavor Shot (none, half, full, extra)",
+          "entangled_modifiers": [
+            {
+              "id": 708,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 709,
+              "label": "Half",
+              "printer_label": "Half Maple Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 710,
+              "label": "Full",
+              "printer_label": "Full Maple Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 711,
+              "label": "Extra",
+              "printer_label": "Extra Maple Shot",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 394,
+          "name": "Marshmallow",
+          "notes": "Hot - Marshmallow Flavor Shot (none, half, full, extra)",
+          "entangled_modifiers": [
+            {
+              "id": 712,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 713,
+              "label": "Half",
+              "printer_label": "Half Marshmallow Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 714,
+              "label": "Full",
+              "printer_label": "Full Marshmallow Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 715,
+              "label": "Extra",
+              "printer_label": "Extra Marshmallow Shot",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 373,
+          "name": "Mint",
+          "notes": "Hot - Mint Flavor Shot (none, half, full, extra)",
+          "entangled_modifiers": [
+            {
+              "id": 661,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 662,
+              "label": "Half",
+              "printer_label": "Half Mint Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 663,
+              "label": "Full",
+              "printer_label": "Full Mint Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 664,
+              "label": "Extra",
+              "printer_label": "Extra Mint Shot",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 395,
+          "name": "Raspberry",
+          "notes": "Hot - Raspberry Flavor Shot (none, half, full, extra)",
+          "entangled_modifiers": [
+            {
+              "id": 716,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 717,
+              "label": "Half",
+              "printer_label": "Half Raspberry Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 718,
+              "label": "Full",
+              "printer_label": "Full Raspberry Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 719,
+              "label": "Extra",
+              "printer_label": "Extra Raspberry Shot",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 396,
+          "name": "Sugar-Free Raspberry",
+          "notes": "Hot - Sugar-Free Raspberry Flavor Shot (none, half, full, extra)",
+          "entangled_modifiers": [
+            {
+              "id": 720,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 721,
+              "label": "Half",
+              "printer_label": "Half Sugar-Free Raspberry Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 722,
+              "label": "Full",
+              "printer_label": "Full Sugar-Free Raspberry Shot",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 723,
+              "label": "Extra",
+              "printer_label": "Extra Sugar-Free Raspberry Shot",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 340,
+      "name": "Sugar & Sweetener Packets",
+      "additional_charges": false,
+      "display_style": "Select Multiple & Quantity",
+      "custom_modifiers": [
+        {
+          "id": 1020,
+          "name": "White Sugar",
+          "notes": "Sugar Packetsz",
+          "entangled_modifiers": [
+            {
+              "id": 1620,
+              "label": "None",
+              "printer_label": "printer description",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1621,
+              "label": "1",
+              "printer_label": "1 white sugar packet",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1622,
+              "label": "2",
+              "printer_label": "2 white sugar packets",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1623,
+              "label": "3",
+              "printer_label": "3 white sugar packets",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1624,
+              "label": "4",
+              "printer_label": "4 white sugar packets",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 1021,
+          "name": "Turbinado",
+          "notes": "Raw sugar packets",
+          "entangled_modifiers": [
+            {
+              "id": 1625,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1626,
+              "label": "1",
+              "printer_label": "1 turbinado packet",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1627,
+              "label": "2",
+              "printer_label": "2 turbinado packets",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1628,
+              "label": "3",
+              "printer_label": "3 turbinado packets",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1629,
+              "label": "4",
+              "printer_label": "4 turbinado packets",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 1023,
+          "name": "Pink Sweetener",
+          "notes": "Pink sweetener packets",
+          "entangled_modifiers": [
+            {
+              "id": 1635,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1636,
+              "label": "1",
+              "printer_label": "1 pink sweetener packet",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1637,
+              "label": "2",
+              "printer_label": "2 pink sweetener packets",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1638,
+              "label": "3",
+              "printer_label": "3 pink sweetener packets",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1639,
+              "label": "4",
+              "printer_label": "4 pink sweetener packets",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        },
+        {
+          "id": 1024,
+          "name": "Blue Sweetener",
+          "notes": "Blue sweetener packets",
+          "entangled_modifiers": [
+            {
+              "id": 1640,
+              "label": "None",
+              "printer_label": "",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1641,
+              "label": "1",
+              "printer_label": "1 blue sweetener packet",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1642,
+              "label": "2",
+              "printer_label": "2 blue sweetener packets",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1643,
+              "label": "3",
+              "printer_label": "3 blue sweetener packets",
+              "additional_charges": false,
+              "hide_label": false
+            },
+            {
+              "id": 1644,
+              "label": "4",
+              "printer_label": "4 blue sweetener packets",
+              "additional_charges": false,
+              "hide_label": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "default_modifiers": [
+    746,
+    667,
+    676,
+    680,
+    684,
+    688,
+    704,
+    708,
+    712,
+    661,
+    716,
+    720,
+    739,
+    773,
+    769,
+    659,
+    1640,
+    1635,
+    1630,
+    1625,
+    1620
+  ],
+  "active": true
+}

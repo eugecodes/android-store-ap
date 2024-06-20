@@ -1,0 +1,92 @@
+{
+  "id": 171,
+  "user_id": 1,
+  "location": {
+    "id": 2,
+    "name": "Solano",
+    "number": "2101",
+    "enterprise_unit": "e7279f27926845c9ab456a323766981b"
+  },
+  "data": {
+    "dateCreated": "2019-09-27T13:22:40.825Z",
+    "dateUpdated": "2019-09-27T13:22:40.825Z",
+    "id": "12343569984522997237",
+    "sourceOrganization": "einstein-noah",
+    "enterpriseUnitId": "e7279f27926845c9ab456a323766981b",
+    "customer": {
+      "id": "cb94d6bf-a61d-e911-a979-000d3a363879",
+      "name": "Andrés S",
+      "phone": "2563295326",
+      "email": "andres+test2019@tarmac.io"
+    },
+    "status": "ReadyForValidation",
+    "expireAt": "2019-12-26T13:22:40.827Z",
+    "orderLines": [
+      {
+        "description": "Latte",
+        "productId": {
+          "value": "103620"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false,
+        "lineId": "fc6b0394-566d-4f74-b3d3-98cd78bfab1f"
+      },
+      {
+        "description": "Farmhouse Egg Sandwich",
+        "productId": {
+          "value": "10400"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false,
+        "lineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe"
+      },
+      {
+        "description": "Six Cheese Bagel",
+        "parentLineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe",
+        "productId": {
+          "value": "60620"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false,
+        "lineId": "ef8d55c1-170d-46e8-878b-c0cc786b960d"
+      },
+      {
+        "description": "Two Eggs",
+        "parentLineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe",
+        "productId": {
+          "value": "57325"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false,
+        "lineId": "acb7e911-3ac4-4d1d-a228-f3b3a2e8679d"
+      },
+      {
+        "description": "None",
+        "parentLineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe",
+        "productId": {
+          "value": "900245"
+        },
+        "quantity": {
+          "value": 1
+        },
+        "substitutionAllowed": false,
+        "lineId": "131caa9f-faf6-4afd-9f13-6ce76f602d0e"
+      }
+    ],
+    "taxExempt": false,
+    "etag": "2019-09-27T13:22:40.825Z"
+  },
+  "status": "ReadyForValidation",
+  "total": null,
+  "tax": null,
+  "check_number": "12343569984522997237",
+  "subtotal": null
+}

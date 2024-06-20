@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="labeled_points">
+        <item quantity="one">%1$d Point</item>
+        <item quantity="other">%1$d Points</item>
+    </plurals>
+    <plurals name="asap_not_available">
+        <item quantity="one">ASAP not available due to selected item</item>
+        <item quantity="other">ASAP not available due to selected items</item>
+    </plurals>
+    <plurals name="bulk_order_item_description">
+        <item quantity="one">This item requires at least %1$d minute to prepare, so ASAP pickup will not be available</item>
+        <item quantity="other">This item requires at least %1$d minutes to prepare, so ASAP pickup will not be available</item>
+    </plurals>
+</resources>

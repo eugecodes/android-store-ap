@@ -1,0 +1,1127 @@
+[
+  {
+    "id": 19,
+    "uuid": "4c6fbb2d8e4c0da1d82face4159f8d8f",
+    "name": "Bacon, Egg & Cheese Bagel",
+    "applicable_rewards": []
+  },
+  {
+    "id": 20,
+    "uuid": "9a051fb3b3a0270230465c20202662d8",
+    "name": "Chicken Apple Sausage",
+    "applicable_rewards": [
+      "190"
+    ]
+  },
+  {
+    "id": 154,
+    "uuid": "613a405caf027b3e700474270f5237a8",
+    "name": "Chicken Chorizo",
+    "applicable_rewards": []
+  },
+  {
+    "id": 6,
+    "uuid": "915f3c72db25ec7f0f20d0e1739ef12c",
+    "name": "Ham & Gruyere",
+    "applicable_rewards": []
+  },
+  {
+    "id": 142,
+    "uuid": "c8e77babd651c66c7e248fe09999e1f6",
+    "name": "Maple French Toast Sandwich",
+    "applicable_rewards": [
+      "190"
+    ]
+  },
+  {
+    "id": 15,
+    "uuid": "0437365fe57b170ac3e4fd5eecb73c16",
+    "name": "Sausage Biscuit",
+    "applicable_rewards": [
+      "190"
+    ]
+  },
+  {
+    "id": 155,
+    "uuid": "67a3900fd16a7aa4d88138bf3fffb4bc",
+    "name": "Spinach Artichoke",
+    "applicable_rewards": []
+  },
+  {
+    "id": 23,
+    "uuid": "03c7bb5588978d8f91a639700f393cbe",
+    "name": "Three Cheese Classic",
+    "applicable_rewards": []
+  },
+  {
+    "id": 22,
+    "uuid": "3b0fc7bd0baaf77a1b262b8d42e31a83",
+    "name": "Turkey Bacon Mini",
+    "applicable_rewards": [
+      "190"
+    ]
+  },
+  {
+    "id": 21,
+    "uuid": "cddf42cc6c0c547f44a7a9be5804978c",
+    "name": "Turkey Bacon, Egg & Swiss",
+    "applicable_rewards": [
+      "190"
+    ]
+  },
+  {
+    "id": 134,
+    "uuid": "7928bc6dd6411d19b35fa07e5d34434f",
+    "name": "Cookies & Cream Shmearful",
+    "applicable_rewards": []
+  },
+  {
+    "id": 26,
+    "uuid": "610981f3bae89892bda950bc877556d6",
+    "name": "French Toast Shmearful",
+    "applicable_rewards": []
+  },
+  {
+    "id": 24,
+    "uuid": "78ca3f65359df5a3b85e47b0c8816424",
+    "name": "Plain Shmearful",
+    "applicable_rewards": []
+  },
+  {
+    "id": 60,
+    "uuid": "0b7211f78fcb5c555c0c2ab92582bf9a",
+    "name": "Cold Press Iced Coffee",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 109,
+    "uuid": "d51700203cad31b06442995e82f4308a",
+    "name": "Hot Press",
+    "applicable_rewards": []
+  },
+  {
+    "id": 59,
+    "uuid": "244660cea52e6108e905dbc71d8d97b1",
+    "name": "Asiago Bagel",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 16,
+    "uuid": "160060b29deff239125c12e7c0f10c82",
+    "name": "Asiago Bagel & Shmear",
+    "applicable_rewards": [
+      "151",
+      "5"
+    ]
+  },
+  {
+    "id": 53,
+    "uuid": "dcd41c81b4f2209be36ae536686afa13",
+    "name": "Blueberry Bagel",
+    "applicable_rewards": []
+  },
+  {
+    "id": 54,
+    "uuid": "617b411c904ff40edc59a27dd939dd05",
+    "name": "Blueberry Bagel & Shmear",
+    "applicable_rewards": []
+  },
+  {
+    "id": 156,
+    "uuid": "6a81ca9413798d0daf5337e0d612b137",
+    "name": "Chocolate Chip Bagel",
+    "applicable_rewards": []
+  },
+  {
+    "id": 157,
+    "uuid": "ef1615d70bade48b9dbc84d7528f9b0e",
+    "name": "Chocolate Chip Bagel & Shmear",
+    "applicable_rewards": [
+      "151",
+      "5"
+    ]
+  },
+  {
+    "id": 57,
+    "uuid": "4d5e4e405d0c0bfaf62fc25d3745772b",
+    "name": "Everything Bagel",
+    "applicable_rewards": []
+  },
+  {
+    "id": 58,
+    "uuid": "8a0bbba00891c2a40e3c6a69e6ea7766",
+    "name": "Everything Bagel & Shmear",
+    "applicable_rewards": [
+      "151",
+      "5"
+    ]
+  },
+  {
+    "id": 55,
+    "uuid": "cee61bc0da5c836aae36a02bbaa0726c",
+    "name": "Plain Bagel",
+    "applicable_rewards": []
+  },
+  {
+    "id": 56,
+    "uuid": "1313552146677ad6d741041fcb1db726",
+    "name": "Plain Bagel & Shmear",
+    "applicable_rewards": [
+      "151",
+      "5"
+    ]
+  },
+  {
+    "id": 143,
+    "uuid": "6ed9dd1f3d92ef0912e1528937cfa3aa",
+    "name": "Pumpkin Bagel",
+    "applicable_rewards": []
+  },
+  {
+    "id": 144,
+    "uuid": "5762952267ce9b54779fb9683c3a24ad",
+    "name": "Pumpkin Bagel w/ Pumpkin Shmear",
+    "applicable_rewards": [
+      "151",
+      "5"
+    ]
+  },
+  {
+    "id": 130,
+    "uuid": "5cc9fc1f18b64379eab4b2cf5f09cb68",
+    "name": "Blackberry Lemon Smoothie",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 131,
+    "uuid": "cb30d580c668db528cd2ec83a84c9ad1",
+    "name": "Blackberry Sage Sparkler",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 48,
+    "uuid": "0e69d4ab73615cc730c4bbf98e7234e5",
+    "name": "Caramel Cooler with Bubbles",
+    "applicable_rewards": []
+  },
+  {
+    "id": 158,
+    "uuid": "b4b4a20cf0de90d0cdc7477bc76a0440",
+    "name": "Cold Egg Nog",
+    "applicable_rewards": []
+  },
+  {
+    "id": 159,
+    "uuid": "57aa40728fbe31d808f6a85c80b6d635",
+    "name": "Fa La Latte",
+    "applicable_rewards": []
+  },
+  {
+    "id": 160,
+    "uuid": "838b5aafba89577a3b1960c98f1016a6",
+    "name": "Ho Ho Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 161,
+    "uuid": "4b08111d50e9c61851f3cd4e02c93153",
+    "name": "Ho Ho Mocha Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 162,
+    "uuid": "a147bf907fce573985780938f23b863a",
+    "name": "Hot Egg Nog",
+    "applicable_rewards": []
+  },
+  {
+    "id": 163,
+    "uuid": "021ea69d11cf83ff39dbf1b05e0f91cd",
+    "name": "Iced Fa La Latte",
+    "applicable_rewards": []
+  },
+  {
+    "id": 164,
+    "uuid": "d967fc9202f696f803ba548b75f5a887",
+    "name": "Iced Ho Ho Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 135,
+    "uuid": "825ad75c68c3f75f1b889a1fe1d395f5",
+    "name": "Iced Maple Boudino",
+    "applicable_rewards": []
+  },
+  {
+    "id": 137,
+    "uuid": "1d15c4c0d8a801b9f060b4826b611d35",
+    "name": "Iced Pumpkin Crafted Press",
+    "applicable_rewards": []
+  },
+  {
+    "id": 138,
+    "uuid": "69f202f7c51b9ba45533877704a8b969",
+    "name": "Iced Pumpkin Latte",
+    "applicable_rewards": []
+  },
+  {
+    "id": 139,
+    "uuid": "150b6c58cb828818bb9e908da59dd686",
+    "name": "Iced Pumpkin White Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 165,
+    "uuid": "b2ab612d88779a469a0ac03b045918fa",
+    "name": "Iced Spicy Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 140,
+    "uuid": "cfbe4aa717d78d0d2d1481697ab3bc3d",
+    "name": "Maple Boudino",
+    "applicable_rewards": []
+  },
+  {
+    "id": 141,
+    "uuid": "f0a0bdd7a78ae96659bbd7ea9950c3bc",
+    "name": "Maple Boudino Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 104,
+    "uuid": "3e415d2ea5da54fa6b7f53b2162f8043",
+    "name": "Matcha Tea Cooler with Bubbles",
+    "applicable_rewards": []
+  },
+  {
+    "id": 147,
+    "uuid": "8e2dc5f401bed44ac09322bdcbe08e53",
+    "name": "Pumpkin Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 148,
+    "uuid": "c60d35f8af4307f072986c2a1c5b71e7",
+    "name": "Pumpkin Crafted Press",
+    "applicable_rewards": []
+  },
+  {
+    "id": 149,
+    "uuid": "ab6464c15a1736027bdf232f578a42b9",
+    "name": "Pumpkin Latte",
+    "applicable_rewards": []
+  },
+  {
+    "id": 150,
+    "uuid": "b93dfbeeae90d73f55bc1028e87f8bb5",
+    "name": "Pumpkin White Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 151,
+    "uuid": "b22d12cedefc9703408729f47f6a42f8",
+    "name": "Pumpkin White Mocha Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 105,
+    "uuid": "9fc5cce0d00ba5c16bdf52e068fced1f",
+    "name": "Raspberry Green Tea with Bubbles",
+    "applicable_rewards": []
+  },
+  {
+    "id": 166,
+    "uuid": "f6efd47feed032c4476c8172d2606fdc",
+    "name": "Spicy Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 167,
+    "uuid": "b072dba89d2791dd01f5213b549a78d5",
+    "name": "Spicy Mocha Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 39,
+    "uuid": "a1530f8a51762784c55a2362016f068b",
+    "name": "Apple Cinnamon Muffin",
+    "applicable_rewards": [
+      "34",
+      "73",
+      "8"
+    ]
+  },
+  {
+    "id": 27,
+    "uuid": "7ae1fca91b0d2c5469d04e3f4f65f756",
+    "name": "Apple Fritter",
+    "applicable_rewards": [
+      "34",
+      "73",
+      "8"
+    ]
+  },
+  {
+    "id": 28,
+    "uuid": "3330e2a063c5445ec98fc46ac11b9e1a",
+    "name": "Banana Bread",
+    "applicable_rewards": [
+      "34",
+      "73"
+    ]
+  },
+  {
+    "id": 7,
+    "uuid": "4cdc4814a4ea3032d49764c77714ffca",
+    "name": "Blueberry Muffin",
+    "applicable_rewards": [
+      "34",
+      "73"
+    ]
+  },
+  {
+    "id": 29,
+    "uuid": "1c6951aec4281ede76b9816e607d0872",
+    "name": "Chocolate Hazelnut Croissant",
+    "applicable_rewards": []
+  },
+  {
+    "id": 30,
+    "uuid": "3c9db9ccbd77319c59a91f3f048ffd08",
+    "name": "Cinnamon Coffee Cake",
+    "applicable_rewards": []
+  },
+  {
+    "id": 31,
+    "uuid": "1ab1738ac6d63da040201df1570d8ade",
+    "name": "Lemon Poppy Seed Bread",
+    "applicable_rewards": []
+  },
+  {
+    "id": 32,
+    "uuid": "24755ec134855ba96174ac0f84779515",
+    "name": "Mini Donut Muffin",
+    "applicable_rewards": []
+  },
+  {
+    "id": 34,
+    "uuid": "5e2e590ee1dcc7e6e35067a171236a3f",
+    "name": "Orange Cranberry Scone",
+    "applicable_rewards": []
+  },
+  {
+    "id": 145,
+    "uuid": "61c509d57c2af6879b21410b06b6c6a1",
+    "name": "Pumpkin Bread",
+    "applicable_rewards": []
+  },
+  {
+    "id": 35,
+    "uuid": "c403f42875f0622804c9370d0cb3b859",
+    "name": "Raspberry White Chocolate Scone",
+    "applicable_rewards": []
+  },
+  {
+    "id": 2,
+    "uuid": "272213d81070c9c4968bc563b98c87ac",
+    "name": "Americano",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 8,
+    "uuid": "a313bf879b5b97cd7772167adb77f94f",
+    "name": "Berry White Mocha",
+    "applicable_rewards": [
+      "9"
+    ]
+  },
+  {
+    "id": 40,
+    "uuid": "3f74b9e568f21bac16ba7b4264c2b5a4",
+    "name": "Berry White Mocha Cooler",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 41,
+    "uuid": "3daca87ad34bb1e664c0b4905bf5f41b",
+    "name": "Blended Crafted Press",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8",
+      "9"
+    ]
+  },
+  {
+    "id": 42,
+    "uuid": "1eef7daabc48ef9ef68a24af7191765d",
+    "name": "Breve",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8",
+      "9"
+    ]
+  },
+  {
+    "id": 43,
+    "uuid": "bac7c6a29332bcd120a52b8a201de5cc",
+    "name": "Brownie Coffeeless Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 44,
+    "uuid": "f78fcfc9e353cc2fb780fe4b22a0c6c7",
+    "name": "Campfire Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 45,
+    "uuid": "7222c50e246b8498435099e0689ab6b8",
+    "name": "Campfire Mocha Cooler",
+    "applicable_rewards": [
+      "9"
+    ]
+  },
+  {
+    "id": 46,
+    "uuid": "ff5719769b2797e93ee5c01b9e7fecd7",
+    "name": "Cappuccino",
+    "applicable_rewards": [
+      "9"
+    ]
+  },
+  {
+    "id": 47,
+    "uuid": "1b622e06845973a9bfda42f75f88a0bb",
+    "name": "Caramel Cooler",
+    "applicable_rewards": [
+      "9"
+    ]
+  },
+  {
+    "id": 49,
+    "uuid": "5c10e5c6fe485edbed36628e3459ad65",
+    "name": "Caramel High Rise",
+    "applicable_rewards": []
+  },
+  {
+    "id": 50,
+    "uuid": "78e59ce203de4be679276a16a4c41dbf",
+    "name": "Caramel High Rise Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 51,
+    "uuid": "7486161fd98e0a1b5fd993030fd0cab4",
+    "name": "Cereal Milk Coffeeless Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 113,
+    "uuid": "1111c9c206a3101174eba92adddcc6fe",
+    "name": "Chai Tea Latte",
+    "applicable_rewards": []
+  },
+  {
+    "id": 3,
+    "uuid": "e12b365e43a2669a435b87dfc597a53b",
+    "name": "Chocolate Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 116,
+    "uuid": "7a40d05044b0dfc1a3098683c07f0bda",
+    "name": "Citron Green Tea",
+    "applicable_rewards": []
+  },
+  {
+    "id": 121,
+    "uuid": "a352203c3de550daefa9e4fefce06585",
+    "name": "Classic Black Iced Tea",
+    "applicable_rewards": []
+  },
+  {
+    "id": 52,
+    "uuid": "45c49a6359a77f767522dee521ff2d59",
+    "name": "Coffee Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 4,
+    "uuid": "8afafeab4bea45e491f9424f080a7502",
+    "name": "Coffee of the Day",
+    "applicable_rewards": [
+      "152",
+      "59",
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 13,
+    "uuid": "6d16581d78d57ad3ff76fab54d493748",
+    "name": "Cookies and Cream Coffeeless Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 125,
+    "uuid": "a98120c66a111d1f54de14836546a288",
+    "name": "Depth Charge",
+    "applicable_rewards": []
+  },
+  {
+    "id": 117,
+    "uuid": "295c41e9097871bb02f9539c736869ff",
+    "name": "Earl Grey Tea",
+    "applicable_rewards": []
+  },
+  {
+    "id": 61,
+    "uuid": "6907c4433be9f98dec6c3d4ffcaa8806",
+    "name": "Espresso",
+    "applicable_rewards": []
+  },
+  {
+    "id": 168,
+    "uuid": "4ad11d3575a955942f7990b284a46d59",
+    "name": "Espresso Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 129,
+    "uuid": "5e0fc8d5f4827445bb5b485ec94d5287",
+    "name": "Frozen Hot Chocolate",
+    "applicable_rewards": []
+  },
+  {
+    "id": 62,
+    "uuid": "2b1527010c67cb60e1e4b80ea7a20a3b",
+    "name": "Hot Apple Blast",
+    "applicable_rewards": []
+  },
+  {
+    "id": 63,
+    "uuid": "c2041850820f8618ef99b321c51f439a",
+    "name": "Hot Chocolate",
+    "applicable_rewards": []
+  },
+  {
+    "id": 118,
+    "uuid": "fcf13ff486b8f88eacca0f8128314a9e",
+    "name": "Hot Cinnamon Spice Tea",
+    "applicable_rewards": []
+  },
+  {
+    "id": 18,
+    "uuid": "970321861ebf2622cb486b0b5d5ed71a",
+    "name": "Hot Crafted Press",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 64,
+    "uuid": "be7cb64daae66ca3e2406b2fb03e4157",
+    "name": "Iced Americano",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 65,
+    "uuid": "7e4a16920d7a50843e6f77836dd80e4f",
+    "name": "Iced Berry White Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 66,
+    "uuid": "dd2828748107ab588bebc6f3619118a8",
+    "name": "Iced Breve",
+    "applicable_rewards": []
+  },
+  {
+    "id": 67,
+    "uuid": "3bc7350ed5d26542bfd383eeece611fd",
+    "name": "Iced Campfire Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 68,
+    "uuid": "e957468c4a03326578a19ae483ca3257",
+    "name": "Iced Caramel High Rise",
+    "applicable_rewards": []
+  },
+  {
+    "id": 112,
+    "uuid": "f796f99d3cb8fdd58984f8c16822435d",
+    "name": "Iced Chai Tea Latte",
+    "applicable_rewards": []
+  },
+  {
+    "id": 17,
+    "uuid": "0536ff3ebe6112392d8f93b63e87d501",
+    "name": "Iced Crafted Press",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8",
+      "9"
+    ]
+  },
+  {
+    "id": 71,
+    "uuid": "6f187a2fd995b9083b0abfac907099f5",
+    "name": "Iced Latte",
+    "applicable_rewards": []
+  },
+  {
+    "id": 11,
+    "uuid": "df5f08811f281c33a310a5e6e5cc4eb2",
+    "name": "Iced Mint Condition",
+    "applicable_rewards": []
+  },
+  {
+    "id": 9,
+    "uuid": "0ec29a4eb30f85f80d703cb2d3783f4d",
+    "name": "Iced Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 69,
+    "uuid": "ff585a6d19278444cf8fadc013c4bd85",
+    "name": "Iced Northern Lite Berry White Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 70,
+    "uuid": "7d067236e2357923eeaf5d8795bad71d",
+    "name": "Iced Northern Lite Caramel High Rise",
+    "applicable_rewards": []
+  },
+  {
+    "id": 10,
+    "uuid": "20cb81669e438c87bbb73e7e3c2e6ef0",
+    "name": "Iced Northern Lite Latte",
+    "applicable_rewards": []
+  },
+  {
+    "id": 101,
+    "uuid": "f2f7e052f6ff53c520c66db66a58fae3",
+    "name": "Iced Northern Lite Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 73,
+    "uuid": "1ee3d4de0eb0a49aabec4cb1a75144a3",
+    "name": "Iced Northern Lite Turtle Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 72,
+    "uuid": "8d97973e23f9a4070fa9afb067e7d0c2",
+    "name": "Iced Northern Lite Vanilla White Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 74,
+    "uuid": "805c078de32a78967ac1cd42cd70592d",
+    "name": "Iced Turtle Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 75,
+    "uuid": "7a0ba3b4db49c8915b343ee0864af49b",
+    "name": "Iced Vanilla White Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 76,
+    "uuid": "d38d810e21536fe98703f17d53855f10",
+    "name": "Kids Hot Chocolate",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 77,
+    "uuid": "7e508ee4ca4fcb227f1f8989547f76c8",
+    "name": "Kids Hot Cider",
+    "applicable_rewards": []
+  },
+  {
+    "id": 14,
+    "uuid": "30702db023ffec8802be68b580556346",
+    "name": "Kids Mango Orange Key Lime Smoothie",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 114,
+    "uuid": "abbcd0cb64bfe52463b2aba84e85714f",
+    "name": "Kids Silly Soda",
+    "applicable_rewards": []
+  },
+  {
+    "id": 78,
+    "uuid": "49f5d111483d10769b0fee43678cfb0a",
+    "name": "Kids Strawberry Banana Smoothie",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 79,
+    "uuid": "c99931dbf4b9f534d066d2cc45199f79",
+    "name": "Latte",
+    "applicable_rewards": [
+      "9"
+    ]
+  },
+  {
+    "id": 80,
+    "uuid": "a33afe8c703c7b475870d325d8214d48",
+    "name": "Macchiato",
+    "applicable_rewards": []
+  },
+  {
+    "id": 122,
+    "uuid": "a5dd80e07a3030c30b0a6f42c9f95cbb",
+    "name": "Mango Black Iced Tea",
+    "applicable_rewards": []
+  },
+  {
+    "id": 119,
+    "uuid": "c2a877c7b14b6aff93efef6c6c1d825b",
+    "name": "Mango Black Tea",
+    "applicable_rewards": []
+  },
+  {
+    "id": 81,
+    "uuid": "55d9ce28d7888d4ceec412561b64a657",
+    "name": "Mango Orange Key Lime Smoothie",
+    "applicable_rewards": []
+  },
+  {
+    "id": 83,
+    "uuid": "3e47c86f871671286f9a679ad92b6b03",
+    "name": "Mint Condition",
+    "applicable_rewards": []
+  },
+  {
+    "id": 82,
+    "uuid": "acb2afcb2e0999217df23c48a288f56e",
+    "name": "Mint Condition Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 120,
+    "uuid": "5edf79dc5a01308167cec6e93819b97c",
+    "name": "Mint Verbena Tea",
+    "applicable_rewards": []
+  },
+  {
+    "id": 1,
+    "uuid": "bfaa3bee7cb9983cdbe897fa298b95ae",
+    "name": "Mocha",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8",
+      "9"
+    ]
+  },
+  {
+    "id": 84,
+    "uuid": "b61d14e5285108fcd39e79e0c2bf5c4c",
+    "name": "Northern Lite Berry White Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 85,
+    "uuid": "b1caca8c98418945b7ad6ffd9d6f0c29",
+    "name": "Northern Lite Berry White Mocha Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 86,
+    "uuid": "9d2b9be75643206004e6688d09f09024",
+    "name": "Northern Lite Caramel Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 87,
+    "uuid": "1dd63f96c2fe3fc064e7ba8a9db3d068",
+    "name": "Northern Lite Caramel High Rise",
+    "applicable_rewards": []
+  },
+  {
+    "id": 88,
+    "uuid": "f685c6a30b6204137f1249e81351462d",
+    "name": "Northern Lite Caramel High Rise Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 89,
+    "uuid": "9c8c602d45be505f2d6cb209245f0f48",
+    "name": "Northern Lite Chocolate Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 90,
+    "uuid": "2a79cd1965f85df9f2b4388635172bdf",
+    "name": "Northern Lite Coffee Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 103,
+    "uuid": "4296fe8be16ac1ffcd0ba380b722c073",
+    "name": "Northern Lite Latte",
+    "applicable_rewards": []
+  },
+  {
+    "id": 91,
+    "uuid": "dbf52a9560050c2b60eaccc6b9387350",
+    "name": "Northern Lite Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 92,
+    "uuid": "cf544f17d57b11fcbeddb2b3d17dea5b",
+    "name": "Northern Lite Turtle Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 93,
+    "uuid": "842d22d35d7c6336d6bd26ddb40fc7e1",
+    "name": "Northern Lite Turtle Mocha Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 94,
+    "uuid": "c7a52005761038f07f63fcd981ad4af7",
+    "name": "Northern Lite Vanilla Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 95,
+    "uuid": "79439e4aa92a52f00c46b43c167419f6",
+    "name": "Northern Lite Vanilla White Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 96,
+    "uuid": "96ca0ca8205bf539bbc1865b4668af44",
+    "name": "Northern Lite Vanilla White Mocha Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 106,
+    "uuid": "cd7d881b0dba1b1c46f20814afe581ae",
+    "name": "Sparkling Green Tea Lemonade",
+    "applicable_rewards": []
+  },
+  {
+    "id": 107,
+    "uuid": "17ccf6d0b54240fd8b38a3bf619648ec",
+    "name": "Sparkling Peach Black Tea",
+    "applicable_rewards": []
+  },
+  {
+    "id": 97,
+    "uuid": "70107328f913b42021fcba8c0b3d96ce",
+    "name": "Strawberry Banana Smoothie",
+    "applicable_rewards": []
+  },
+  {
+    "id": 123,
+    "uuid": "24bdcecc35629489f454f2bf1f27af2a",
+    "name": "Tropical Green Iced Tea",
+    "applicable_rewards": []
+  },
+  {
+    "id": 98,
+    "uuid": "1df82a982ed314e23992549a5634fd94",
+    "name": "Turtl\n    e Mocha",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 12,
+    "uuid": "f5132d7bdb62a336a37051f376e9c295",
+    "name": "Turtle Mocha Cooler",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8",
+      "9"
+    ]
+  },
+  {
+    "id": 102,
+    "uuid": "e41f673d7f3b16245a9c725804db8d06",
+    "name": "Vanilla Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 99,
+    "uuid": "d52879ed4f1346cb3686a07e61b7cec0",
+    "name": "Vanilla White Mocha",
+    "applicable_rewards": []
+  },
+  {
+    "id": 100,
+    "uuid": "8f8435f083e725f401c68002158a162a",
+    "name": "Vanilla White Mocha Cooler",
+    "applicable_rewards": []
+  },
+  {
+    "id": 110,
+    "uuid": "70a9bbb06071f94daabfaa82f8b4b3c8",
+    "name": "Draft Mocha",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94"
+    ]
+  },
+  {
+    "id": 108,
+    "uuid": "59fedc816fc177566a37a8a45046886b",
+    "name": "Nitro Cold Press",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94",
+      "104",
+      "7",
+      "94",
+      "90",
+      "89",
+      "137",
+      "8"
+    ]
+  },
+  {
+    "id": 111,
+    "uuid": "946794832ff94ac999b74097ddb60648",
+    "name": "Nitro High Rise",
+    "applicable_rewards": [
+      "104",
+      "7",
+      "94"
+    ]
+  }
+]

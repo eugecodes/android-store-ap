@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="primary_font_family" format="reference" type="font">
+        @font/opensans_bold
+    </item>
+
+    <item name="secondary_font_family" format="reference" type="font">
+        @font/opensans_regular
+    </item>
+
+    <item name="tertiary_font" format="reference" type="font">
+        @font/neutra_text_bold
+    </item>
+
+    <item name="tertiary_light_font" format="reference" type="font">
+        @font/neutra_text_demi
+    </item>
+
+    <item name="toolbar_title_font" format="reference" type="font">
+        @font/neutra_text_bold
+    </item>
+
+    <item name="toolbar_subtitle_font" format="reference" type="font">
+        @font/neutra_text_demi
+    </item>
+
+    <item name="content_font_family" format="reference" type="font">
+        @font/secondary_font_family
+    </item>
+
+    <item name="description_font_family" format="reference" type="font">
+        @font/opensans_light
+    </item>
+
+    <item name="reward_card_font" format="reference" type="font">
+        @font/heading_secondary_font_family
+    </item>
+
+    <item name="section_header_font" format="reference" type="font">
+        @font/heading_secondary_font_family
+    </item>
+
+    <item name="search_field_font" format="reference" type="font">
+        @font/primary_font_family
+    </item>
+
+    <item name="phone_font" format="reference" type="font">
+        @font/opensans_regular
+    </item>
+
+    <item name="store_name_font" type="font" format="reference">
+        @font/opensans_light
+    </item>
+
+    <item name="menu_item_name_font" type="font" format="reference">
+        @font/heading_secondary_font_family
+    </item>
+
+    <item name="calories_font" type="font" format="reference">
+        @font/opensans_bold
+    </item>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="caribouapp.caribou.com.cariboucoffee.mvp.locations.LocationsListActivity"
+        tools:showIn="@layout/activity_locations_list">
+
+        <caribouapp.caribou.com.cariboucoffee.mvp.locations.LocationSearchBarView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_locations_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/searchView"
+            android:clipToPadding="false"
+            android:paddingBottom="@dimen/list_bottom_padding"
+            tools:listitem="@layout/layout_location_vertical_list_item" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_error_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/location_list_height"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/xsmall_spacing"
+            app:cardElevation="@dimen/medium_elevation"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:id="@+id/tv_error_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_spacing"
+                android:textSize="@dimen/text_size_5"
+                android:fontFamily="@font/description_font_family"
+                tools:text="This is an error message" />
+
+        </androidx.cardview.widget.CardView>
+
+        <caribouapp.caribou.com.cariboucoffee.common.LoadingView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</layout>

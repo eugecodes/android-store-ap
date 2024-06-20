@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#a7353a</color>
+    <color name="tertiaryColor">#58585A</color>
+    <color name="primaryLightColor">#58585a</color>
+    <color name="primaryDarkColor">#a7353a</color>
+    <color name="primaryMidDarkColor">#a7353a</color>
+    <color name="accentColor">#8f9437</color>
+    <color name="textAccentPrimaryColor">#a7353a</color>
+    <color name="textAccentSecondaryColor">#a7353a</color>
+    <color name="buttonPrimaryPressedColor">#601d20</color>
+    <color name="bruLightRedButton993D3D">#993D3D</color>
+    <color name="startColor">#787878</color>
+    <color name="endColor">#9F9F9F</color>
+    <color name="guestHintColor">#993D3D</color>
+    <color name="buttonPrimaryColor">@color/primaryDarkColor</color>
+    <color name="progressColor">@color/primaryLightColor</color>
+    <color name="buttonSecondaryPressedColor">@color/primaryDarkColor</color>
+    <color name="buttonSecondaryColor">@color/primaryColor</color>
+    <color name="buttonCommercePressed">@color/primaryColor</color>
+    <color name="buttonCommerceDarkColor">@color/primaryDarkColor</color>
+    <color name="rewardBannerBackground">@color/lightBrownColor</color>
+    <color name="buttonTertiaryColor">@color/tertiaryColor</color>
+    <color name="buttonTertiaryPressedColor">@color/tertiaryColor</color>
+
+
+    <color name="gradientBackgroundStartColor">#58585a</color>
+    <color name="gradientBackgroundEndColor">#58585a</color>
+
+    <color name="menuDawnTextColor">@color/whiteColor</color>
+    <color name="menuDuskTextColor">@color/whiteColor</color>
+    <color name="menuMiddayTextColor">@color/whiteColor</color>
+    <color name="menuNightskyTextColor">@color/whiteColor</color>
+    <color name="midTransparentBlackColor">#88000000</color>
+
+
+    <color name="menuDawnBottomTextColor">@color/whiteColor</color>
+    <color name="menuDuskBottomTextColor">@color/whiteColor</color>
+    <color name="menuMiddayBottomTextColor">@color/whiteColor</color>
+    <color name="menuNightskyBottomTextColor">@color/whiteColor</color>
+
+    <color name="dashboardDawnCheckInBackgroundColor">@color/primaryColor</color>
+    <color name="dashboardDuskCheckInBackgroundColor">@color/primaryColor</color>
+    <color name="dashboardMiddayCheckInBackgroundColor">@color/primaryColor</color>
+    <color name="dashboardNightskyCheckInBackgroundColor">@color/primaryColor</color>
+
+    <color name="dashboardDawnCheckInPayTextColor">@color/whiteColor</color>
+    <color name="dashboardDuskCheckInPayTextColor">@color/whiteColor</color>
+    <color name="dashboardMiddayCheckInPayTextColor">@color/whiteColor</color>
+    <color name="dashboardNightskyCheckInPayTextColor">@color/whiteColor</color>
+
+    <color name="dashboardDawnMenuButtonColor">@color/primaryColor</color>
+    <color name="dashboardDuskMenuButtonColor">@color/primaryColor</color>
+    <color name="dashboardMiddayMenuButtonColor">@color/primaryColor</color>
+    <color name="dashboardNightskyMenuButtonColor">@color/primaryColor</color>
+
+    <color name="dashboardDawnTextColor">@color/whiteColor</color>
+    <color name="dashboardDuskTextColor">@color/whiteColor</color>
+    <color name="dashboardMiddayTextColor">@color/whiteColor</color>
+    <color name="dashboardNightskyTextColor">@color/whiteColor</color>
+
+    <color name="dashboardDawnBannerTextColor">@color/whiteColor</color>
+    <color name="dashboardDuskBannerTextColor">@color/whiteColor</color>
+    <color name="dashboardMiddayBannerTextColor">@color/whiteColor</color>
+    <color name="dashboardNightskyBannerTextColor">@color/whiteColor</color>
+
+    <color name="dashboardDawnBannerSecondaryTextColor">@color/taupeColor</color>
+    <color name="dashboardDuskBannerSecondaryTextColor">@color/taupeColor</color>
+    <color name="dashboardMiddayBannerSecondaryTextColor">@color/taupeColor</color>
+    <color name="dashboardNightskyBannerSecondaryTextColor">@color/taupeColor</color>
+
+    <color name="buttonActionNeededColor">#C66828</color>
+    <color name="buttonActionNeededPressedColor">#843804</color>
+
+    <color name="dashboardTextShadowColor">@color/blackColor</color>
+
+    <color name="notificationBadgeBackgroundColor">@color/whiteColor</color>
+    <color name="notificationBadgeTextColor">#A7353A</color>
+
+    <color name="welcomeBackTextColor">@color/primaryLightColor</color>
+
+    <color name="titleTextColor">@color/primaryDarkColor</color>
+    <color name="sectionTitleTextColor">@color/primaryDarkColor</color>
+    <color name="subtitleTextColor">@color/primaryLightColor</color>
+    <color name="orderConfirmationTextColor">@color/deepBrownColor</color>
+    <color name="orderConfirmationTitleTextColor">@color/deepBrownColor</color>
+    <color name="inlineModifierSelectedColor">@color/buttonPrimaryPressedColor</color>
+
+    <color name="iAmHereDashboardTitleColor">@color/whiteColor</color>
+    <color name="iAmHereConfirmationTitleColor">@color/whiteColor</color>
+    <color name="iAmHereConfirmationBackground">@color/primaryLightColor</color>
+
+    <color name="iAmHereDashboardButton">@color/primaryColor</color>
+    <color name="iAmHereDashboardButtonPressed">@color/buttonPrimaryPressedColor</color>
+    <color name="iAmHereDashboardBackground">@color/midTransparentBlackColor</color>
+
+    <color name="customizationTextColor">@color/primaryLightColor</color>
+    <color name="customizationButtonColor">@color/primaryColor</color>
+    <color name="customizationButtonPressedColor">@color/buttonPrimaryPressedColor</color>
+
+    <color name="expand_collapse_text_button">@color/primaryColor</color>
+    <color name="guest_user_dialog_close">@color/whiteColor</color>
+    <color name="guest_user_dialog_button">@color/bruLightRedButton993D3D</color>
+    <color name="guestDialogBackgroundStartColor">@color/startColor</color>
+    <color name="guestDialogBackgroundEndColor">@color/endColor</color>
+    <color name="lets_get_started_hint_color">@color/guestHintColor</color>
+    <color name="guestTNCColor">@color/whiteColor</color>
+    <color name="disabled_continue_button">#80993D3D</color>
+    <color name="payment_type_screen">#433726</color>
+    <color name="payment_type_normal_button_color">#9A3D3D</color>
+
+</resources>

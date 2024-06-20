@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="caribouapp.caribou.com.cariboucoffee.api.model.yext.YextPickupType" />
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.pickup.model.PickupModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/activity_pickup">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsv_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:fillViewport="true"
+            android:paddingBottom="@dimen/list_bottom_padding"
+            tools:showIn="@layout/activity_item">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/medium_spacing"
+                    android:fontFamily="@font/primary_font_family"
+                    android:importantForAccessibility="yes"
+                    android:text="@string/pickup_type_title"
+                    android:textSize="@dimen/text_size_6_3" />
+
+                <include
+                    android:id="@+id/opt_walkin"
+                    layout="@layout/layout_pickup_type_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_separator_height"
+                    app:enabled="@{model.isPickupTypeEnabled(YextPickupType.WalkIn)}"
+                    app:pickupDescription="@{model.isPickupTypeEnabled(YextPickupType.WalkIn) ? model.walkInDescription : @string/pickup_disabled_description(context.getString(YextPickupType.WalkIn.displayNameStringId))}"
+                    app:pickupTitle="@{@string/pickup_walkin}" />
+
+                <include
+                    android:id="@+id/opt_drive_thru"
+                    layout="@layout/layout_pickup_type_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_separator_height"
+                    app:pickupDescription="@{model.isPickupTypeEnabled(YextPickupType.DriveThru) ? model.driveThruDescription : @string/pickup_disabled_description(context.getString(YextPickupType.DriveThru.displayNameStringId))}"
+                    app:pickupTitle="@{@string/pickup_drivethru}"
+                    app:enabled="@{model.isPickupTypeEnabled(YextPickupType.DriveThru)}" />
+
+                <include
+                    android:id="@+id/opt_curbside"
+                    layout="@layout/layout_pickup_type_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_separator_height"
+                    app:pickupDescription="@{model.isPickupTypeEnabled(YextPickupType.Curbside) ? model.curbsideDescription : @string/pickup_disabled_description(context.getString(YextPickupType.Curbside.displayNameStringId))}"
+                    app:pickupTitle="@{@string/pickup_curbside}"
+                    app:enabled="@{model.isPickupTypeEnabled(YextPickupType.Curbside)}"
+                    app:pickupCurbsideTipMessage="@{model.pickupCurbsideTipMessage}"
+                    />
+
+                <include
+                    android:id="@+id/curbside_data"
+                    layout="@layout/layout_curbside_pick_up_data"
+                    android:animateLayoutChanges="true"
+                    android:orientation="vertical"
+                    app:bindVisible="@{model.selectedPickupType == YextPickupType.Curbside &amp;&amp; model.isPickupTypeEnabled(YextPickupType.Curbside)}" />
+
+                <include
+                    android:id="@+id/delivery_option"
+                    layout="@layout/layout_pickup_type_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/row_separator_height"
+                    app:enabled="@{model.isPickupTypeEnabled(YextPickupType.Delivery)}"
+                    app:pickupDescription="@{model.isPickupTypeEnabled(YextPickupType.Delivery) ? @string/pickup_delivery_description : @string/pickup_delivery_disabled_description }"
+                    app:pickupTitle="@{@string/pickup_delivery}" />
+
+                <include
+                    android:id="@+id/delivery_data"
+                    layout="@layout/layout_delivery_data"
+                    app:bindVisible="@{model.selectedPickupType == YextPickupType.Delivery &amp;&amp; model.isPickupTypeEnabled(YextPickupType.Delivery)}"
+                    app:model="@{model.deliveryModel}" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/BaseButton.SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_spacing"
+            android:text="@string/continue_text" />
+
+    </LinearLayout>
+</layout>

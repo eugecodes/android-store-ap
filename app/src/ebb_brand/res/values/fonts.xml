@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="heading_primary_font_family" format="reference" type="font">
+        @font/ebb_elmo_regular_family
+    </item>
+    <item name="heading_secondary_font_family" format="reference" type="font">
+        @font/archer_bold
+    </item>
+
+    <item name="toolbar_title_font" format="reference" type="font">
+        @font/primary_font_family
+    </item>
+
+    <item name="toolbar_subtitle_font" format="reference" type="font">
+        @font/primary_font_family
+    </item>
+
+    <item name="primary_font_family" format="reference" type="font">
+        @font/lato_black
+    </item>
+
+    <item name="secondary_font_family" format="reference" type="font">
+        @font/archer_bold
+    </item>
+
+    <item name="tertiary_font" format="reference" type="font">
+        @font/primary_font_family
+    </item>
+
+    <item name="tertiary_light_font" format="reference" type="font">
+        @font/primary_font_family
+    </item>
+
+    <item name="content_font_family" format="reference" type="font">
+        @font/archer_bold
+    </item>
+
+    <item name="reward_card_font" format="reference" type="font">
+        @font/secondary_font_family
+    </item>
+
+
+    <item name="section_header_font" format="reference" type="font">
+        @font/secondary_font_family
+    </item>
+
+    <item name="search_field_font" format="reference" type="font">
+        @font/lato_regular
+    </item>
+
+    <item name="description_font_family" format="reference" type="font">
+        @font/lato_regular
+    </item>
+
+    <item name="phone_font" format="reference" type="font">
+        @font/primary_font_family
+    </item>
+
+    <item name="store_name_font" type="font" format="reference">
+        @font/primary_font_family
+    </item>
+
+    <item name="menu_item_name_font" type="font" format="reference">
+        @font/content_font_family
+    </item>
+
+    <item name="calories_font" type="font" format="reference">
+        @font/description_font_family
+    </item>
+
+    <item name="default_font_family" format="reference" type="font">@font/secondary_font_family</item>
+</resources>

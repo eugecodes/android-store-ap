@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:src="@drawable/perks_logo_black" />
+
+            <TextView
+                style="@style/subtitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_spacing"
+                android:text="@string/sign_up_message"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_sign_up_with_email"
+                style="@style/BaseButton.PrimaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_spacing"
+                android:text="@string/sign_up_with_email_and_password" />
+
+            <TextView
+                android:id="@+id/tv_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:text="@string/sign_up_or"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/btn_google_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_spacing"
+                android:background="@drawable/common_google_signin_btn_text_dark"
+                android:minHeight="@dimen/min_google_button_height"
+                android:text="@string/sign_up_with_google"
+                android:textAllCaps="false"
+                android:textColor="@color/whiteColor"
+                android:textSize="@dimen/text_size_6_5" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_go_to_sign_in"
+            style="@style/LinkTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xlarge_size"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grayBackgroundColor"
+            android:contentDescription="@{@string/button_cd(@string/im_already_a_member)}"
+            android:gravity="center"
+            android:text="@string/im_already_a_member"
+            android:textSize="@dimen/text_size_8" />
+
+    </RelativeLayout>
+
+</layout>

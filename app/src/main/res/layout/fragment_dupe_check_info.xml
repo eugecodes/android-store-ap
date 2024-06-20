@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.enrollment.model.DupeCheckModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_spacing"
+        android:layout_marginEnd="@dimen/medium_spacing"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@{@string/concat_cd(@string/lets_get_you,@string/signed_up )}"
+            android:gravity="center_horizontal"
+            android:importantForAccessibility="yes"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/large_spacing"
+            android:paddingBottom="@dimen/large_spacing">
+
+            <TextView
+                android:id="@+id/tv_lets_get_you"
+                style="@style/titleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="no"
+                android:text="@string/lets_get_you" />
+
+            <TextView
+                style="@style/subtitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_spacing"
+                android:importantForAccessibility="no"
+                android:text="@string/signed_up" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:hint="@string/email_address"
+            android:labelFor="@id/et_email">
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textWebEmailAddress"
+                android:text="@={model.email}"
+                app:bindEditable="@{!model.preEnrolledValidationPassed &amp;&amp; !model.enrolledViaGoogle}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:hint="@string/phone_number"
+            android:labelFor="@id/et_phone_number">
+
+            <EditText
+                android:id="@+id/et_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionGo"
+                android:importantForAutofill="no"
+                android:inputType="number|phone"
+                android:text="@={model.telephone}"
+                app:bindEditable="@{!model.preEnrolledValidationPassed}"
+                app:bindPhoneNumber="@{true}" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_next"
+            style="@style/BaseButton.PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:text="@string/next"
+            app:bindVisible="@{!model.preEnrolledValidationPassed}" />
+
+    </LinearLayout>
+</layout>

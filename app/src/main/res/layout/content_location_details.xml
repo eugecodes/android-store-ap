@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.locations.StoreLocation" />
+
+        <variable
+            name="newOrderMode"
+            type="Boolean" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/small_spacing"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="caribouapp.caribou.com.cariboucoffee.mvp.locations.LocationsActivity"
+        tools:showIn="@layout/activity_locations">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map_fragment"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/map_height_location_details"
+            android:importantForAccessibility="no"
+            tools:context=".mvp.locations.LocationDetailsActivity" />
+
+
+        <FrameLayout
+            android:id="@+id/directions_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/map_fragment"
+            android:background="@drawable/rounded_corner_header">
+
+            <TextView
+                android:id="@+id/tv_distance"
+                style="@style/DistanceStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:importantForAccessibility="yes"
+                android:padding="@dimen/small_spacing"
+                app:bindDistanceInMiles="@{model.distanceInMiles}"
+                tools:text="21 miles" />
+
+            <TextView
+                android:id="@+id/tv_directions"
+                style="@style/LinkTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center_vertical"
+                android:contentDescription="@string/get_directions_cd"
+                android:gravity="center_vertical"
+                android:importantForAccessibility="yes"
+                android:minHeight="0dp"
+                android:padding="@dimen/small_spacing"
+                android:text="@string/get_directions"
+                app:bindShowDirections="@{model.coordinates}" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/directions_container"
+            android:background="@color/whiteColor"
+            android:importantForAccessibility="yes">
+
+            <ScrollView
+                android:id="@+id/nsv_scrollable_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:paddingLeft="@dimen/medium_spacing"
+                android:paddingRight="@dimen/medium_spacing">
+
+                <include
+                    android:id="@+id/include_location_info"
+                    layout="@layout/layout_location_details_info"
+                    android:importantForAccessibility="yes"
+                    app:model="@{model}"
+                    app:newOrderMode="@{newOrderMode}" />
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/btn_start_order"
+                style="@style/BaseButton.PrimaryButton"
+                bindVisible="@{safeUnbox(newOrderMode)}"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:importantForAccessibility="yes"
+                android:text="@string/start_new_order"
+                tools:visibility="visible" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</layout>

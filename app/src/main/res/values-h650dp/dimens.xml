@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="perks_logo_margin">@dimen/medium_spacing</dimen>
+    <dimen name="sign_in_button_margin">@dimen/medium_spacing</dimen>
+    <dimen name="ebb_header_lets_get_started">32sp</dimen>
+    <dimen name="noah_header_lets_get_started">38sp</dimen>
+    <dimen name="bru_header_lets_get_started">27sp</dimen>
+</resources>

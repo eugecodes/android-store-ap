@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_full_screen_background">
+
+        <ImageView
+            android:id="@+id/iv_title_trivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/xlarge_spacing"
+            android:src="@drawable/trivia_title_logo" />
+
+        <TextView
+            android:id="@+id/tv_title_trivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_title_trivia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:fontFamily="@font/heading_secondary_font_family"
+            android:text="@string/daily_trivia"
+            android:textAllCaps="true"
+            android:textColor="@color/coloredBackgroundTextColor"
+            android:textSize="@dimen/text_size_5" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lav_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:lottie_rawRes="@raw/countdown" />
+
+        <ImageButton
+            android:id="@+id/ib_play_pause_btn"
+            android:layout_width="@dimen/trivia_pause_play_height_width"
+            android:layout_height="@dimen/trivia_pause_play_height_width"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/xxxlarge_spacing"
+            android:background="@drawable/background_rounded_white_button"
+            android:src="@drawable/ic_pause_trivia_btn"
+            app:tint="@color/primaryLightColor"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/xxsmall_spacing"
+            android:layout_centerInParent="true"
+            android:alpha=".25"
+            android:background="@color/whiteColor" />
+
+        <View
+            android:layout_width="@dimen/xxsmall_spacing"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:alpha=".25"
+            android:background="@color/whiteColor" />
+
+        <FrameLayout
+            android:id="@+id/fl_trivia_pause_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,22 @@
+{
+  "header": {
+    "status": "Success"
+  },
+  "data": [
+    {
+      "id": "7",
+      "expirationDate": "2018-10-15T00:00:00",
+      "balance": 3
+    },
+    {
+      "id": "41",
+      "expirationDate": "2018-10-15T00:00:00",
+      "balance": 3
+    },
+    {
+      "id": "33",
+      "expirationDate": "2018-10-15T00:00:00",
+      "balance": 3
+    }
+  ]
+}

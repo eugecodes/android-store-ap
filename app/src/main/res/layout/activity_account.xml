@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/abl_app_bar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/appbar_primary_background"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tb"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/transparent"
+                app:elevation="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <TextView
+                    android:id="@+id/tb_title"
+                    style="@style/Toolbar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_account" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tl_tabs"
+                style="@style/TabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_height_menu"
+                android:layout_below="@id/abl_app_bar_layout"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <include
+            android:id="@+id/content_included"
+            layout="@layout/content_account" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

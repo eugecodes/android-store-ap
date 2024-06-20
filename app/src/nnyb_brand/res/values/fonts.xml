@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="heading_primary_font_family" format="reference" type="font">
+        @font/futurastd_bold_family
+    </item>
+    <item name="heading_secondary_font_family" format="reference" type="font">
+        @font/octanis_serif_family
+    </item>
+</resources>

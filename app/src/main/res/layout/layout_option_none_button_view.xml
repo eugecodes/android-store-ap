@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_none_option"
+        style="@style/OptionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/xlarge_size"
+        android:layout_marginLeft="@dimen/xsmall_spacing"
+        android:layout_marginEnd="@dimen/xsmall_spacing"
+        android:layout_marginRight="@dimen/xsmall_spacing"
+        android:minWidth="@dimen/min_button_size"
+        android:background="@drawable/bg_tip_amount_value"
+        android:fontFamily="@font/tertiary_font"
+        android:padding="@dimen/xsmall_spacing"
+        android:text="@string/none"
+        android:textColor="@color/tip_option_text_color"
+        tools:text="@string/none" />
+
+</layout>

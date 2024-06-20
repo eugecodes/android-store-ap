@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.model.OrderItem" />
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/rl_cart_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_spacing"
+        android:background="@color/whiteColor">
+
+        <TextView
+            android:id="@+id/tv_cart_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_toStartOf="@+id/iv_delete_item"
+            android:fontFamily="@font/heading_secondary_font_family"
+            android:importantForAccessibility="no"
+            android:paddingStart="@dimen/medium_spacing"
+            android:text="@{model.menuData.name}"
+            android:textColor="@color/textSecondaryColor"
+            android:textSize="@dimen/text_size_5"
+            tools:ignore="RtlSymmetry"
+            tools:text="Mocha" />
+
+        <TextView
+            android:id="@+id/tv_edit_item"
+            style="@style/LinkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cart_item_name"
+            android:contentDescription="@string/edit_cd"
+            android:importantForAccessibility="yes"
+            android:paddingStart="@dimen/medium_spacing"
+            android:paddingTop="@dimen/small_spacing"
+            android:paddingBottom="@dimen/small_spacing"
+            android:text="@string/edit"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/tv_cart_item_size"
+            android:layout_width="@dimen/height_width_circle_container"
+            android:layout_height="@dimen/height_width_circle_container"
+            android:layout_below="@+id/tv_edit_item"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:background="@drawable/bg_item_size"
+            android:contentDescription="@{@string/size_content_description(model.size)}"
+            android:fontFamily="@font/primary_font_family"
+            android:gravity="center"
+            android:importantForAccessibility="no"
+            android:textColor="@color/sizeSelectorTextColor"
+            android:textStyle="bold"
+            app:bindItemSize="@{model.size}"
+            tools:text="M" />
+
+        <ImageView
+            android:id="@+id/iv_delete_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:background="@drawable/stepper_button"
+            android:contentDescription="@string/remove_item_cd"
+            android:importantForAccessibility="yes"
+            android:padding="@dimen/small_spacing"
+            android:src="@drawable/ic_close_white_transparent" />
+
+        <LinearLayout
+            android:id="@+id/ll_extras_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cart_item_size"
+            android:layout_marginStart="@dimen/medium_spacing"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:layout_marginBottom="@dimen/medium_spacing"
+            android:importantForAccessibility="yes"
+            android:orientation="vertical" />
+
+        <FrameLayout
+            android:id="@+id/fl_cart_item_quantity_subtotal_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_extras_container"
+            android:elevation="4dp"
+            android:importantForAccessibility="yes"
+            android:paddingBottom="@dimen/small_spacing">
+
+            <caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.view.ItemQuantityView
+                android:id="@+id/item_quantity_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/small_spacing"
+                android:importantForAccessibility="yes" />
+
+            <TextView
+                android:id="@+id/tv_cart_item_subtotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="@dimen/small_spacing"
+                android:focusable="true"
+                android:fontFamily="@font/primary_font_family"
+                android:importantForAccessibility="yes"
+                android:text="@string/empty_balance"
+                android:textSize="@dimen/text_size_7"
+                android:textStyle="bold"
+                app:bindMoney="@{model.subtotal}" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</layout>

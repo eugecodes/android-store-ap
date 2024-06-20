@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="wifi">Wifi</string>
+    <string name="mobile_pay">Mobile Pay</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="catering">Catering</string>
+    <string name="order_out_of_store">Order out of store</string>
+
+    <string name="no_stores_matching_filters">There are no stores matching your filters, but there are other Noah\'s locations nearby. Please change your filters and search again.</string>
+    <string name="add_funds_confirmation">You\'ve successfully added $%1$.2f to your Noah\'s Rewards Card.</string>
+
+    <string name="insufficient_funds">Sorry! You don\'t have enough Noah\'s points to redeem the reward.</string>
+    <string name="turn_on_auto_reload_hint">Turn on Auto Reload to automatically add funds to your Noah\'s Rewards Card. You can edit or remove your settings any time!</string>
+
+    <string name="recommend_update_dialog_text">An update to the Noah\'s New York Bagels Mobile App is available!</string>
+    <string name="its_got_your_name_on_it_text">Follow the Order Ahead signs - your order will be ready at the Pick Up counter.</string>
+    <string name="its_got_your_name_on_it">It\'s got your name all over it!</string>
+
+    <string name="accept_t_n_c_part2"><u>Noah\'s New York Bagels Terms and Conditions</u></string>
+
+    <string name="no_store_close_by">No nearby locations.</string>
+    <string name="your_order_will_be_ready_asap">See you in 10&#8211;15 minutes!</string>
+    <string name="order_placed">Success!</string>
+    <string name="order_placed_successfully">Your order will be ready faster than you can say geshmak!</string>
+    <string name="no_stores_on_location">Oh no! There isn\'t a Noah\'s New York Bagels near you. Try searching a new location.</string>
+    <string name="no_stores_on_location_pick_location">Oh no! There isn\'t a Noah’s near you that supports order ahead. Try searching locations for walk-in orders</string>
+    <string name="error_message_age_requirement">Sorry, you need to be at least 13 to use Noah\'s  Rewards. See you in a couple years.</string>
+    <string name="terms_n_conditions_text">You are requesting that we continuously charge your credit/debit card associated with your account for the loading of funds into your Noah\'s New York Bagels Loyalty account. Your credit/debit card will be charged when your balance reaches the amount you selected. You are choosing an automatic renewal plan which will continue to charge your credit/debit card associated with your account until you cancel your subscription.</string>
+    <string name="you_are_already_registered">You\'re part of Noah\'s Rewards! We already have data for you in our system. Return to the sign-in screen and enter your email and password. If you forgot your password, select the Forgot Password link and we will get you what you need!</string>
+
+    <string name="notification_channel_id">nnyb_push_notification_channel_id</string>
+
+    <string name="program_name">Noah\'s New York Bagels</string>
+    <string name="payment_type_text">How would you like \n to pay for your order?</string>
+</resources>

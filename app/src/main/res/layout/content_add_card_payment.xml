@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.common.CCInformationModel" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_place_order_by_new_gateway"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/medium_spacing">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/small_spacing"
+                    android:layout_marginEnd="@dimen/small_spacing"
+                    android:fontFamily="@font/primary_font_family"
+                    android:importantForAccessibility="no"
+                    android:text="@string/billing_information"
+                    android:textSize="@dimen/text_size_6_4" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_name_on_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/small_spacing"
+                    android:layout_marginTop="@dimen/large_spacing"
+                    android:layout_marginEnd="@dimen/small_spacing"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/name_on_card"
+                    android:importantForAccessibility="yes"
+                    android:labelFor="@id/et_first_name">
+
+                    <EditText
+                        android:id="@+id/et_name_on_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:accessibilityLiveRegion="1"
+                        android:autofillHints="name"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:imeOptions="actionNext"
+                        android:importantForAccessibility="yes"
+                        android:importantForAutofill="yes"
+                        android:inputType="text"
+                        android:maxLength="100"
+                        android:nextFocusDown="@id/til_cc_number"
+                        android:text="@={model.nameOnCard}"
+                        android:textAllCaps="true"
+                        tools:ignore="LabelFor" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_add_cc_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:layout_marginEnd="@dimen/small_spacing"
+                        android:layout_weight="1"
+                        android:hint="@string/add_credit_card_number">
+
+                        <EditText
+                            android:id="@+id/et_add_cc_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="creditCardNumber"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="yes"
+                            android:inputType="numberPassword"
+                            android:maxLength="@integer/cc_length"
+                            android:nextFocusDown="@id/et_expiration_month"
+                            android:text="@={model.ccNumber}"
+                            tools:ignore="LabelFor" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageButton
+                        android:id="@+id/btn_scan_card_from_camera"
+                        android:layout_width="@dimen/min_button_size"
+                        android:layout_height="@dimen/min_button_size"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/transparent"
+                        android:contentDescription="@string/add_card_from_camera_cd"
+                        android:padding="@dimen/small_spacing"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_menu_camera"
+                        android:visibility="visible"
+                        tools:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_add_expiration_month"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:layout_marginEnd="@dimen/small_spacing"
+                        android:layout_weight="1.5"
+                        android:accessibilityLiveRegion="assertive"
+                        android:hint="@string/expiring_month_cd"
+                        android:importantForAccessibility="yes"
+                        android:labelFor="@id/et_add_expiration_month"
+                        android:textColorHint="@android:color/transparent">
+
+                        <EditText
+                            android:id="@+id/et_add_expiration_month"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="creditCardExpirationMonth"
+                            android:hint="@string/add_expiring_month"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="yes"
+                            android:inputType="numberPassword"
+                            android:maxLength="@integer/month_year_cc_length"
+                            android:nextFocusDown="@+id/et_expiration_year"
+                            android:text="@={model.expirationMonth}"
+                            tools:ignore="LabelFor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_add_expiration_year"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:layout_marginEnd="@dimen/small_spacing"
+                        android:layout_weight="1.5"
+                        android:accessibilityLiveRegion="polite"
+                        android:hint="@string/expiring_year_cd"
+                        android:importantForAccessibility="yes"
+                        android:labelFor="@id/et_add_expiration_year"
+                        android:textColorHint="@android:color/transparent">
+
+                        <EditText
+                            android:id="@+id/et_add_expiration_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="creditCardExpirationYear"
+                            android:hint="@string/add_expiring_year"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="yes"
+                            android:inputType="numberPassword"
+                            android:maxLength="@integer/month_year_cc_length"
+                            android:nextFocusDown="@+id/et_add_cvv"
+                            android:text="@={model.expirationYear}"
+                            tools:ignore="LabelFor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_add_cvv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:layout_marginEnd="@dimen/small_spacing"
+                        android:layout_weight="1.5"
+                        android:accessibilityLiveRegion="polite"
+                        android:hint="@string/cvv_cd"
+                        android:importantForAccessibility="yes"
+                        android:labelFor="@id/et_add_cvv"
+                        android:textColorHint="@android:color/transparent">
+
+                        <EditText
+                            android:id="@+id/et_add_cvv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="creditCardSecurityCode"
+                            android:hint="@string/add_cvv"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="yes"
+                            android:inputType="numberPassword"
+                            android:maxLength="@integer/ccv_cc_length"
+                            android:nextFocusDown="@id/til_add_billing_address_1"
+                            android:text="@={model.cvv}"
+                            tools:ignore="LabelFor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_add_billing_address_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/small_spacing"
+                    android:layout_marginEnd="@dimen/small_spacing"
+                    android:hint="@string/add_billing_address_1"
+                    android:labelFor="@id/et_add_billing_address_1"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_add_billing_address_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="postalAddress"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="yes"
+                        android:inputType="textCapWords"
+                        android:nextFocusDown="@id/til_add_billing_address_2"
+                        android:text="@={model.billingAddress}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til_add_billing_address_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/small_spacing"
+                    android:layout_marginEnd="@dimen/small_spacing"
+                    android:hint="@string/add_billing_address_2"
+                    android:labelFor="@id/et_add_billing_address_2"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/et_add_billing_address_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints="postalAddress2"
+                        android:imeOptions="actionNext"
+                        android:importantForAutofill="no"
+                        android:inputType="textCapWords"
+                        android:nextFocusDown="@id/til_add_city"
+                        android:text="@={model.billingAddress2}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_add_city"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:layout_marginEnd="@dimen/small_spacing"
+                        android:layout_weight="1"
+                        android:hint="@string/city"
+                        android:labelFor="@id/et_add_city"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/et_add_city"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="city"
+                            android:imeOptions="actionNext"
+                            android:importantForAutofill="yes"
+                            android:inputType="textCapWords"
+                            android:nextFocusDown="@id/spn_state"
+                            android:text="@={model.city}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_state"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.25"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/hint_add_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/small_spacing"
+                            android:layout_marginEnd="@dimen/small_spacing"
+                            android:accessibilityLiveRegion="1"
+                            android:importantForAccessibility="yes"
+                            android:text="@string/state"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                        <Spinner
+                            android:id="@+id/spn_add_state"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/small_spacing"
+                            android:layout_marginEnd="@dimen/small_spacing"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@id/til_add_zip_code"
+                            android:prompt="@string/state" />
+
+                        <TextView
+                            android:id="@+id/tv_add_select_state_error"
+                            style="@style/ErrorText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/small_spacing"
+                            android:layout_marginTop="@dimen/small_spacing"
+                            android:layout_marginEnd="@dimen/small_spacing"
+                            android:accessibilityLiveRegion="1"
+                            android:importantForAccessibility="yes"
+                            android:text="@string/error_no_state_selected"
+                            android:visibility="gone"
+                            tools:visibility="visible" />
+
+                    </LinearLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_add_zip_code"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:layout_marginEnd="@dimen/small_spacing"
+                        android:layout_weight="1"
+                        android:hint="@string/add_zip_code"
+                        android:labelFor="@id/et_add_zip_code"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/et_add_zip_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints="postalCode"
+                            android:importantForAutofill="yes"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:text="@={model.zip}" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_cancel_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:background="@color/transparent"
+            android:contentDescription="@string/cancel"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@string/cancel"
+            android:textColor="@color/clickable_text_color"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_place_order_by_new_gateway"
+            style="@style/BaseButton.ImHereButtonDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_cancel_order"
+            android:layout_marginStart="@dimen/large_spacing"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/large_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:text="@string/place_order" />
+
+
+    </RelativeLayout>
+
+</layout>

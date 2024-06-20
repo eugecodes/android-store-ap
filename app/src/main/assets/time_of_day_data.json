@@ -1,0 +1,34 @@
+{
+  "ranges": [
+    {
+      "starts": "00:00",
+      "ends": "04:00",
+      "timeOfDay": "LateNight"
+    },
+    {
+      "starts": "04:00",
+      "ends": "11:00",
+      "timeOfDay": "Morning"
+    },
+    {
+      "starts": "11:00",
+      "ends": "16:30",
+      "timeOfDay": "Day"
+    },
+    {
+      "starts": "16:30",
+      "ends": "19:30",
+      "timeOfDay": "Evening"
+    },
+    {
+      "starts": "19:30",
+      "ends": "00:00",
+      "timeOfDay": "Night"
+    },
+    {
+      "starts": "00:00",
+      "ends": "00:00",
+      "timeOfDay": "LoggedOut"
+    }
+  ]
+}

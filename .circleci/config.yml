@@ -1,0 +1,235 @@
+version: 2.1
+
+parameters:
+  jdk-version:
+    type: integer
+    default: 17
+
+workflows:
+  androidwf:
+    jobs:
+      - build-and-test
+      - ebbDevBuild:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only:
+                - develop
+                - /feature-dev.*/
+                - /^sidelane\/[0-9]+\.[0-9]+\.[0-9]+_develop/
+      - nnybDevBuild:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only:
+                - develop
+                - /feature-dev.*/
+                - /^sidelane\/[0-9]+\.[0-9]+\.[0-9]+_develop/
+      - bruDevBuild:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only:
+                - develop
+                - /feature-dev.*/
+                - /^sidelane\/[0-9]+\.[0-9]+\.[0-9]+_develop/
+      - qaBuilds:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only:
+                - qa
+                - /feature-qa.*/
+                - /^sidelane\/[0-9]+\.[0-9]+\.[0-9]+_qa/
+      - prodBuilds:
+          requires:
+            - build-and-test
+          filters:
+            branches:
+              only:
+                - master
+                - /feature-prod.*/
+                - /^sidelane\/[0-9]+\.[0-9]+\.[0-9]+_prod/
+
+executors:
+  main-executor:
+    docker:
+      - image: cimg/android:2023.08.1
+    environment:
+      BUNDLE_DEPLOYMENT: true
+    resource_class: medium+
+
+commands:
+  android-init:
+    steps:
+      - checkout
+      - android/accept-licenses
+      - reveal_secret
+      - install_gems
+      - android/change-java-version:
+          java-version: << pipeline.parameters.jdk-version >>
+      - run:
+          name: Bootstrap
+          command: |
+            mkdir -p ~/.gradle && echo "org.gradle.daemon=false" >> ~/.gradle/gradle.properties
+            ./gradlew bootstrap
+
+  restore_gradle_cache:
+    parameters:
+      version:
+        type: string
+        default: v1-jvm17
+    steps:
+      - android/restore-gradle-cache:
+          cache-prefix: gradle-<< parameters.version >>
+  save_gradle_cache:
+    parameters:
+      version:
+        type: string
+        default: v1-jvm17
+    steps:
+      - android/save-gradle-cache:
+          cache-prefix: gradle-<< parameters.version >>
+  install_gems:
+    steps:
+      - restore_cache:
+          keys:
+            - v1-gems-{{ checksum "Gemfile.lock" }}
+            # Fall back to using the latest cache if no exact match is found.
+            - v1-gems-
+      - run:
+          name: Bundle install
+          command: bundle check || bundle install
+          environment:
+            BUNDLE_JOBS: 4
+            BUNDLE_RETRY: 3
+      - save_cache:
+          key: v1-gems-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+  reveal_secret:
+    steps:
+      - run:
+          name: Reveal secrets
+          context: org-global
+          command: |
+            git clone --branch v0.5.0 https://github.com/sobolevn/git-secret.git git-secret
+            cd git-secret && make && cd ..
+            echo "$GIT_SECRET_GPG_KEY_2023" | base64 --decode > ~/circleci_pkey_gpg_secret.asc
+            gpg --import ~/circleci_pkey_gpg_secret.asc
+            git-secret/git-secret reveal -f
+            rm -rf git-secret
+  store_build_artifacts:
+    parameters:
+      store-reports:
+        type: boolean
+        default: false
+    steps:
+      - store_artifacts:
+          path: build/bootstrap/
+      - store_artifacts:
+          path: ~/.gradle/gradle.properties
+      - store_artifacts:
+          path: app/build/outputs/mapping
+          destination: mapping
+      - when:
+          condition: << parameters.store-reports >>
+          steps:
+            - store_artifacts:
+                path: app/build/reports
+                destination: reports
+
+orbs:
+  android: circleci/android@2.3.0
+
+jobs:
+  build-and-test:
+    executor: main-executor
+    steps:
+      - android-init
+      - restore_gradle_cache
+      - run:
+          name: Checkstyle
+          command: java -jar checkstyle-8.12-all.jar -c app/config/checkstyle/checkstyle.xml app/src/main
+          no_output_timeout: 1200
+      - run:
+          name: Run Lint
+          command: |
+            cp app/lint-baseline-bru-dev.xml app/lint-baseline.xml
+            ./gradlew ktlintBru_brandBruDevServerDebugSourceSetCheck lintBru_brandBruDevServerDebug
+            cp app/lint-baseline-ebb-dev.xml app/lint-baseline.xml
+            ./gradlew ktlintEbb_brandEbbDevServerDebugSourceSetCheck lintEbb_brandEbbDevServerDebug
+            cp app/lint-baseline-nnyb-dev.xml app/lint-baseline.xml
+            ./gradlew ktlintNnyb_brandNnybDevServerDebugSourceSetCheck lintNnyb_brandNnybDevServerDebug
+          no_output_timeout: 1200
+      - run:
+          name: Run Tests
+          command: |
+            ./gradlew app:testBru_brandBruDevServerDebugUnitTest
+            ./gradlew app:testEbb_brandEbbDevServerDebugUnitTest
+            ./gradlew app:testNnyb_brandNnybDevServerDebugUnitTest
+          no_output_timeout: 1200
+      - save_gradle_cache
+      - store_test_results:
+          path: app/build/test-results
+      - store_build_artifacts:
+          store-reports: true
+  ebbDevBuild:
+    executor: main-executor
+    steps:
+      - android-init
+      - restore_gradle_cache
+      - run:
+          name: Deploy to AppCenter EBB
+          command: bundle exec fastlane ebbDevBuild
+          no_output_timeout: 1200
+      - save_gradle_cache
+      - store_build_artifacts
+  nnybDevBuild:
+    executor: main-executor
+    steps:
+      - android-init
+      - restore_gradle_cache
+      - run:
+          name: Deploy to AppCenter NNYB
+          command: bundle exec fastlane nnybDevBuild
+          no_output_timeout: 1200
+      - save_gradle_cache
+      - store_build_artifacts
+  bruDevBuild:
+    executor: main-executor
+    steps:
+      - android-init
+      - restore_gradle_cache
+      - run:
+          name: Deploy to AppCenter BRU
+          command: bundle exec fastlane bruDevBuild
+          no_output_timeout: 1200
+      - save_gradle_cache
+      - store_build_artifacts
+  qaBuilds:
+    executor: main-executor
+    steps:
+      - android-init
+      - restore_gradle_cache
+      - run:
+          name: Deploy QA builds to AppCenter
+          command: bundle exec fastlane allQaBuild
+          no_output_timeout: 1200
+      - save_gradle_cache
+      - store_build_artifacts
+  prodBuilds:
+    executor: main-executor
+    steps:
+      - android-init
+      - restore_gradle_cache
+      - run:
+          name: Deploy Prod builds to AppCenter
+          command: bundle exec fastlane release
+          no_output_timeout: 1200
+      - save_gradle_cache
+      - store_build_artifacts

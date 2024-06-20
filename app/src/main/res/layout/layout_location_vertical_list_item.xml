@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="caribouapp.caribou.com.cariboucoffee.mvp.locations.LocationVerticalListAdapter.LocationListType" />
+
+        <variable
+            name="listType"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.locations.LocationVerticalListAdapter.LocationListType" />
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.locations.StoreLocation" />
+
+        <variable
+            name="listener"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.locations.LocationVerticalListAdapter.LocationListListener" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/xxsmall_spacing"
+        android:background="?android:attr/selectableItemBackground"
+        android:importantForAccessibility="yes">
+
+        <FrameLayout
+            android:id="@+id/fl_actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/row_separator"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:importantForAccessibility="yes"
+            tools:ignore="RelativeOverlap">
+
+            <TextView
+                android:id="@+id/tv_pick_up_types"
+                style="@style/StorePickupTypesTextView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/small_spacing"
+                android:gravity="center_vertical"
+                app:bindVisible="@{listType==LocationListType.CHOOSE_LOCATION}"
+                tools:text="Drive-Thru available" />
+
+            <ImageView
+                android:id="@+id/iv_navigate_to_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginStart="@dimen/small_spacing"
+                android:layout_marginEnd="@dimen/medium_spacing"
+                android:src="@drawable/ic_keyboard_arrow_right_grey_400_24dp"
+                app:bindVisible="@{listType==LocationListType.TOUCH_TO_OPEN}" />
+
+            <TextView
+                android:id="@+id/btn_choose_location"
+                style="@style/ShortButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="@dimen/small_spacing"
+                android:layout_marginBottom="@dimen/medium_spacing"
+                android:text="@string/choose_location"
+                app:bindVisible="@{listType==LocationListType.CHOOSE_LOCATION}" />
+
+            <TextView
+                android:id="@+id/tv_view_on_map"
+                style="@style/LinkTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_marginEnd="@dimen/medium_spacing"
+                android:text="@string/view_on_map"
+                app:bindVisible="@{!model.restrictedAccessLocation &amp;&amp; listType==LocationListType.CHOOSE_LOCATION}" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_restricted_access_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:layout_marginEnd="@dimen/medium_spacing"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@string/restricted_access_location"
+            android:textAllCaps="true"
+            android:textColor="@color/textAccentSecondaryColor"
+            android:textSize="@dimen/text_size_10"
+            android:textStyle="bold"
+            app:bindVisible="@{model.restrictedAccessLocation}"
+            tools:ignore="RelativeOverlap" />
+
+        <LinearLayout
+            android:id="@+id/ll_data_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical"
+            android:padding="@dimen/medium_spacing">
+
+            <TextView
+                style="@style/StoreName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/store_name_content_description"
+                android:text="@{model.name}"
+                tools:text="Stadium Village" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/description_font_family"
+                android:text="@{model.address}"
+                android:textSize="@dimen/text_size_8"
+                tools:text="501 Washington Avenue\nMinneapolis, MN 55415-1127" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_distance"
+                    style="@style/DistanceStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:bindDistanceInMiles="@{model.distanceInMiles}"
+                    tools:text="0.8 miles" />
+
+                <View
+                    android:layout_width="@dimen/xxxsmall_size"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/xsmall_spacing"
+                    android:layout_marginRight="@dimen/xsmall_spacing"
+                    android:background="@drawable/separator" />
+
+                <TextView
+                    android:id="@+id/tv_open_until"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/primary_font_family"
+                    android:maxLines="1"
+                    app:bindOpenStatus="@{model}"
+                    tools:text="Open until 8:00pm" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/row_separator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_separator_height"
+            android:layout_below="@id/ll_data_container"
+            android:layout_gravity="bottom"
+            android:background="@color/rowSeparator" />
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.itemcustomization.model.ModifierGroup" />
+
+        <variable
+            name="rowDescription"
+            type="String" />
+
+        <variable
+            name="inlineEditing"
+            type="Boolean" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/main_container"
+            bindInvisible="@{safeUnbox(inlineEditing)}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingStart="@dimen/medium_spacing"
+            android:paddingEnd="@dimen/small_spacing">
+
+            <ImageView
+                android:id="@+id/iv_navigate_to_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginStart="@dimen/small_spacing"
+                android:src="@drawable/ic_keyboard_arrow_right_grey_400_24dp" />
+
+            <TextView
+                android:id="@+id/tv_modifier_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:layout_toStartOf="@id/iv_navigate_to_details"
+                android:fontFamily="@font/primary_font_family"
+                android:importantForAccessibility="yes"
+                android:text="@{model.name}"
+                android:textColor="@color/modifierFontColor"
+                android:textSize="@dimen/text_size_6_5"
+                android:textStyle="bold"
+                tools:text="Milk" />
+
+            <TextView
+                android:id="@+id/tv_modifier_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_modifier_name"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/xsmall_spacing"
+                android:layout_marginBottom="@dimen/medium_spacing"
+                android:layout_toStartOf="@id/iv_navigate_to_details"
+                android:fontFamily="@font/description_font_family"
+                android:text="@{rowDescription}"
+                android:textColor="@color/modifierFontColor"
+                android:textSize="@dimen/text_size_6_5"
+                tools:text="2% Milk" />
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/inline_editing_included"
+            layout="@layout/layout_edit_inline_modifier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            app:inlineEditing="@{safeUnbox(inlineEditing)}"
+            app:model="@{model}" />
+
+
+        <View
+            android:id="@+id/row_separator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/row_separator_height"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:background="@color/rowSeparator" />
+
+    </FrameLayout>
+</layout>

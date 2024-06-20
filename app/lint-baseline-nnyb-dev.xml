@@ -1,0 +1,2323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.1.0" type="baseline" client="gradle" dependencies="false" name="AGP (8.1.0)" variant="all" version="8.1.0">
+
+    <issue
+        id="UseGetLayoutInflater"
+        message="Use of LayoutInflater.from(getContext()) detected. Consider using getLayoutInflater() instead"
+        errorLine1="        mBinding = DialogLocationsFilterBinding.inflate(LayoutInflater.from(getContext()));"
+        errorLine2="                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/menu/view/MenuFilterFragmentDialog.java"
+            line="78"
+            column="57"/>
+    </issue>
+
+    <issue
+        id="UseGetLayoutInflater"
+        message="Use of LayoutInflater.from(getContext()) detected. Consider using getLayoutInflater() instead"
+        errorLine1="                    .inflate(LayoutInflater.from(getContext()),"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/menu/view/MenuFilterFragmentDialog.java"
+            line="83"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="UseGetLayoutInflater"
+        message="Use of LayoutInflater.from(getContext()) detected. Consider using getLayoutInflater() instead"
+        errorLine1="                        .inflate(LayoutInflater.from(getContext()),"
+        errorLine2="                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/menu/view/MenuFilterFragmentDialog.java"
+            line="100"
+            column="34"/>
+    </issue>
+
+    <issue
+        id="UseGetLayoutInflater"
+        message="Use of LayoutInflater.from(getContext()) detected. Consider using getLayoutInflater() instead"
+        errorLine1="        mBinding = DialogPickUpTimeBinding.inflate(LayoutInflater.from(getContext()));"
+        errorLine2="                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/oos/checkout/view/PickUpTimeFragmentDialog.java"
+            line="50"
+            column="52"/>
+    </issue>
+
+    <issue
+        id="UseGetLayoutInflater"
+        message="Use of LayoutInflater.from(getContext()) detected. Consider using getLayoutInflater() instead"
+        errorLine1="                    .inflate(LayoutInflater.from(getContext()),"
+        errorLine2="                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/oos/checkout/view/PickUpTimeFragmentDialog.java"
+            line="54"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="DuplicateIncludedIds"
+        message="Duplicate id @+id/tv_modifier_name, defined or included multiple times in layout/layout_modifier_group_list_item.xml: [layout/layout_modifier_group_list_item.xml defines @+id/tv_modifier_name, layout/layout_modifier_group_list_item.xml => layout/layout_edit_inline_modifier.xml defines @+id/tv_modifier_name]"
+        errorLine1="        &lt;include"
+        errorLine2="        ^">
+        <location
+            file="src/main/res/layout/layout_modifier_group_list_item.xml"
+            line="78"
+            column="9"
+            message="Duplicate id @+id/tv_modifier_name, defined or included multiple times in layout/layout_modifier_group_list_item.xml: [layout/layout_modifier_group_list_item.xml defines @+id/tv_modifier_name, layout/layout_modifier_group_list_item.xml => layout/layout_edit_inline_modifier.xml defines @+id/tv_modifier_name]"/>
+        <location
+            file="src/main/res/layout/layout_modifier_group_list_item.xml"
+            line="47"
+            column="17"
+            message="Defined here"/>
+        <location
+            file="src/main/res/layout/layout_edit_inline_modifier.xml"
+            line="26"
+            column="13"
+            message="Defined here, included via layout/layout_modifier_group_list_item.xml => layout/layout_edit_inline_modifier.xml defines @+id/tv_modifier_name"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="70"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="84"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="104"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="111"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="123"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="137"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="144"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="150"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="157"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="163"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="180"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="187"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="195"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="202"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="210"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="230"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="238"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="246"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="254"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="262"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="270"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="278"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="292"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="298"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="306"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="314"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="322"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="330"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="338"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="346"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="354"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="360"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="366"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="395"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/brand_app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="401"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.github.redmadrobot:input-mask-android than 6.1.0 is available: 7.2.6"
+        errorLine1="inputMask = &quot;6.1.0&quot; # Cannot update to latest because we need minSdkVersion 23"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="$HOME/Documents/Work/bagels-android-app/gradle/libs.versions.toml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="&quot;Thru&quot; is a common misspelling; did you mean &quot;Through&quot;?"
+        errorLine1="    &lt;string name=&quot;pickup_drivethru&quot;>Drive-Thru&lt;/string>"
+        errorLine2="                                          ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="600"
+            column="43"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="&quot;thru&quot; is a common misspelling; did you mean &quot;through&quot;?"
+        errorLine1="    &lt;string name=&quot;pickup_drivethru_description&quot;>Jump in the drive-thru line and let us know you have a mobile order waiting&lt;/string>"
+        errorLine2="                                                                  ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="601"
+            column="67"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;Hours&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;expires_in_hours_format&quot;>%d Hours&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="143"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="PluralsCandidate"
+        message="Formatting %d followed by words (&quot;characters&quot;): This should probably be a plural rather than a string"
+        errorLine1="    &lt;string name=&quot;maximum_500_chars&quot;>%d characters left&lt;/string>"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="397"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="SetJavaScriptEnabled"
+        message="Using `setJavaScriptEnabled` can introduce XSS vulnerabilities into your application, review carefully"
+        errorLine1="        webSettings.setJavaScriptEnabled(true);"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/webflow/view/CaptivePortalWebActivity.java"
+            line="57"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnspecifiedImmutableFlag"
+        message="Missing `PendingIntent` mutability flag"
+        errorLine1="            return PendingIntent.getActivity(context, random.nextInt(), pushIntent, PendingIntent.FLAG_CANCEL_CURRENT);"
+        errorLine2="                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/push/MyFirebaseMessagingService.java"
+            line="88"
+            column="85"/>
+    </issue>
+
+    <issue
+        id="UnspecifiedImmutableFlag"
+        message="Missing `PendingIntent` mutability flag"
+        errorLine1="                pendingIntent = PendingIntent.getActivity(context, 0, nextScreenIntent, PendingIntent.FLAG_ONE_SHOT);"
+        errorLine2="                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/oos/pickup/view/PickupTypeActivity.java"
+            line="60"
+            column="89"/>
+    </issue>
+
+    <issue
+        id="DataExtractionRules"
+        message="The attribute `android:allowBackup` is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute `android:dataExtractionRules` specifying an `@xml` resource which configures cloud backups and device transfers on Android 12 and higher."
+        errorLine1="        android:allowBackup=&quot;false&quot;"
+        errorLine2="                             ~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="15"
+            column="30"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="            mCardAdapter.notifyDataSetChanged();"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/account/view/CreditCardFragment.java"
+            line="84"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/oos/pickup/view/HorizontalPickerAdapter.java"
+            line="48"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/oos/pickup/view/HorizontalPickerAdapter.java"
+            line="53"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/locations/LocationDetailsScheduleAdapter.java"
+            line="48"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/locations/LocationListAdapter.java"
+            line="47"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/locations/LocationListAdapter.java"
+            line="52"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/locations/LocationListAdapter.java"
+            line="80"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/menu/view/MenuCategoryCardAdapter.java"
+            line="76"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/itemcustomization/view/ModifierAndQuantityAdapter.java"
+            line="50"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/itemcustomization/view/ModifierVerticalAdapter.java"
+            line="46"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/itemcustomization/view/ModifierVerticalAdapter.java"
+            line="51"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/oos/recentOrders/view/RecentOrderDetailsAdapter.java"
+            line="24"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/oos/recentOrders/view/RecentOrdersAdapter.java"
+            line="60"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/oos/checkout/view/TippingOptionAdapter.java"
+            line="45"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="NotifyDataSetChanged"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort."
+        errorLine1="        notifyDataSetChanged();"
+        errorLine2="        ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/caribouapp/caribou/com/cariboucoffee/mvp/oos/checkout/view/TippingOptionAdapter.java"
+            line="55"
+            column="9"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.appbar_semitransparent_background` appears to be unused"
+        errorLine1="&lt;shape xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/appbar_semitransparent_background.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.midTransparentBlackColor` appears to be unused"
+        errorLine1="    &lt;color name=&quot;midTransparentBlackColor&quot;>#88000000&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="34"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.midTransparentGreyColor` appears to be unused"
+        errorLine1="    &lt;color name=&quot;midTransparentGreyColor&quot;>#88CCCCCC&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="35"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.customizationButtonColor` appears to be unused"
+        errorLine1="    &lt;color name=&quot;customizationButtonColor&quot;>@color/primaryColor&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/nnyb_brand/res/values/colors.xml"
+            line="98"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.customizationButtonPressedColor` appears to be unused"
+        errorLine1="    &lt;color name=&quot;customizationButtonPressedColor&quot;>@color/buttonPrimaryPressedColor&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/nnyb_brand/res/values/colors.xml"
+            line="99"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.guest_user_dialog_close` appears to be unused"
+        errorLine1="    &lt;color name=&quot;guest_user_dialog_close&quot;>@color/whiteColor&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/nnyb_brand/res/values/colors.xml"
+            line="102"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.lets_get_started_hint_color` appears to be unused"
+        errorLine1="    &lt;color name=&quot;lets_get_started_hint_color&quot;>@color/guestHintColor&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/nnyb_brand/res/values/colors.xml"
+            line="106"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.mtrl_textinput_default_box_stroke_color` appears to be unused"
+        errorLine1="    &lt;color name=&quot;mtrl_textinput_default_box_stroke_color&quot; tools:override=&quot;true&quot;>@color/whiteColor&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="115"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_button` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_button&quot;>Search&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/content_descriptions.xml"
+            line="42"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_button_cd` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_button_cd&quot;>Search Button&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/content_descriptions.xml"
+            line="43"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.choose_location_button_cd` appears to be unused"
+        errorLine1="    &lt;string name=&quot;choose_location_button_cd&quot;>Choose location&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/content_descriptions.xml"
+            line="47"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.layout.content_item` appears to be unused"
+        errorLine1="&lt;layout xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/layout/content_item.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.dialog_close` appears to be unused"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/dialog_close.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.text_size_header2` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;text_size_header2&quot;>24sp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="40"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.confirmation_header_height` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;confirmation_header_height&quot;>200dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="53"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.icon_padding` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;icon_padding&quot;>4dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="58"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.button_radius_quantity` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;button_radius_quantity&quot;>4dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="62"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.minus_plus_button_size` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;minus_plus_button_size&quot;>28dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="66"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.rectangular_button_size` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;rectangular_button_size&quot;>18dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="77"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.margin_large` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;margin_large&quot;>20dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="89"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.txt_input_layout_height` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;txt_input_layout_height&quot;>55dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="94"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.get_started_field_margin` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;get_started_field_margin&quot;>10dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="96"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.get_started_field_text_size` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;get_started_field_text_size&quot;>16sp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="98"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.payment_type_screen_margin` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;payment_type_screen_margin&quot;>25sp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/dimens.xml"
+            line="100"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.fab_size_plus_margin` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;fab_size_plus_margin&quot;>88dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.medium_negative_spacing` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;medium_negative_spacing&quot;>-16dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="6"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.large_negative_spacing` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;large_negative_spacing&quot;>-24dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="9"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.xlarge_negative_spacing` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;xlarge_negative_spacing&quot;>-36dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="11"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.xsmall_negative_spacing` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;xsmall_negative_spacing&quot;>-4dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="18"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.xxsmall_negative_spacing` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;xxsmall_negative_spacing&quot;>-2dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="21"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.xxxsmall_negative_spacing` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;xxxsmall_negative_spacing&quot;>-1dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="24"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.xxlarge_negative_spacing` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;xxlarge_negative_spacing&quot;>-48dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="27"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.xxxlarge_negative_spacing` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;xxxlarge_negative_spacing&quot;>-64dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="30"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.large_size` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;large_size&quot;>24dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="37"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.xxxxsmall_size` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;xxxxsmall_size&quot;>1dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="41"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.text_separation` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;text_separation&quot;>4dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="58"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.medium_dash_gap` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;medium_dash_gap&quot;>5dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="60"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.medium_dash_width` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;medium_dash_width&quot;>7dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="61"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.dimen.min_row_height` appears to be unused"
+        errorLine1="    &lt;dimen name=&quot;min_row_height&quot;>40dp&lt;/dimen>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/general_dimens.xml"
+            line="68"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.font.neutra_text_family` appears to be unused"
+        errorLine1="&lt;font-family xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;"
+        errorLine2="^">
+        <location
+            file="src/main/res/font/neutra_text_family.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.overlay_button` appears to be unused"
+        errorLine1="&lt;selector xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;>"
+        errorLine2="^">
+        <location
+            file="src/main/res/drawable/overlay_button.xml"
+            line="2"
+            column="1"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.calories` appears to be unused"
+        errorLine1="    &lt;string name=&quot;calories&quot;>%s Calories&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.grand_total_cd` appears to be unused"
+        errorLine1="    &lt;string name=&quot;grand_total_cd&quot;>Grand Total, %1$s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="53"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.additional_price` appears to be unused"
+        errorLine1="    &lt;string name=&quot;additional_price&quot;>+ \u0024%1$s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="162"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.additional_price_bracket` appears to be unused"
+        errorLine1="    &lt;string name=&quot;additional_price_bracket&quot;> &amp;#160;( + \u0024%1$s )&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="163"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.add_funds_your_new_balance_cd` appears to be unused"
+        errorLine1="    &lt;string name=&quot;add_funds_your_new_balance_cd&quot;>Your New Balance Will Be:, %1$s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="208"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.title_add_funds` appears to be unused"
+        errorLine1="    &lt;string name=&quot;title_add_funds&quot;>Add Funds&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="215"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.cc_number_expiration_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;cc_number_expiration_error&quot;>Your card is expired, Enter valid card&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="262"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.save_changes` appears to be unused"
+        errorLine1="    &lt;string name=&quot;save_changes&quot;>Save Changes&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="268"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.dot` appears to be unused"
+        errorLine1="    &lt;string name=&quot;dot&quot;>.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="389"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.empty` appears to be unused"
+        errorLine1="    &lt;string name=&quot;empty&quot;> &lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="390"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.pick_up_time_label` appears to be unused"
+        errorLine1="    &lt;string name=&quot;pick_up_time_label&quot;>Pick-up time&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="453"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.item_extended_cd` appears to be unused"
+        errorLine1="    &lt;string name=&quot;item_extended_cd&quot;>%1$s, %2$s, Row %3$d of %4$d&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="548"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.cart_subtotal_amount` appears to be unused"
+        errorLine1="    &lt;string name=&quot;cart_subtotal_amount&quot;>Cart subtotal amount&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="554"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.checkout_subtotal_amount` appears to be unused"
+        errorLine1="    &lt;string name=&quot;checkout_subtotal_amount&quot;>Checkout subtotal amount&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="555"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.checkout_total_amount` appears to be unused"
+        errorLine1="    &lt;string name=&quot;checkout_total_amount&quot;>Checkout total amount&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="556"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.update_pick_up_time_cd` appears to be unused"
+        errorLine1="    &lt;string name=&quot;update_pick_up_time_cd&quot;>Update Pick Up Time&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="560"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.phone_number_content_description` appears to be unused"
+        errorLine1="    &lt;string name=&quot;phone_number_content_description&quot;>Phone Number&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="565"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.cart_item_row_content_description` appears to be unused"
+        errorLine1="    &lt;string name=&quot;cart_item_row_content_description&quot;>Cart Item Row %1$d, %2$d, %3$s %4$s, %5$s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="578"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.cart_item_count_content_description` appears to be unused"
+        errorLine1="    &lt;string name=&quot;cart_item_count_content_description&quot;>Cart Item Count Label&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="592"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.item_customization_content_description` appears to be unused"
+        errorLine1="    &lt;string name=&quot;item_customization_content_description&quot;>Customization description&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="593"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.download_receipt` appears to be unused"
+        errorLine1="    &lt;string name=&quot;download_receipt&quot;>Download Receipt&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="596"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_pdf_viewer_app` appears to be unused"
+        errorLine1="    &lt;string name=&quot;no_pdf_viewer_app&quot;>Uh Oh! Looks like you don\&apos;t have a PDF viewing app installed yet. Install one and try again.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="597"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.pickup_walkin_description` appears to be unused"
+        errorLine1="    &lt;string name=&quot;pickup_walkin_description&quot;>Head into the store and pick-up your order&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="599"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.pickup_drivethru_description` appears to be unused"
+        errorLine1="    &lt;string name=&quot;pickup_drivethru_description&quot;>Jump in the drive-thru line and let us know you have a mobile order waiting&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="601"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.pickup_curbside_description` appears to be unused"
+        errorLine1="    &lt;string name=&quot;pickup_curbside_description&quot;>Park near the entrance and we will bring your items to your vehicle.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="603"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.add_city` appears to be unused"
+        errorLine1="    &lt;string name=&quot;add_city&quot;>City&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="665"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.add_state` appears to be unused"
+        errorLine1="    &lt;string name=&quot;add_state&quot;>State&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="666"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.AppTheme_TransparentActionBar` appears to be unused"
+        errorLine1="    &lt;style name=&quot;AppTheme.TransparentActionBar&quot; parent=&quot;Theme.MaterialComponents.NoActionBar.Bridge&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="40"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.AppTheme_AppBarOverlayLightMenu` appears to be unused"
+        errorLine1="    &lt;style name=&quot;AppTheme.AppBarOverlayLightMenu&quot; parent=&quot;AppTheme.AppBarOverlay&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="55"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.AppTheme_PopupOverlay_White` appears to be unused"
+        errorLine1="    &lt;style name=&quot;AppTheme.PopupOverlay.White&quot; parent=&quot;ThemeOverlay.AppCompat.Dark&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="67"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Toolbar_Title_White` appears to be unused"
+        errorLine1="    &lt;style name=&quot;Toolbar.Title.White&quot; parent=&quot;Toolbar.Title&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="80"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Display1TextStyle` appears to be unused"
+        errorLine1="    &lt;style name=&quot;Display1TextStyle&quot; parent=&quot;@android:style/Widget.TextView&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="103"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Customization_Button` appears to be unused"
+        errorLine1="    &lt;style name=&quot;Customization.Button&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/nnyb_brand/res/values/styles.xml"
+            line="140"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Customization_Icon` appears to be unused"
+        errorLine1="    &lt;style name=&quot;Customization.Icon&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/nnyb_brand/res/values/styles.xml"
+            line="149"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.BaseButton_SecondaryButton_Light` appears to be unused"
+        errorLine1="    &lt;style name=&quot;BaseButton.SecondaryButton.Light&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="170"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.ProductDescriptionMenuTitle` appears to be unused"
+        errorLine1="    &lt;style name=&quot;ProductDescriptionMenuTitle&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="341"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Customization_Overlay` appears to be unused"
+        errorLine1="    &lt;style name=&quot;Customization.Overlay&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="355"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Customization_Title` appears to be unused"
+        errorLine1="    &lt;style name=&quot;Customization.Title&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="365"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.Customization_Description_Bold` appears to be unused"
+        errorLine1="    &lt;style name=&quot;Customization.Description.Bold&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="378"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.HintTextAppearance` appears to be unused"
+        errorLine1="    &lt;style name=&quot;HintTextAppearance&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="385"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.style.GuestUserDialogStyle` appears to be unused"
+        errorLine1="    &lt;style name=&quot;GuestUserDialogStyle&quot; parent=&quot;Theme.AppCompat.Light.Dialog.Alert&quot;>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/styles.xml"
+            line="530"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-hdpi/ic_menu_first_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-ldpi/ic_menu_first_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-mdpi/ic_menu_first_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-xhdpi/ic_menu_first_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-xxhdpi/ic_menu_first_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-xxxhdpi/ic_menu_first_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-hdpi/ic_menu_second_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-ldpi/ic_menu_second_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-mdpi/ic_menu_second_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-xhdpi/ic_menu_second_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-xxhdpi/ic_menu_second_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-xxxhdpi/ic_menu_second_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-hdpi/ic_menu_third_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-ldpi/ic_menu_third_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-mdpi/ic_menu_third_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-xhdpi/ic_menu_third_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-xxhdpi/ic_menu_third_column.png"/>
+    </issue>
+
+    <issue
+        id="IconColors"
+        message="Action Bar icons should use a single gray color (`#333333` for light themes (with 60%/30% opacity for enabled/disabled), and `#FFFFFF` with opacity 80%/30% for dark themes">
+        <location
+            file="src/nnyb_brand/res/drawable-xxxhdpi/ic_menu_third_column.png"/>
+    </issue>
+
+    <issue
+        id="IconLauncherShape"
+        message="Launcher icon used as round icon did not have a circular shape">
+        <location
+            file="src/nnyb_brand/res/mipmap-ldpi/ic_launcher_round.png"/>
+    </issue>
+
+    <issue
+        id="GifUsage"
+        message="Using the `.gif` format for bitmaps is discouraged">
+        <location
+            file="src/nnyb_brand/res/drawable-xxxhdpi/loading_animation.gif"/>
+    </issue>
+
+    <issue
+        id="IconDipSize"
+        message="The image `ic_menu_share.png` varies significantly in its density-independent (dip) size across the various density versions: drawable-hdpi/ic_menu_share.png: 36x36 dp (54x54 px), drawable-mdpi/ic_menu_share.png: 24x24 dp (24x24 px), drawable-xhdpi/ic_menu_share.png: 48x48 dp (96x96 px), drawable-xxhdpi/ic_menu_share.png: 48x48 dp (144x144 px), drawable-xxxhdpi/ic_menu_share.png: 48x48 dp (192x192 px)">
+        <location
+            file="src/main/res/drawable-mdpi/ic_menu_share.png"/>
+        <location
+            file="src/main/res/drawable-hdpi/ic_menu_share.png"/>
+        <location
+            file="src/main/res/drawable-xxhdpi/ic_menu_share.png"/>
+        <location
+            file="src/main/res/drawable-xxxhdpi/ic_menu_share.png"/>
+        <location
+            file="src/main/res/drawable-xhdpi/ic_menu_share.png"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-hdpi`: loading_animation.gif (found in drawable-xxxhdpi)">
+        <location
+            file="src/nnyb_brand/res/drawable-hdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-mdpi`: loading_animation.gif (found in drawable-xxxhdpi)">
+        <location
+            file="src/nnyb_brand/res/drawable-mdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-xhdpi`: loading_animation.gif (found in drawable-xxxhdpi)">
+        <location
+            file="src/nnyb_brand/res/drawable-xhdpi"/>
+    </issue>
+
+    <issue
+        id="IconDensities"
+        message="Missing the following drawables in `drawable-xxhdpi`: loading_animation.gif (found in drawable-xxxhdpi)">
+        <location
+            file="src/nnyb_brand/res/drawable-xxhdpi"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: background_menu_dawn.png, background_menu_dusk.png, background_menu_late_nightsky.png, background_menu_midday.png, background_menu_nightsky.png">
+        <location
+            file="src/nnyb_brand/res/drawable-hdpi/background_menu_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-hdpi/background_menu_midday.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-hdpi/background_menu_late_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-hdpi/background_menu_dusk.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-hdpi/background_menu_dawn.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: background_menu_dawn.png, background_menu_dusk.png, background_menu_late_nightsky.png, background_menu_midday.png, background_menu_nightsky.png">
+        <location
+            file="src/nnyb_brand/res/drawable-ldpi/background_menu_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-ldpi/background_menu_midday.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-ldpi/background_menu_late_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-ldpi/background_menu_dusk.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-ldpi/background_menu_dawn.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: background_menu_dawn.png, background_menu_dusk.png, background_menu_late_nightsky.png, background_menu_midday.png, background_menu_nightsky.png">
+        <location
+            file="src/nnyb_brand/res/drawable-mdpi/background_menu_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-mdpi/background_menu_midday.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-mdpi/background_menu_late_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-mdpi/background_menu_dusk.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-mdpi/background_menu_dawn.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: background_menu_dawn.png, background_menu_dusk.png, background_menu_late_nightsky.png, background_menu_midday.png, background_menu_nightsky.png">
+        <location
+            file="src/nnyb_brand/res/drawable-xhdpi/background_menu_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xhdpi/background_menu_midday.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xhdpi/background_menu_late_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xhdpi/background_menu_dusk.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xhdpi/background_menu_dawn.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: background_menu_dawn.png, background_menu_dusk.png, background_menu_late_nightsky.png, background_menu_midday.png, background_menu_nightsky.png">
+        <location
+            file="src/nnyb_brand/res/drawable-xxhdpi/background_menu_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xxhdpi/background_menu_midday.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xxhdpi/background_menu_late_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xxhdpi/background_menu_dusk.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xxhdpi/background_menu_dawn.png"/>
+    </issue>
+
+    <issue
+        id="IconDuplicates"
+        message="The following unrelated icon files have identical contents: background_menu_dawn.png, background_menu_dusk.png, background_menu_late_nightsky.png, background_menu_midday.png, background_menu_nightsky.png">
+        <location
+            file="src/nnyb_brand/res/drawable-xxxhdpi/background_menu_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xxxhdpi/background_menu_midday.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xxxhdpi/background_menu_late_nightsky.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xxxhdpi/background_menu_dusk.png"/>
+        <location
+            file="src/nnyb_brand/res/drawable-xxxhdpi/background_menu_dawn.png"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_autoreload_t_n_c.xml"
+            line="10"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_trivia_result.xml"
+            line="30"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/activity_trivia_result.xml"
+            line="41"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/content_dashboard.xml"
+            line="58"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/content_item.xml"
+            line="33"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/content_item_new.xml"
+            line="42"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/content_payment_type.xml"
+            line="50"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/content_payment_type.xml"
+            line="73"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageButton"
+        errorLine2="         ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/content_payment_type.xml"
+            line="82"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/content_payment_type.xml"
+            line="97"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/content_payment_type.xml"
+            line="131"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/content_trivia_countdown.xml"
+            line="14"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageButton"
+        errorLine2="         ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/content_trivia_countdown.xml"
+            line="43"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/custom_tab_menu.xml"
+            line="13"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_menu.xml"
+            line="62"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_menu.xml"
+            line="125"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="                &lt;ImageView"
+        errorLine2="                 ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_rewards_card.xml"
+            line="38"
+            column="18"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_trivia_pause.xml"
+            line="9"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageButton"
+        errorLine2="         ~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/fragment_trivia_pause.xml"
+            line="58"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_check_in_pay_button.xml"
+            line="43"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_custom_location_marker_info.xml"
+            line="17"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_iamhere_dashboard_error.xml"
+            line="26"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_iamhere_dashboard_success.xml"
+            line="24"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_location_vertical_list_item.xml"
+            line="53"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_menu_filter_item.xml"
+            line="42"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="    &lt;ImageView"
+        errorLine2="     ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_menu_product_image.xml"
+            line="12"
+            column="6"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_modifier_group_list_item.xml"
+            line="36"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_modifier_option_list_item.xml"
+            line="30"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_option_selector_view.xml"
+            line="17"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_option_selector_view.xml"
+            line="35"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Do not set both `contentDescription` and `hint`: the `contentDescription` will mask the `hint`"
+        errorLine1="            android:contentDescription=&quot;@string/location_search_cc&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_search_field.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_search_field.xml"
+            line="41"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_third_level_filter.xml"
+            line="16"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_trivia_answer.xml"
+            line="20"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/layout_trivia_answer.xml"
+            line="30"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/menu_dashboard.xml"
+            line="38"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="        &lt;ImageView"
+        errorLine2="         ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/view_load_screen.xml"
+            line="14"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="ContentDescription"
+        message="Missing `contentDescription` attribute on image"
+        errorLine1="            &lt;ImageView"
+        errorLine2="             ~~~~~~~~~">
+        <location
+            file="src/main/res/layout/view_load_screen.xml"
+            line="31"
+            column="14"/>
+    </issue>
+
+</issues>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayBackgroundMenu">
+
+        <ImageView
+            android:id="@+id/iv_title_trivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/xlarge_spacing"
+            android:src="@drawable/ic_trivia_with_color"
+            app:tint="@color/primaryLightColor"/>
+
+        <TextView
+            android:id="@+id/tv_title_trivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_title_trivia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:fontFamily="@font/heading_secondary_font_family"
+            android:text="@string/daily_trivia"
+            style="@style/subtitleStyle"
+            android:textSize="@dimen/text_size_5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/heading_primary_font_family"
+                android:text="@string/trivia_pause_wait_for_you"
+                style="@style/titleStyle"
+                android:textSize="@dimen/text_size_5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heading_secondary_font_family"
+                android:text="@string/trivia_pause_take_your_time"
+                style="@style/subtitleStyle"
+                android:textColor="@color/textAccentPrimaryColor"
+                android:textSize="@dimen/text_size_2" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ib_resume_trivia"
+            android:layout_width="@dimen/trivia_pause_play_height_width"
+            android:layout_height="@dimen/trivia_pause_play_height_width"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/secondary_button"
+            android:layout_marginBottom="@dimen/xxxlarge_spacing"
+            android:src="@drawable/ic_play_trivia_btn" />
+
+        <TextView
+            android:id="@+id/tv_not_ready_to_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/medium_spacing"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@string/trivia_pause_not_ready_to_play"
+            android:textAllCaps="true"
+            android:textColor="@color/textAccentPrimaryColor"
+            android:textSize="@dimen/text_size_7" />
+
+
+    </RelativeLayout>
+</layout>

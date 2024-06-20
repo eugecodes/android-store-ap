@@ -1,0 +1,104 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="radio_button_size">36dp</dimen>
+    <dimen name="radio_button_stroke_size">2dp</dimen>
+    <dimen name="subtract_disable_stroke_size">1dp</dimen>
+    <dimen name="status_bar_height">24dp</dimen>
+    <dimen name="menu_bottom_margin">20dp</dimen>
+    <dimen name="reward_card_logo">65dp</dimen>
+    <dimen name="location_list_height">290dp</dimen>
+    <dimen name="money_spinner_height">64dip</dimen>
+    <dimen name="location_search_panel_height">46dp</dimen>
+    <dimen name="menu_lower_items_margin_dashboard">12dp</dimen>
+    <dimen name="menu_items_left_margin_dashboard">30dp</dimen>
+    <dimen name="menu_option_separation_dashboard">8dp</dimen>
+    <dimen name="height_width_circle_container">22dp</dimen>
+    <dimen name="tab_height_menu">60dp</dimen>
+    <dimen name="margin_card_menu">5dp</dimen>
+    <dimen name="item_card_image_height_menu">160dp</dimen>
+    <dimen name="size_toggle_button_menu">45dp</dimen>
+    <dimen name="item_card_bottom_margin_menu">4dp</dimen>
+    <dimen name="empty_menu_top_margin">20dp</dimen>
+    <dimen name="item_lower_margin_card">10dp</dimen>
+    <dimen name="margin_bottom_card_menu">10dp</dimen>
+    <dimen name="margin_start_toggle_menu">5dp</dimen>
+    <dimen name="margin_end_toggle_menu">3dp</dimen>
+    <dimen name="padding_toggle_menu">20dp</dimen>
+    <dimen name="text_size_toggle_menu">14sp</dimen>
+    <dimen name="menu_button_top_margin">12dp</dimen>
+    <dimen name="menu_badge_size">33dp</dimen>
+    <dimen name="dashboard_menu_button_badge_size">22dp</dimen>
+
+    <dimen name="map_height_location_details">140dp</dimen>
+    <dimen name="text_size_11">8sp</dimen>
+    <dimen name="limited_time_text_size">10sp</dimen>
+
+    <dimen name="text_size_rewards_small">13sp</dimen>
+    <dimen name="text_size_rewards_large">16sp</dimen>
+
+    <dimen name="text_size_header1">28sp</dimen>
+    <dimen name="text_size_header2">24sp</dimen>
+    <dimen name="text_size_header5">12sp</dimen>
+    <dimen name="location_open_hours_panel_width">240dp</dimen>
+    <dimen name="ebb_header_lets_get_started">32sp</dimen>
+    <dimen name="noah_header_lets_get_started">38sp</dimen>
+    <dimen name="bru_header_lets_get_started">26sp</dimen>
+    <dimen name="row_separator_height">2dp</dimen>
+    <dimen name="credit_card_height">220dp</dimen>
+
+    <dimen name="reward_card_image_width">70dp</dimen>
+    <dimen name="reward_card_image_height">80dp</dimen>
+    <dimen name="list_bottom_padding">100dp</dimen>
+    <dimen name="item_image_height">380dp</dimen>
+    <dimen name="confirmation_header_height">200dp</dimen>
+    <dimen name="trivia_animation_height_width">120dp</dimen>
+    <dimen name="checkout_reward_banner_min_height">90dp</dimen>
+
+    <dimen name="buttons_top_bottom_bg_padding">8dp</dimen>
+    <dimen name="icon_padding">4dp</dimen>
+    <dimen name="button_radius_large">12dp</dimen>
+    <dimen name="button_radius">20dp</dimen>
+    <dimen name="button_radius_payment_type">18dp</dimen>
+    <dimen name="button_radius_quantity">4dp</dimen>
+
+    <dimen name="dashboard_order_now_loading_size">24dp</dimen>
+
+    <dimen name="minus_plus_button_size">28dp</dimen>
+    <dimen name="min_button_size">48dp</dimen>
+    <dimen name="min_google_button_height">54dp</dimen>
+
+    <dimen name="welcome_back_logo_height">72dp</dimen>
+    <dimen name="welcome_back_top_spacing">48dp</dimen>
+    <dimen name="trivia_pause_play_height_width">48dp</dimen>
+
+    <dimen name="confirmation_screen_header_image_height">170dp</dimen>
+
+    <dimen name="circular_button_size">32dp</dimen>
+    <dimen name="rectangular_button_size">18dp</dimen>
+
+    <dimen name="location_list_name_text_size">@dimen/text_size_3</dimen>
+    <dimen name="link_text_size">@dimen/text_size_8</dimen>
+    <dimen name="menu_item_min_name_height">48dp</dimen>
+
+    <dimen name="section_header_text_size">@dimen/text_size_9</dimen>
+    <dimen name="section_header_menu_item_text_size">@dimen/section_header_text_size</dimen>
+
+    <dimen name="perks_logo_margin">@dimen/small_spacing</dimen>
+    <dimen name="sign_in_button_margin">@dimen/small_spacing</dimen>
+
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="guest_user_card_margin">10dp</dimen>
+    <dimen name="guest_user_card_radius">8dp</dimen>
+    <dimen name="guest_user_card_elevation">10dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="txt_input_layout_height">55dp</dimen>
+    <dimen name="get_started_pop_up_margin">16dp</dimen>
+    <dimen name="get_started_field_margin">10dp</dimen>
+    <dimen name="get_started_field_height">42dp</dimen>
+    <dimen name="get_started_field_text_size">16sp</dimen>
+
+    <dimen name="payment_type_screen_margin">25sp</dimen>
+    <dimen name="payment_type_screen_top_margin">50sp</dimen>
+
+
+</resources>

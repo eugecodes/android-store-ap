@@ -1,0 +1,120 @@
+{
+  "id": 1592,
+  "user_id": 5,
+  "location": {
+    "id": 10,
+    "name": "Colfax & Indiana",
+    "number": "3099",
+    "enterprise_unit": "0bb243d1ab6c4d1bb94a606abeb2993c"
+  },
+  "data": {
+    "channel": "Web",
+    "customer": {
+      "id": "df776be3-11d6-e811-a962-000d3a36399f",
+      "externalIds": [],
+      "firstName": "ggon7",
+      "lastName": "g",
+      "email": "gon7@mailinator.com"
+    },
+    "groupMembers": [],
+    "status": "Validated",
+    "totals": [
+      {
+        "lineId": "86469e33aaa64258840d5285540fec56",
+        "type": "Net",
+        "value": 1.42
+      }
+    ],
+    "fulfillment": {
+      "address": {
+        "type": "Residential",
+        "line1": "",
+        "line2": "",
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "businessInfo": {}
+      },
+      "leadTimes": [
+        {
+          "lineId": "PreperationLineId",
+          "type": "Preparation",
+          "interval": 10,
+          "intervalUnits": "Minutes"
+        },
+        {
+          "lineId": "TransitLineId",
+          "type": "Transit",
+          "interval": 0,
+          "intervalUnits": "Minutes"
+        }
+      ],
+      "pickupDate": "2020-03-11T19:52:53.626Z",
+      "type": "Pickup",
+      "autoRelease": false,
+      "catering": false
+    },
+    "expireAt": "2020-06-09T19:52:53.011Z",
+    "fees": [
+      {
+        "lineId": "a7b9d642ffc847aa9f331a6b50d915c4",
+        "type": "Web",
+        "amount": 0.0
+      }
+    ],
+    "orderLines": [
+      {
+        "lineId": "8a593f7a-7ffe-4c00-be2b-588756ca7555",
+        "description": "TB Hashbrown",
+        "extendedAmount": 1.29,
+        "notes": [],
+        "priceModifiers": [],
+        "productId": {
+          "value": "10078"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 1.29,
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true
+      }
+    ],
+    "payments": [],
+    "taxes": [
+      {
+        "lineId": "1bb10489514c4f71b0d2a6116c6e944b",
+        "amount": 0.13,
+        "description": "Store Calculated Tax",
+        "isIncluded": false
+      }
+    ],
+    "promotions": [],
+    "additionalReferenceIds": {
+      "AlohaCheckId": "11534437",
+      "AtoReferenceId": "0",
+      "AtoOrderId": "0"
+    },
+    "taxExempt": false,
+    "totalModifiers": [],
+    "partySize": 0,
+    "dateCreated": "2020-03-11T19:52:53.009Z",
+    "dateUpdated": "2020-03-11T19:52:54.460Z",
+    "id": "09978298420396432974",
+    "lock": {
+      "lockedBy": "[0bb243d1ab6c4d1bb94a606abeb2993c][3e974e4e-736b-420f-bd93-53de1cedbac6]",
+      "lockedDate": "2020-03-11T19:52:53.540Z"
+    },
+    "sourceOrganization": "einstein-noah",
+    "enterpriseUnitId": "0bb243d1ab6c4d1bb94a606abeb2993c",
+    "etag": "2020-03-11T19:52:54.460Z"
+  },
+  "status": "ReceivedForFulfillment",
+  "ncr_status": "ReceivedForFulfillment",
+  "total": 1.42,
+  "tax": 0.13,
+  "check_number": "09978298420396432974",
+  "subtotal": 1.29
+}

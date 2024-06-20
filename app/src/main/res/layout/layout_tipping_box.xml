@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/ll_tipping_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/xxxsmall_spacing"
+        android:layout_marginRight="@dimen/xxxsmall_spacing"
+        android:background="@drawable/tipping_background_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:minWidth="@dimen/min_button_size"
+        android:minHeight="@dimen/min_button_size"
+        android:orientation="vertical"
+        android:padding="@dimen/small_spacing">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/primary_font_family"
+            android:text="@{percentageOfTip}"
+            android:textColor="@color/tipping_text_selector"
+            android:textSize="@dimen/text_size_6_3"
+            tools:text="10 %" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/secondary_font_family"
+            android:textColor="@color/tipping_text_selector"
+            android:textSize="@dimen/text_size_8"
+            android:singleLine="true"
+            app:bindMoney="@{amountOfTip}"
+            app:bindMoneyDigits="@{2}"
+            tools:text="$ 0.58" />
+
+    </LinearLayout>
+
+    <data>
+
+        <variable
+            name="percentageOfTip"
+            type="String" />
+
+        <variable
+            name="amountOfTip"
+            type="java.math.BigDecimal" />
+    </data>
+</layout>

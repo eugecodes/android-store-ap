@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.feedback.model.FeedbackModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/small_spacing">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:importantForAccessibility="yes"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_give_us"
+                style="@style/titleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_spacing"
+                android:fontFamily="@font/heading_primary_font_family"
+                android:importantForAccessibility="no"
+                android:text="@string/give_us"
+                android:textSize="@dimen/text_size_5" />
+
+            <TextView
+                android:id="@+id/tv_feedback"
+                style="@style/subtitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heading_secondary_font_family"
+                android:importantForAccessibility="no"
+                android:text="@string/feedback"
+                android:textSize="@dimen/text_size_3" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_feedback_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_title"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:fontFamily="@font/primary_font_family"
+            android:gravity="center_horizontal"
+            android:text="@string/feedback_subtitle_text"
+            android:textAlignment="center"
+            android:textColor="@color/menuDetailsItemDescription"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_stars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_feedback_subtitle"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_star_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacing"
+                android:contentDescription="@string/star_1"
+                android:src="@drawable/star_drawable_selector"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/iv_star_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacing"
+                android:contentDescription="@string/star_2"
+                android:src="@drawable/star_drawable_selector"
+                android:tag="2" />
+
+            <ImageView
+                android:id="@+id/iv_star_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacing"
+                android:contentDescription="@string/star_3"
+                android:src="@drawable/star_drawable_selector"
+                android:tag="3" />
+
+            <ImageView
+                android:id="@+id/iv_star_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacing"
+                android:contentDescription="@string/star_4"
+                android:src="@drawable/star_drawable_selector"
+                android:tag="4" />
+
+            <ImageView
+                android:id="@+id/iv_star_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/small_spacing"
+                android:contentDescription="@string/star_5"
+                android:src="@drawable/star_drawable_selector"
+                android:tag="5" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_stars_error"
+            style="@style/ErrorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_stars"
+            android:layout_gravity="center"
+            android:text="@string/error_no_stars_selected"
+            app:bindVisible="@{model.stars == null &amp;&amp; model.confirmedPressed}"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/et_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_stars_error"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:background="@drawable/background_edit_text_give_feedback"
+            android:contentDescription="@string/feedback"
+            android:gravity="start"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:maxLength="@{safeUnbox(model.maxFeedbackChars)}"
+            android:maxLines="6"
+            android:minHeight="@dimen/min_button_size"
+            android:minLines="6"
+            android:text="@={model.feedback}"
+            android:textAlignment="textStart"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/tv_feedback_text_error"
+            style="@style/ErrorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_feedback"
+            android:layout_gravity="center"
+            android:text="@string/error_feedback_empty"
+            app:bindVisible="@{model.errorFeedbackText &amp;&amp; model.confirmedPressed}" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et_feedback"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:text="@{@string/maximum_500_chars(model.feedbackCharactersLeft)}"
+            app:bindVisible="@{!(model.errorFeedbackText &amp;&amp; model.confirmedPressed)}" />
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/BaseButton.SecondaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_cancel"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:text="@string/continue_text" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/LinkTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/small_spacing"
+            android:background="@drawable/background_rounded_white_button"
+            android:text="@string/cancel" />
+
+    </RelativeLayout>
+
+</layout>

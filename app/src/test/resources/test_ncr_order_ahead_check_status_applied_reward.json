@@ -1,0 +1,204 @@
+{
+  "id": 171,
+  "user_id": 1,
+  "location": {
+    "id": 2,
+    "name": "Solano",
+    "number": "2101",
+    "enterprise_unit": "e7279f27926845c9ab456a323766981b"
+  },
+  "data": {
+    "dateCreated": "2019-09-27T13:22:40.825Z",
+    "dateUpdated": "2019-09-27T13:22:42.769Z",
+    "id": "12343569984522997237",
+    "lock": {
+      "lockedBy": "[e7279f27926845c9ab456a323766981b][0df53dfd-440b-4cff-8753-d0240010236d]",
+      "lockedDate": "2019-09-27T13:22:41.482Z"
+    },
+    "sourceOrganization": "einstein-noah",
+    "enterpriseUnitId": "e7279f27926845c9ab456a323766981b",
+    "channel": "Web",
+    "customer": {
+      "id": "cb94d6bf-a61d-e911-a979-000d3a363879",
+      "externalIds": [],
+      "firstName": "Andrés",
+      "lastName": "S",
+      "phone": "(256) 329-5326",
+      "email": "andres+test2019@tarmac.io"
+    },
+    "groupMembers": [],
+    "status": "Validated",
+    "totals": [
+      {
+        "type": "Net",
+        "value": 12.15,
+        "lineId": "e09d9972b28048da85490351fc96f528"
+      }
+    ],
+    "fulfillment": {
+      "address": {
+        "type": "Residential",
+        "line1": "",
+        "line2": "",
+        "city": "",
+        "state": "",
+        "postalCode": "",
+        "businessInfo": {}
+      },
+      "leadTimes": [
+        {
+          "type": "Preparation",
+          "interval": 10,
+          "intervalUnits": "Minutes",
+          "lineId": "5a874d792f7b47c6a0191f2b6bee3bf1"
+        },
+        {
+          "type": "Transit",
+          "interval": 0,
+          "intervalUnits": "Minutes",
+          "lineId": "ea069017d95d4fbb9c601f0582c216ed"
+        }
+      ],
+      "pickupDate": "2019-09-27T13:22:41.529Z",
+      "type": "Pickup",
+      "autoRelease": false
+    },
+    "expireAt": "2019-12-26T13:22:42.770Z",
+    "fees": [
+      {
+        "type": "Web",
+        "amount": 0.0,
+        "lineId": "363ba592121f47f6a55a0213fdb80028"
+      }
+    ],
+    "orderLines": [
+      {
+        "description": "Latte, Med",
+        "extendedAmount": 3.75,
+        "notes": [],
+        "priceModifiers": [],
+        "productId": {
+          "value": "103620"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 3.75,
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true,
+        "lineId": "fc6b0394-566d-4f74-b3d3-98cd78bfab1f"
+      },
+      {
+        "description": "Egg Farmhouse",
+        "extendedAmount": 5.99,
+        "notes": [],
+        "priceModifiers": [],
+        "productId": {
+          "value": "10400"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 5.99,
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true,
+        "lineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe"
+      },
+      {
+        "description": "6 Chz Bgl",
+        "extendedAmount": 0.65,
+        "notes": [],
+        "parentLineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe",
+        "priceModifiers": [],
+        "productId": {
+          "value": "60620"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 0.65,
+        "linkGroupCode": "15405",
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true,
+        "lineId": "ef8d55c1-170d-46e8-878b-c0cc786b960d"
+      },
+      {
+        "description": "2 Eggs",
+        "extendedAmount": 0.7,
+        "notes": [],
+        "parentLineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe",
+        "priceModifiers": [],
+        "productId": {
+          "value": "57325"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 0.7,
+        "linkGroupCode": "15403",
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true,
+        "lineId": "acb7e911-3ac4-4d1d-a228-f3b3a2e8679d"
+      },
+      {
+        "description": "NO Side",
+        "extendedAmount": 0.0,
+        "notes": [],
+        "parentLineId": "2c974f0f-33fc-4b2d-affd-a2416c56bfbe",
+        "priceModifiers": [],
+        "productId": {
+          "value": "900245"
+        },
+        "quantity": {
+          "value": 1.0
+        },
+        "substitutionAllowed": false,
+        "taxes": [],
+        "unitPrice": 0.0,
+        "linkGroupCode": "10505",
+        "fulfillmentResult": "Fulfilled",
+        "overridePrice": true,
+        "lineId": "131caa9f-faf6-4afd-9f13-6ce76f602d0e"
+      }
+    ],
+    "payments": [],
+    "taxes": [
+      {
+        "amount": 1.06,
+        "description": "Store Calculated Tax",
+        "isIncluded": false,
+        "lineId": "a98627239e3348818ed30e8d4cde2913"
+      }
+    ],
+    "promotions": [],
+    "additionalReferenceIds": {
+      "AtoOrderId": "0",
+      "AlohaCheckId": "11534356",
+      "AtoReferenceId": "0"
+    },
+    "taxExempt": false,
+    "totalModifiers": [],
+    "partySize": 0,
+    "etag": "2019-09-27T13:22:42.769Z"
+  },
+  "applied_rewards": [
+    {
+      "wallet_id": "17",
+      "discount_line": "1$ off the total",
+      "auto_apply": false
+    }
+  ],
+  "status": "Validated",
+  "total": 12.15,
+  "tax": 1.06,
+  "check_number": "12343569984522997237",
+  "subtotal": 11.09
+}

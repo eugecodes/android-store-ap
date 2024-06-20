@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="size"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.menu.model.SizeEnum" />
+
+    </data>
+
+    <TextView
+        android:id="@+id/tv_cart_item_size"
+        android:layout_width="@dimen/height_width_circle_container"
+        android:layout_height="@dimen/height_width_circle_container"
+        android:layout_marginEnd="@dimen/small_spacing"
+        android:background="@drawable/stepper_button"
+        android:contentDescription="@{@string/size_content_description(size)}"
+        android:gravity="center"
+        android:textColor="@color/whiteColor"
+        android:fontFamily="@font/primary_font_family"
+        app:bindItemSize="@{size}"
+        tools:text="M" />
+</layout>

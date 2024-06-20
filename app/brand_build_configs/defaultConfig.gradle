@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    defaultConfig {
+
+        buildConfigField "String", "CMS_PATH", "\"/content/\""
+        buildConfigField "String", "CMS_ORDER_PATH", "\"/order/\""
+
+        // Fake url to prevent compilation error on brands that don't use NCR
+        buildConfigField "String", "NCR_WRAPPER_BASE_URL", "\"https://localhost\""
+
+
+        // Deeplinks
+        buildConfigField "String", "FINISH_ACTIVITY_REDIRECT", "\"://activity/finish\""
+        resValue "string", "managecard_path", "MyCard"
+        resValue "string", "share_a_perk_path", "share"
+
+        // YEXT
+        buildConfigField "String", "YEXT_DATA_VERSION", "\"20190207\""
+        buildConfigField "boolean", "YEXT_PRODUCTION_ENV", "false"
+
+        // Cybersource Config
+        buildConfigField "String", "USER_ENCRYPTION_KEY", "\"7JGELk4PZkdd8eGb\""
+        buildConfigField "String", "CYBERSOURCE_URL", "\"https://testsecureacceptance.cybersource.com/silent/pay\""
+
+        // Google REST API key
+        resValue "string", "google_rest_api_key", "\"${System.getProperty('GOOGLE_REST_API_KEY')}\""
+
+        buildConfigField "String", "CYBERSOURCE_SECRET_KEY", "\"${System.getProperty('CYBERSOURCE_SECRET_KEY_EBB_STAGE')}\""
+        buildConfigField "String", "CYBERSOURCE_ACCESS_KEY", "\"${System.getProperty('CYBERSOURCE_ACCESS_KEY_EBB_STAGE')}\""
+        buildConfigField "String", "CYBERSOURCE_PROFILE_ID", "\"${System.getProperty('CYBERSOURCE_PROFILE_ID_EBB_STAGE')}\""
+
+        ext {
+            app_name_prefix = ""
+            brand_app_name = ""
+        }
+        resValue "string","brand_app_name",""
+    }
+}

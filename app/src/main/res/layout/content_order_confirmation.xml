@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <data>
+
+        <import type="android.text.TextUtils" />
+
+        <import type="caribouapp.caribou.com.cariboucoffee.common.CurbsideStatusEnum" />
+
+        <import type="caribouapp.caribou.com.cariboucoffee.api.model.yext.YextPickupType" />
+
+        <variable
+            name="confirmationModel"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.confirmation.model.ConfirmationModel" />
+
+        <variable
+            name="presenter"
+            type="caribouapp.caribou.com.cariboucoffee.mvp.oos.confirmation.OrderConfirmationContract.Presenter" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grayBackgroundMenu"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAccessibility="yes">
+
+                    <include
+                        android:id="@+id/include_order_confirmation_header"
+                        layout="@layout/order_confirmation_header" />
+
+                    <ImageButton
+                        android:id="@+id/iv_close"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|end"
+                        android:layout_margin="@dimen/small_spacing"
+                        android:background="@null"
+                        android:contentDescription="@string/close_screen_content_description"
+                        android:minWidth="@dimen/min_button_size"
+                        android:minHeight="@dimen/min_button_size"
+                        android:padding="@dimen/xsmall_spacing"
+                        android:src="@drawable/close_menu" />
+                </FrameLayout>
+
+                <include
+                    android:id="@+id/confirmation_im_here_container"
+                    layout="@layout/layout_iamhere_confirmation_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:confirmationModel="@{confirmationModel}"
+                    app:presenter="@{presenter}"
+                    tools:visibility="gone" />
+
+                <RelativeLayout
+                    bindVisible="@{confirmationModel.order.pickupData.yextPickupType == YextPickupType.WalkIn}"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_spacing"
+                    android:background="@color/whiteColor"
+                    android:contentDescription="@{@string/concat_cd(@string/its_got_your_name_on_it,@string/its_got_your_name_on_it_text)}"
+                    android:importantForAccessibility="yes"
+                    android:padding="@dimen/small_spacing">
+
+                    <TextView
+                        android:id="@+id/tv_what_to_look"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@+id/iv_store"
+                        android:fontFamily="@font/heading_secondary_font_family"
+                        android:importantForAccessibility="no"
+                        android:text="@string/its_got_your_name_on_it"
+                        android:textColor="@color/orderConfirmationTitleTextColor"
+                        android:textSize="@dimen/text_size_6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_what_to_look"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginEnd="@dimen/medium_spacing"
+                        android:layout_toStartOf="@+id/iv_store"
+                        android:fontFamily="@font/description_font_family"
+                        android:importantForAccessibility="no"
+                        android:text="@string/its_got_your_name_on_it_text"
+                        android:textColor="@color/orderConfirmationTextColor"
+                        android:textSize="@dimen/text_size_7" />
+
+                    <ImageView
+                        android:id="@+id/iv_store"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerVertical="true"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/order_ahead_logo" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_spacing"
+                    android:background="@color/whiteColor"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/medium_spacing"
+                    app:bindVisible="@{confirmationModel.order.pickupData.yextPickupType == YextPickupType.Delivery}">
+
+                    <TextView
+                        android:id="@+id/tv_delivery_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/primary_font_family"
+                        android:padding="@dimen/small_spacing"
+                        android:text="@string/delivery_information"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_7"
+                        android:textStyle="bold"
+                        tools:text="Delivery Information" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/xxxsmall_size"
+                        android:background="@color/grayBackgroundMenu" />
+
+                    <TextView
+                        android:id="@+id/tv_delivery_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:fontFamily="@font/primary_font_family"
+                        android:paddingTop="@dimen/small_spacing"
+                        android:text="@string/delivery_address_line_1"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_7"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:fontFamily="@font/description_font_family"
+                        android:text="@{confirmationModel.order.deliveryData.addressLine1}"
+                        android:textColor="@color/orderConfirmationTextColor"
+                        android:textSize="@dimen/text_size_7"
+                        tools:text="211 Belmont St.New York" />
+
+                    <TextView
+                        android:id="@+id/tv_delivery_aparment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:fontFamily="@font/primary_font_family"
+                        android:paddingTop="@dimen/small_spacing"
+                        android:text="@string/delivery_address_line_2"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_7"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:fontFamily="@font/description_font_family"
+                        android:text="@{confirmationModel.order.deliveryData.addressLine2}"
+                        android:textColor="@color/orderConfirmationTextColor"
+                        android:textSize="@dimen/text_size_7"
+                        tools:text="1004" />
+
+                    <TextView
+                        android:id="@+id/tv_delivery_zip_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:fontFamily="@font/primary_font_family"
+                        android:paddingTop="@dimen/small_spacing"
+                        android:text="@string/zip_code"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_7"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:fontFamily="@font/description_font_family"
+                        android:text="@{confirmationModel.order.deliveryData.zipCode}"
+                        android:textColor="@color/orderConfirmationTextColor"
+                        android:textSize="@dimen/text_size_7"
+                        tools:text="NY 10028" />
+
+                    <TextView
+                        android:id="@+id/tv_delivery_contact"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:fontFamily="@font/primary_font_family"
+                        android:paddingTop="@dimen/small_spacing"
+                        android:text="@string/delivery_contact_phone_number"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_7"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        style="@style/PhoneNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:fontFamily="@font/description_font_family"
+                        android:text="@{confirmationModel.order.deliveryData.contact}"
+                        android:textColor="@color/orderConfirmationTextColor"
+                        android:textSize="@dimen/text_size_7"
+                        tools:text="(123) 423-4321" />
+
+                    <TextView
+                        android:id="@+id/tv_delivery_instructions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:fontFamily="@font/primary_font_family"
+                        android:paddingTop="@dimen/small_spacing"
+                        android:text="@string/delivery_instructions"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_7"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:fontFamily="@font/description_font_family"
+                        android:text="@{confirmationModel.order.deliveryData.instructions}"
+                        android:textColor="@color/orderConfirmationTextColor"
+                        android:textSize="@dimen/text_size_7"
+                        tools:text="House with two cars and green plant in front" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/small_spacing"
+                    android:background="@color/whiteColor"
+                    android:gravity="center_horizontal"
+                    app:bindVisible="@{confirmationModel.order.pickupData.yextPickupType != YextPickupType.Delivery}">
+
+                    <TextView
+                        android:id="@+id/tv_store_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@{@string/store_heading_cd(confirmationModel.order.storeLocation.name)}"
+                        android:drawablePadding="@dimen/small_spacing"
+                        android:fontFamily="@font/primary_font_family"
+                        android:padding="@dimen/small_spacing"
+                        android:text="@{confirmationModel.order.storeLocation.name}"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_7"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/location_tinted"
+                        tools:text="Brooklyn Park HQ" />
+
+                    <androidx.fragment.app.FragmentContainerView
+                        android:id="@+id/map_fragment"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/item_card_image_height_menu"
+                        android:layout_below="@+id/tv_store_name"
+                        android:importantForAccessibility="no" />
+
+                    <View
+                        android:id="@+id/view_direction_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/xlarge_spacing"
+                        android:layout_below="@+id/map_fragment"
+                        android:background="@drawable/rounded_corner_header" />
+
+                    <TextView
+                        android:id="@+id/tv_directions"
+                        style="@style/LinkTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/map_fragment"
+                        android:layout_alignParentEnd="true"
+                        android:contentDescription="@string/get_directions_cd"
+                        android:importantForAccessibility="yes"
+                        android:paddingStart="@dimen/small_spacing"
+                        android:paddingLeft="@dimen/small_spacing"
+                        android:paddingTop="@dimen/small_spacing"
+                        android:paddingEnd="@dimen/small_spacing"
+                        android:paddingRight="@dimen/small_spacing"
+                        android:text="@string/get_directions"
+                        app:bindShowDirections="@{confirmationModel.order.storeLocation.coordinates}" />
+
+                    <TextView
+                        android:id="@+id/tv_store_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_direction_container"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@{@string/store_address_cd(confirmationModel.order.storeLocation.address)}"
+                        android:fontFamily="@font/primary_font_family"
+                        android:gravity="start|center_vertical"
+                        android:maxLines="3"
+                        android:paddingStart="@dimen/small_spacing"
+                        android:text="@{confirmationModel.order.storeLocation.address}"
+                        android:textColor="@color/lightBrownColor"
+                        android:textSize="@dimen/text_size_8"
+                        android:textStyle="bold"
+                        tools:ignore="RtlHardcoded,RtlSymmetry"
+                        tools:text="501 Washington Avenue\nMinneapolis, MN 34234-3432" />
+
+                    <TextView
+                        android:id="@+id/tv_store_phone"
+                        style="@style/PhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_store_address"
+                        android:padding="@dimen/small_spacing"
+                        android:text="@{confirmationModel.order.storeLocation.phone}"
+                        app:bindCall="@{confirmationModel.order.storeLocation.phone}"
+                        app:bindCallTemplateCD="@{@string/phone_number_cd}"
+                        tools:text="(123) 423-4321" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_spacing"
+                    android:background="@color/whiteColor"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@{@string/heading_cd(@string/your_order)}"
+                        android:drawablePadding="@dimen/small_spacing"
+                        android:elevation="@dimen/xxsmall_spacing"
+                        android:fontFamily="@font/primary_font_family"
+                        android:gravity="center"
+                        android:text="@string/your_order"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_check_tinted" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/xxxsmall_size"
+                        android:background="@color/grayBackgroundMenu" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_cart_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/small_spacing"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/xxxsmall_size"
+                        android:layout_marginStart="@dimen/small_spacing"
+                        android:layout_marginTop="@dimen/medium_spacing"
+                        android:layout_marginEnd="@dimen/small_spacing"
+                        android:layout_marginBottom="@dimen/small_spacing"
+                        android:background="@color/warmGrayColor"
+                        android:padding="@dimen/small_spacing" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:importantForAccessibility="yes"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/small_spacing"
+                        app:bindMoneyCD="@{confirmationModel.order.totalWithTip}"
+                        app:bindTemplateCD="@{@string/total_cd}">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/primary_font_family"
+                            android:importantForAccessibility="no"
+                            android:text="@string/grand_total"
+                            android:textColor="@color/textSecondaryColor"
+                            android:textSize="@dimen/text_size_7"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_order_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/primary_font_family"
+                            android:importantForAccessibility="no"
+                            android:textColor="@color/textSecondaryColor"
+                            android:textSize="@dimen/text_size_6"
+                            android:textStyle="bold"
+                            app:bindMoney="@{confirmationModel.order.totalWithTip}"
+                            tools:text="$6.70" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_mobile_wallet_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_spacing"
+                    android:background="@color/whiteColor"
+                    android:contentDescription="@{@string/concat_cd(@string/reload_perk_card,@string/reload_perk_card_text)}"
+                    android:importantForAccessibility="yes"
+                    android:padding="@dimen/medium_spacing">
+
+                    <TextView
+                        android:id="@+id/tv_reload_perks_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heading_secondary_font_family"
+                        android:importantForAccessibility="no"
+                        android:text="@string/reload_perk_card"
+                        android:textColor="@color/textSecondaryColor"
+                        android:textSize="@dimen/text_size_6" />
+
+                    <TextView
+                        android:id="@+id/tv_reload_perks_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_reload_perks_title"
+                        android:layout_toStartOf="@+id/btn_reload_card"
+                        android:fontFamily="@font/description_font_family"
+                        android:importantForAccessibility="no"
+                        android:paddingStart="@dimen/small_spacing"
+                        android:paddingLeft="@dimen/small_spacing"
+                        android:paddingEnd="@dimen/small_spacing"
+                        android:paddingRight="@dimen/small_spacing"
+                        android:text="@string/reload_perk_card_text"
+                        android:textColor="@color/menuDetailsItemDescription" />
+
+                    <Button
+                        android:id="@+id/btn_reload_card"
+                        style="@style/BaseButton.SecondaryButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_reload_perks_title"
+                        android:layout_alignParentEnd="true"
+                        android:importantForAccessibility="yes"
+                        android:text="@string/reload"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_close"
+                    style="@style/LinkTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/dialog_close_cd"
+                    android:gravity="center"
+                    android:padding="@dimen/medium_spacing"
+                    android:text="@string/dialog_close"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <caribouapp.caribou.com.cariboucoffee.common.LoadingView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="gone" />
+
+    </FrameLayout>
+</layout>

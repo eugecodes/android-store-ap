@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ebbGoldPMS124C">#E3AC33</color>
+    <color name="ebbGoldPMS124C2">#C8931F</color>
+    <color name="ebbBrownPMS7533C">#46372A</color>
+    <color name="ebbMidBrownPMS7531C">#796858</color>
+    <color name="ebbLightBrownPMS7502C">#CEB98D</color>
+    <color name="ebbBrownPMS7533CTransparent">#CC46372A</color>
+    <color name="ebbBrownCircleX3E3025">#3E3025</color>
+    <color name="ebbBrownButton4B3B2E">#4B3B2E</color>
+    <color name="startColor">#87672E</color>
+    <color name="endColor">#DAAE4C</color>
+    <color name="guestHintColor">#909191</color>
+
+    <color name="primaryColor">@color/ebbGoldPMS124C</color>
+    <color name="primaryLightColor">@color/ebbGoldPMS124C</color>
+    <color name="primaryDarkColor">@color/ebbGoldPMS124C</color>
+    <color name="primaryMidDarkColor">@color/ebbGoldPMS124C</color>
+    <color name="accentColor">@color/ebbBrownPMS7533C</color>
+
+    <color name="textAccentPrimaryColor">@color/ebbBrownPMS7533C</color>
+    <color name="textAccentSecondaryColor">@color/ebbMidBrownPMS7531C</color>
+    <color name="buttonPrimaryPressedColor">#FDD16C</color>
+    <color name="buttonPrimaryColor">@color/primaryDarkColor</color>
+    <color name="progressColor">@color/primaryLightColor</color>
+    <color name="buttonSecondaryPressedColor">@color/ebbGoldPMS124C2</color>
+    <color name="buttonSecondaryColor">@color/primaryColor</color>
+    <color name="buttonCommercePressed">@color/ebbLightBrownPMS7502C</color>
+    <color name="buttonCommerceDarkColor">@color/ebbBrownPMS7533C</color>
+    <color name="rewardBannerBackground">@color/lightBrownColor</color>
+
+    <color name="gradientBackgroundStartColor">@color/primaryMidDarkColor</color>
+    <color name="gradientBackgroundEndColor">@color/primaryColor</color>
+
+    <color name="menuDawnTextColor">@color/whiteColor</color>
+    <color name="menuDuskTextColor">@color/whiteColor</color>
+    <color name="menuMiddayTextColor">@color/whiteColor</color>
+    <color name="menuNightskyTextColor">@color/whiteColor</color>
+
+    <color name="menuDawnBottomTextColor">@color/whiteColor</color>
+    <color name="menuDuskBottomTextColor">@color/whiteColor</color>
+    <color name="menuMiddayBottomTextColor">@color/whiteColor</color>
+    <color name="menuNightskyBottomTextColor">@color/whiteColor</color>
+
+    <color name="dashboardDawnCheckInBackgroundColor">@color/primaryDarkColor</color>
+    <color name="dashboardDuskCheckInBackgroundColor">@color/primaryDarkColor</color>
+    <color name="dashboardMiddayCheckInBackgroundColor">@color/primaryDarkColor</color>
+    <color name="dashboardNightskyCheckInBackgroundColor">@color/primaryDarkColor</color>
+
+    <color name="dashboardDawnCheckInPayTextColor">@color/textAccentPrimaryColor</color>
+    <color name="dashboardDuskCheckInPayTextColor">@color/textAccentPrimaryColor</color>
+    <color name="dashboardMiddayCheckInPayTextColor">@color/textAccentPrimaryColor</color>
+    <color name="dashboardNightskyCheckInPayTextColor">@color/textAccentPrimaryColor</color>
+
+    <color name="dashboardDawnMenuButtonColor">@color/primaryDarkColor</color>
+    <color name="dashboardDuskMenuButtonColor">@color/primaryDarkColor</color>
+    <color name="dashboardMiddayMenuButtonColor">@color/primaryDarkColor</color>
+    <color name="dashboardNightskyMenuButtonColor">@color/primaryDarkColor</color>
+
+    <color name="dashboardDawnTextColor">@color/whiteColor</color>
+    <color name="dashboardDuskTextColor">@color/whiteColor</color>
+    <color name="dashboardMiddayTextColor">@color/whiteColor</color>
+    <color name="dashboardNightskyTextColor">@color/whiteColor</color>
+
+    <color name="dashboardDawnBannerTextColor">@color/whiteColor</color>
+    <color name="dashboardDuskBannerTextColor">@color/whiteColor</color>
+    <color name="dashboardMiddayBannerTextColor">@color/whiteColor</color>
+    <color name="dashboardNightskyBannerTextColor">@color/whiteColor</color>
+
+    <color name="dashboardDawnBannerSecondaryTextColor">@color/taupeColor</color>
+    <color name="dashboardDuskBannerSecondaryTextColor">@color/taupeColor</color>
+    <color name="dashboardMiddayBannerSecondaryTextColor">@color/taupeColor</color>
+    <color name="dashboardNightskyBannerSecondaryTextColor">@color/taupeColor</color>
+
+    <color name="buttonActionNeededColor">#C66828</color>
+    <color name="buttonActionNeededPressedColor">#843804</color>
+
+    <color name="dashboardTextShadowColor">@color/blackColor</color>
+
+    <color name="welcomeBackTextColor">@color/textAccentPrimaryColor</color>
+
+    <color name="primaryTextButtonColor">@color/accentColor</color>
+    <color name="secondaryTextButtonColor">@color/accentColor</color>
+
+    <color name="coloredBackgroundTextColor">@color/accentColor</color>
+
+    <color name="titleTextColor">@color/accentColor</color>
+    <color name="sectionTitleTextColor">@color/accentColor</color>
+    <color name="subtitleTextColor">@color/accentColor</color>
+    <color name="orderConfirmationTitleTextColor">@color/ebbBrownPMS7533C</color>
+    <color name="orderConfirmationTextColor">@color/ebbBrownPMS7533C</color>
+
+    <color name="textSecondaryLightColor">@color/ebbBrownPMS7533C</color>
+    <color name="textSecondaryColor">@color/ebbBrownPMS7533C</color>
+
+    <color name="rewardLimitedTextColor">@color/ebbBrownPMS7533C</color>
+    <color name="rewardLimitedBackgroundColor">@color/ebbLightBrownPMS7502C</color>
+
+    <color name="shortButtonTextColor">@color/ebbBrownPMS7533C</color>
+    <color name="toggleTextSelectedMenu">@color/ebbBrownPMS7533C</color>
+
+    <color name="menuCaloriesTextColor">@color/ebbBrownPMS7533C</color>
+
+    <color name="toolbarControlColor">@color/ebbBrownPMS7533C</color>
+
+    <color name="distanceTextColor">@color/ebbBrownPMS7533C</color>
+
+    <color name="locationCardHeaderBackgroundColor">@color/ebbLightBrownPMS7502C</color>
+
+    <color name="contentControlColor">@color/ebbBrownPMS7533C</color>
+
+    <color name="openHours">@color/ebbBrownPMS7533C</color>
+
+    <color name="toolbarBackgroundGradient1">@color/primaryColor</color>
+    <color name="toolbarBackgroundGradient2">@color/primaryColor</color>
+
+    <color name="menuItemTextColor">@color/textAccentPrimaryColor</color>
+    <color name="sizeSelectedColor">@color/buttonPrimaryColor</color>
+    <color name="inlineModifierSelectedColor">@color/ebbMidBrownPMS7531C</color>
+    <color name="checkIconTintColor">@color/primaryColor</color>
+    <color name="quantitySelectorBackgroundColor">@color/ebbBrownPMS7533C</color>
+    <color name="sizeSelectorTextColor">@color/ebbBrownPMS7533C</color>
+    <color name="storeDetailsButtonColor">@color/ebbMidBrownPMS7531C</color>
+    <color name="storeDetailsButtonPressedColor">@color/ebbLightBrownPMS7502C</color>
+
+    <color name="iAmHereDashboardTitleColor">@color/whiteColor</color>
+    <color name="iAmHereConfirmationTitleColor">@color/whiteColor</color>
+    <color name="iAmHereConfirmationBackground">@color/ebbBrownPMS7533C</color>
+
+    <color name="iAmHereDashboardButton">@color/primaryColor</color>
+    <color name="iAmHereDashboardButtonPressed">@color/buttonPrimaryPressedColor</color>
+    <color name="iAmHereDashboardBackground">@color/ebbBrownPMS7533CTransparent</color>
+
+    <color name="tertiaryColor">@color/lightBrownColor</color>
+    <color name="buttonTertiaryColor">@color/tertiaryColor</color>
+    <color name="buttonTertiaryPressedColor">@color/tertiaryColor</color>
+
+    <color name="customizationTextColor">@color/ebbBrownPMS7533C</color>
+    <color name="customizationButtonColor">@color/ebbBrownPMS7533C</color>
+    <color name="customizationButtonPressedColor">@color/ebbMidBrownPMS7531C</color>
+
+    <color name="expand_collapse_text_button">@color/ebbBrownPMS7533C</color>
+    <color name="guest_user_dialog_close">@color/ebbBrownCircleX3E3025</color>
+    <color name="guest_user_dialog_button">@color/ebbBrownButton4B3B2E</color>
+    <color name="guestDialogBackgroundStartColor">@color/startColor</color>
+    <color name="guestDialogBackgroundEndColor">@color/endColor</color>
+    <color name="lets_get_started_hint_color">@color/guestHintColor</color>
+    <color name="guestTNCColor">@color/ebbBrownButton4B3B2E</color>
+    <color name="disabled_continue_button">#804B3B2E</color>
+    <color name="payment_type_screen">#4B3B2E</color>
+    <color name="payment_type_normal_button_color">#DAAE4C</color>
+
+</resources>

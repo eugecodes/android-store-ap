@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#DDDDDD">
+    <item>
+        <selector>
+            <item android:state_pressed="false">
+                <shape>
+                    <solid android:color="@color/iAmHereDashboardButton" />
+                    <corners android:radius="@dimen/button_radius" />
+                    <padding
+                        android:bottom="@dimen/buttons_top_bottom_bg_padding"
+                        android:left="10dp"
+                        android:right="10dp"
+                        android:top="@dimen/buttons_top_bottom_bg_padding" />
+                </shape>
+            </item>
+
+            <item android:state_pressed="true">
+                <shape>
+                    <solid android:color="@color/iAmHereDashboardButtonPressed" />
+                    <corners android:radius="@dimen/button_radius" />
+                    <padding
+                        android:bottom="@dimen/buttons_top_bottom_bg_padding"
+                        android:left="10dp"
+                        android:right="10dp"
+                        android:top="@dimen/buttons_top_bottom_bg_padding" />
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

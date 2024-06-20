@@ -1,0 +1,78 @@
+{
+  "header": {
+    "status": "Success"
+  },
+  "getResult": {
+    "uid": "b64d1eb6-1f05-e811-8109-5065f38ba4f1",
+    "personalInfo": {
+      "firstName": "Martin",
+      "lastName": "Tarmac Test",
+      "gender": "PreferNotToAnswer",
+      "dateOfBirth": "1991-04-13",
+      "emailAddress": "martin.t_qa@mailinator.com",
+      "memberPhone": "3553454538",
+      "address": {
+        "addressLine1": null,
+        "addressLine2": null,
+        "city": "New York",
+        "state": "NY",
+        "zip": "10022"
+      },
+      "company": null
+    },
+    "preferences": {
+      "perksProgram": true,
+      "perksEmail": false,
+      "ebbProgram": true,
+      "ebbEmail": true,
+      "nnybProgram": true,
+      "nnybEmail": true,
+      "cateringProgram": false,
+      "cateringEmail": false,
+      "nnybCateringProgram": false,
+      "nnybCateringEmail": false,
+      "cbouMarketingEmail": false,
+      "ecomMarketingEmail": false,
+      "mbcEmail": false,
+      "ecomProgram": false,
+      "bruProgram": true,
+      "bruEmail": true,
+      "bruCateringProgram": false,
+      "bruCateringEmail": false
+    },
+    "billingInfo": {
+      "paymentCards": [
+        {
+          "id": null,
+          "firstName": "Martin",
+          "lastName": "Tarmac",
+          "cardNumberPartial": "411111xxxxxx1111",
+          "type": "visa",
+          "expireMonth": "02",
+          "expireYear": "2029",
+          "billingAddress": {
+            "addressLine1": "Lane St",
+            "city": "New York",
+            "state": "NY",
+            "zip": "10022",
+            "country": "US"
+          },
+          "token": "5355622389326170004105"
+        }
+      ],
+      "storedValueCards": [
+        {
+          "cardNumber": "6000900070243033",
+          "autoReloadSettings": {
+            "enabled": false,
+            "currency": "USD",
+            "incrementAmount": 0,
+            "thresholdAmount": 0,
+            "errorCount": 0,
+            "paymentCardId": null
+          }
+        }
+      ]
+    }
+  }
+}

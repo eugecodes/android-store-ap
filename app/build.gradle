@@ -1,0 +1,266 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
+
+plugins {
+    id("bagels.brands.gradle.base")
+    id 'com.android.application'
+    id("com.google.devtools.ksp")
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'newrelic'
+    alias(libs.plugins.googleServices)
+    alias(libs.plugins.ktlint)
+}
+
+apply from: 'versioning.gradle'
+apply from: 'config.gradle'
+
+// Reading in data from local.properties is used here to grab key/value pairs used below in ext
+// Originally, it read the local.properties, but this file should never be committed to vcs,
+// So check if it exists first, because some projects may not care about it
+Properties properties = new Properties()
+if (project.rootProject.file('local.properties').exists()) {
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+}
+
+if (!properties.getProperty("release.storeFile")) {
+    properties.put("release.storeFile", ".")
+}
+
+android {
+    namespace "caribouapp.caribou.com.cariboucoffee"
+    compileSdk = 34
+
+    defaultConfig {
+        applicationId "com.sourceapp"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode readBuildCode()
+        versionName "4.2.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    configurations {
+        all {
+            exclude module: 'commons-logging'
+        }
+    }
+
+    buildFeatures {
+        dataBinding = true
+        buildConfig = true
+        compose = true
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+
+    lint {
+        baseline file("lint-baseline.xml")
+    }
+
+    signingConfigs {
+
+        bagelsUpload {
+            storeFile file("bb_key_2023.jks")
+            storePassword "$System.env.ANDROID_RELEASE_STORE_PASSWORD_2023"
+            keyAlias "bb_key_2023"
+            keyPassword "$System.env.ANDROID_RELEASE_KEY_PASSWORD_2023"
+        }
+
+        debug {
+            storeFile file("keystore_debug.jks_debug")
+            storePassword "7DjmxpBFvPmyWaEG"
+            keyAlias "caribou_debug"
+            keyPassword "7DjmxpBFvPmyWaEG"
+        }
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    buildTypes {
+        bagelsRelease {
+            minifyEnabled true
+            zipAlignEnabled true
+
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles fileTree('proguards').asList().toArray()
+
+            signingConfig signingConfigs.bagelsUpload
+        }
+
+        circleCI {
+            minifyEnabled true
+            zipAlignEnabled true
+
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles fileTree('proguards').asList().toArray()
+
+            signingConfig signingConfigs.debug
+        }
+
+        debug {
+            minifyEnabled false
+            zipAlignEnabled true
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles fileTree('proguards').asList().toArray()
+
+            signingConfig signingConfigs.debug
+            versionNameSuffix "-SNAPSHOT"
+        }
+    }
+
+    flavorDimensions "brand", "server"
+
+    variantFilter { variant ->
+        def flavors = variant.flavors
+        // flavorDimensions "brand" -> 0, "server" -> 1, "api" -> 2
+        def brand = flavors[0]
+        def server = flavors[1]
+
+        if (!server.name.contains(brand.name.split("_")[0])) {
+            setIgnore(true)
+        }
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.compose.compiler.get()
+    }
+}
+
+tasks.withType(KotlinCompilationTask).configureEach {
+    compilerOptions {
+        allWarningsAsErrors.set(true)
+    }
+}
+
+// Ignore unnecessary test for some build variants
+tasks.configureEach { task ->
+    if (task.name.startsWith("test") && task.name.contains("Release")) {
+        task.enabled = false
+    }
+}
+
+apply from: 'brand_build_configs/defaultConfig.gradle'
+apply from: 'brand_build_configs/nnybBuild.gradle'
+apply from: 'brand_build_configs/ebbBuild.gradle'
+apply from: 'brand_build_configs/bruBuild.gradle'
+apply from: 'newrelic_config.gradle'
+dependencies {
+    // No longer maintained, find replacement
+    implementation(name: "searchablespinnerlibrary-release", group: "", version: "", ext: "aar")
+    implementation(name: "CurrencyEditText-release", group: "", version: "", ext: "aar")
+
+    ksp(libs.glide.ksp)
+
+    implementation(platform(libs.compose.bom))
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.cardview)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.core)
+    implementation(libs.androidx.fragment)
+    implementation(libs.androidx.lifecycle.common)
+    implementation(libs.androidx.lifecycle.livedata)
+    implementation(libs.androidx.lifecycle.runtime)
+    implementation(libs.androidx.lifecycle.viewmodel)
+    implementation(libs.braintree.paypal)
+    implementation(libs.braintree.venmo)
+    implementation(libs.card)
+    implementation(libs.compose.material)
+    implementation(libs.compose.ui.tooling.preview)
+    implementation(libs.compose.ui.viewinterop)
+    implementation(libs.dagger)
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.config)
+    implementation(libs.firebase.messaging)
+    implementation(libs.flexbox)
+    implementation(libs.fragmentargs.annotation)
+    implementation(libs.glide)
+    implementation(libs.glide.transformations)
+    implementation(libs.gson)
+    implementation(libs.icepick)
+    implementation libs.inputMask
+    implementation(libs.joda)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.lottie)
+    implementation(libs.material)
+    implementation(libs.newrelic.agent)
+    implementation(libs.okhttp)
+    implementation(libs.okhttp.loggingInterceptor)
+    implementation(libs.play.services.auth)
+    implementation(libs.play.services.location)
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.wallet)
+    implementation(libs.retrofit)
+    implementation(libs.retrofit.gson)
+    implementation(libs.securePreferences)
+    implementation(libs.streamsupport)
+    implementation(libs.taptargetview)
+    implementation(libs.urbanairship.automation)
+    implementation(libs.urbanairship.fcm)
+    implementation(libs.urbanairship.message.center)
+    implementation libs.zxing
+
+    debugImplementation(libs.compose.ui.tooling)
+    debugImplementation(libs.leakcanary.android)
+
+    kapt(libs.androidx.annotation)
+    kapt(libs.dagger.compiler)
+    kapt(libs.fragmentargs.processor)
+    kapt(libs.icepick.processor)
+
+    testImplementation(libs.assertj.core)
+    testImplementation(libs.jsonassert)
+    testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.okhttp.mockwebserver)
+    testImplementation(libs.robolectric)
+}
+
+
+android.applicationVariants.configureEach { variant ->
+    println("variant: " + variant.dirName)
+    variant.mergeResourcesProvider.get().doLast {
+        try {
+            println("Resource masking start symbol replacing")
+            ext.env = System.getenv()
+            File valuesFile = file("${buildDir}/intermediates/res/merged/${variant.dirName}/values/values.xml")
+            String content = valuesFile.getText('UTF-8')
+            content = content.replaceAll(/&lt;item&lgt;/, '<')
+            valuesFile.write(content, 'UTF-8')
+        } catch (Exception e) {
+            if (e instanceof FileNotFoundException) {
+                return
+            }
+            println("Exception = " + e)
+        }
+    }
+
+    try {
+        println("Resource masking end symbol replacing")
+        ext.env = System.getenv()
+        File valuesFile = file("${buildDir}/intermediates/res/merged/${variant.dirName}/values/values.xml")
+        String content = valuesFile.getText('UTF-8')
+        content = content.replaceAll(/&lt;\/item&gt;/, '<')
+        valuesFile.write(content, 'UTF-8')
+    } catch (Exception e) {
+        if (e instanceof FileNotFoundException) {
+            return
+        }
+        println("Exception = " + e)
+    }
+}

@@ -1,0 +1,69 @@
+{
+  "name": "Free Medium Roast Coffee",
+  "id": "2569",
+  "quickComboId": "0",
+  "type": "MENU_ITEM",
+  "defaultSalesItemId": "3903",
+  "orderMode": "NORMAL",
+  "salesItemIds": [
+    "3904",
+    "3903",
+    "3905"
+  ],
+  "salesItems": [
+    {
+      "name": "Small",
+      "id": "3904",
+      "productId": "104408",
+      "currentPrice": 0,
+      "available": true,
+      "defaultOptions": [],
+      "customFields": [
+        {
+          "name": "quantityLimit",
+          "value": "2"
+        },
+        {
+          "name": "quantityLimit",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "name": "Medium",
+      "id": "3903",
+      "productId": "104409",
+      "currentPrice": 0,
+      "available": true,
+      "defaultOptions": [],
+      "customFields": [
+        {
+          "name": "quantityLimit",
+          "value": "1"
+        },
+        {
+          "name": "quantityLimit",
+          "value": "2"
+        }
+      ]
+    },
+    {
+      "name": "Large",
+      "id": "3905",
+      "productId": "104410",
+      "currentPrice": 0,
+      "available": true,
+      "defaultOptions": [],
+      "customFields": [
+        {
+          "name": "quantityLimit",
+          "value": "1"
+        },
+        {
+          "name": "quantityLimit",
+          "value": "2"
+        }
+      ]
+    }
+  ]
+}

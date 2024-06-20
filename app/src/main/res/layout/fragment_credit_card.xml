@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_cards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btn_add_card"
+            android:layout_alignParentTop="true"/>
+
+        <ImageView
+            android:id="@+id/iv_no_credit_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_spacing"
+            android:scaleType="fitXY"
+            app:tint="@color/primaryLightColor"
+            android:contentDescription="@{@string/image_cd(@string/no_credit_card)}"
+            android:src="@drawable/img_no_credit_card"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_add_card"
+            style="@style/BaseButton.PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/small_spacing"
+            android:layout_marginTop="@dimen/small_spacing"
+            android:layout_marginEnd="@dimen/small_spacing"
+            android:layout_marginBottom="@dimen/small_spacing"
+            android:contentDescription="@string/add_new_card_cd"
+            android:text="@string/add_new_card"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>
+
+</layout>
